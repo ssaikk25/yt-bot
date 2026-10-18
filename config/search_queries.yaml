@@ -1,0 +1,76 @@
+# Поисковые запросы (объект + действие + локальность, разные языки).
+# video_duration=medium (4-20 мин) отсекает Shorts; long — для природы/поездов.
+
+queries:
+  # --- Физика / механообработка / спецтехника ---
+  - {query: "токарный станок обработка металла", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "фрезерный станок ЧПУ обработка детали", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "ковка металла вручную кузница", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "сварка полуавтоматом шов", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "экскаватор копает котлован работа", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "lathe turning metal part", region: US, language: en, video_duration: medium, max_results: 30}
+  - {query: "milling machine CNC aluminum", region: US, language: en, video_duration: medium, max_results: 30}
+  - {query: "torno mecanizado pieza metal", region: ES, language: es, video_duration: medium, max_results: 30}
+  - {query: "fresadora CNC mecanizado pieza", region: ES, language: es, video_duration: medium, max_results: 30}
+  - {query: "drehbank metall drehen", region: DE, language: de, video_duration: medium, max_results: 30}
+  - {query: "fraiseuse CNC usinage", region: FR, language: fr, video_duration: medium, max_results: 30}
+  - {query: "blacksmith forging hammer", region: GB, language: en, video_duration: medium, max_results: 30}
+  - {query: "offroad 4x4 mud driving", region: US, language: en, video_duration: medium, max_results: 30}
+
+  # --- Сад / огород / земледелие ---
+  - {query: "пересадка рассады томатов в теплицу", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "вспашка огорода трактором", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "обрезка винограда осенью", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "посадка картофеля мотоблоком", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "huerto urbano siembra tomates", region: ES, language: es, video_duration: medium, max_results: 30}
+  - {query: "potager plantation semis serre", region: FR, language: fr, video_duration: medium, max_results: 30}
+  - {query: "vegetable garden transplanting", region: US, language: en, video_duration: medium, max_results: 30}
+  - {query: "orto semina pomodori", region: IT, language: it, video_duration: medium, max_results: 30}
+
+  # --- Кулинария / Еда ---
+  - {query: "выпечка хлеба в дровяной печи", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "готовка плова в казане на огне", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "street food cooking wok", region: TH, language: en, video_duration: medium, max_results: 30}
+  - {query: "baking bread wood fired oven", region: GB, language: en, video_duration: medium, max_results: 30}
+  - {query: "cocina tradicional guiso", region: ES, language: es, video_duration: medium, max_results: 30}
+
+  # --- Природа / Water ---
+  - {query: "горная река водопад природа", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "прибой океана рассвет", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "mountain river waterfall ambient", region: US, language: en, video_duration: long, max_results: 30}
+  - {query: "cascada río montaña", region: ES, language: es, video_duration: medium, max_results: 30}
+  - {query: "torrent montagne cascade", region: FR, language: fr, video_duration: medium, max_results: 30}
+
+  # --- Животные / пчеловодство / аквариум ---
+  - {query: "осмотр пчелиных рамок пасека", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "аквариумные рыбки уход", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "beekeeping hive inspection frames", region: US, language: en, video_duration: medium, max_results: 30}
+  - {query: "apicultura revisión colmenas", region: ES, language: es, video_duration: medium, max_results: 30}
+  - {query: "aquarium fish tank care", region: GB, language: en, video_duration: medium, max_results: 30}
+
+  # --- Наука и технологии ---
+  - {query: "arduino самодельный станок ЧПУ", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "3d принтер печать детали timelapse", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "arduino homemade CNC machine", region: US, language: en, video_duration: medium, max_results: 30}
+  - {query: "3d printer timelapse print", region: US, language: en, video_duration: medium, max_results: 30}
+  - {query: "robot casero arduino", region: ES, language: es, video_duration: medium, max_results: 30}
+
+  # --- Съемки с дронов / goPRO ---
+  - {query: "поезд из кабины машиниста", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "прогулка по городу камера на теле", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "train cab view countryside", region: GB, language: en, video_duration: medium, max_results: 30}
+  - {query: "walking tour small town", region: US, language: en, video_duration: medium, max_results: 30}
+  - {query: "drone flight coastline 4k", region: US, language: en, video_duration: medium, max_results: 30}
+  - {query: "sailing boat sea gopro", region: GB, language: en, video_duration: medium, max_results: 30}
+
+  # --- Art / ремёсла (горизонтальные) ---
+  - {query: "гончарный круг лепка кувшина", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "резьба по дереву мастерская", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "pottery wheel throwing vase", region: GB, language: en, video_duration: medium, max_results: 30}
+  - {query: "wood carving chisel", region: US, language: en, video_duration: medium, max_results: 30}
+  - {query: "cerámica torno alfarero", region: ES, language: es, video_duration: medium, max_results: 30}
+
+  # --- Flowers / растения ---
+  - {query: "пересадка орхидеи фаленопсис", region: RU, language: ru, video_duration: medium, max_results: 30}
+  - {query: "repotting orchid phalaenopsis", region: US, language: en, video_duration: medium, max_results: 30}
+  - {query: "trasplante orquídea phalaenopsis", region: ES, language: es, video_duration: medium, max_results: 30}
