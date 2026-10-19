@@ -188,6 +188,16 @@ class Settings:
     mimo_retries: int = 3
     mimo_min_confidence: float = 0.5
 
+    # --- DeepSeek (vision через Messages API /v1/messages) ---
+    # По умолчанию выключен: оценщик кадров остаётся MiMo.
+    deepseek_enabled: bool = False
+    deepseek_api_key: str = ""
+    deepseek_base_url: str = "https://llm.azati.ai"
+    deepseek_model: str = "deepseek-flash"
+    deepseek_timeout: float = 180.0
+    deepseek_max_tokens: int = 4096   # 2048 иногда обрезает reasoning → пустой JSON
+    deepseek_retries: int = 3
+
     # --- Локальный VLM pre-filter (экономия вызовов MiMo) ---
     # В штатном режиме выключен: не меняет существующее поведение.
     local_vlm_enabled: bool = False
@@ -332,6 +342,13 @@ def load_settings() -> Settings:
         mimo_enable_thinking=_env_bool("MIMO_ENABLE_THINKING", False),
         mimo_retries=_env_int("MIMO_RETRIES", 3),
         mimo_min_confidence=_env_float("MIMO_MIN_CONFIDENCE", 0.5),
+        deepseek_enabled=_env_bool("DEEPSEEK_ENABLED", False),
+        deepseek_api_key=(os.getenv("DEEPSEEK_API_KEY", "") or "").strip(),
+        deepseek_base_url=(os.getenv("DEEPSEEK_BASE_URL", Settings.deepseek_base_url) or Settings.deepseek_base_url).strip(),
+        deepseek_model=(os.getenv("DEEPSEEK_MODEL", Settings.deepseek_model) or Settings.deepseek_model).strip(),
+        deepseek_timeout=_env_float("DEEPSEEK_TIMEOUT", 180.0),
+        deepseek_max_tokens=_env_int("DEEPSEEK_MAX_TOKENS", 4096),
+        deepseek_retries=_env_int("DEEPSEEK_RETRIES", 3),
         local_vlm_enabled=_env_bool("LOCAL_VLM_ENABLED", False),
         local_vlm_mode=(os.getenv("LOCAL_VLM_MODE", "shadow") or "shadow").strip().lower(),
         local_vlm_base_url=(os.getenv("LOCAL_VLM_BASE_URL", Settings.local_vlm_base_url) or Settings.local_vlm_base_url).strip(),

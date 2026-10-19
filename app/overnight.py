@@ -22,8 +22,8 @@ from .channel_evaluator import ChannelEvaluator
 from .config import load_settings
 from .discovery import discover_channels_ytdlp
 from .frame_sampler import FrameSampler, is_bot_blocked
+from .deepseek_client import create_vision_client
 from .logger import get_logger, setup_logging
-from .mimo_client import MiMoClient
 from .video_selector import get_channel_video_pool
 from .youtube_client import YouTubeClient, YouTubeQuotaError
 
@@ -179,14 +179,7 @@ def main() -> int:
         _ensure_pot_server(settings)
 
         youtube = YouTubeClient(settings.youtube_api_key, settings.youtube_quota_budget)
-        mimo = MiMoClient(
-            api_key=settings.mimo_api_key, base_url=settings.mimo_base_url,
-            model=settings.mimo_model, categories=settings.categories,
-            timeout=settings.mimo_timeout, retries=settings.mimo_retries,
-            max_tokens=settings.mimo_max_tokens, temperature=settings.mimo_temperature,
-            use_response_format=settings.mimo_use_response_format,
-            enable_thinking=settings.mimo_enable_thinking,
-        )
+        mimo = create_vision_client(settings)
         sampler = FrameSampler(
             settings.ffmpeg_path, settings.ffprobe_path, Path(settings.temp_dir),
             delay=settings.ytdlp_delay, cookies_file=settings.cookies_file,

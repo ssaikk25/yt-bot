@@ -91,14 +91,17 @@ vision-AI оценивает КАДРЫ (не видео целиком) → sui
 
 ## AI-оценка
 
-Основной оценщик — **MiMo V2.6 Flash** (OpenAI-совместимый vision API, строгий JSON).
-Есть опциональный **локальный VLM** (SmolVLM2-2.2B через llama.cpp) с единым интерфейсом
-`analyze(images) -> FrameAnalysis`:
+Оценщики кадров взаимозаменяемы (единый интерфейс `analyze(images) -> FrameAnalysis`):
 
 | Оценщик | Как включается | Особенности |
 |---|---|---|
 | **MiMo V2.6 Flash** | по умолчанию | OpenAI-совместимый vision API, строгий JSON |
+| **DeepSeek** (Messages API) | `DEEPSEEK_ENABLED=true` | ~5 с/видео (быстрее MiMo), картинки — только через `/v1/messages` |
 | **Локальный VLM** (SmolVLM2-2.2B, llama.cpp) | `LOCAL_VLM_ENABLED=true` | полностью локально, 4 ГБ VRAM |
+
+Важно: DeepSeek-модели принимают изображения только через **Messages API**
+(`{"type":"image","source":{"type":"base64",...}}`), а не через OpenAI `image_url` —
+в OpenAI-формате модель отвечает «I don't see an image».
 
 Локальный VLM на 2.2B Q4_K_M дал **60% ложных отказов** на shadow-тесте → для
 автоматического отказа не годится, оставлен как опциональный эксперимент.
@@ -129,6 +132,7 @@ yt-tagme-bot/
 │   ├── precheck.py            # дешёвый farm-fingerprint, порядок проверки
 │   ├── thumbhash.py           # похожесть миниатюр (aHash)
 │   ├── mimo_client.py         # клиент MiMo (vision, строгий JSON)
+│   ├── deepseek_client.py     # клиент DeepSeek (vision через Messages API)
 │   ├── local_vlm.py           # локальный VLM pre-filter (llama.cpp)
 │   ├── channel_evaluator.py   # правило 30%, two-stage, выбор категории
 │   ├── rules.py               # правило 30% (чистые функции)
@@ -136,6 +140,7 @@ yt-tagme-bot/
 │   ├── tagme_bot.py           # Playwright-автоматизация TagMe
 │   ├── benchmark.py           # benchmark discovery
 │   ├── eval_benchmark.py      # benchmark оценки
+│   ├── deepseek_benchmark.py  # DeepSeek vs MiMo
 │   ├── local_vlm_benchmark.py # локальный VLM vs MiMo
 │   └── ...
 ├── config/
