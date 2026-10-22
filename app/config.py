@@ -146,7 +146,7 @@ class Settings:
     farm_very_high_threshold: float = 0.8 # band VERY_HIGH
     target_region: str = ""               # регион для regionRestriction ("" = не фильтровать)
     rediscovery_queue_threshold: int = 50 # ниже этого кол-ва usable-кандидатов -> re-discovery
-    rediscovery_cooldown: float = 1800.0  # пауза, если re-discovery дал 0 новых (анти busy-loop)
+    rediscovery_cooldown: float = 300.0   # пауза, если re-discovery дал 0 новых (анти busy-loop)
 
     # --- Discovery ---
     discovery_workers: int = 4       # параллельных yt-dlp-поисков
@@ -312,7 +312,7 @@ def load_settings() -> Settings:
         farm_very_high_threshold=_env_float("FARM_VERY_HIGH_THRESHOLD", 0.8),
         target_region=(os.getenv("TARGET_REGION", "") or "").strip().upper(),
         rediscovery_queue_threshold=_env_int("REDISCOVERY_QUEUE_THRESHOLD", 50),
-        rediscovery_cooldown=_env_float("REDISCOVERY_COOLDOWN", 1800.0),
+        rediscovery_cooldown=_env_float("REDISCOVERY_COOLDOWN", 300.0),
         discovery_workers=_env_int("DISCOVERY_WORKERS", 4),
         max_discovery_workers=_env_int("MAX_DISCOVERY_WORKERS", 6),
         results_per_query=_env_int("RESULTS_PER_QUERY", 50),

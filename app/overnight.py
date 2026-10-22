@@ -227,6 +227,17 @@ def main() -> int:
                      len(usable), settings.rediscovery_queue_threshold)
             try:
                 fresh_batch = discover_channels_ytdlp(settings, youtube)
+                # Больше Data API, меньше yt-dlp: API не ловит bot-check.
+                # Дополняем re-discovery кандидатами из API (если есть квота).
+                try:
+                    api_batch = find_channels(youtube, settings)
+                    if api_batch:
+                        fresh_batch = list(fresh_batch) + list(api_batch)
+                        log.info("Re-discovery: API добавил %d кандидатов", len(api_batch))
+                except YouTubeQuotaError:
+                    log.info("Re-discovery: квота Data API исчерпана, только yt-dlp")
+                except Exception as e:
+                    log.warning("Re-discovery API: %s", e)
                 fresh = [c for c in fresh_batch if c.channel_id not in seen]
                 if fresh:
                     ytdlp_channels = fresh_batch
@@ -300,7 +311,7 @@ def main() -> int:
         if len(results) < target:
             if not progressed:
                 log.info("Кандидаты исчерпаны; повторный поиск через 300 c")
-                time.sleep(1800)
+                time.sleep(300)
             else:
                 time.sleep(5)
 

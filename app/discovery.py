@@ -45,8 +45,11 @@ SKIP_TITLE_KEYWORDS = [
 BOT_BLOCK_MARKERS = ("sign in to confirm you", "not a bot", "bot-block")
 
 # Бонус приоритета для ещё ни разу не прогонявшихся запросов (runs=0).
-# Позволяет быстрее покрыть все ~1455 запросов пула, не отключая адаптацию.
-UNTRIED_QUERY_BONUS = 1.5
+# Сильно доминирует: сначала всегда идём по непробованным запросам.
+UNTRIED_QUERY_BONUS = 2.5
+
+# Бонус запросам не на русском — «другие языки вперёд».
+NON_RU_QUERY_BONUS = 0.8
 
 # Категории, которые НЕ ищем и НЕ берём (например, аниме).
 EXCLUDED_QUERY_CATEGORIES = {"Аниме/Анимации"}
@@ -254,6 +257,9 @@ class DiscoveryEngine:
                 p = self._query_priority(q) + 0.5 * theme_score.get(t, 0.5)
                 if self._is_untried(q):
                     p += UNTRIED_QUERY_BONUS
+                # «Другие языки вперёд»: не-RU запросы приоритетнее.
+                if (q.get("language") or "").strip().lower() not in ("ru", ""):
+                    p += NON_RU_QUERY_BONUS
                 scored.append((p + random.uniform(0, 0.05), q))
             scored.sort(key=lambda x: -x[0])
             for _, q in scored:
