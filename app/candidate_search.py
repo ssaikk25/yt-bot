@@ -35,10 +35,10 @@ def _video_from_search_item(item: dict) -> VideoCandidate | None:
     )
 
 
-def collect_video_candidates(youtube: YouTubeClient, settings) -> list[VideoCandidate]:
+def collect_video_candidates(youtube: YouTubeClient, settings, queries=None) -> list[VideoCandidate]:
     seen: set[str] = set()
     out: list[VideoCandidate] = []
-    for q in settings.queries:
+    for q in (queries if queries is not None else settings.queries):
         if youtube.quota_used >= settings.youtube_quota_budget:
             log.warning("Бюджет квоты достигнут, остановка поиска")
             break
@@ -166,7 +166,7 @@ def build_channel_candidates(youtube: YouTubeClient, videos: list[VideoCandidate
     return out
 
 
-def find_channels(youtube: YouTubeClient, settings) -> list[ChannelCandidate]:
-    videos = collect_video_candidates(youtube, settings)
+def find_channels(youtube: YouTubeClient, settings, queries=None) -> list[ChannelCandidate]:
+    videos = collect_video_candidates(youtube, settings, queries)
     videos = enrich_and_filter(youtube, videos, settings)
     return build_channel_candidates(youtube, videos, settings)

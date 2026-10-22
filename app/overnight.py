@@ -130,6 +130,22 @@ def _ensure_pot_server(settings) -> None:
         log.warning("Не удалось запустить POT-сервер: %s", e)
 
 
+def _api_query_batch(settings) -> list[dict]:
+    """YAML-запросы + ротируемая выборка из пула — для Data API (в пределах квоты)."""
+    import random
+    from .expansion_pool import EXPANSION_POOL, EXPERIMENT_POOL
+    from .expansion_pool_950 import EXPANSION_950
+    from .query_pool import QUERY_POOL
+
+    base = list(settings.queries)
+    pool = ([dict(q) for q in QUERY_POOL] + [dict(q) for q in EXPANSION_POOL]
+            + [dict(q) for q in EXPERIMENT_POOL] + [dict(q) for q in EXPANSION_950])
+    pool = [q for q in pool
+            if (q.get("category") or "").strip() != "Аниме/Анимации" and q.get("query")]
+    sample = random.sample(pool, min(30, len(pool))) if pool else []
+    return base + sample
+
+
 def main() -> int:
     target = int(os.getenv("TARGET_CHANNELS", "50") or 50)
     max_hours = float(os.getenv("MAX_HOURS", "14") or 14)
@@ -198,8 +214,10 @@ def main() -> int:
         channels = list(ytdlp_channels)
 
         # SUPPLEMENT: Data API search (если есть квота search) — дополняет каналы.
+        # Запросы: YAML + ротируемая выборка из пула (больше API, меньше yt-dlp).
+        api_queries = _api_query_batch(settings)
         try:
-            api_channels = find_channels(youtube, settings)
+            api_channels = find_channels(youtube, settings, api_queries)
             known = {c.channel_id for c in channels}
             extra = [c for c in api_channels if c.channel_id not in known]
             if extra:
@@ -230,7 +248,7 @@ def main() -> int:
                 # Больше Data API, меньше yt-dlp: API не ловит bot-check.
                 # Дополняем re-discovery кандидатами из API (если есть квота).
                 try:
-                    api_batch = find_channels(youtube, settings)
+                    api_batch = find_channels(youtube, settings, api_queries)
                     if api_batch:
                         fresh_batch = list(fresh_batch) + list(api_batch)
                         log.info("Re-discovery: API добавил %d кандидатов", len(api_batch))
