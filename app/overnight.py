@@ -183,6 +183,11 @@ def main() -> int:
              settings.bot_block_cooldown, settings.bot_block_backoff_factor,
              settings.bot_block_max_cooldown, settings.video_403_cooldown,
              settings.discovery_workers, settings.max_discovery_workers)
+    log.info("RUNTIME_CONFIG eval_parallel=%d max_videos_per_channel=%d results_per_query=%d "
+             "discovery_queries_per_run=%d ytdlp_delay=%.1f",
+             settings.eval_parallel, settings.max_videos_per_channel,
+             settings.results_per_query, settings.discovery_queries_per_run,
+             settings.ytdlp_delay)
     log.info("ACCESS_STATE snapshot: %s", access_controller.snapshot())
     _ensure_pot_server(settings)
 
