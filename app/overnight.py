@@ -15,12 +15,12 @@ import sys
 import time
 from pathlib import Path
 
-from .access_control import TEMP_KINDS, access_controller, classify_youtube_error, configure_access_control
+from .access_control import TEMP_KINDS, BotBlockedError, access_controller, classify_youtube_error, configure_access_control
 from .candidate_search import find_channels
 from .category_mapper import canonicalize
 from .channel_evaluator import ChannelEvaluator
 from .config import load_settings
-from .discovery import discover_channels_ytdlp
+from .discovery import discover_channels_ytdlp, recovery_probe
 from .frame_sampler import FrameSampler, is_bot_blocked
 from .deepseek_client import create_vision_client
 from .logger import get_logger, setup_logging
@@ -130,6 +130,20 @@ def _ensure_pot_server(settings) -> None:
         log.warning("Не удалось запустить POT-сервер: %s", e)
 
 
+def _wait_for_unblock(settings, chunk: float = 300.0) -> None:
+    """ЕДИНЫЙ координатор паузы: ждёт окончания cooldown кусками (логи каждые chunk c).
+
+    Куски нужны, чтобы watchdog видел активность и не перезапускал процесс.
+    """
+    while access_controller.is_blocked():
+        remaining = access_controller.cooldown_remaining()
+        log.info("COOLDOWN_REMAINING %d c (бот ждёт, прямые запросы к youtube.com запрещены)",
+                 int(remaining))
+        time.sleep(min(chunk, remaining))
+    if access_controller.state == access_controller.BLOCKED:
+        log.info("COOLDOWN_EXPIRED")
+
+
 def _api_query_batch(settings) -> list[dict]:
     """YAML-запросы + ротируемая выборка из пула — для Data API (в пределах квоты)."""
     import random
@@ -152,17 +166,24 @@ def main() -> int:
     quota_wait = int(os.getenv("QUOTA_WAIT_SECONDS", "1800") or 1800)
 
     settings = load_settings()
+    Path(settings.logs_dir).mkdir(parents=True, exist_ok=True)
     configure_access_control(
         settings.bot_block_cooldown,
         settings.bot_block_backoff_factor,
         settings.bot_block_max_cooldown,
         settings.video_403_cooldown,
+        state_path=Path(settings.logs_dir) / "access_state.json",
     )
-    Path(settings.logs_dir).mkdir(parents=True, exist_ok=True)
     Path(settings.temp_dir).mkdir(parents=True, exist_ok=True)
     setup_logging(Path(settings.logs_dir))
+    access_controller.load_state()
 
     log.info("=== OVERNIGHT: target=%d, max_hours=%s, MAX_VIEWS=%d ===", target, max_hours, settings.max_views)
+    log.info("ACCESS_STATE конфиг: base=%.0f backoff=%.1f max=%.0f video_403=%.0f | discovery_workers=%d max=%d",
+             settings.bot_block_cooldown, settings.bot_block_backoff_factor,
+             settings.bot_block_max_cooldown, settings.video_403_cooldown,
+             settings.discovery_workers, settings.max_discovery_workers)
+    log.info("ACCESS_STATE snapshot: %s", access_controller.snapshot())
     _ensure_pot_server(settings)
 
     deadline = time.time() + max_hours * 3600
@@ -192,6 +213,22 @@ def main() -> int:
         attempt += 1
         log.info("--- Попытка %d: найдено %d/%d, осталось %.1f ч ---",
                  attempt, len(results), target, max(0.0, (deadline - time.time()) / 3600))
+
+        # 0. ЕДИНЫЙ координатор паузы: пока cooldown активен, прямые запросы к youtube.com
+        # (discovery/re-discovery/probe) не запускаются вообще.
+        if access_controller.is_blocked():
+            _wait_for_unblock(settings)
+            if access_controller.is_blocked():
+                continue
+        # 0b. Recovery check: один ограниченный запрос перед возобновлением.
+        if access_controller.state in (access_controller.BLOCKED, access_controller.RECOVERING):
+            if access_controller.start_recovery_probe():
+                if not recovery_probe():
+                    log.warning("RECOVERY_PROBE_BLOCKED — остаёмся в cooldown")
+                    _wait_for_unblock(settings)
+                    continue
+                access_controller.mark_recovery_succeeded()
+
         _ensure_pot_server(settings)
 
         youtube = YouTubeClient(settings.youtube_api_key, settings.youtube_quota_budget)
@@ -280,9 +317,9 @@ def main() -> int:
                 continue  # канал в per-video cooldown после temp-ошибки
             if is_bot_blocked():
                 remaining = access_controller.cooldown_remaining() or settings.bot_block_cooldown
-                log.info("bot-block активен, пауза %d c...", int(remaining))
-                time.sleep(remaining)
-                break  # каналы не помечены seen -> будут повторены
+                log.info("bot-block активен (%d c) — прекращаем обработку очереди, "
+                         "пауза в едином координаторе", int(remaining))
+                break  # каналы не помечены seen -> будут повторены после cooldown
             try:
                 pool, ratio = get_channel_video_pool(youtube, ch, settings)
                 if ratio > settings.max_shorts_ratio:

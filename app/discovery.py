@@ -24,6 +24,12 @@ from typing import Any, Optional
 
 import yt_dlp
 
+from .access_control import (
+    BOT_CHECK,
+    BotBlockedError,
+    access_controller,
+    classify_youtube_error,
+)
 from .expansion_pool import EXPANSION_POOL, EXPERIMENT_POOL
 from .expansion_pool_950 import EXPANSION_950
 from .logger import get_logger
@@ -61,6 +67,8 @@ def _title_skipped(title: str) -> bool:
 
 
 def _yt_search(query: str, n: int, cookies_file: str = "") -> list[dict]:
+    # Единый гейт: во время глобального cooldown прямые запросы к youtube.com запрещены.
+    access_controller.gate("discovery")
     opts = {
         "quiet": True,
         "no_warnings": True,
@@ -164,7 +172,10 @@ class DiscoveryEngine:
         self.stats: dict[str, QueryStat] = {}
         self.priorities: dict[str, dict] = self._load_priorities()
         self.workers = max(1, settings.discovery_workers)
+        # Явный верхний предел: не превышаем настроенный максимум автоматически.
+        self.max_workers = max(self.workers, int(getattr(settings, "max_discovery_workers", 0) or self.workers))
         self.min_workers = 2
+        self._bot_noted = False  # bot-check фиксируется в контроллере один раз за прогон
 
     def _load_priorities(self) -> dict[str, dict]:
         """Загружает накопленные runs/EMA из query_priorities.json (persistent)."""
@@ -295,18 +306,32 @@ class DiscoveryEngine:
                        theme=q.get("category", "") or "", subtheme=q.get("subtheme", "") or "")
         channel_views: dict[str, list[int]] = {}
         async with sem:
+            # Гейт проверяется ПЕРЕД каждым запросом (в т.ч. внутри уже запущенного batch).
+            if access_controller.is_blocked():
+                st.bot_check = 1
+                st.errors = 1
+                return st, channel_views
             await asyncio.sleep(0.15)  # мягкий throttle против bot-check
             t0 = time.time()
             try:
                 entries = await asyncio.to_thread(
                     _yt_search, q.get("query", ""), results, self.settings.cookies_file
                 )
+            except BotBlockedError:
+                st.bot_check = 1
+                st.errors = 1
+                st.time_sec = time.time() - t0
+                return st, channel_views
             except Exception as e:
                 st.errors = 1
-                if any(m in str(e).lower() for m in BOT_BLOCK_MARKERS):
+                kind = classify_youtube_error(str(e), source="youtube")
+                if kind == BOT_CHECK or any(m in str(e).lower() for m in BOT_BLOCK_MARKERS):
                     st.bot_check = 1
+                    if not self._bot_noted:
+                        access_controller.note_bot_check("discovery")
+                        self._bot_noted = True
                 st.time_sec = time.time() - t0
-                log.warning("yt-dlp поиск %r: %s", q.get("query", ""), str(e)[:110])
+                log.warning("yt-dlp поиск %r: [%s] %s", q.get("query", ""), kind, str(e)[:110])
                 return st, channel_views
         st.time_sec = time.time() - t0
         st.result_count = len(entries)
@@ -337,6 +362,11 @@ class DiscoveryEngine:
     # ------------------------------------------------------------------ #
     def run(self, seen_channels: Optional[set[str]] = None, save_seen: bool = True) -> list[ChannelCandidate]:
         settings = self.settings
+        # Гейт: во время глобального cooldown discovery не запускается вовсе.
+        if access_controller.is_blocked():
+            log.info("YOUTUBE_DISCOVERY_PAUSED %d c — discovery пропущен",
+                     int(access_controller.cooldown_remaining()))
+            return []
         queries = self._mixed_queries()  # BASE/EXPANSION/EXPERIMENT по ratio + adaptive priority
         if not queries:
             log.warning("query pool пуст")
@@ -357,9 +387,10 @@ class DiscoveryEngine:
         if total_bot or total_err >= max(3, len(results) * 0.1):
             self.workers = max(self.min_workers, self.workers - 1)
             log.info("adaptive concurrency: ошибок=%d bot_check=%d -> workers=%d", total_err, total_bot, self.workers)
-        elif self.workers < self.settings.max_discovery_workers and total_err == 0:
+        elif self.workers < self.max_workers and total_err == 0:
             self.workers += 1
-            log.info("adaptive concurrency: чистый проход -> workers=%d", self.workers)
+            log.info("adaptive concurrency: чистый проход -> workers=%d (max=%d)",
+                     self.workers, self.max_workers)
 
         seen = seen_channels if seen_channels is not None else _load_seen_channels(settings)
 
@@ -497,3 +528,23 @@ def discover_channels_ytdlp(settings, youtube, max_per_query: Optional[int] = No
         settings.results_per_query = max_per_query
     engine = DiscoveryEngine(settings, youtube)
     return engine.run()
+
+
+def recovery_probe(query: str = "hand forge blacksmith") -> bool:
+    """ОДИН ограниченный ytsearch для проверки восстановления после cooldown.
+
+    Возвращает True, если youtube.com отвечает; False — если явный bot-check.
+    Сетевые/прочие ошибки НЕ считаются доказательством блока.
+    """
+    try:
+        _yt_search(query, 1, "")
+        return True
+    except BotBlockedError:
+        return False
+    except Exception as e:
+        kind = classify_youtube_error(str(e), source="youtube")
+        if kind == BOT_CHECK or any(m in str(e).lower() for m in BOT_BLOCK_MARKERS):
+            access_controller.note_bot_check("recovery")
+            return False
+        log.warning("recovery probe: [%s] %s (не считаем блоком)", kind, str(e)[:120])
+        return True

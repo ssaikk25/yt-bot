@@ -1,8 +1,18 @@
-"""Обёртка над YouTube Data API v3: учёт квоты, повторы, ошибки."""
+"""Обёртка над YouTube Data API v3: учёт квоты, повторы, ошибки.
+
+Важно: счётчик квоты — ГЛОБАЛЬНЫЙ и персистентный (logs/api_quota.json), а не
+per-client. Раньше `YouTubeClient` создавался заново на каждый attempt, из-за
+чего `quota_used` обнулялся и дневной бюджет 9000 не соблюдался.
+"""
 from __future__ import annotations
 
+import json
+import os
 import re
+import threading
 import time
+from datetime import datetime
+from pathlib import Path
 from typing import Optional
 
 import httplib2
@@ -17,13 +27,92 @@ log = get_logger("youtube")
 SEARCH_COST = 100
 SIMPLE_COST = 1
 
+try:  # Дневная квота YouTube сбрасывается в полночь Pacific Time.
+    from zoneinfo import ZoneInfo
+    _QUOTA_TZ = ZoneInfo("America/Los_Angeles")
+except Exception:  # pragma: no cover - fallback без tzdata
+    _QUOTA_TZ = None
+
 
 class YouTubeQuotaError(RuntimeError):
     """Превышена квота YouTube Data API."""
 
 
+class YouTubeAuthError(RuntimeError):
+    """Неверный/заблокированный API-ключ (401/403, не квота)."""
+
+
 class YouTubeRateLimitError(RuntimeError):
     """Не удалось выполнить запрос после повторов (rate limit / 5xx)."""
+
+
+def _today_key() -> str:
+    now = datetime.now(_QUOTA_TZ) if _QUOTA_TZ else datetime.utcnow()
+    return now.strftime("%Y-%m-%d")
+
+
+class QuotaMeter:
+    """Дневной счётчик квоты Data API, переживающий рестарты и пересоздание клиента."""
+
+    def __init__(self, path: Optional[Path] = None):
+        self._lock = threading.Lock()
+        self._used = 0
+        self._day = ""
+        self._path = None
+        if path:
+            self.bind(path)
+
+    def bind(self, path) -> None:
+        self._path = Path(path)
+        self._load()
+
+    def _load(self) -> None:
+        if not self._path or not self._path.exists():
+            return
+        try:
+            data = json.loads(self._path.read_text(encoding="utf-8"))
+            self._day = str(data.get("day", ""))
+            self._used = int(data.get("used", 0) or 0)
+        except Exception:
+            pass
+        self._roll()
+
+    def _roll(self) -> None:
+        today = _today_key()
+        if self._day != today:
+            self._day = today
+            self._used = 0
+
+    def _save(self) -> None:
+        if not self._path:
+            return
+        try:
+            self._path.parent.mkdir(parents=True, exist_ok=True)
+            self._path.write_text(
+                json.dumps({"day": self._day, "used": self._used}), encoding="utf-8")
+        except Exception as e:
+            log.warning("API_QUOTA_ACCOUNTING: не удалось сохранить счётчик: %s", e)
+
+    @property
+    def used(self) -> int:
+        with self._lock:
+            self._roll()
+            return self._used
+
+    def add(self, cost: int) -> int:
+        with self._lock:
+            self._roll()
+            self._used += int(cost)
+            self._save()
+            return self._used
+
+
+# Глобальный счётчик: создаётся один раз на процесс.
+quota_meter = QuotaMeter(Path(os.getenv("API_QUOTA_PATH", "logs/api_quota.json")))
+
+
+def configure_quota_meter(path) -> None:
+    quota_meter.bind(path)
 
 
 def iso8601_duration_to_seconds(duration: str) -> float:
@@ -59,8 +148,11 @@ class YouTubeClient:
     def __init__(self, api_key: str, quota_budget: int = 9000):
         self.api_key = api_key
         self.quota_budget = quota_budget
-        self.quota_used = 0
         self._service = None
+
+    @property
+    def quota_used(self) -> int:
+        return quota_meter.used
 
     @property
     def service(self):
@@ -72,7 +164,9 @@ class YouTubeClient:
         return self._service
 
     def _charge(self, cost: int) -> None:
-        self.quota_used += cost
+        used = quota_meter.add(cost)
+        log.info("API_QUOTA_ACCOUNTING +%d -> %d/%d (день %s)",
+                 int(cost), used, self.quota_budget, _today_key())
 
     def _execute(self, request, cost: int = SIMPLE_COST, retries: int = 4):
         last_exc: Optional[Exception] = None
@@ -90,6 +184,10 @@ class YouTubeClient:
                 # Дневная квота (403 или 429 с "quota") — НЕ ретраим, ждём сброса.
                 if status in (403, 429) and ("quota" in lowered or "quotaexceeded" in lowered):
                     raise YouTubeQuotaError(f"Quota превышена: {content[:300]}") from e
+                # 401/403 без квоты: неверный ключ/доступ — НЕ ретраим.
+                if status == 401 or (status == 403 and (
+                        "key" in lowered or "forbidden" in lowered or "unauthorized" in lowered)):
+                    raise YouTubeAuthError(f"Data API auth {status}: {content[:300]}") from e
                 if status in (403, 429, 500, 502, 503, 504):
                     last_exc = e
                     wait = (2 ** attempt) * 1.5

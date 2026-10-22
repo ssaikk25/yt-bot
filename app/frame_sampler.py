@@ -23,8 +23,12 @@ import yt_dlp
 from .access_control import (
     BOT_CHECK,
     FORBIDDEN,
+    GVS_403,
     NETWORK,
+    OTHER_403,
+    PAGE_403,
     URL_EXPIRED,
+    BotBlockedError,
     access_controller,
     access_metrics,
     classify_youtube_error,
@@ -146,10 +150,12 @@ class FrameSampler:
         """
         if self.delay > 0:
             time.sleep(self.delay)
-        if access_controller.is_blocked():
-            raise ProbeError(BOT_CHECK, "global bot-block: cooldown активен")
+        try:
+            access_controller.gate("probe")
+        except BotBlockedError as e:
+            raise ProbeError(BOT_CHECK, str(e)) from e
         if video_cooldown.is_blocked(video_id):
-            raise ProbeError(FORBIDDEN, "per-video cooldown активен (недавний 403)")
+            raise ProbeError(GVS_403, "per-video cooldown активен (недавний 403)")
 
         ydl_opts = {
             "quiet": True,
@@ -167,11 +173,14 @@ class FrameSampler:
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 info = ydl.extract_info(video_url, download=False)
         except Exception as e:
-            kind = classify_youtube_error(str(e))
+            kind = classify_youtube_error(str(e), source="youtube")
             if kind == BOT_CHECK:
-                access_controller.note_bot_check()
-            elif kind == FORBIDDEN:
-                access_controller.note_suspected()
+                access_controller.note_bot_check("probe")
+            elif kind in (PAGE_403, OTHER_403):
+                access_controller.note_suspected(f"probe {kind}")
+            elif kind == GVS_403:
+                video_cooldown.mark(video_id)
+                log.warning("GVS_FORBIDDEN video=%s (медиапоток, не глобальный блок)", video_id)
             access_metrics.record_probe(False, kind, time.time() - t0)
             log.warning("probe %s: [%s] %s", video_id, kind, str(e)[:160])
             raise ProbeError(kind, str(e)) from e
@@ -254,7 +263,9 @@ class FrameSampler:
         return []
 
     def _classify_ffmpeg_failure(self, stderr: bytes) -> str:
-        return classify_youtube_error((stderr or b"").decode("utf-8", "replace"))
+        # ffmpeg тянет медиапоток с googlevideo.com — отдельный источник ошибок.
+        return classify_youtube_error((stderr or b"").decode("utf-8", "replace"),
+                                      source="googlevideo")
 
     def _note_frame_result(self, ok: bool, duration: float, kind: str = "") -> None:
         access_metrics.record_frame(ok, duration, kind)
@@ -289,7 +300,7 @@ class FrameSampler:
                 log.warning("ffmpeg ошибка при t=%ss (%s) [%s]: %s",
                             t, meta.video_id, kind,
                             (e.stderr or b"").decode("utf-8", "replace")[:200])
-                if kind in (FORBIDDEN, URL_EXPIRED, NETWORK) and not paths:
+                if kind in (GVS_403, OTHER_403, URL_EXPIRED, NETWORK) and not paths:
                     # первая же ошибка доступа — пробрасываем наверх для re-probe
                     raise MediaUrlError(kind, f"ffmpeg {kind} при t={t}s")
                 continue
@@ -332,7 +343,7 @@ class FrameSampler:
             log.warning("ffmpeg multi ошибка (%s) [%s]: %s",
                         meta.video_id, kind,
                         (e.stderr or b"").decode("utf-8", "replace")[:200])
-            if kind in (FORBIDDEN, URL_EXPIRED, NETWORK) and not paths:
+            if kind in (GVS_403, OTHER_403, URL_EXPIRED, NETWORK) and not paths:
                 raise MediaUrlError(kind, f"ffmpeg multi {kind}")
 
         for i, t in missing:

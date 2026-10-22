@@ -2,9 +2,11 @@
 """Контроль доступа к YouTube-видеопотоку.
 
 Содержит ТОЛЬКО логику снижения нагрузки и корректного останова/восстановления:
-- классификация ошибок (bot-check / age-gate / unavailable / 403 / expire / network);
-- глобальный state machine NORMAL → SUSPECTED → BLOCKED → RECOVERING;
+- классификация ошибок с учётом источника (youtube.com / googlevideo / Data API);
+- глобальный state machine NORMAL → SUSPECTED → BLOCKED → RECOVERING → NORMAL;
 - exponential backoff кулдауна (base → base*factor → ... → cap);
+- персистентность состояния между рестартами;
+- единый гейт `youtube_gate()` для ВСЕХ прямых запросов к youtube.com;
 - per-video cooldown для 403/expire (не долбить одно видео);
 - метрики probe/frame (счётчики + тайминги).
 
@@ -12,34 +14,82 @@
 """
 from __future__ import annotations
 
+import json
 import threading
 import time
+from pathlib import Path
+from typing import Optional
+
+from .logger import get_logger
+
+log = get_logger("access")
 
 # --------------------------------------------------------------------------- #
 # Виды ошибок
 # --------------------------------------------------------------------------- #
-BOT_CHECK = "bot_check"        # «Sign in to confirm you're not a bot»
+BOT_CHECK = "bot_check"        # явный «Sign in to confirm you're not a bot»
 AGE_GATE = "age_gate"          # «Sign in to confirm your age»
 UNAVAILABLE = "unavailable"    # private / deleted / unavailable
-FORBIDDEN = "forbidden"        # HTTP 403 от CDN / googlevideo
+PAGE_403 = "page_403"          # HTTP 403 от youtube.com (страница/API-страница)
+GVS_403 = "gvs_403"            # HTTP 403 от googlevideo.com (медиапоток)
+OTHER_403 = "other_403"        # HTTP 403 из неопознанного источника
 URL_EXPIRED = "url_expired"    # истёк signature/expire
 NETWORK = "network"            # timeout / DNS / reset / 5xx / connection
 UNSUPPORTED = "unsupported"    # нет доступного формата
+API_QUOTA = "api_quota"        # Data API: квота исчерпана
+API_AUTH = "api_auth"          # Data API: 401/403 ключ
+API_TEMP = "api_temp"          # Data API: временная 5xx/сеть
 UNKNOWN = "unknown"
 
+# Обратная совместимость: старые коды.
+FORBIDDEN = OTHER_403
+
 # Временные ошибки: канал НЕ помечается проверенным, разрешён повтор после cooldown.
-TEMP_KINDS = frozenset({BOT_CHECK, FORBIDDEN, URL_EXPIRED, NETWORK})
+TEMP_KINDS = frozenset({
+    BOT_CHECK, PAGE_403, GVS_403, OTHER_403, URL_EXPIRED, NETWORK, API_TEMP,
+})
 # Постоянные: видео/канал можно считать отклонённым.
 PERMANENT_KINDS = frozenset({UNAVAILABLE, AGE_GATE, UNSUPPORTED})
 # «Не просматриваемые»: НЕ считаются ни PASS, ни FAIL, исключаются из denominator 30%.
 UNWATCHABLE_KINDS = frozenset({UNAVAILABLE, AGE_GATE})
+# 403 от медиапотока — НЕ глобальный bot-check; лечим per-video cooldown.
+MEDIA_KINDS = frozenset({GVS_403, URL_EXPIRED})
+
+_BOT_MARKERS = (
+    "not a bot",
+    "sign in to confirm",
+    "confirm you're not a bot",
+    "confirm you’re not a bot",
+    "bot-check",
+    "bot check",
+)
+_403_MARKERS = ("http error 403", "403 forbidden", "server returned 403", " 403 ")
 
 
-def classify_youtube_error(message: str) -> str:
-    """Классифицирует текст ошибки yt-dlp / ffmpeg по виду."""
+def classify_youtube_error(message: str, source: str = "") -> str:
+    """Классифицирует текст ошибки yt-dlp / ffmpeg / Data API по виду.
+
+    source: "youtube" | "googlevideo" | "api" | "" — уточняет 403 и сетевые ошибки,
+    чтобы ошибка одного компонента не меняла состояние другого.
+    """
     msg = (message or "").lower()
     if not msg:
         return UNKNOWN
+    src = (source or "").lower()
+
+    # Data API имеет собственную классификацию.
+    if src == "api":
+        if "quota" in msg or "quotaexceeded" in msg:
+            return API_QUOTA
+        if ("api key" in msg or "keyinvalid" in msg or "unauthorized" in msg
+                or "401" in msg or "forbidden" in msg and "quota" not in msg):
+            return API_AUTH
+        for m in ("timeout", "timed out", "connection", "reset", "503", "502",
+                  "500", "504", "unavailable", "backend"):
+            if m in msg:
+                return API_TEMP
+        return API_TEMP
+
     if "sign in to confirm your age" in msg:
         return AGE_GATE
     if "not a bot" in msg or ("sign in to confirm" in msg and "age" not in msg):
@@ -48,13 +98,16 @@ def classify_youtube_error(message: str) -> str:
             or "private video" in msg or "removed by the uploader" in msg
             or "has been removed" in msg or "deleted" in msg):
         return UNAVAILABLE
-    if "signature" in msg or "expired" in msg or "url expired" in msg:
+    if "signature" in msg or "url expired" in msg or "expired" in msg:
         return URL_EXPIRED
-    if ("http error 403" in msg or " 403 " in msg or msg.startswith("403")
-            or "403 forbidden" in msg or "server returned 403" in msg):
-        return FORBIDDEN
+    if any(m in msg for m in _403_MARKERS) or msg.startswith("403"):
+        if src == "googlevideo":
+            return GVS_403
+        if src in ("youtube", "page"):
+            return PAGE_403
+        return OTHER_403
     if ("no video formats" in msg or "requested format is not available" in msg
-            or "unsupported" in msg or "no formats found" in msg):
+            or "no formats found" in msg):
         return UNSUPPORTED
     for m in ("timeout", "timed out", "dns", "connection", "reset",
               "unreachable", "refused", "network", "ssl", "closed",
@@ -62,6 +115,17 @@ def classify_youtube_error(message: str) -> str:
         if m in msg:
             return NETWORK
     return UNKNOWN
+
+
+class BotBlockedError(RuntimeError):
+    """Запрос к youtube.com запрещён: активен глобальный cooldown."""
+
+    def __init__(self, component: str, remaining: float):
+        self.component = component
+        self.remaining = float(remaining)
+        super().__init__(
+            f"global bot-block активен: {component}, осталось {int(remaining)} c"
+        )
 
 
 class YouTubeAccessController:
@@ -81,53 +145,133 @@ class YouTubeAccessController:
         self.current_cooldown = float(base_cooldown)
         self.cooldown_until = 0.0
         self.block_count = 0
+        self._state_path: Optional[Path] = None
         self._lock = threading.Lock()
+        self._last_remaining_log = 0.0
 
+    # ---------------------------------------------------------------- #
     def is_blocked(self) -> bool:
         return time.time() < self.cooldown_until
 
     def cooldown_remaining(self) -> float:
         return max(0.0, self.cooldown_until - time.time())
 
-    def note_suspected(self) -> None:
+    def _set_state(self, new_state: str, reason: str = "") -> None:
+        old = self.state
+        self.state = new_state
+        if old != new_state:
+            log.info("ACCESS_STATE_CHANGED %s -> %s (%s)", old, new_state, reason)
+
+    # ---------------------------------------------------------------- #
+    def note_suspected(self, reason: str = "") -> None:
         """Один странный 403/необычный ответ, но не точный bot-check."""
         with self._lock:
             if self.state == self.NORMAL:
-                self.state = self.SUSPECTED
+                self._set_state(self.SUSPECTED, reason or "non-fatal 403")
 
-    def note_bot_check(self) -> None:
-        """Точный bot-check: BLOCKED + кулдаун с exponential backoff."""
+    def note_bot_check(self, source: str = "") -> None:
+        """ТОЛЬКО явный bot-check: BLOCKED + кулдаун с exponential backoff."""
         with self._lock:
+            was_recovering = self.state == self.RECOVERING
             self.block_count += 1
             if self.state != self.BLOCKED:
-                # первый блок в серии — начинаем с base
                 self.current_cooldown = self.base_cooldown
             else:
-                # повторный блок — увеличиваем, но не выше cap
                 self.current_cooldown = min(
                     self.max_cooldown,
                     self.current_cooldown * self.backoff_factor,
                 )
             self.cooldown_until = time.time() + self.current_cooldown
-            self.state = self.BLOCKED
+            self._set_state(self.BLOCKED, f"bot_check from {source or 'unknown'}")
+            log.warning("BOT_CHECK_CONFIRMED source=%s block_count=%d",
+                        source or "unknown", self.block_count)
+            if was_recovering:
+                log.warning("RECOVERY_PROBE_BLOCKED source=%s", source or "unknown")
+            log.info("COOLDOWN_STARTED %d c (until unixtime=%d)",
+                     int(self.current_cooldown), int(self.cooldown_until))
+            self._save_locked()
 
     def note_success(self) -> None:
         """Успешный probe — полное восстановление."""
         with self._lock:
-            self.state = self.NORMAL
+            self._set_state(self.NORMAL, "probe success")
             self.current_cooldown = self.base_cooldown
             self.cooldown_until = 0.0
+            self._save_locked()
 
     def start_recovery_probe(self) -> bool:
-        """Пытается начать осторожный recovery-пробник после окончания кулдауна.
-
-        Возвращает True, если пробник разрешён (cooldown истёк), иначе False.
-        """
+        """Разрешает ОДИН осторожный recovery-пробник после окончания кулдауна."""
         with self._lock:
             if time.time() < self.cooldown_until:
                 return False
             if self.state == self.BLOCKED:
+                log.info("COOLDOWN_EXPIRED")
+                self._set_state(self.RECOVERING, "cooldown expired")
+                log.info("RECOVERY_PROBE_STARTED")
+            return True
+
+    def mark_recovery_succeeded(self) -> None:
+        with self._lock:
+            log.info("RECOVERY_PROBE_SUCCEEDED")
+            self._set_state(self.NORMAL, "recovery ok")
+            self.current_cooldown = self.base_cooldown
+            self.cooldown_until = 0.0
+            self._save_locked()
+
+    # ---------------------------------------------------------------- #
+    def gate(self, component: str) -> None:
+        """Единая точка проверки для ЛЮБОГО прямого запроса к youtube.com."""
+        if self.is_blocked():
+            remaining = self.cooldown_remaining()
+            if component == "discovery":
+                log.info("YOUTUBE_DISCOVERY_PAUSED %d c", int(remaining))
+            elif component == "probe":
+                log.info("YOUTUBE_PROBE_PAUSED %d c", int(remaining))
+            raise BotBlockedError(component, remaining)
+
+    # ---------------------------------------------------------------- #
+    # Персистентность состояния между рестартами.
+    # ---------------------------------------------------------------- #
+    def bind_state_path(self, path) -> None:
+        self._state_path = Path(path)
+
+    def _save_locked(self) -> None:
+        if not self._state_path:
+            return
+        try:
+            data = {
+                "state": self.state,
+                "cooldown_until": self.cooldown_until,
+                "current_cooldown": self.current_cooldown,
+                "block_count": self.block_count,
+                "saved_at": time.time(),
+            }
+            self._state_path.parent.mkdir(parents=True, exist_ok=True)
+            self._state_path.write_text(json.dumps(data), encoding="utf-8")
+        except Exception as e:
+            log.warning("ACCESS_STATE_SAVE_FAILED %s", e)
+
+    def load_state(self) -> bool:
+        """Восстанавливает состояние после рестарта. True, если состояние было."""
+        if not self._state_path or not self._state_path.exists():
+            return False
+        try:
+            data = json.loads(self._state_path.read_text(encoding="utf-8"))
+        except Exception:
+            return False
+        with self._lock:
+            self.state = data.get("state", self.NORMAL)
+            self.cooldown_until = float(data.get("cooldown_until", 0.0) or 0.0)
+            self.current_cooldown = float(
+                data.get("current_cooldown", self.base_cooldown) or self.base_cooldown)
+            self.block_count = int(data.get("block_count", 0) or 0)
+            if self.is_blocked():
+                log.info("ACCESS_STATE_RESTORED state=%s cooldown_remaining=%d c",
+                         self.state, int(self.cooldown_remaining()))
+            elif self.state == self.BLOCKED:
+                # кулдаун истёк, пока процесс был остановлен — нужен recovery probe
                 self.state = self.RECOVERING
+                log.info("ACCESS_STATE_RESTORED state=recovering (cooldown истёк)")
             return True
 
     def snapshot(self) -> dict:
@@ -142,10 +286,7 @@ class YouTubeAccessController:
 
 
 class VideoErrorCooldown:
-    """Per-video кулдаун для временных ошибок (403/expire/network).
-
-    Позволяет НЕ долбить одно и то же видео подряд, продолжая остальные.
-    """
+    """Per-video кулдаун для временных ошибок (403/expire/network)."""
 
     def __init__(self, cooldown_sec: float = 600.0):
         self.cooldown_sec = float(cooldown_sec)
@@ -171,7 +312,6 @@ class VideoErrorCooldown:
             for k in expired:
                 del self._until[k]
             if len(self._until) > max_entries:
-                # удаляем самые старые по сроку окончания
                 for k in sorted(self._until, key=self._until.get)[: len(self._until) - max_entries]:
                     del self._until[k]
 
@@ -259,6 +399,7 @@ def configure_access_control(
     backoff_factor: float = 2.0,
     max_cooldown: float = 7200.0,
     video_error_cooldown: float = 600.0,
+    state_path=None,
 ) -> None:
     """Настраивает глобальный контроллер из Settings (вызывается при старте)."""
     access_controller.base_cooldown = float(base_cooldown)
@@ -267,17 +408,27 @@ def configure_access_control(
     if access_controller.state == access_controller.NORMAL:
         access_controller.current_cooldown = float(base_cooldown)
     video_cooldown.cooldown_sec = float(video_error_cooldown)
+    if state_path:
+        access_controller.bind_state_path(state_path)
+
+
+def youtube_gate(component: str) -> None:
+    """Публичный гейт: бросает BotBlockedError, если активен cooldown."""
+    access_controller.gate(component)
+
+
+# Обратная совместимость.
+def is_bot_blocked() -> bool:
+    return access_controller.is_blocked()
 
 
 # --------------------------------------------------------------------------- #
 # Adaptive MiMo concurrency (отдельный limiter, НЕ смешан с discovery).
-# Живёт на уровне модуля: переживает пересоздание evaluator/mimo между попытками.
 # --------------------------------------------------------------------------- #
 _mimo_parallel = {"current": 2, "base": 2, "clean": 0, "min": 2}
 
 
 def init_mimo_parallel(base: int) -> None:
-    """Устанавливает базовый параллелизм (первый вызов)."""
     base = max(2, int(base))
     if _mimo_parallel["base"] == 2 and _mimo_parallel["current"] == 2:
         _mimo_parallel["base"] = base
@@ -285,7 +436,6 @@ def init_mimo_parallel(base: int) -> None:
 
 
 def reset_mimo_parallel(base: int = 2, min_par: int = 2) -> None:
-    """Сброс адаптивного параллелизма (для тестов)."""
     _mimo_parallel["current"] = base
     _mimo_parallel["base"] = base
     _mimo_parallel["min"] = min_par
@@ -294,8 +444,6 @@ def reset_mimo_parallel(base: int = 2, min_par: int = 2) -> None:
 
 # --------------------------------------------------------------------------- #
 # MiMo rate-limit (429): глобальный cooldown с exponential backoff.
-# 429 = исчерпание токенов ИЛИ RPM-лимит. При повторных 429 растягиваем паузу:
-# 1800 -> 3600 -> 7200 (cap), при успехе сбрасываем.
 # --------------------------------------------------------------------------- #
 _mimo_rl_until = 0.0
 _mimo_rl_streak = 0
@@ -306,7 +454,6 @@ def mimo_is_rate_limited() -> bool:
 
 
 def mimo_note_rate_limit() -> None:
-    """Фиксирует 429 и увеличивает паузу (backoff)."""
     global _mimo_rl_until, _mimo_rl_streak
     _mimo_rl_streak += 1
     cooldown = min(7200.0, 1800.0 * (2 ** min(_mimo_rl_streak - 1, 2)))
@@ -314,7 +461,6 @@ def mimo_note_rate_limit() -> None:
 
 
 def mimo_note_success() -> None:
-    """Успешный MiMo-вызов сбрасывает streak (лимит остыл)."""
     global _mimo_rl_streak
     _mimo_rl_streak = 0
 
@@ -324,7 +470,6 @@ def current_mimo_parallel() -> int:
 
 
 def adjust_mimo_parallel(errors: int, calls: int) -> int:
-    """После канала: ошибки MiMo -> снижаем, стабильность -> возвращаем."""
     cur = _mimo_parallel["current"]
     base = _mimo_parallel["base"]
     if errors > 0:

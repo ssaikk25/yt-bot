@@ -246,6 +246,19 @@ def _load_queries(path: Path) -> list[dict[str, Any]]:
     return [q for q in queries if isinstance(q, dict) and q.get("query")]
 
 
+def resolve_max_discovery_workers(discovery_workers: int, max_discovery_workers: int) -> int:
+    """Верхний предел параллелизма discovery.
+
+    0 (не задан) => не превышать DISCOVERY_WORKERS: адаптивная логика не может
+    молча поднять конкурентность выше настроенного безопасного лимита.
+    """
+    initial = max(1, int(discovery_workers or 1))
+    maximum = int(max_discovery_workers or 0)
+    if maximum < initial:
+        return initial
+    return maximum
+
+
 def load_settings() -> Settings:
     load_dotenv(PROJECT_ROOT / ".env")
 
@@ -314,7 +327,7 @@ def load_settings() -> Settings:
         rediscovery_queue_threshold=_env_int("REDISCOVERY_QUEUE_THRESHOLD", 50),
         rediscovery_cooldown=_env_float("REDISCOVERY_COOLDOWN", 300.0),
         discovery_workers=_env_int("DISCOVERY_WORKERS", 4),
-        max_discovery_workers=_env_int("MAX_DISCOVERY_WORKERS", 6),
+        max_discovery_workers=_env_int("MAX_DISCOVERY_WORKERS", 0),
         results_per_query=_env_int("RESULTS_PER_QUERY", 50),
         exploit_ratio=_env_float("EXPLOIT_RATIO", 0.70),
         explore_ratio=_env_float("EXPLORE_RATIO", 0.20),
@@ -369,6 +382,11 @@ def load_settings() -> Settings:
     s.logs_dir = str(s.resolved_path(s.logs_dir))
     s.playwright_profile_dir = str(s.resolved_path(s.playwright_profile_dir))
     s.search_queries_path = str(s.resolved_path(s.search_queries_path))
+
+    # Явный верхний предел конкурентности discovery.
+    # MAX_DISCOVERY_WORKERS=0 => не превышать DISCOVERY_WORKERS (без автопревышения).
+    s.max_discovery_workers = resolve_max_discovery_workers(
+        s.discovery_workers, s.max_discovery_workers)
 
     s.queries = _load_queries(Path(s.search_queries_path))
     return s
