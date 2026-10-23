@@ -68,13 +68,14 @@ def start_runner():
     env = os.environ.copy()
     env.update({
         "MAX_VIEWS": "10000", "TARGET_CHANNELS": "1800", "MAX_HOURS": "48",
-        "QUOTA_WAIT_SECONDS": "900", "MAX_VIDEOS_PER_CHANNEL": "10",
-        "EVAL_PARALLEL": "3", "YTDLP_DELAY": "8.0",
-        "PROBE_MIN_INTERVAL": "15",
-        "DISCOVERY_WORKERS": "2", "MAX_DISCOVERY_WORKERS": "2",
-        "RESULTS_PER_QUERY": "30",
+        "QUOTA_WAIT_SECONDS": "900", "MAX_VIDEOS_PER_CHANNEL": "15",
+        "EVAL_PARALLEL": "4", "YTDLP_DELAY": "3.0",
+        "PROBE_MIN_INTERVAL": "0",
+        "DISCOVERY_WORKERS": "4", "MAX_DISCOVERY_WORKERS": "6",
+        "RESULTS_PER_QUERY": "50",
         "FRAME_EXTRACTION_MODE": "multi", "REDISCOVERY_QUEUE_THRESHOLD": "50",
-        "TARGET_REGION": "RU", "DISCOVERY_QUERIES_PER_RUN": "40",
+        "TARGET_REGION": "RU", "DISCOVERY_QUERIES_PER_RUN": "240",
+        "YOUTUBE_QUOTA_BUDGET": "10000",
     })
     # DETACHED_PROCESS + NEW_PROCESS_GROUP + NO_WINDOW: раннер полностью независим
     flags = 0x00000008 | 0x00000200 | 0x08000000
