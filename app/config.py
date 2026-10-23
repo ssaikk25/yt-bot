@@ -90,6 +90,7 @@ class Settings:
 
     # --- Квоты и объёмы ---
     youtube_quota_budget: int = 9000
+    api_discovery_share: float = 0.30  # доля квоты на API-discovery (остальное — листинг каналов)
     max_channels_to_process: int = 10
     max_search_pages_per_query: int = 1
     default_search_max_results: int = 30
@@ -280,6 +281,7 @@ def load_settings() -> Settings:
         headless=_env_bool("HEADLESS", False),
         slow_mo_ms=_env_int("SLOW_MO_MS", 0),
         youtube_quota_budget=_env_int("YOUTUBE_QUOTA_BUDGET", 9000),
+        api_discovery_share=_env_float("API_DISCOVERY_SHARE", 0.30),
         max_channels_to_process=_env_int("MAX_CHANNELS", 10),
         max_search_pages_per_query=_env_int("MAX_SEARCH_PAGES", 1),
         default_search_max_results=_env_int("SEARCH_MAX_RESULTS", 30),

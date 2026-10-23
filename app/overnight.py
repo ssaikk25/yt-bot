@@ -151,12 +151,12 @@ def _api_query_batch(settings) -> list[dict]:
     from .expansion_pool_950 import EXPANSION_950
     from .query_pool import QUERY_POOL
 
-    base = list(settings.queries)
+    base = list(settings.queries)[:10]
     pool = ([dict(q) for q in QUERY_POOL] + [dict(q) for q in EXPANSION_POOL]
             + [dict(q) for q in EXPERIMENT_POOL] + [dict(q) for q in EXPANSION_950])
     pool = [q for q in pool
             if (q.get("category") or "").strip() != "Аниме/Анимации" and q.get("query")]
-    sample = random.sample(pool, min(30, len(pool))) if pool else []
+    sample = random.sample(pool, min(10, len(pool))) if pool else []
     return base + sample
 
 
@@ -256,20 +256,25 @@ def main() -> int:
                 log.warning("yt-dlp discovery ошибка: %s", e)
         channels = list(ytdlp_channels)
 
-        # SUPPLEMENT: Data API search (если есть квота search) — дополняет каналы.
-        # Запросы: YAML + ротируемая выборка из пула (больше API, меньше yt-dlp).
+        # SUPPLEMENT: Data API search (дополняет каналы), но ТОЛЬКО из резерва.
+        # ВАЖНО: search.list стоит 100 units, а листинг видео канала (playlistItems
+        # + videos.list) — ~2 units/канал. API-discovery не должен съедать квоту,
+        # нужную на обработку каналов, иначе бот встанет до сброса квоты.
         api_queries = _api_query_batch(settings)
-        try:
-            api_channels = find_channels(youtube, settings, api_queries)
-            known = {c.channel_id for c in channels}
-            extra = [c for c in api_channels if c.channel_id not in known]
-            if extra:
-                log.info("Data API search добавил %d новых каналов", len(extra))
-                channels.extend(extra)
-        except YouTubeQuotaError:
-            pass
-        except Exception as e:
-            log.warning("Data API search: %s", e)
+        api_allow = int(settings.youtube_quota_budget * settings.api_discovery_share)
+        if youtube.quota_used < api_allow:
+            try:
+                api_channels = find_channels(youtube, settings, api_queries)
+                known = {c.channel_id for c in channels}
+                extra = [c for c in api_channels if c.channel_id not in known]
+                if extra:
+                    log.info("Data API search добавил %d новых каналов (quota=%d/%d)",
+                             len(extra), youtube.quota_used, settings.youtube_quota_budget)
+                    channels.extend(extra)
+            except YouTubeQuotaError:
+                pass
+            except Exception as e:
+                log.warning("Data API search: %s", e)
 
         if not channels:
             log.info("Нет каналов. Жду %d c...", quota_wait)
@@ -288,10 +293,12 @@ def main() -> int:
                      len(usable), settings.rediscovery_queue_threshold)
             try:
                 fresh_batch = discover_channels_ytdlp(settings, youtube)
-                # Больше Data API, меньше yt-dlp: API не ловит bot-check.
-                # Дополняем re-discovery кандидатами из API (если есть квота).
+                # Дополняем re-discovery кандидатами из API (только из резерва).
                 try:
-                    api_batch = find_channels(youtube, settings, api_queries)
+                    if youtube.quota_used < api_allow:
+                        api_batch = find_channels(youtube, settings, api_queries)
+                    else:
+                        api_batch = []
                     if api_batch:
                         fresh_batch = list(fresh_batch) + list(api_batch)
                         log.info("Re-discovery: API добавил %d кандидатов", len(api_batch))
