@@ -530,21 +530,40 @@ def discover_channels_ytdlp(settings, youtube, max_per_query: Optional[int] = No
     return engine.run()
 
 
-def recovery_probe(query: str = "hand forge blacksmith") -> bool:
-    """ОДИН ограниченный ytsearch для проверки восстановления после cooldown.
+def recovery_probe(query: str = "hand forge blacksmith",
+                   video_url: str = "https://www.youtube.com/watch?v=dQw4w9WgXcQ") -> bool:
+    """Ограниченная проверка восстановления: ytsearch + ОДИН probe видео.
 
-    Возвращает True, если youtube.com отвечает; False — если явный bot-check.
+    ВАЖНО: успешный ytsearch НЕ доказывает, что работает probe видеопотока
+    (это разные эндпоинты — реальная работа бота идёт через probe).
+    Возвращает True, если оба шага отвечают; False — если явный bot-check.
     Сетевые/прочие ошибки НЕ считаются доказательством блока.
     """
+    # Шаг 1: поиск.
     try:
         _yt_search(query, 1, "")
-        return True
     except BotBlockedError:
         return False
     except Exception as e:
         kind = classify_youtube_error(str(e), source="youtube")
         if kind == BOT_CHECK or any(m in str(e).lower() for m in BOT_BLOCK_MARKERS):
-            access_controller.note_bot_check("recovery")
+            access_controller.note_bot_check("recovery_search")
+            return False
+        log.warning("recovery ytsearch: [%s] %s (не считаем блоком)", kind, str(e)[:120])
+
+    # Шаг 2: probe видео (как в реальной оценке каналов).
+    try:
+        import yt_dlp
+        with yt_dlp.YoutubeDL({
+            "quiet": True, "no_warnings": True, "skip_download": True,
+            "noplaylist": True, "socket_timeout": 30,
+        }) as ydl:
+            ydl.extract_info(video_url, download=False)
+        return True
+    except Exception as e:
+        kind = classify_youtube_error(str(e), source="youtube")
+        if kind == BOT_CHECK or any(m in str(e).lower() for m in BOT_BLOCK_MARKERS):
+            access_controller.note_bot_check("recovery_probe")
             return False
         log.warning("recovery probe: [%s] %s (не считаем блоком)", kind, str(e)[:120])
         return True
