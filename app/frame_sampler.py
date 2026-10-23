@@ -160,6 +160,7 @@ class FrameSampler:
         """
         if self.probe_min_interval <= 0:
             return
+        global _probe_last_mono
         while True:
             with _probe_gate_lock:
                 now = time.monotonic()
