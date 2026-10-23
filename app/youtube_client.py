@@ -64,6 +64,10 @@ class QuotaMeter:
 
     def bind(self, path) -> None:
         self._path = Path(path)
+        # Сброс перед загрузкой: новый путь не должен наследовать старый счётчик.
+        with self._lock:
+            self._used = 0
+            self._day = ""
         self._load()
 
     def _load(self) -> None:

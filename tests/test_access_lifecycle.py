@@ -190,6 +190,19 @@ class AccessControlTests(unittest.TestCase):
             self.ctrl.note_bot_check("test")
         self.assertLessEqual(self.ctrl.current_cooldown, self.ctrl.max_cooldown)
 
+    # TEST 17: параллельные probe = ОДИН эпизод bot-check -------------- #
+    def test_17_concurrent_bot_check_escalates_once(self):
+        import threading
+        ctrl = YouTubeAccessController(base_cooldown=10, backoff_factor=2, max_cooldown=40)
+        threads = [threading.Thread(target=ctrl.note_bot_check, args=("probe",))
+                   for _ in range(6)]
+        for t in threads:
+            t.start()
+        for t in threads:
+            t.join()
+        self.assertEqual(ctrl.block_count, 1)
+        self.assertEqual(ctrl.current_cooldown, 10)
+
 
 if __name__ == "__main__":
     unittest.main()

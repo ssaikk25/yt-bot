@@ -136,6 +136,10 @@ class YouTubeAccessController:
     BLOCKED = "blocked"
     RECOVERING = "recovering"
 
+    # Параллельные probe, получившие bot-check одновременно, — это ОДИН эпизод.
+    # В пределах окна backoff не эскалируется повторно.
+    DEDUP_WINDOW = 60.0
+
     def __init__(self, base_cooldown: float = 1800.0, backoff_factor: float = 2.0,
                  max_cooldown: float = 7200.0):
         self.base_cooldown = float(base_cooldown)
@@ -148,6 +152,7 @@ class YouTubeAccessController:
         self._state_path: Optional[Path] = None
         self._lock = threading.Lock()
         self._last_remaining_log = 0.0
+        self._last_block_mono = 0.0
 
     # ---------------------------------------------------------------- #
     def is_blocked(self) -> bool:
@@ -170,8 +175,20 @@ class YouTubeAccessController:
                 self._set_state(self.SUSPECTED, reason or "non-fatal 403")
 
     def note_bot_check(self, source: str = "") -> None:
-        """ТОЛЬКО явный bot-check: BLOCKED + кулдаун с exponential backoff."""
+        """ТОЛЬКО явный bot-check: BLOCKED + кулдаун с exponential backoff.
+
+        Дедуп: один bot-check = один эпизод. Параллельные probe (EVAL_PARALLEL),
+        получившие блок одновременно, НЕ эскалируют backoff несколько раз.
+        """
         with self._lock:
+            now_mono = time.monotonic()
+            if (self.state == self.BLOCKED
+                    and (now_mono - self._last_block_mono) < self.DEDUP_WINDOW):
+                log.info("BOT_CHECK_DEDUPED source=%s (эпизод уже учтён, "
+                         "осталось %d c)", source or "unknown",
+                         int(self.cooldown_remaining()))
+                return
+            self._last_block_mono = now_mono
             was_recovering = self.state == self.RECOVERING
             self.block_count += 1
             if self.state != self.BLOCKED:

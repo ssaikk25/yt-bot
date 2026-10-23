@@ -71,16 +71,21 @@ class TestStateMachine(unittest.TestCase):
         c.note_bot_check()
         self.assertEqual(c.state, c.BLOCKED)
         self.assertEqual(c.current_cooldown, 100.0)
+        # Новый эпизод (прошло больше окна дедупа): эскалация.
+        c._last_block_mono = 0.0
         c.note_bot_check()
         self.assertEqual(c.current_cooldown, 200.0)
+        c._last_block_mono = 0.0
         c.note_bot_check()
         self.assertEqual(c.current_cooldown, 400.0)  # cap
+        c._last_block_mono = 0.0
         c.note_bot_check()
         self.assertEqual(c.current_cooldown, 400.0)  # stays capped
 
     def test_success_resets(self):
         c = YouTubeAccessController(base_cooldown=100.0)
         c.note_bot_check()
+        c._last_block_mono = 0.0
         c.note_bot_check()
         self.assertEqual(c.current_cooldown, 200.0)
         c.note_success()
