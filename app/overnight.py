@@ -15,7 +15,7 @@ import sys
 import time
 from pathlib import Path
 
-from .access_control import TEMP_KINDS, BotBlockedError, access_controller, classify_youtube_error, configure_access_control
+from .access_control import TEMP_KINDS, BotBlockedError, access_controller, access_metrics, classify_youtube_error, configure_access_control
 from .candidate_search import find_channels
 from .category_mapper import canonicalize
 from .channel_evaluator import ChannelEvaluator
@@ -184,10 +184,10 @@ def main() -> int:
              settings.bot_block_max_cooldown, settings.video_403_cooldown,
              settings.discovery_workers, settings.max_discovery_workers)
     log.info("RUNTIME_CONFIG eval_parallel=%d max_videos_per_channel=%d results_per_query=%d "
-             "discovery_queries_per_run=%d ytdlp_delay=%.1f",
+             "discovery_queries_per_run=%d ytdlp_delay=%.1f probe_min_interval=%.1f",
              settings.eval_parallel, settings.max_videos_per_channel,
              settings.results_per_query, settings.discovery_queries_per_run,
-             settings.ytdlp_delay)
+             settings.ytdlp_delay, settings.probe_min_interval)
     log.info("ACCESS_STATE snapshot: %s", access_controller.snapshot())
     _ensure_pot_server(settings)
 
@@ -314,6 +314,7 @@ def main() -> int:
                 continue
 
         progressed = False
+        last_metrics_log = time.time()
         for ch in channels:
             if time.time() >= deadline or len(results) >= target:
                 break
@@ -353,6 +354,9 @@ def main() -> int:
                     results.append(_summarize(ch, ev))
                     log.info(">>> НАЙДЕН #%d: %s | %s", len(results), ch.channel_url, ev.best_category)
                     _save(results, settings)
+                if time.time() - last_metrics_log >= 600:
+                    log.info("METRICS %s", access_metrics.summary())
+                    last_metrics_log = time.time()
             except YouTubeQuotaError:
                 log.warning("Quota исчерпана при оценке. Жду %d c...", quota_wait)
                 _save(results, settings)
