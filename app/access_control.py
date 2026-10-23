@@ -139,6 +139,8 @@ class YouTubeAccessController:
     # Параллельные probe, получившие bot-check одновременно, — это ОДИН эпизод.
     # В пределах окна backoff не эскалируется повторно.
     DEDUP_WINDOW = 60.0
+    # Сколько УСПЕШНЫХ probe (реальной чистой работы) нужно, чтобы сбросить backoff.
+    RESET_AFTER_PROBES = 50
 
     def __init__(self, base_cooldown: float = 1800.0, backoff_factor: float = 2.0,
                  max_cooldown: float = 7200.0):
@@ -153,6 +155,8 @@ class YouTubeAccessController:
         self._lock = threading.Lock()
         self._last_remaining_log = 0.0
         self._last_block_mono = 0.0
+        self._last_block_at = 0.0
+        self._success_since_block = 0
 
     # ---------------------------------------------------------------- #
     def is_blocked(self) -> bool:
@@ -177,8 +181,10 @@ class YouTubeAccessController:
     def note_bot_check(self, source: str = "") -> None:
         """ТОЛЬКО явный bot-check: BLOCKED + кулдаун с exponential backoff.
 
-        Дедуп: один bot-check = один эпизод. Параллельные probe (EVAL_PARALLEL),
-        получившие блок одновременно, НЕ эскалируют backoff несколько раз.
+        Дедуп: один bot-check = один эпизод (параллельные probe не эскалируют многократно).
+        Эскалация по времени: если с ПРОШЛОГО блока прошло < RESET_AFTER, backoff
+        растёт — даже если между ними был успешный recovery-probe. Иначе (долгая
+        чистая работа) начинаем с base_cooldown.
         """
         with self._lock:
             now_mono = time.monotonic()
@@ -188,20 +194,26 @@ class YouTubeAccessController:
                          "осталось %d c)", source or "unknown",
                          int(self.cooldown_remaining()))
                 return
-            self._last_block_mono = now_mono
+            since_last = (now_mono - self._last_block_mono
+                          if self._last_block_mono else 1e9)
             was_recovering = self.state == self.RECOVERING
-            self.block_count += 1
-            if self.state != self.BLOCKED:
-                self.current_cooldown = self.base_cooldown
-            else:
+            # Эскалация: повторный блок, если после прошлого блока НЕ было
+            # достаточно чистой работы. Recovery-probe сам по себе не считается работой.
+            if self.block_count > 0 and self._success_since_block < self.RESET_AFTER_PROBES:
                 self.current_cooldown = min(
                     self.max_cooldown,
                     self.current_cooldown * self.backoff_factor,
                 )
+            else:
+                self.current_cooldown = self.base_cooldown
+            self._last_block_mono = now_mono
+            self._last_block_at = time.time()
+            self._success_since_block = 0
+            self.block_count += 1
             self.cooldown_until = time.time() + self.current_cooldown
             self._set_state(self.BLOCKED, f"bot_check from {source or 'unknown'}")
-            log.warning("BOT_CHECK_CONFIRMED source=%s block_count=%d",
-                        source or "unknown", self.block_count)
+            log.warning("BOT_CHECK_CONFIRMED source=%s block_count=%d success_since_block=%d",
+                        source or "unknown", self.block_count, self._success_since_block)
             if was_recovering:
                 log.warning("RECOVERY_PROBE_BLOCKED source=%s", source or "unknown")
             log.info("COOLDOWN_STARTED %d c (until unixtime=%d)",
@@ -209,11 +221,20 @@ class YouTubeAccessController:
             self._save_locked()
 
     def note_success(self) -> None:
-        """Успешный probe — полное восстановление."""
+        """Успешный probe — состояние NORMAL; backoff сбрасывается после N успехов.
+
+        Один успешный recovery-probe НЕ должен обнулять backoff: иначе бот каждые
+        полчаса выходит и снова ловит блок с тем же коротким кулдауном.
+        """
         with self._lock:
             self._set_state(self.NORMAL, "probe success")
-            self.current_cooldown = self.base_cooldown
             self.cooldown_until = 0.0
+            self._success_since_block += 1
+            if (self._success_since_block >= self.RESET_AFTER_PROBES
+                    and self.current_cooldown > self.base_cooldown):
+                log.info("BACKOFF_RESET после %d успешных probe", self._success_since_block)
+                self.current_cooldown = self.base_cooldown
+                self._success_since_block = 0
             self._save_locked()
 
     def start_recovery_probe(self) -> bool:
@@ -231,7 +252,7 @@ class YouTubeAccessController:
         with self._lock:
             log.info("RECOVERY_PROBE_SUCCEEDED")
             self._set_state(self.NORMAL, "recovery ok")
-            self.current_cooldown = self.base_cooldown
+            # Backoff не сбрасываем: сброс — только после RESET_AFTER чистой работы.
             self.cooldown_until = 0.0
             self._save_locked()
 
@@ -261,6 +282,8 @@ class YouTubeAccessController:
                 "cooldown_until": self.cooldown_until,
                 "current_cooldown": self.current_cooldown,
                 "block_count": self.block_count,
+                "last_block_at": self._last_block_at,
+                "success_since_block": self._success_since_block,
                 "saved_at": time.time(),
             }
             self._state_path.parent.mkdir(parents=True, exist_ok=True)
@@ -282,6 +305,12 @@ class YouTubeAccessController:
             self.current_cooldown = float(
                 data.get("current_cooldown", self.base_cooldown) or self.base_cooldown)
             self.block_count = int(data.get("block_count", 0) or 0)
+            self._last_block_at = float(data.get("last_block_at", 0.0) or 0.0)
+            self._success_since_block = int(data.get("success_since_block", 0) or 0)
+            # Восстанавливаем "сколько назад был прошлый блок" для эскалации backoff.
+            if self._last_block_at:
+                ago = max(0.0, time.time() - self._last_block_at)
+                self._last_block_mono = time.monotonic() - ago
             if self.is_blocked():
                 log.info("ACCESS_STATE_RESTORED state=%s cooldown_remaining=%d c",
                          self.state, int(self.cooldown_remaining()))
