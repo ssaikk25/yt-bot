@@ -14,6 +14,7 @@
 from __future__ import annotations
 
 import subprocess
+import threading
 import time
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
@@ -87,6 +88,13 @@ def is_bot_blocked() -> bool:
     return access_controller.is_blocked()
 
 
+# Глобальный (на процесс) троттлинг probe: суммарный интервал между запросами
+# к YouTube для ВСЕХ потоков EVAL_PARALLEL. Защита от «залповой» скорости,
+# после которой YouTube выдаёт bot-check.
+_probe_gate_lock = threading.Lock()
+_probe_last_mono = 0.0
+
+
 def _mark_bot_block() -> None:
     access_controller.note_bot_check()
 
@@ -131,6 +139,7 @@ class FrameSampler:
         format_mode: str = "720_1080",
         frame_extraction_mode: str = "single",
         video_error_cooldown_sec: float = 600.0,
+        probe_min_interval: float = 0.0,
     ):
         self.ffmpeg = ffmpeg_path
         self.ffprobe = ffprobe_path
@@ -140,7 +149,25 @@ class FrameSampler:
         self.format_mode = format_mode
         self.frame_extraction_mode = frame_extraction_mode  # "single" | "multi"
         self.video_error_cooldown_sec = video_error_cooldown_sec
+        self.probe_min_interval = max(0.0, float(probe_min_interval or 0.0))
         self.temp_dir.mkdir(parents=True, exist_ok=True)
+
+    def _global_probe_throttle(self) -> None:
+        """ГЛОБАЛЬНЫЙ лимит частоты probe (общий на все потоки EVAL_PARALLEL).
+
+        Нужен, чтобы суммарная скорость не превышала устойчивую для IP
+        (иначе YouTube выдаёт bot-check после ~500 видео/час).
+        """
+        if self.probe_min_interval <= 0:
+            return
+        while True:
+            with _probe_gate_lock:
+                now = time.monotonic()
+                wait = _probe_last_mono + self.probe_min_interval - now
+                if wait <= 0:
+                    _probe_last_mono = now
+                    return
+            time.sleep(min(wait, 1.0))
 
     # ------------------------------------------------------------------ #
     def probe(self, video_url: str, video_id: str, min_height: int = 720) -> VideoMeta:
@@ -150,6 +177,8 @@ class FrameSampler:
         """
         if self.delay > 0:
             time.sleep(self.delay)
+        # Глобальный лимит частоты probe (общий для всех потоков EVAL_PARALLEL).
+        self._global_probe_throttle()
         try:
             access_controller.gate("probe")
         except BotBlockedError as e:

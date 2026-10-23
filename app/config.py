@@ -127,6 +127,7 @@ class Settings:
     bot_block_backoff_factor: float = 2.0  # множитель при повторном блоке
     bot_block_max_cooldown: float = 7200.0 # верхний предел кулдауна, сек
     video_403_cooldown: float = 600.0      # per-video cooldown после 403/expire, сек
+    probe_min_interval: float = 0.0        # ГЛОБАЛЬНЫЙ интервал между probe, сек (0 = выкл)
     frame_extraction_mode: str = "multi"  # "multi" (один ffmpeg-процесс, быстрее) | "single"
     video_format_mode: str = "720_1080"    # "720" (приоритет 720p) | "720_1080"
     probe_max_reprobe: int = 1             # максимум свежих re-probe после ошибки media_url
@@ -308,6 +309,7 @@ def load_settings() -> Settings:
         bot_block_backoff_factor=_env_float("BOT_BLOCK_BACKOFF_FACTOR", 2.0),
         bot_block_max_cooldown=_env_float("BOT_BLOCK_MAX_COOLDOWN", 7200.0),
         video_403_cooldown=_env_float("VIDEO_403_COOLDOWN", 600.0),
+        probe_min_interval=_env_float("PROBE_MIN_INTERVAL", 0.0),
         frame_extraction_mode=(os.getenv("FRAME_EXTRACTION_MODE", "single") or "single").strip(),
         video_format_mode=(os.getenv("VIDEO_FORMAT_MODE", "720_1080") or "720_1080").strip(),
         probe_max_reprobe=_env_int("PROBE_MAX_REPROBE", 1),

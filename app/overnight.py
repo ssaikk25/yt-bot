@@ -244,6 +244,7 @@ def main() -> int:
             format_mode=settings.video_format_mode,
             frame_extraction_mode=settings.frame_extraction_mode,
             video_error_cooldown_sec=settings.video_403_cooldown,
+            probe_min_interval=settings.probe_min_interval,
         )
         evaluator = ChannelEvaluator(settings, youtube, mimo, sampler, parallel=settings.eval_parallel)
 
