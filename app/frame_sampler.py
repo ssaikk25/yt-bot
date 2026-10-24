@@ -14,6 +14,8 @@
 from __future__ import annotations
 
 import subprocess
+
+from . import subproc
 import threading
 import time
 from pathlib import Path
@@ -319,7 +321,7 @@ class FrameSampler:
             cmd += ["-pix_fmt", "yuvj420p", "-frames:v", "1", "-q:v", str(quality), str(out)]
             st0 = time.time()
             try:
-                subprocess.run(cmd, check=True, timeout=60, capture_output=True)
+                subproc.run(cmd, check=True, timeout=60, capture_output=True)
             except subprocess.TimeoutExpired:
                 self._note_frame_result(False, time.time() - st0, "timeout")
                 log.warning("ffmpeg timeout при извлечении кадра t=%ss (%s)", t, meta.video_id)
@@ -363,7 +365,7 @@ class FrameSampler:
 
         t0 = time.time()
         try:
-            subprocess.run(cmd, check=True, timeout=90, capture_output=True)
+            subproc.run(cmd, check=True, timeout=90, capture_output=True)
         except subprocess.TimeoutExpired:
             self._note_frame_result(False, time.time() - t0, "timeout")
             log.warning("ffmpeg multi timeout (%s)", meta.video_id)

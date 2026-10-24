@@ -15,6 +15,8 @@
 """
 import os
 import subprocess
+
+from app import subproc
 import sys
 import time
 from datetime import datetime
@@ -50,7 +52,7 @@ def mtime_or_none(p: Path):
 def overnight_pid() -> int:
     """Находит PID процесса python -m app.overnight."""
     try:
-        out = subprocess.run(
+        out = subproc.run(
             ["powershell", "-NoProfile", "-Command",
              "Get-CimInstance Win32_Process -Filter \"Name='python.exe'\" | "
              "Where-Object { $_.CommandLine -like '*app.overnight*' } | "
@@ -81,7 +83,7 @@ def start_runner():
     })
     # DETACHED_PROCESS + NEW_PROCESS_GROUP + NO_WINDOW: раннер полностью независим
     flags = 0x00000008 | 0x00000200 | 0x08000000
-    subprocess.Popen(
+    subproc.popen(
         [sys.executable, "-m", "app.overnight"],
         cwd=str(ROOT), env=env,
         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
@@ -91,7 +93,7 @@ def start_runner():
 
 def kill_runner(pid: int):
     try:
-        subprocess.run(["taskkill", "/F", "/PID", str(pid)],
+        subproc.run(["taskkill", "/F", "/PID", str(pid)],
                        capture_output=True, timeout=30)
         log(f"Убит процесс {pid}")
     except Exception as e:

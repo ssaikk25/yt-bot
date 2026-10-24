@@ -6,6 +6,8 @@
 from __future__ import annotations
 
 import subprocess
+
+from . import subproc
 from pathlib import Path
 
 import numpy as np
@@ -18,7 +20,7 @@ log = get_logger("checks")
 
 
 def run_ffmpeg(ffmpeg_path: str, args: list[str], timeout: int = 120) -> tuple[int, bytes, bytes]:
-    proc = subprocess.run(
+    proc = subproc.run(
         [ffmpeg_path, "-y", "-hide_banner", "-loglevel", "error", *args],
         capture_output=True,
         timeout=timeout,
