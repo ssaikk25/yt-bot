@@ -435,7 +435,11 @@ class DiscoveryEngine:
         new_cnt_total = sum(1 for c in channel_ids if c not in seen)
         log.info("discovery: %d новых каналов (из %d)", new_cnt_total, len(channel_ids))
 
-        channels_raw = self.youtube.get_channels(channel_ids)
+        # ЭКОНОМИЯ КВОТЫ: get_channels только для ещё НЕ виденных каналов.
+        # Иначе каждый re-discovery тянет все ~7500 каналов (150 units) и за ночь
+        # выжигает дневную квоту Data API.
+        new_channel_ids = [cid for cid in channel_ids if cid not in seen]
+        channels_raw = self.youtube.get_channels(new_channel_ids)
         out: list[ChannelCandidate] = []
         for cid in channel_ids:
             ch = channels_raw.get(cid)
