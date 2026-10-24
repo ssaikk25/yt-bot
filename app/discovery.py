@@ -26,6 +26,7 @@ import yt_dlp
 
 from .access_control import (
     BOT_CHECK,
+    PAGE_403,
     BotBlockedError,
     access_controller,
     classify_youtube_error,
@@ -102,6 +103,7 @@ class QueryStat:
     cheap_filter_pass: int = 0
     time_sec: float = 0.0
     bot_check: int = 0
+    page_403: int = 0
     errors: int = 0
     novelty: float = 0.0
     score: float = 0.0
@@ -330,6 +332,8 @@ class DiscoveryEngine:
                     if not self._bot_noted:
                         access_controller.note_bot_check("discovery")
                         self._bot_noted = True
+                elif kind == PAGE_403:
+                    st.page_403 = 1
                 st.time_sec = time.time() - t0
                 log.warning("yt-dlp поиск %r: [%s] %s", q.get("query", ""), kind, str(e)[:110])
                 return st, channel_views
@@ -380,6 +384,17 @@ class DiscoveryEngine:
             )
 
         results = asyncio.run(_run_all())
+
+        # «Шторм 403»: если большинство запросов получили 403 — это блокировка
+        # поискового эндпоинта. НЕ молотим дальше — уходим в глобальный cooldown.
+        total_403 = sum(1 for st, _ in results if st.page_403)
+        if total_403 >= max(5, len(results) * 0.5):
+            log.warning("YOUTUBE_DISCOVERY_BLOCKED_403 %d/%d запросов -> 403, cooldown",
+                        total_403, len(results))
+            if not self._bot_noted:
+                access_controller.note_bot_check("discovery_403_storm")
+                self._bot_noted = True
+            return []
 
         # Adaptive concurrency: при ошибках/bot-check снижаем, при чистом проходе — плавно растим.
         total_bot = sum(1 for st, _ in results if st.bot_check)
