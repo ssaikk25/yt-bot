@@ -68,9 +68,11 @@ def start_runner():
     env = os.environ.copy()
     env.update({
         "MAX_VIEWS": "10000", "TARGET_CHANNELS": "1800", "MAX_HOURS": "48",
-        "QUOTA_WAIT_SECONDS": "900", "MAX_VIDEOS_PER_CHANNEL": "15",
+        "QUOTA_WAIT_SECONDS": "900", "MAX_VIDEOS_PER_CHANNEL": "30",
         "EVAL_PARALLEL": "4", "YTDLP_DELAY": "3.0",
         "PROBE_MIN_INTERVAL": "0",
+        "FRAME_COUNT": "5", "FRAME_FRACTIONS": "0.05,0.25,0.50,0.75,0.95",
+        "QUICK_ACCEPT_CONFIDENCE": "0.99", "DEEP_CONFIDENCE_THRESHOLD": "0.99",
         "DISCOVERY_WORKERS": "4", "MAX_DISCOVERY_WORKERS": "6",
         "RESULTS_PER_QUERY": "50",
         "FRAME_EXTRACTION_MODE": "multi", "REDISCOVERY_QUEUE_THRESHOLD": "50",
