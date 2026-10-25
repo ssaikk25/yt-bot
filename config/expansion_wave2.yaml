@@ -1,0 +1,5400 @@
+- query: how a small hydroelectric turbine works animated diagram
+  category: Инфографика
+  language: en
+  subtheme: process_visualization
+  method: process_visualization
+  pool: expansion_wave2
+- query: proceso de reciclaje explicado con infografía animada
+  category: Инфографика
+  language: es
+  subtheme: process_visualization
+  method: process_visualization
+  pool: expansion_wave2
+- query: como funciona uma estação de tratamento em animação explicativa
+  category: Инфографика
+  language: pt
+  subtheme: process_visualization
+  method: process_visualization
+  pool: expansion_wave2
+- query: Wasseraufbereitung als animierte Prozessgrafik erklärt
+  category: Инфографика
+  language: de
+  subtheme: process_visualization
+  method: process_visualization
+  pool: expansion_wave2
+- query: schéma animé du fonctionnement d'une écluse
+  category: Инфографика
+  language: fr
+  subtheme: process_visualization
+  method: process_visualization
+  pool: expansion_wave2
+- query: infografica animata del ciclo di produzione del vetro
+  category: Инфографика
+  language: it
+  subtheme: process_visualization
+  method: process_visualization
+  pool: expansion_wave2
+- query: animacja procesu sortowania odpadów krok po kroku
+  category: Инфографика
+  language: pl
+  subtheme: process_visualization
+  method: process_visualization
+  pool: expansion_wave2
+- query: анимированная схема работы шлюза на реке
+  category: Инфографика
+  language: ru
+  subtheme: process_visualization
+  method: process_visualization
+  pool: expansion_wave2
+- query: інфографіка процесу очищення питної води
+  category: Инфографика
+  language: uk
+  subtheme: process_visualization
+  method: process_visualization
+  pool: expansion_wave2
+- query: पानी साफ करने की प्रक्रिया एनिमेटेड इन्फोग्राफिक
+  category: Инфографика
+  language: hi
+  subtheme: process_visualization
+  method: process_visualization
+  pool: expansion_wave2
+- query: اینفوگرافیک متحرک مراحل تصفیه آب در خانه
+  category: Инфографика
+  language: fa
+  subtheme: technical_diagrams
+  method: object_mechanism
+  pool: expansion_wave2
+- query: esquema animado de una bomba hidráulica por dentro
+  category: Инфографика
+  language: es
+  subtheme: technical_diagrams
+  method: object_mechanism
+  pool: expansion_wave2
+- query: diagrama visual de funcionamento de uma caixa de velocidades
+  category: Инфографика
+  language: pt
+  subtheme: technical_diagrams
+  method: object_mechanism
+  pool: expansion_wave2
+- query: animiertes Schaltbild einer mechanischen Presse
+  category: Инфографика
+  language: de
+  subtheme: technical_diagrams
+  method: object_mechanism
+  pool: expansion_wave2
+- query: animation pédagogique du circuit de refroidissement moteur
+  category: Инфографика
+  language: fr
+  subtheme: technical_diagrams
+  method: object_mechanism
+  pool: expansion_wave2
+- query: schema animato di una piccola turbina idraulica
+  category: Инфографика
+  language: it
+  subtheme: technical_diagrams
+  method: object_mechanism
+  pool: expansion_wave2
+- query: animované schéma převodovky krok za krokem
+  category: Инфографика
+  language: cs
+  subtheme: technical_diagrams
+  method: object_mechanism
+  pool: expansion_wave2
+- query: diagramă animată a unui sistem de irigații
+  category: Инфографика
+  language: ro
+  subtheme: technical_diagrams
+  method: object_mechanism
+  pool: expansion_wave2
+- query: hidrolik piston çalışma prensibi animasyonlu şema
+  category: Инфографика
+  language: tr
+  subtheme: technical_diagrams
+  method: object_mechanism
+  pool: expansion_wave2
+- query: 小型歯車機構の動きを説明するアニメーション図解
+  category: Инфографика
+  language: ja
+  subtheme: technical_diagrams
+  method: object_mechanism
+  pool: expansion_wave2
+- query: הדגמת שבירת אור במנסרה באמצעות תרשים מונפש
+  category: Инфографика
+  language: he
+  subtheme: math_and_science
+  method: concept_visualization
+  pool: expansion_wave2
+- query: visualización gráfica de una función matemática en movimiento
+  category: Инфографика
+  language: es
+  subtheme: math_and_science
+  method: concept_visualization
+  pool: expansion_wave2
+- query: visualização animada de ondas senoidais
+  category: Инфографика
+  language: pt
+  subtheme: math_and_science
+  method: concept_visualization
+  pool: expansion_wave2
+- query: Mathematik anschaulich erklärt mit gezeichneten Diagrammen
+  category: Инфографика
+  language: de
+  subtheme: math_and_science
+  method: concept_visualization
+  pool: expansion_wave2
+- query: visualisation animée des lignes de champ magnétique
+  category: Инфографика
+  language: fr
+  subtheme: math_and_science
+  method: concept_visualization
+  pool: expansion_wave2
+- query: visualizzazione geometrica di una dimostrazione matematica
+  category: Инфографика
+  language: it
+  subtheme: math_and_science
+  method: concept_visualization
+  pool: expansion_wave2
+- query: wizualizacja rozchodzenia się fali dźwiękowej
+  category: Инфографика
+  language: pl
+  subtheme: math_and_science
+  method: concept_visualization
+  pool: expansion_wave2
+- query: наглядная визуализация преломления света схема
+  category: Инфографика
+  language: ru
+  subtheme: math_and_science
+  method: concept_visualization
+  pool: expansion_wave2
+- query: οπτική εξήγηση γεωμετρικού θεωρήματος με κινούμενο διάγραμμα
+  category: Инфографика
+  language: el
+  subtheme: math_and_science
+  method: concept_visualization
+  pool: expansion_wave2
+- query: 수학 함수의 변화를 보여주는 단계별 애니메이션 그래프
+  category: Инфографика
+  language: ko
+  subtheme: math_and_science
+  method: concept_visualization
+  pool: expansion_wave2
+- query: অ্যানিমেশনে নদীর গতিপথ পরিবর্তনের মানচিত্র
+  category: Инфографика
+  language: bn
+  subtheme: maps_timelines
+  method: place_time_context
+  pool: expansion_wave2
+- query: mapa animado del crecimiento de una ciudad por décadas
+  category: Инфографика
+  language: es
+  subtheme: maps_timelines
+  method: place_time_context
+  pool: expansion_wave2
+- query: linha do tempo visual de uma antiga rota comercial
+  category: Инфографика
+  language: pt
+  subtheme: maps_timelines
+  method: place_time_context
+  pool: expansion_wave2
+- query: animierte Karte zur Entwicklung eines Eisenbahnnetzes
+  category: Инфографика
+  language: de
+  subtheme: maps_timelines
+  method: place_time_context
+  pool: expansion_wave2
+- query: carte animée de l'évolution d'un delta fluvial
+  category: Инфографика
+  language: fr
+  subtheme: maps_timelines
+  method: place_time_context
+  pool: expansion_wave2
+- query: infografica sulla crescita di una città industriale
+  category: Инфографика
+  language: it
+  subtheme: maps_timelines
+  method: place_time_context
+  pool: expansion_wave2
+- query: animowana mapa zmian granic historycznych krok po kroku
+  category: Инфографика
+  language: pl
+  subtheme: maps_timelines
+  method: place_time_context
+  pool: expansion_wave2
+- query: визуализация движения ледника на карте по годам
+  category: Инфографика
+  language: ru
+  subtheme: maps_timelines
+  method: place_time_context
+  pool: expansion_wave2
+- query: خريطة متحركة توضح تغير مجرى النهر عبر الزمن
+  category: Инфографика
+  language: ar
+  subtheme: maps_timelines
+  method: place_time_context
+  pool: expansion_wave2
+- query: bản đồ hoạt hình về quá trình mở rộng đường sắt
+  category: Инфографика
+  language: vi
+  subtheme: maps_timelines
+  method: place_time_context
+  pool: expansion_wave2
+- query: கை வின்ச் அமைக்கும் படிப்படியான விளக்கப்படம்
+  category: Инфографика
+  language: ta
+  subtheme: instructions_and_steps
+  method: process_step_by_step
+  pool: expansion_wave2
+- query: instrucciones visuales animadas para montar una válvula
+  category: Инфографика
+  language: es
+  subtheme: instructions_and_steps
+  method: process_step_by_step
+  pool: expansion_wave2
+- query: infográfico passo a passo de uma pequena prensa manual
+  category: Инфографика
+  language: pt
+  subtheme: instructions_and_steps
+  method: process_step_by_step
+  pool: expansion_wave2
+- query: Schritt-für-Schritt-Grafik zum Aufbau eines einfachen Flaschenzugs
+  category: Инфографика
+  language: de
+  subtheme: instructions_and_steps
+  method: process_step_by_step
+  pool: expansion_wave2
+- query: illustration séquentielle du montage d'un mécanisme simple
+  category: Инфографика
+  language: fr
+  subtheme: instructions_and_steps
+  method: process_step_by_step
+  pool: expansion_wave2
+- query: schema illustrato per assemblare una pompa manuale
+  category: Инфографика
+  language: it
+  subtheme: instructions_and_steps
+  method: process_step_by_step
+  pool: expansion_wave2
+- query: lépésenkénti ábra egy egyszerű csigasor működéséről
+  category: Инфографика
+  language: hu
+  subtheme: instructions_and_steps
+  method: process_step_by_step
+  pool: expansion_wave2
+- query: stapsgewijze illustratie van een eenvoudige tandwieloverbrenging
+  category: Инфографика
+  language: nl
+  subtheme: instructions_and_steps
+  method: process_step_by_step
+  pool: expansion_wave2
+- query: diagram langkah demi langkah cara kerja katrol sederhana
+  category: Инфографика
+  language: id
+  subtheme: instructions_and_steps
+  method: process_step_by_step
+  pool: expansion_wave2
+- query: อินโฟกราฟิกขั้นตอนการทำงานของระบบรอกแบบง่าย
+  category: Инфографика
+  language: th
+  subtheme: instructions_and_steps
+  method: process_step_by_step
+  pool: expansion_wave2
+- query: small workshop manual lathe turning a steel bushing
+  category: Физика
+  language: en
+  subtheme: machining_metalwork
+  method: tool_process_context
+  pool: expansion_wave2
+- query: toczenie małego elementu stalowego na tokarce warsztatowej
+  category: Физика
+  language: pl
+  subtheme: machining_metalwork
+  method: tool_process_context
+  pool: expansion_wave2
+- query: Drehmaschine bearbeitet eine kleine Messingbuchse in der Werkstatt
+  category: Физика
+  language: de
+  subtheme: machining_metalwork
+  method: tool_process_context
+  pool: expansion_wave2
+- query: torneado de una pieza metálica pequeña en taller artesanal
+  category: Физика
+  language: es
+  subtheme: machining_metalwork
+  method: tool_process_context
+  pool: expansion_wave2
+- query: usinagem de uma bucha de aço em torno mecânico pequeno
+  category: Физика
+  language: pt
+  subtheme: machining_metalwork
+  method: tool_process_context
+  pool: expansion_wave2
+- query: soustružení ocelového pouzdra v malé dílně
+  category: Физика
+  language: cs
+  subtheme: machining_metalwork
+  method: tool_process_context
+  pool: expansion_wave2
+- query: токарная обработка стальной втулки в небольшой мастерской
+  category: Физика
+  language: ru
+  subtheme: machining_metalwork
+  method: tool_process_context
+  pool: expansion_wave2
+- query: tornitura di un distanziale in acciaio in officina
+  category: Физика
+  language: it
+  subtheme: machining_metalwork
+  method: tool_process_context
+  pool: expansion_wave2
+- query: küçük atölyede torna tezgahında metal parça işleme
+  category: Физика
+  language: tr
+  subtheme: machining_metalwork
+  method: tool_process_context
+  pool: expansion_wave2
+- query: kis műhelyben acélpersely esztergálása
+  category: Физика
+  language: hu
+  subtheme: machining_metalwork
+  method: tool_process_context
+  pool: expansion_wave2
+- query: چھوٹی ورکشاپ میں اسٹیل بشنگ کی لیتھ مشین سے تراش خراش
+  category: Физика
+  language: ur
+  subtheme: casting_forging_forming
+  method: process_material_context
+  pool: expansion_wave2
+- query: fundición artesanal de aluminio en molde de arena
+  category: Физика
+  language: es
+  subtheme: casting_forging_forming
+  method: process_material_context
+  pool: expansion_wave2
+- query: kleine Metallgießerei gießt Aluminium in eine Sandform
+  category: Физика
+  language: de
+  subtheme: casting_forging_forming
+  method: process_material_context
+  pool: expansion_wave2
+- query: forge artisanale façonnage d'une pièce en acier au marteau
+  category: Физика
+  language: fr
+  subtheme: casting_forging_forming
+  method: process_material_context
+  pool: expansion_wave2
+- query: forjamento manual de uma pequena peça de aço
+  category: Физика
+  language: pt
+  subtheme: casting_forging_forming
+  method: process_material_context
+  pool: expansion_wave2
+- query: odlewanie aluminium w formie piaskowej mała odlewnia
+  category: Физика
+  language: pl
+  subtheme: casting_forging_forming
+  method: process_material_context
+  pool: expansion_wave2
+- query: литьё алюминия в песчаную форму в небольшой мастерской
+  category: Физика
+  language: ru
+  subtheme: casting_forging_forming
+  method: process_material_context
+  pool: expansion_wave2
+- query: lavorazione artigianale del rame con martello e incudine
+  category: Физика
+  language: it
+  subtheme: casting_forging_forming
+  method: process_material_context
+  pool: expansion_wave2
+- query: ръчно коване на малка стоманена част в работилница
+  category: Физика
+  language: bg
+  subtheme: casting_forging_forming
+  method: process_material_context
+  pool: expansion_wave2
+- query: ručno kovanje metalnog alata u maloj radionici
+  category: Физика
+  language: sr
+  subtheme: casting_forging_forming
+  method: process_material_context
+  pool: expansion_wave2
+- query: bengkel kecil mencurah aluminium ke dalam acuan pasir
+  category: Физика
+  language: ms
+  subtheme: fluids_hydraulics
+  method: experiment_setup
+  pool: expansion_wave2
+- query: experimento casero de presión hidráulica con manómetros
+  category: Физика
+  language: es
+  subtheme: fluids_hydraulics
+  method: experiment_setup
+  pool: expansion_wave2
+- query: teste de fluxo de água em tubo transparente bancada caseira
+  category: Физика
+  language: pt
+  subtheme: fluids_hydraulics
+  method: experiment_setup
+  pool: expansion_wave2
+- query: Strömungsversuch mit Wasser in einem transparenten Rohr
+  category: Физика
+  language: de
+  subtheme: fluids_hydraulics
+  method: experiment_setup
+  pool: expansion_wave2
+- query: expérience de mécanique des fluides avec un tuyau transparent
+  category: Физика
+  language: fr
+  subtheme: fluids_hydraulics
+  method: experiment_setup
+  pool: expansion_wave2
+- query: prova pratica di una pompa idraulica smontata
+  category: Физика
+  language: it
+  subtheme: fluids_hydraulics
+  method: experiment_setup
+  pool: expansion_wave2
+- query: doświadczenie z przepływem cieczy w przezroczystej rurze
+  category: Физика
+  language: pl
+  subtheme: fluids_hydraulics
+  method: experiment_setup
+  pool: expansion_wave2
+- query: опыт с гидравлическим прессом и измерением давления
+  category: Физика
+  language: ru
+  subtheme: fluids_hydraulics
+  method: experiment_setup
+  pool: expansion_wave2
+- query: ทดลองแรงดันไฮดรอลิกด้วยเกจวัดในเวิร์กช็อป
+  category: Физика
+  language: th
+  subtheme: fluids_hydraulics
+  method: experiment_setup
+  pool: expansion_wave2
+- query: घरेलू सेटअप में हाइड्रोलिक दबाव का प्रयोग
+  category: Физика
+  language: hi
+  subtheme: fluids_hydraulics
+  method: experiment_setup
+  pool: expansion_wave2
+- query: mätning av värmeöverföring i en hemmabyggd försöksuppställning
+  category: Физика
+  language: sv
+  subtheme: optics_thermodynamics_magnetism
+  method: experiment_setup
+  pool: expansion_wave2
+- query: experimento de óptica con prismas y luz sobre una mesa
+  category: Физика
+  language: es
+  subtheme: optics_thermodynamics_magnetism
+  method: experiment_setup
+  pool: expansion_wave2
+- query: Wärmeübertragung an einem selbstgebauten Versuchsaufbau messen
+  category: Физика
+  language: de
+  subtheme: optics_thermodynamics_magnetism
+  method: experiment_setup
+  pool: expansion_wave2
+- query: expérience de thermodynamique avec deux métaux chauffés
+  category: Физика
+  language: fr
+  subtheme: optics_thermodynamics_magnetism
+  method: experiment_setup
+  pool: expansion_wave2
+- query: dimostrazione pratica del campo magnetico con limatura di ferro
+  category: Физика
+  language: it
+  subtheme: optics_thermodynamics_magnetism
+  method: experiment_setup
+  pool: expansion_wave2
+- query: doświadczenie z magnesami i polem magnetycznym na stole
+  category: Физика
+  language: pl
+  subtheme: optics_thermodynamics_magnetism
+  method: experiment_setup
+  pool: expansion_wave2
+- query: эксперимент с линзами и преломлением света на оптической скамье
+  category: Физика
+  language: ru
+  subtheme: optics_thermodynamics_magnetism
+  method: experiment_setup
+  pool: expansion_wave2
+- query: дослід з теплопередачі на саморобному стенді
+  category: Физика
+  language: uk
+  subtheme: optics_thermodynamics_magnetism
+  method: experiment_setup
+  pool: expansion_wave2
+- query: πείραμα διάθλασης φωτός με πρίσματα σε πάγκο
+  category: Физика
+  language: el
+  subtheme: optics_thermodynamics_magnetism
+  method: experiment_setup
+  pool: expansion_wave2
+- query: レンズと光の屈折を測定する光学実験
+  category: Физика
+  language: ja
+  subtheme: optics_thermodynamics_magnetism
+  method: experiment_setup
+  pool: expansion_wave2
+- query: måling av varmeoverføring i et enkelt hjemmelaget forsøksoppsett
+  category: Физика
+  language: 'no'
+  subtheme: machinery_mining_offroad
+  method: machine_real_operation
+  pool: expansion_wave2
+- query: maquinaria minera trabajando en una cantera pequeña
+  category: Физика
+  language: es
+  subtheme: machinery_mining_offroad
+  method: machine_real_operation
+  pool: expansion_wave2
+- query: Radlader arbeitet auf einem Schotterplatz im laufenden Betrieb
+  category: Физика
+  language: de
+  subtheme: machinery_mining_offroad
+  method: machine_real_operation
+  pool: expansion_wave2
+- query: máquina agrícola trabalhando em terreno irregular filmagem real
+  category: Физика
+  language: pt
+  subtheme: machinery_mining_offroad
+  method: machine_real_operation
+  pool: expansion_wave2
+- query: mała koparka pracuje przy wykopie na placu budowy
+  category: Физика
+  language: pl
+  subtheme: machinery_mining_offroad
+  method: machine_real_operation
+  pool: expansion_wave2
+- query: работа дробильной установки на небольшом карьере
+  category: Физика
+  language: ru
+  subtheme: machinery_mining_offroad
+  method: machine_real_operation
+  pool: expansion_wave2
+- query: taş ocağında çalışan ekskavatör gerçek çalışma görüntüsü
+  category: Физика
+  language: tr
+  subtheme: machinery_mining_offroad
+  method: machine_real_operation
+  pool: expansion_wave2
+- query: utilaj forestier lucrează pe teren accidentat
+  category: Физика
+  language: ro
+  subtheme: machinery_mining_offroad
+  method: machine_real_operation
+  pool: expansion_wave2
+- query: робота гусеничного навантажувача на кам’яному кар’єрі
+  category: Физика
+  language: uk
+  subtheme: machinery_mining_offroad
+  method: machine_real_operation
+  pool: expansion_wave2
+- query: máy xúc làm việc tại mỏ đá nhỏ quay thực tế
+  category: Физика
+  language: vi
+  subtheme: machinery_mining_offroad
+  method: machine_real_operation
+  pool: expansion_wave2
+- query: amateur hammered dulcimer solo recorded in a small room
+  category: Музыка
+  language: en
+  subtheme: instrument_solos
+  method: instrument_performance
+  pool: expansion_wave2
+- query: solo de bandoneón en directo en una sala pequeña
+  category: Музыка
+  language: es
+  subtheme: instrument_solos
+  method: instrument_performance
+  pool: expansion_wave2
+- query: apresentação solo de viola caipira em ambiente caseiro
+  category: Музыка
+  language: pt
+  subtheme: instrument_solos
+  method: instrument_performance
+  pool: expansion_wave2
+- query: Zither Solospiel im kleinen Musikzimmer aufgenommen
+  category: Музыка
+  language: de
+  subtheme: instrument_solos
+  method: instrument_performance
+  pool: expansion_wave2
+- query: solo d'accordéon diatonique joué dans une petite salle
+  category: Музыка
+  language: fr
+  subtheme: instrument_solos
+  method: instrument_performance
+  pool: expansion_wave2
+- query: esecuzione solista di mandolino in una stanza
+  category: Музыка
+  language: it
+  subtheme: instrument_solos
+  method: instrument_performance
+  pool: expansion_wave2
+- query: amatorski koncert na akordeonie w małej sali
+  category: Музыка
+  language: pl
+  subtheme: instrument_solos
+  method: instrument_performance
+  pool: expansion_wave2
+- query: сольное исполнение на балалайке в небольшой комнате
+  category: Музыка
+  language: ru
+  subtheme: instrument_solos
+  method: instrument_performance
+  pool: expansion_wave2
+- query: σόλο παραδοσιακού σαντουριού σε μικρό χώρο
+  category: Музыка
+  language: el
+  subtheme: instrument_solos
+  method: instrument_performance
+  pool: expansion_wave2
+- query: 小さな部屋で演奏する箏のソロ演奏
+  category: Музыка
+  language: ja
+  subtheme: instrument_solos
+  method: instrument_performance
+  pool: expansion_wave2
+- query: amatør spiller harmonika solo i et lille værelse
+  category: Музыка
+  language: da
+  subtheme: local_live_performance
+  method: local_live_performance
+  pool: expansion_wave2
+- query: banda local tocando música tradicional en una plaza
+  category: Музыка
+  language: es
+  subtheme: local_live_performance
+  method: local_live_performance
+  pool: expansion_wave2
+- query: banda comunitária tocando ao vivo em festa de bairro
+  category: Музыка
+  language: pt
+  subtheme: local_live_performance
+  method: local_live_performance
+  pool: expansion_wave2
+- query: Blaskapelle spielt live auf einem Dorffest
+  category: Музыка
+  language: de
+  subtheme: local_live_performance
+  method: local_live_performance
+  pool: expansion_wave2
+- query: petit orchestre local en concert dans une salle communale
+  category: Музыка
+  language: fr
+  subtheme: local_live_performance
+  method: local_live_performance
+  pool: expansion_wave2
+- query: banda di paese che suona dal vivo durante una festa
+  category: Музыка
+  language: it
+  subtheme: local_live_performance
+  method: local_live_performance
+  pool: expansion_wave2
+- query: lokalny zespół ludowy występuje na scenie wiejskiej
+  category: Музыка
+  language: pl
+  subtheme: local_live_performance
+  method: local_live_performance
+  pool: expansion_wave2
+- query: местный духовой оркестр играет на городском празднике
+  category: Музыка
+  language: ru
+  subtheme: local_live_performance
+  method: local_live_performance
+  pool: expansion_wave2
+- query: munting banda tumutugtog nang live sa pista ng barangay
+  category: Музыка
+  language: tl
+  subtheme: local_live_performance
+  method: local_live_performance
+  pool: expansion_wave2
+- query: วงดนตรีชุมชนเล่นสดในงานวัดท้องถิ่น
+  category: Музыка
+  language: th
+  subtheme: local_live_performance
+  method: local_live_performance
+  pool: expansion_wave2
+- query: paikallinen puhallinorkester soittaa ulkoilmakonsertissa
+  category: Музыка
+  language: fi
+  subtheme: traditional_instruments
+  method: instrument_cultural_context
+  pool: expansion_wave2
+- query: demostración musical de gaita tradicional en una aldea
+  category: Музыка
+  language: es
+  subtheme: traditional_instruments
+  method: instrument_cultural_context
+  pool: expansion_wave2
+- query: tocando sanfona tradicional em uma pequena comunidade
+  category: Музыка
+  language: pt
+  subtheme: traditional_instruments
+  method: instrument_cultural_context
+  pool: expansion_wave2
+- query: Drehleier spielen bei einem kleinen Folkmusiktreffen
+  category: Музыка
+  language: de
+  subtheme: traditional_instruments
+  method: instrument_cultural_context
+  pool: expansion_wave2
+- query: musique traditionnelle au vielle à roue en public
+  category: Музыка
+  language: fr
+  subtheme: traditional_instruments
+  method: instrument_cultural_context
+  pool: expansion_wave2
+- query: esecuzione di organetto tradizionale in una festa locale
+  category: Музыка
+  language: it
+  subtheme: traditional_instruments
+  method: instrument_cultural_context
+  pool: expansion_wave2
+- query: gra na cymbałach podczas lokalnego spotkania muzycznego
+  category: Музыка
+  language: pl
+  subtheme: traditional_instruments
+  method: instrument_cultural_context
+  pool: expansion_wave2
+- query: игра на гуслях на небольшом народном концерте
+  category: Музыка
+  language: ru
+  subtheme: traditional_instruments
+  method: instrument_cultural_context
+  pool: expansion_wave2
+- query: citera bemutató hagyományos falusi rendezvényen
+  category: Музыка
+  language: hu
+  subtheme: traditional_instruments
+  method: instrument_cultural_context
+  pool: expansion_wave2
+- query: 소규모 공연장에서 전통 악기 대금 연주
+  category: Музыка
+  language: ko
+  subtheme: traditional_instruments
+  method: instrument_cultural_context
+  pool: expansion_wave2
+- query: pagtugtog ng tradisyonal na kudyapi sa maliit na pagtitipon
+  category: Музыка
+  language: tl
+  subtheme: rehearsal_and_ensemble
+  method: activity_location
+  pool: expansion_wave2
+- query: ensayo de un pequeño coro comunitario antes del concierto
+  category: Музыка
+  language: es
+  subtheme: rehearsal_and_ensemble
+  method: activity_location
+  pool: expansion_wave2
+- query: ensaio de grupo de choro em uma garagem pequena
+  category: Музыка
+  language: pt
+  subtheme: rehearsal_and_ensemble
+  method: activity_location
+  pool: expansion_wave2
+- query: Amateurorchester probt ein Stück im Gemeindehaus
+  category: Музыка
+  language: de
+  subtheme: rehearsal_and_ensemble
+  method: activity_location
+  pool: expansion_wave2
+- query: répétition d'un ensemble de jazz amateur dans un local
+  category: Музыка
+  language: fr
+  subtheme: rehearsal_and_ensemble
+  method: activity_location
+  pool: expansion_wave2
+- query: prove di un quartetto d'archi amatoriale in una stanza
+  category: Музыка
+  language: it
+  subtheme: rehearsal_and_ensemble
+  method: activity_location
+  pool: expansion_wave2
+- query: próba małego zespołu jazzowego w lokalnym domu kultury
+  category: Музыка
+  language: pl
+  subtheme: rehearsal_and_ensemble
+  method: activity_location
+  pool: expansion_wave2
+- query: репетиция небольшого джазового ансамбля в помещении
+  category: Музыка
+  language: ru
+  subtheme: rehearsal_and_ensemble
+  method: activity_location
+  pool: expansion_wave2
+- query: amateurkoor oefent meerstemmig lied in buurthuis
+  category: Музыка
+  language: nl
+  subtheme: rehearsal_and_ensemble
+  method: activity_location
+  pool: expansion_wave2
+- query: amatörensemble repeterar folkmusik i en liten lokal
+  category: Музыка
+  language: sv
+  subtheme: rehearsal_and_ensemble
+  method: activity_location
+  pool: expansion_wave2
+- query: घरच्या खोलीत तबल्याचे एकल वादन
+  category: Музыка
+  language: mr
+  subtheme: before_after_performance
+  method: performance_prep
+  pool: expansion_wave2
+- query: preparación de instrumentos antes de una actuación de música folklórica
+  category: Музыка
+  language: es
+  subtheme: before_after_performance
+  method: performance_prep
+  pool: expansion_wave2
+- query: músicos afinando violões antes de tocar ao vivo
+  category: Музыка
+  language: pt
+  subtheme: before_after_performance
+  method: performance_prep
+  pool: expansion_wave2
+- query: Geiger stimmt sein Instrument vor einem kleinen Auftritt
+  category: Музыка
+  language: de
+  subtheme: before_after_performance
+  method: performance_prep
+  pool: expansion_wave2
+- query: préparation d'un instrument à vent avant une représentation
+  category: Музыка
+  language: fr
+  subtheme: before_after_performance
+  method: performance_prep
+  pool: expansion_wave2
+- query: accordatura di un pianoforte prima di una piccola esibizione
+  category: Музыка
+  language: it
+  subtheme: before_after_performance
+  method: performance_prep
+  pool: expansion_wave2
+- query: muzyk stroi skrzypce przed występem na żywo
+  category: Музыка
+  language: pl
+  subtheme: before_after_performance
+  method: performance_prep
+  pool: expansion_wave2
+- query: музыкант настраивает аккордеон перед выступлением
+  category: Музыка
+  language: ru
+  subtheme: before_after_performance
+  method: performance_prep
+  pool: expansion_wave2
+- query: muzicien își acordă vioara înaintea unui recital
+  category: Музыка
+  language: ro
+  subtheme: before_after_performance
+  method: performance_prep
+  pool: expansion_wave2
+- query: pemain gamelan menyiapkan alat sebelum pertunjukan
+  category: Музыка
+  language: id
+  subtheme: before_after_performance
+  method: performance_prep
+  pool: expansion_wave2
+- query: independent tailor drafting a jacket pattern on a worktable
+  category: Дизайн
+  language: en
+  subtheme: clothing_construction
+  method: design_process
+  pool: expansion_wave2
+- query: costurera local confecciona una chaqueta desde el patrón
+  category: Дизайн
+  language: es
+  subtheme: clothing_construction
+  method: design_process
+  pool: expansion_wave2
+- query: alfaiate artesanal cortando tecido para um casaco sob medida
+  category: Дизайн
+  language: pt
+  subtheme: clothing_construction
+  method: design_process
+  pool: expansion_wave2
+- query: Maßschneider zeichnet Schnittmuster für eine Weste
+  category: Дизайн
+  language: de
+  subtheme: clothing_construction
+  method: design_process
+  pool: expansion_wave2
+- query: couturière indépendante trace un patron de manteau
+  category: Дизайн
+  language: fr
+  subtheme: clothing_construction
+  method: design_process
+  pool: expansion_wave2
+- query: sarto artigiano prepara il cartamodello di una giacca
+  category: Дизайн
+  language: it
+  subtheme: clothing_construction
+  method: design_process
+  pool: expansion_wave2
+- query: krawiec wykreśla wykrój marynarki w małej pracowni
+  category: Дизайн
+  language: pl
+  subtheme: clothing_construction
+  method: design_process
+  pool: expansion_wave2
+- query: портной строит выкройку пальто в домашней мастерской
+  category: Дизайн
+  language: ru
+  subtheme: clothing_construction
+  method: design_process
+  pool: expansion_wave2
+- query: küçük atölyede özel dikim ceket kalıbı hazırlama
+  category: Дизайн
+  language: tr
+  subtheme: clothing_construction
+  method: design_process
+  pool: expansion_wave2
+- query: छोटी सिलाई कार्यशाला में जैकेट का पैटर्न बनाना
+  category: Дизайн
+  language: hi
+  subtheme: clothing_construction
+  method: design_process
+  pool: expansion_wave2
+- query: చిన్న పనిగదిలో జాకెట్ నమూనాను గీయడం
+  category: Дизайн
+  language: te
+  subtheme: shoes_and_leather
+  method: craft_process
+  pool: expansion_wave2
+- query: fabricación artesanal de sandalias de cuero paso a paso
+  category: Дизайн
+  language: es
+  subtheme: shoes_and_leather
+  method: craft_process
+  pool: expansion_wave2
+- query: sapateiro artesanal costurando um sapato de couro
+  category: Дизайн
+  language: pt
+  subtheme: shoes_and_leather
+  method: craft_process
+  pool: expansion_wave2
+- query: Schuhmacher repariert und gestaltet einen Lederschuh
+  category: Дизайн
+  language: de
+  subtheme: shoes_and_leather
+  method: craft_process
+  pool: expansion_wave2
+- query: fabrication manuelle d'une chaussure en cuir dans un atelier
+  category: Дизайн
+  language: fr
+  subtheme: shoes_and_leather
+  method: craft_process
+  pool: expansion_wave2
+- query: lavorazione artigianale di scarpe in pelle
+  category: Дизайн
+  language: it
+  subtheme: shoes_and_leather
+  method: craft_process
+  pool: expansion_wave2
+- query: ręczne szycie skórzanych butów w małym warsztacie
+  category: Дизайн
+  language: pl
+  subtheme: shoes_and_leather
+  method: craft_process
+  pool: expansion_wave2
+- query: изготовление кожаных туфель в небольшой мастерской
+  category: Дизайн
+  language: ru
+  subtheme: shoes_and_leather
+  method: craft_process
+  pool: expansion_wave2
+- query: cizmar confecționează manual pantofi din piele
+  category: Дизайн
+  language: ro
+  subtheme: shoes_and_leather
+  method: craft_process
+  pool: expansion_wave2
+- query: صناعة حذاء جلدي يدويًا في ورشة صغيرة
+  category: Дизайн
+  language: ar
+  subtheme: shoes_and_leather
+  method: craft_process
+  pool: expansion_wave2
+- query: ചെറിയ വർക്ക്‌ഷോപ്പിൽ കൈകൊണ്ട് തുകൽ ചെരുപ്പ് നിർമ്മിക്കൽ
+  category: Дизайн
+  language: ml
+  subtheme: interior_small_spaces
+  method: place_design_context
+  pool: expansion_wave2
+- query: diseño funcional de una cocina pequeña durante la renovación
+  category: Дизайн
+  language: es
+  subtheme: interior_small_spaces
+  method: place_design_context
+  pool: expansion_wave2
+- query: reorganização de um quarto pequeno com móveis feitos sob medida
+  category: Дизайн
+  language: pt
+  subtheme: interior_small_spaces
+  method: place_design_context
+  pool: expansion_wave2
+- query: Gestaltung eines schmalen Flurs mit selbstgebauten Möbeln
+  category: Дизайн
+  language: de
+  subtheme: interior_small_spaces
+  method: place_design_context
+  pool: expansion_wave2
+- query: aménagement d'un petit atelier avec rangement sur mesure
+  category: Дизайн
+  language: fr
+  subtheme: interior_small_spaces
+  method: place_design_context
+  pool: expansion_wave2
+- query: progetto di arredamento per un monolocale stretto
+  category: Дизайн
+  language: it
+  subtheme: interior_small_spaces
+  method: place_design_context
+  pool: expansion_wave2
+- query: projekt małego przedpokoju z ręcznie wykonanymi półkami
+  category: Дизайн
+  language: pl
+  subtheme: interior_small_spaces
+  method: place_design_context
+  pool: expansion_wave2
+- query: переделка маленькой мастерской с изготовлением полок
+  category: Дизайн
+  language: ru
+  subtheme: interior_small_spaces
+  method: place_design_context
+  pool: expansion_wave2
+- query: kleine werkruimte praktisch inrichten met maatwerkmeubels
+  category: Дизайн
+  language: nl
+  subtheme: interior_small_spaces
+  method: place_design_context
+  pool: expansion_wave2
+- query: smart inredning av en liten verkstad med specialbyggd förvaring
+  category: Дизайн
+  language: sv
+  subtheme: interior_small_spaces
+  method: place_design_context
+  pool: expansion_wave2
+- query: طراحی فضای کوچک کارگاهی با قفسه‌های سفارشی
+  category: Дизайн
+  language: fa
+  subtheme: fashion_and_textiles
+  method: fashion_process
+  pool: expansion_wave2
+- query: diseñadora independiente crea un vestido en un taller pequeño
+  category: Дизайн
+  language: es
+  subtheme: fashion_and_textiles
+  method: fashion_process
+  pool: expansion_wave2
+- query: criação de roupa tradicional em uma pequena oficina têxtil
+  category: Дизайн
+  language: pt
+  subtheme: fashion_and_textiles
+  method: fashion_process
+  pool: expansion_wave2
+- query: Modedesignerin drapiert Stoff an einer Schneiderpuppe
+  category: Дизайн
+  language: de
+  subtheme: fashion_and_textiles
+  method: fashion_process
+  pool: expansion_wave2
+- query: création d'une tenue de scène dans un atelier de couture
+  category: Дизайн
+  language: fr
+  subtheme: fashion_and_textiles
+  method: fashion_process
+  pool: expansion_wave2
+- query: stilista indipendente realizza un abito su manichino
+  category: Дизайн
+  language: it
+  subtheme: fashion_and_textiles
+  method: fashion_process
+  pool: expansion_wave2
+- query: projektant odzieży pracuje nad kostiumem w pracowni
+  category: Дизайн
+  language: pl
+  subtheme: fashion_and_textiles
+  method: fashion_process
+  pool: expansion_wave2
+- query: создание сценического костюма в небольшой мастерской
+  category: Дизайн
+  language: ru
+  subtheme: fashion_and_textiles
+  method: fashion_process
+  pool: expansion_wave2
+- query: 小さな工房で布を裁断して舞台衣装を作る
+  category: Дизайн
+  language: ja
+  subtheme: fashion_and_textiles
+  method: fashion_process
+  pool: expansion_wave2
+- query: 작은 봉제 작업실에서 맞춤 의상 디자인 과정
+  category: Дизайн
+  language: ko
+  subtheme: fashion_and_textiles
+  method: fashion_process
+  pool: expansion_wave2
+- query: תצוגת אופנה מקומית של מעצבים צעירים באולם קטן
+  category: Дизайн
+  language: he
+  subtheme: fashion_show_process
+  method: event_format
+  pool: expansion_wave2
+- query: desfile de moda de diseñadores emergentes en un espacio local
+  category: Дизайн
+  language: es
+  subtheme: fashion_show_process
+  method: event_format
+  pool: expansion_wave2
+- query: desfile de moda independente em uma pequena galeria
+  category: Дизайн
+  language: pt
+  subtheme: fashion_show_process
+  method: event_format
+  pool: expansion_wave2
+- query: Modenschau einer lokalen Modeschule mit handgefertigten Kleidern
+  category: Дизайн
+  language: de
+  subtheme: fashion_show_process
+  method: event_format
+  pool: expansion_wave2
+- query: défilé étudiant de créateurs dans une petite salle
+  category: Дизайн
+  language: fr
+  subtheme: fashion_show_process
+  method: event_format
+  pool: expansion_wave2
+- query: sfilata di giovani stilisti in uno spazio indipendente
+  category: Дизайн
+  language: it
+  subtheme: fashion_show_process
+  method: event_format
+  pool: expansion_wave2
+- query: pokaz kolekcji uczniów lokalnej szkoły mody
+  category: Дизайн
+  language: pl
+  subtheme: fashion_show_process
+  method: event_format
+  pool: expansion_wave2
+- query: небольшой показ коллекции молодых дизайнеров одежды
+  category: Дизайн
+  language: ru
+  subtheme: fashion_show_process
+  method: event_format
+  pool: expansion_wave2
+- query: μικρή επίδειξη μόδας νέων σχεδιαστών σε τοπικό χώρο
+  category: Дизайн
+  language: el
+  subtheme: fashion_show_process
+  method: event_format
+  pool: expansion_wave2
+- query: buổi trình diễn thời trang của nhà thiết kế trẻ địa phương
+  category: Дизайн
+  language: vi
+  subtheme: fashion_show_process
+  method: event_format
+  pool: expansion_wave2
+- query: amateur drone flight over a small rural village raw footage
+  category: Съёмки с дронов, GoPro
+  language: en
+  subtheme: drone_towns_architecture
+  method: camera_format_location
+  pool: expansion_wave2
+- query: vuelo de dron sobre un casco antiguo de una ciudad pequeña
+  category: Съёмки с дронов, GoPro
+  language: es
+  subtheme: drone_towns_architecture
+  method: camera_format_location
+  pool: expansion_wave2
+- query: filmagem aérea de uma vila costeira com drone amador
+  category: Съёмки с дронов, GoPro
+  language: pt
+  subtheme: drone_towns_architecture
+  method: camera_format_location
+  pool: expansion_wave2
+- query: Drohnenflug über ein kleines Dorf mit Fachwerkhäusern
+  category: Съёмки с дронов, GoPro
+  language: de
+  subtheme: drone_towns_architecture
+  method: camera_format_location
+  pool: expansion_wave2
+- query: vue drone d'un quartier ancien filmée par un amateur
+  category: Съёмки с дронов, GoPro
+  language: fr
+  subtheme: drone_towns_architecture
+  method: camera_format_location
+  pool: expansion_wave2
+- query: ripresa con drone di un borgo collinare poco conosciuto
+  category: Съёмки с дронов, GoPro
+  language: it
+  subtheme: drone_towns_architecture
+  method: camera_format_location
+  pool: expansion_wave2
+- query: amatorski lot dronem nad małym miasteczkiem i rynkiem
+  category: Съёмки с дронов, GoPro
+  language: pl
+  subtheme: drone_towns_architecture
+  method: camera_format_location
+  pool: expansion_wave2
+- query: любительская съёмка дроном над небольшим посёлком
+  category: Съёмки с дронов, GoPro
+  language: ru
+  subtheme: drone_towns_architecture
+  method: camera_format_location
+  pool: expansion_wave2
+- query: ερασιτεχνική πτήση drone πάνω από παραδοσιακό χωριό
+  category: Съёмки с дронов, GoPro
+  language: el
+  subtheme: drone_towns_architecture
+  method: camera_format_location
+  pool: expansion_wave2
+- query: บินโดรนถ่ายหมู่บ้านเล็กในชนบทแบบวิดีโอดิบ
+  category: Съёмки с дронов, GoPro
+  language: th
+  subtheme: drone_towns_architecture
+  method: camera_format_location
+  pool: expansion_wave2
+- query: গ্রামীণ ছোট গ্রামের উপর অপেশাদার ড্রোনের কাঁচা ফুটেজ
+  category: Съёмки с дронов, GoPro
+  language: bn
+  subtheme: drone_nature_routes
+  method: camera_route_context
+  pool: expansion_wave2
+- query: recorrido de dron por un sendero de montaña poco transitado
+  category: Съёмки с дронов, GoPro
+  language: es
+  subtheme: drone_nature_routes
+  method: camera_route_context
+  pool: expansion_wave2
+- query: drone acompanhando uma cachoeira em região rural
+  category: Съёмки с дронов, GoPro
+  language: pt
+  subtheme: drone_nature_routes
+  method: camera_route_context
+  pool: expansion_wave2
+- query: Drohnenaufnahme einer abgelegenen Bergstraße im Herbst
+  category: Съёмки с дронов, GoPro
+  language: de
+  subtheme: drone_nature_routes
+  method: camera_route_context
+  pool: expansion_wave2
+- query: drone amateur au-dessus d'un delta et de ses petits canaux
+  category: Съёмки с дронов, GoPro
+  language: fr
+  subtheme: drone_nature_routes
+  method: camera_route_context
+  pool: expansion_wave2
+- query: ripresa drone lungo una costa rocciosa poco frequentata
+  category: Съёмки с дронов, GoPro
+  language: it
+  subtheme: drone_nature_routes
+  method: camera_route_context
+  pool: expansion_wave2
+- query: lot dronem nad leśną drogą i rzecznym zakolem
+  category: Съёмки с дронов, GoPro
+  language: pl
+  subtheme: drone_nature_routes
+  method: camera_route_context
+  pool: expansion_wave2
+- query: съёмка дроном вдоль горной тропы и лесного ручья
+  category: Съёмки с дронов, GoPro
+  language: ru
+  subtheme: drone_nature_routes
+  method: camera_route_context
+  pool: expansion_wave2
+- query: quay flycam dọc thung lũng sông ở vùng quê
+  category: Съёмки с дронов, GoPro
+  language: vi
+  subtheme: drone_nature_routes
+  method: camera_route_context
+  pool: expansion_wave2
+- query: rekaman drone mengikuti garis pantai desa nelayan
+  category: Съёмки с дронов, GoPro
+  language: id
+  subtheme: drone_nature_routes
+  method: camera_route_context
+  pool: expansion_wave2
+- query: காட்டு பள்ளத்தாக்கில் ஆற்றைத் தொடர்ந்து செல்லும் ட்ரோன் காட்சி
+  category: Съёмки с дронов, GoPro
+  language: ta
+  subtheme: industrial_transport_drone
+  method: camera_industrial_context
+  pool: expansion_wave2
+- query: vuelo de dron sobre patios ferroviarios en funcionamiento
+  category: Съёмки с дронов, GoPro
+  language: es
+  subtheme: industrial_transport_drone
+  method: camera_industrial_context
+  pool: expansion_wave2
+- query: filmagem aérea de um porto pesqueiro em atividade
+  category: Съёмки с дронов, GoPro
+  language: pt
+  subtheme: industrial_transport_drone
+  method: camera_industrial_context
+  pool: expansion_wave2
+- query: Drohnenaufnahme eines aktiven Kieswerks von außen
+  category: Съёмки с дронов, GoPro
+  language: de
+  subtheme: industrial_transport_drone
+  method: camera_industrial_context
+  pool: expansion_wave2
+- query: survol drone d'un chantier de pont en cours
+  category: Съёмки с дронов, GoPro
+  language: fr
+  subtheme: industrial_transport_drone
+  method: camera_industrial_context
+  pool: expansion_wave2
+- query: ripresa aerea di un deposito ferroviario locale
+  category: Съёмки с дронов, GoPro
+  language: it
+  subtheme: industrial_transport_drone
+  method: camera_industrial_context
+  pool: expansion_wave2
+- query: dron nad działającym kamieniołomem i ładowarką
+  category: Съёмки с дронов, GoPro
+  language: pl
+  subtheme: industrial_transport_drone
+  method: camera_industrial_context
+  pool: expansion_wave2
+- query: дрон снимает работающую небольшую карьерную площадку
+  category: Съёмки с дронов, GoPro
+  language: ru
+  subtheme: industrial_transport_drone
+  method: camera_industrial_context
+  pool: expansion_wave2
+- query: çalışan taş ocağının drone ile havadan çekimi
+  category: Съёмки с дронов, GoPro
+  language: tr
+  subtheme: industrial_transport_drone
+  method: camera_industrial_context
+  pool: expansion_wave2
+- query: تصوير بطائرة مسيرة لميناء صغير أثناء العمل
+  category: Съёмки с дронов, GoPro
+  language: ar
+  subtheme: industrial_transport_drone
+  method: camera_industrial_context
+  pool: expansion_wave2
+- query: چھوٹی پتھر کی کان کا ڈرون سے معائنہ کرتے ہوئے ویڈیو
+  category: Съёмки с дронов, GoPro
+  language: ur
+  subtheme: action_camera_body_vehicle
+  method: camera_mount_activity
+  pool: expansion_wave2
+- query: cámara de acción en casco durante una ruta de bicicleta rural
+  category: Съёмки с дронов, GoPro
+  language: es
+  subtheme: action_camera_body_vehicle
+  method: camera_mount_activity
+  pool: expansion_wave2
+- query: GoPro presa ao peito durante trilha de caiaque em rio
+  category: Съёмки с дронов, GoPro
+  language: pt
+  subtheme: action_camera_body_vehicle
+  method: camera_mount_activity
+  pool: expansion_wave2
+- query: Kamera am Fahrradlenker auf einem abgelegenen Schotterweg
+  category: Съёмки с дронов, GoPro
+  language: de
+  subtheme: action_camera_body_vehicle
+  method: camera_mount_activity
+  pool: expansion_wave2
+- query: caméra embarquée sur un train régional pendant le trajet
+  category: Съёмки с дронов, GoPro
+  language: fr
+  subtheme: action_camera_body_vehicle
+  method: camera_mount_activity
+  pool: expansion_wave2
+- query: ripresa con action cam sul manubrio lungo una strada di montagna
+  category: Съёмки с дронов, GoPro
+  language: it
+  subtheme: action_camera_body_vehicle
+  method: camera_mount_activity
+  pool: expansion_wave2
+- query: kamera na kasku podczas przejazdu rowerem leśną trasą
+  category: Съёмки с дронов, GoPro
+  language: pl
+  subtheme: action_camera_body_vehicle
+  method: camera_mount_activity
+  pool: expansion_wave2
+- query: съёмка с нагрудной камеры во время поездки по лесной дороге
+  category: Съёмки с дронов, GoPro
+  language: ru
+  subtheme: action_camera_body_vehicle
+  method: camera_mount_activity
+  pool: expansion_wave2
+- query: 車載アクションカメラで撮る田舎道の連続走行
+  category: Съёмки с дронов, GoPro
+  language: ja
+  subtheme: action_camera_body_vehicle
+  method: camera_mount_activity
+  pool: expansion_wave2
+- query: 가슴 마운트 액션캠으로 촬영한 산길 하이킹 영상
+  category: Съёмки с дронов, GoPro
+  language: ko
+  subtheme: action_camera_body_vehicle
+  method: camera_mount_activity
+  pool: expansion_wave2
+- query: rakaman kamera aksi di dada sepanjang laluan basikal hutan
+  category: Съёмки с дронов, GoPro
+  language: ms
+  subtheme: local_raw_vehicle_routes
+  method: local_raw_footage
+  pool: expansion_wave2
+- query: grabación continua desde una motocicleta por caminos rurales
+  category: Съёмки с дронов, GoPro
+  language: es
+  subtheme: local_raw_vehicle_routes
+  method: local_raw_footage
+  pool: expansion_wave2
+- query: filmagem sem cortes de um trator trabalhando em estrada de terra
+  category: Съёмки с дронов, GoPro
+  language: pt
+  subtheme: local_raw_vehicle_routes
+  method: local_raw_footage
+  pool: expansion_wave2
+- query: ununterbrochene Actioncam-Fahrt auf einem ländlichen Feldweg
+  category: Съёмки с дронов, GoPro
+  language: de
+  subtheme: local_raw_vehicle_routes
+  method: local_raw_footage
+  pool: expansion_wave2
+- query: vidéo embarquée continue d'un petit bateau sur un canal
+  category: Съёмки с дронов, GoPro
+  language: fr
+  subtheme: local_raw_vehicle_routes
+  method: local_raw_footage
+  pool: expansion_wave2
+- query: ripresa in prima persona su un quad lungo una pista sterrata
+  category: Съёмки с дронов, GoPro
+  language: it
+  subtheme: local_raw_vehicle_routes
+  method: local_raw_footage
+  pool: expansion_wave2
+- query: nieprzerwany przejazd kamerą samochodową przez górską drogę
+  category: Съёмки с дронов, GoPro
+  language: pl
+  subtheme: local_raw_vehicle_routes
+  method: local_raw_footage
+  pool: expansion_wave2
+- query: непрерывная съёмка с кабины поезда на сельском маршруте
+  category: Съёмки с дронов, GoPro
+  language: ru
+  subtheme: local_raw_vehicle_routes
+  method: local_raw_footage
+  pool: expansion_wave2
+- query: tuloy-tuloy na action camera ride sa mabatong daan sa probinsya
+  category: Съёмки с дронов, GoPro
+  language: tl
+  subtheme: local_raw_vehicle_routes
+  method: local_raw_footage
+  pool: expansion_wave2
+- query: ग्रामीण पहाड़ी रास्ते पर बाइक एक्शन कैमरा फुटेज
+  category: Съёмки с дронов, GoPro
+  language: hi
+  subtheme: local_raw_vehicle_routes
+  method: local_raw_footage
+  pool: expansion_wave2
+- query: propagating dahlias from cuttings in a small flower greenhouse
+  category: Цветы
+  language: en
+  subtheme: flower_propagation
+  method: plant_process
+  pool: expansion_wave2
+- query: propagación de geranios por esquejes en un vivero familiar
+  category: Цветы
+  language: es
+  subtheme: flower_propagation
+  method: plant_process
+  pool: expansion_wave2
+- query: produção de mudas de flores a partir de estacas em estufa
+  category: Цветы
+  language: pt
+  subtheme: flower_propagation
+  method: plant_process
+  pool: expansion_wave2
+- query: Dahlien durch Stecklinge in einer kleinen Gärtnerei vermehren
+  category: Цветы
+  language: de
+  subtheme: flower_propagation
+  method: plant_process
+  pool: expansion_wave2
+- query: multiplication de lavande par bouturage dans une pépinière
+  category: Цветы
+  language: fr
+  subtheme: flower_propagation
+  method: plant_process
+  pool: expansion_wave2
+- query: propagazione di crisantemi da talea in una piccola serra
+  category: Цветы
+  language: it
+  subtheme: flower_propagation
+  method: plant_process
+  pool: expansion_wave2
+- query: rozmnażanie pelargonii z sadzonek w małej szklarni
+  category: Цветы
+  language: pl
+  subtheme: flower_propagation
+  method: plant_process
+  pool: expansion_wave2
+- query: размножение петунии черенками в домашней теплице
+  category: Цветы
+  language: ru
+  subtheme: flower_propagation
+  method: plant_process
+  pool: expansion_wave2
+- query: küçük serada çiçek çeliği köklendirme süreci
+  category: Цветы
+  language: tr
+  subtheme: flower_propagation
+  method: plant_process
+  pool: expansion_wave2
+- query: छोटी नर्सरी में गुलाब की कटिंग से पौधे तैयार करना
+  category: Цветы
+  language: hi
+  subtheme: flower_propagation
+  method: plant_process
+  pool: expansion_wave2
+- query: föröka dahlior med sticklingar i ett litet växthus
+  category: Цветы
+  language: sv
+  subtheme: flower_growing_care
+  method: cultivation_process
+  pool: expansion_wave2
+- query: cultivo de flores de temporada en un vivero local
+  category: Цветы
+  language: es
+  subtheme: flower_growing_care
+  method: cultivation_process
+  pool: expansion_wave2
+- query: cuidados de dálias em canteiro de flores no quintal
+  category: Цветы
+  language: pt
+  subtheme: flower_growing_care
+  method: cultivation_process
+  pool: expansion_wave2
+- query: Schnittblumen im kleinen Gewächshaus pflegen und ernten
+  category: Цветы
+  language: de
+  subtheme: flower_growing_care
+  method: cultivation_process
+  pool: expansion_wave2
+- query: culture de renoncules dans une petite exploitation florale
+  category: Цветы
+  language: fr
+  subtheme: flower_growing_care
+  method: cultivation_process
+  pool: expansion_wave2
+- query: cura delle rose in un piccolo giardino di fiori
+  category: Цветы
+  language: it
+  subtheme: flower_growing_care
+  method: cultivation_process
+  pool: expansion_wave2
+- query: uprawa mieczyków na kwiat cięty w małym gospodarstwie
+  category: Цветы
+  language: pl
+  subtheme: flower_growing_care
+  method: cultivation_process
+  pool: expansion_wave2
+- query: выращивание эустомы на срезку в небольшой теплице
+  category: Цветы
+  language: ru
+  subtheme: flower_growing_care
+  method: cultivation_process
+  pool: expansion_wave2
+- query: cultivarea crizantemelor pentru flori tăiate într-o seră mică
+  category: Цветы
+  language: ro
+  subtheme: flower_growing_care
+  method: cultivation_process
+  pool: expansion_wave2
+- query: ปลูกดอกเบญจมาศเพื่อตัดดอกในโรงเรือนขนาดเล็ก
+  category: Цветы
+  language: th
+  subtheme: flower_growing_care
+  method: cultivation_process
+  pool: expansion_wave2
+- query: dyrking av snittblomster i et lite familiedrevet veksthus
+  category: Цветы
+  language: 'no'
+  subtheme: bouquet_making
+  method: handcraft_process
+  pool: expansion_wave2
+- query: florista prepara un ramo de flores silvestres de temporada
+  category: Цветы
+  language: es
+  subtheme: bouquet_making
+  method: handcraft_process
+  pool: expansion_wave2
+- query: montagem manual de buquê campestre em uma floricultura local
+  category: Цветы
+  language: pt
+  subtheme: bouquet_making
+  method: handcraft_process
+  pool: expansion_wave2
+- query: Floristin bindet einen saisonalen Wiesenblumenstrauß
+  category: Цветы
+  language: de
+  subtheme: bouquet_making
+  method: handcraft_process
+  pool: expansion_wave2
+- query: composition d'un bouquet champêtre dans une petite boutique
+  category: Цветы
+  language: fr
+  subtheme: bouquet_making
+  method: handcraft_process
+  pool: expansion_wave2
+- query: fiorista compone un mazzo di fiori di stagione a mano
+  category: Цветы
+  language: it
+  subtheme: bouquet_making
+  method: handcraft_process
+  pool: expansion_wave2
+- query: ręczne układanie bukietu z kwiatów sezonowych w kwiaciarni
+  category: Цветы
+  language: pl
+  subtheme: bouquet_making
+  method: handcraft_process
+  pool: expansion_wave2
+- query: флорист собирает букет из сезонных цветов вручную
+  category: Цветы
+  language: ru
+  subtheme: bouquet_making
+  method: handcraft_process
+  pool: expansion_wave2
+- query: bloemist bindt een handgemaakt boeket met veldbloemen
+  category: Цветы
+  language: nl
+  subtheme: bouquet_making
+  method: handcraft_process
+  pool: expansion_wave2
+- query: флорист створює букет із польових квітів вручну
+  category: Цветы
+  language: uk
+  subtheme: bouquet_making
+  method: handcraft_process
+  pool: expansion_wave2
+- query: blomsterhandler binder en sæsonbuket af vilde blomster
+  category: Цветы
+  language: da
+  subtheme: indoor_flower_transplant
+  method: planting_process
+  pool: expansion_wave2
+- query: trasplante de una monstera adulta en una maceta más grande
+  category: Цветы
+  language: es
+  subtheme: indoor_flower_transplant
+  method: planting_process
+  pool: expansion_wave2
+- query: replantio de violetas africanas em vasos pequenos
+  category: Цветы
+  language: pt
+  subtheme: indoor_flower_transplant
+  method: planting_process
+  pool: expansion_wave2
+- query: Zimmerpflanzen in frische Erde umtopfen Schritt für Schritt
+  category: Цветы
+  language: de
+  subtheme: indoor_flower_transplant
+  method: planting_process
+  pool: expansion_wave2
+- query: rempotage d'une orchidée dans un pot transparent adapté
+  category: Цветы
+  language: fr
+  subtheme: indoor_flower_transplant
+  method: planting_process
+  pool: expansion_wave2
+- query: rinvaso di una pianta da interno con radici fitte
+  category: Цветы
+  language: it
+  subtheme: indoor_flower_transplant
+  method: planting_process
+  pool: expansion_wave2
+- query: przesadzanie storczyka do nowego podłoża w mieszkaniu
+  category: Цветы
+  language: pl
+  subtheme: indoor_flower_transplant
+  method: planting_process
+  pool: expansion_wave2
+- query: пересадка разросшейся монстеры в новый горшок дома
+  category: Цветы
+  language: ru
+  subtheme: indoor_flower_transplant
+  method: planting_process
+  pool: expansion_wave2
+- query: 室内の観葉植物を大きな鉢に植え替える作業
+  category: Цветы
+  language: ja
+  subtheme: indoor_flower_transplant
+  method: planting_process
+  pool: expansion_wave2
+- query: 실내 난초를 새 화분으로 옮겨 심는 과정
+  category: Цветы
+  language: ko
+  subtheme: indoor_flower_transplant
+  method: planting_process
+  pool: expansion_wave2
+- query: huonekasvin siirtäminen suurempaan ruukkuun kotona
+  category: Цветы
+  language: fi
+  subtheme: rare_and_local_flowers
+  method: local_variety_cultivation
+  pool: expansion_wave2
+- query: cultivo local de dalias antiguas a partir de semillas
+  category: Цветы
+  language: es
+  subtheme: rare_and_local_flowers
+  method: local_variety_cultivation
+  pool: expansion_wave2
+- query: colheita de sementes de zínias no jardim de flores
+  category: Цветы
+  language: pt
+  subtheme: rare_and_local_flowers
+  method: local_variety_cultivation
+  pool: expansion_wave2
+- query: alte Rosensorten im kleinen Bauerngarten vermehren
+  category: Цветы
+  language: de
+  subtheme: rare_and_local_flowers
+  method: local_variety_cultivation
+  pool: expansion_wave2
+- query: récolte de graines de fleurs anciennes dans un jardin familial
+  category: Цветы
+  language: fr
+  subtheme: rare_and_local_flowers
+  method: local_variety_cultivation
+  pool: expansion_wave2
+- query: coltivazione di varietà locali di garofani in vaso
+  category: Цветы
+  language: it
+  subtheme: rare_and_local_flowers
+  method: local_variety_cultivation
+  pool: expansion_wave2
+- query: zbiór nasion nagietka z przydomowej rabaty kwiatowej
+  category: Цветы
+  language: pl
+  subtheme: rare_and_local_flowers
+  method: local_variety_cultivation
+  pool: expansion_wave2
+- query: сбор семян редких цветов в небольшом саду
+  category: Цветы
+  language: ru
+  subtheme: rare_and_local_flowers
+  method: local_variety_cultivation
+  pool: expansion_wave2
+- query: καλλιέργεια τοπικών ποικιλιών λουλουδιών σε μικρό κήπο
+  category: Цветы
+  language: el
+  subtheme: rare_and_local_flowers
+  method: local_variety_cultivation
+  pool: expansion_wave2
+- query: thu hạt giống hoa địa phương trong vườn nhà
+  category: Цветы
+  language: vi
+  subtheme: rare_and_local_flowers
+  method: local_variety_cultivation
+  pool: expansion_wave2
+- query: small family greenhouse growing tomatoes through the season
+  category: Сад / огород
+  language: en
+  subtheme: vegetable_greenhouse
+  method: cultivation_location
+  pool: expansion_wave2
+- query: cultivo de tomates en invernadero familiar con riego manual
+  category: Сад / огород
+  language: es
+  subtheme: vegetable_greenhouse
+  method: cultivation_location
+  pool: expansion_wave2
+- query: plantio de pimentões em pequena estufa rural
+  category: Сад / огород
+  language: pt
+  subtheme: vegetable_greenhouse
+  method: cultivation_location
+  pool: expansion_wave2
+- query: Tomatenanbau im kleinen Foliengewächshaus auf dem Land
+  category: Сад / огород
+  language: de
+  subtheme: vegetable_greenhouse
+  method: cultivation_location
+  pool: expansion_wave2
+- query: culture de concombres dans une serre maraîchère familiale
+  category: Сад / огород
+  language: fr
+  subtheme: vegetable_greenhouse
+  method: cultivation_location
+  pool: expansion_wave2
+- query: coltivazione di peperoni in una piccola serra domestica
+  category: Сад / огород
+  language: it
+  subtheme: vegetable_greenhouse
+  method: cultivation_location
+  pool: expansion_wave2
+- query: uprawa pomidorów w przydomowym tunelu foliowym
+  category: Сад / огород
+  language: pl
+  subtheme: vegetable_greenhouse
+  method: cultivation_location
+  pool: expansion_wave2
+- query: выращивание огурцов в небольшой дачной теплице
+  category: Сад / огород
+  language: ru
+  subtheme: vegetable_greenhouse
+  method: cultivation_location
+  pool: expansion_wave2
+- query: küçük serada domates yetiştirme günlük bakım
+  category: Сад / огород
+  language: tr
+  subtheme: vegetable_greenhouse
+  method: cultivation_location
+  pool: expansion_wave2
+- query: छोटे ग्रीनहाउस में टमाटर उगाने की प्रक्रिया
+  category: Сад / огород
+  language: hi
+  subtheme: vegetable_greenhouse
+  method: cultivation_location
+  pool: expansion_wave2
+- query: pagtatanim ng kamatis sa maliit na pampamilyang greenhouse
+  category: Сад / огород
+  language: tl
+  subtheme: soil_irrigation
+  method: tool_process_context
+  pool: expansion_wave2
+- query: instalación de riego por goteo en un huerto pequeño
+  category: Сад / огород
+  language: es
+  subtheme: soil_irrigation
+  method: tool_process_context
+  pool: expansion_wave2
+- query: preparação manual do solo para horta em quintal
+  category: Сад / огород
+  language: pt
+  subtheme: soil_irrigation
+  method: tool_process_context
+  pool: expansion_wave2
+- query: Tropfbewässerung für ein kleines Gemüsebeet installieren
+  category: Сад / огород
+  language: de
+  subtheme: soil_irrigation
+  method: tool_process_context
+  pool: expansion_wave2
+- query: préparation de la terre et compost pour un potager familial
+  category: Сад / огород
+  language: fr
+  subtheme: soil_irrigation
+  method: tool_process_context
+  pool: expansion_wave2
+- query: sistema di irrigazione a goccia per un orto domestico
+  category: Сад / огород
+  language: it
+  subtheme: soil_irrigation
+  method: tool_process_context
+  pool: expansion_wave2
+- query: ręczne przygotowanie gleby pod warzywa w ogródku
+  category: Сад / огород
+  language: pl
+  subtheme: soil_irrigation
+  method: tool_process_context
+  pool: expansion_wave2
+- query: установка капельного полива на небольшом огороде
+  category: Сад / огород
+  language: ru
+  subtheme: soil_irrigation
+  method: tool_process_context
+  pool: expansion_wave2
+- query: pregătirea solului și irigarea unei grădini de legume
+  category: Сад / огород
+  language: ro
+  subtheme: soil_irrigation
+  method: tool_process_context
+  pool: expansion_wave2
+- query: تركيب ري بالتنقيط لحديقة خضروات منزلية
+  category: Сад / огород
+  language: ar
+  subtheme: soil_irrigation
+  method: tool_process_context
+  pool: expansion_wave2
+- query: घरच्या भाजीपाल्याच्या बागेसाठी ठिबक सिंचन बसवणे
+  category: Сад / огород
+  language: mr
+  subtheme: harvesting_field_work
+  method: field_operation
+  pool: expansion_wave2
+- query: cosecha manual de cebollas en una pequeña parcela rural
+  category: Сад / огород
+  language: es
+  subtheme: harvesting_field_work
+  method: field_operation
+  pool: expansion_wave2
+- query: colheita de mandioca em uma pequena propriedade familiar
+  category: Сад / огород
+  language: pt
+  subtheme: harvesting_field_work
+  method: field_operation
+  pool: expansion_wave2
+- query: Kartoffelernte auf einem kleinen Hof mit älterer Maschine
+  category: Сад / огород
+  language: de
+  subtheme: harvesting_field_work
+  method: field_operation
+  pool: expansion_wave2
+- query: récolte de haricots dans un petit potager de campagne
+  category: Сад / огород
+  language: fr
+  subtheme: harvesting_field_work
+  method: field_operation
+  pool: expansion_wave2
+- query: raccolta di zucche in un piccolo orto rurale
+  category: Сад / огород
+  language: it
+  subtheme: harvesting_field_work
+  method: field_operation
+  pool: expansion_wave2
+- query: zbiór ziemniaków na małym gospodarstwie wiejskim
+  category: Сад / огород
+  language: pl
+  subtheme: harvesting_field_work
+  method: field_operation
+  pool: expansion_wave2
+- query: уборка картофеля на небольшом участке мотоблоком
+  category: Сад / огород
+  language: ru
+  subtheme: harvesting_field_work
+  method: field_operation
+  pool: expansion_wave2
+- query: збирання цибулі на невеликій сімейній ділянці
+  category: Сад / огород
+  language: uk
+  subtheme: harvesting_field_work
+  method: field_operation
+  pool: expansion_wave2
+- query: เก็บเกี่ยวผักในสวนครอบครัวขนาดเล็ก
+  category: Сад / огород
+  language: th
+  subtheme: harvesting_field_work
+  method: field_operation
+  pool: expansion_wave2
+- query: చిన్న పొలంలో ట్రాక్టర్‌తో బంగాళాదుంపల కోత
+  category: Сад / огород
+  language: te
+  subtheme: fruit_trees_grafting
+  method: horticulture_technique
+  pool: expansion_wave2
+- query: injerto de un árbol frutal en un huerto familiar
+  category: Сад / огород
+  language: es
+  subtheme: fruit_trees_grafting
+  method: horticulture_technique
+  pool: expansion_wave2
+- query: poda e enxertia de goiabeira em pequeno pomar
+  category: Сад / огород
+  language: pt
+  subtheme: fruit_trees_grafting
+  method: horticulture_technique
+  pool: expansion_wave2
+- query: Obstbaum veredeln im privaten Schrebergarten
+  category: Сад / огород
+  language: de
+  subtheme: fruit_trees_grafting
+  method: horticulture_technique
+  pool: expansion_wave2
+- query: greffage d'un vieux pommier dans un petit verger
+  category: Сад / огород
+  language: fr
+  subtheme: fruit_trees_grafting
+  method: horticulture_technique
+  pool: expansion_wave2
+- query: innesto di un pero in un frutteto familiare
+  category: Сад / огород
+  language: it
+  subtheme: fruit_trees_grafting
+  method: horticulture_technique
+  pool: expansion_wave2
+- query: szczepienie jabłoni w przydomowym sadzie
+  category: Сад / огород
+  language: pl
+  subtheme: fruit_trees_grafting
+  method: horticulture_technique
+  pool: expansion_wave2
+- query: прививка яблони в маленьком домашнем саду
+  category: Сад / огород
+  language: ru
+  subtheme: fruit_trees_grafting
+  method: horticulture_technique
+  pool: expansion_wave2
+- query: κλάδεμα και εμβολιασμός μικρού οπωροφόρου δέντρου
+  category: Сад / огород
+  language: el
+  subtheme: fruit_trees_grafting
+  method: horticulture_technique
+  pool: expansion_wave2
+- query: menyambung pohon mangga di kebun keluarga kecil
+  category: Сад / огород
+  language: id
+  subtheme: fruit_trees_grafting
+  method: horticulture_technique
+  pool: expansion_wave2
+- query: വീട്ടുമുറ്റത്തെ ഫലത്തോട്ടത്തിൽ പഴയ ആപ്പിൾ മരത്തിന് ഒട്ടിക്കൽ
+  category: Сад / огород
+  language: ml
+  subtheme: small_farm_animals_crops
+  method: small_farm_activity
+  pool: expansion_wave2
+- query: preparación de bancales para cultivo de verduras en finca pequeña
+  category: Сад / огород
+  language: es
+  subtheme: small_farm_animals_crops
+  method: small_farm_activity
+  pool: expansion_wave2
+- query: plantio de feijão em uma pequena roça familiar
+  category: Сад / огород
+  language: pt
+  subtheme: small_farm_animals_crops
+  method: small_farm_activity
+  pool: expansion_wave2
+- query: Gemüsebeete auf einem kleinen Biohof vorbereiten
+  category: Сад / огород
+  language: de
+  subtheme: small_farm_animals_crops
+  method: small_farm_activity
+  pool: expansion_wave2
+- query: travail manuel entre les rangs d'un petit champ maraîcher
+  category: Сад / огород
+  language: fr
+  subtheme: small_farm_animals_crops
+  method: small_farm_activity
+  pool: expansion_wave2
+- query: semina di fagioli in un piccolo orto agricolo
+  category: Сад / огород
+  language: it
+  subtheme: small_farm_animals_crops
+  method: small_farm_activity
+  pool: expansion_wave2
+- query: prace polowe na małym gospodarstwie warzywnym
+  category: Сад / огород
+  language: pl
+  subtheme: small_farm_animals_crops
+  method: small_farm_activity
+  pool: expansion_wave2
+- query: ручная прополка грядок на небольшом фермерском участке
+  category: Сад / огород
+  language: ru
+  subtheme: small_farm_animals_crops
+  method: small_farm_activity
+  pool: expansion_wave2
+- query: chăm sóc luống rau tại nông trại gia đình nhỏ
+  category: Сад / огород
+  language: vi
+  subtheme: small_farm_animals_crops
+  method: small_farm_activity
+  pool: expansion_wave2
+- query: kulima na kuvuna mboga katika shamba dogo la familia
+  category: Сад / огород
+  language: sw
+  subtheme: small_farm_animals_crops
+  method: small_farm_activity
+  pool: expansion_wave2
+- query: potter throwing a small stoneware bowl on a wheel in a home studio
+  category: Арт
+  language: en
+  subtheme: pottery_ceramics
+  method: craft_process
+  pool: expansion_wave2
+- query: alfarera modela una jarra en torno en un taller pequeño
+  category: Арт
+  language: es
+  subtheme: pottery_ceramics
+  method: craft_process
+  pool: expansion_wave2
+- query: ceramista moldando uma tigela no torno em ateliê caseiro
+  category: Арт
+  language: pt
+  subtheme: pottery_ceramics
+  method: craft_process
+  pool: expansion_wave2
+- query: Töpfer dreht eine Schale auf der Scheibe in einer kleinen Werkstatt
+  category: Арт
+  language: de
+  subtheme: pottery_ceramics
+  method: craft_process
+  pool: expansion_wave2
+- query: céramiste façonne un bol en grès dans son atelier
+  category: Арт
+  language: fr
+  subtheme: pottery_ceramics
+  method: craft_process
+  pool: expansion_wave2
+- query: ceramista realizza una ciotola al tornio in un piccolo studio
+  category: Арт
+  language: it
+  subtheme: pottery_ceramics
+  method: craft_process
+  pool: expansion_wave2
+- query: garncarz tworzy miskę na kole w niewielkiej pracowni
+  category: Арт
+  language: pl
+  subtheme: pottery_ceramics
+  method: craft_process
+  pool: expansion_wave2
+- query: гончар делает керамическую чашу на ручном круге
+  category: Арт
+  language: ru
+  subtheme: pottery_ceramics
+  method: craft_process
+  pool: expansion_wave2
+- query: 小さな工房で陶芸家がろくろで器を作る
+  category: Арт
+  language: ja
+  subtheme: pottery_ceramics
+  method: craft_process
+  pool: expansion_wave2
+- query: 작은 공방에서 물레로 도자기 그릇 만들기
+  category: Арт
+  language: ko
+  subtheme: pottery_ceramics
+  method: craft_process
+  pool: expansion_wave2
+- query: تراشیدن دستی مجسمه کوچک چوبی در یک کارگاه
+  category: Арт
+  language: fa
+  subtheme: sculpture_carving
+  method: art_creation_process
+  pool: expansion_wave2
+- query: escultor talla una figura de madera en un taller artesanal
+  category: Арт
+  language: es
+  subtheme: sculpture_carving
+  method: art_creation_process
+  pool: expansion_wave2
+- query: entalhe manual de uma pequena escultura de madeira
+  category: Арт
+  language: pt
+  subtheme: sculpture_carving
+  method: art_creation_process
+  pool: expansion_wave2
+- query: Holzbildhauer schnitzt eine kleine Figur aus Lindenholz
+  category: Арт
+  language: de
+  subtheme: sculpture_carving
+  method: art_creation_process
+  pool: expansion_wave2
+- query: sculpture d'une petite forme dans la pierre tendre en atelier
+  category: Арт
+  language: fr
+  subtheme: sculpture_carving
+  method: art_creation_process
+  pool: expansion_wave2
+- query: scultura a mano di una figura in legno in un laboratorio
+  category: Арт
+  language: it
+  subtheme: sculpture_carving
+  method: art_creation_process
+  pool: expansion_wave2
+- query: rzeźbienie niewielkiej figurki z drewna w pracowni
+  category: Арт
+  language: pl
+  subtheme: sculpture_carving
+  method: art_creation_process
+  pool: expansion_wave2
+- query: резьба небольшой деревянной скульптуры вручную
+  category: Арт
+  language: ru
+  subtheme: sculpture_carving
+  method: art_creation_process
+  pool: expansion_wave2
+- query: küçük atölyede ahşaptan el yapımı heykel oyma
+  category: Арт
+  language: tr
+  subtheme: sculpture_carving
+  method: art_creation_process
+  pool: expansion_wave2
+- query: نحت تمثال خشبي صغير يدويًا في ورشة
+  category: Арт
+  language: ar
+  subtheme: sculpture_carving
+  method: art_creation_process
+  pool: expansion_wave2
+- query: יצירת נייר שיש בעבודת יד בסטודיו קטן
+  category: Арт
+  language: he
+  subtheme: craft_process
+  method: handmade_process
+  pool: expansion_wave2
+- query: fabricación artesanal de papel decorativo con pigmentos
+  category: Арт
+  language: es
+  subtheme: craft_process
+  method: handmade_process
+  pool: expansion_wave2
+- query: encadernação manual de caderno artesanal passo a passo
+  category: Арт
+  language: pt
+  subtheme: craft_process
+  method: handmade_process
+  pool: expansion_wave2
+- query: Handgemachte Buchbinderei in einer kleinen Werkstatt
+  category: Арт
+  language: de
+  subtheme: craft_process
+  method: handmade_process
+  pool: expansion_wave2
+- query: fabrication de papier décoratif à la main dans un atelier
+  category: Арт
+  language: fr
+  subtheme: craft_process
+  method: handmade_process
+  pool: expansion_wave2
+- query: lavorazione artigianale della carta decorata in studio
+  category: Арт
+  language: it
+  subtheme: craft_process
+  method: handmade_process
+  pool: expansion_wave2
+- query: ręczne tworzenie ozdobnego papieru w pracowni
+  category: Арт
+  language: pl
+  subtheme: craft_process
+  method: handmade_process
+  pool: expansion_wave2
+- query: изготовление декоративной бумаги ручным способом
+  category: Арт
+  language: ru
+  subtheme: craft_process
+  method: handmade_process
+  pool: expansion_wave2
+- query: proses membuat kerajinan rotan tangan di bengkel kecil
+  category: Арт
+  language: id
+  subtheme: craft_process
+  method: handmade_process
+  pool: expansion_wave2
+- query: สาธิตการทำกระดาษทำมือในสตูดิโอหัตถกรรม
+  category: Арт
+  language: th
+  subtheme: craft_process
+  method: handmade_process
+  pool: expansion_wave2
+- query: ছোট স্টুডিওতে শিল্পীর জলরঙে রাস্তার দৃশ্য আঁকা
+  category: Арт
+  language: bn
+  subtheme: drawing_painting
+  method: art_creation_process
+  pool: expansion_wave2
+- query: pintura al óleo de un paisaje local paso a paso
+  category: Арт
+  language: es
+  subtheme: drawing_painting
+  method: art_creation_process
+  pool: expansion_wave2
+- query: desenho de observação de uma rua antiga em caderno
+  category: Арт
+  language: pt
+  subtheme: drawing_painting
+  method: art_creation_process
+  pool: expansion_wave2
+- query: Aquarellmalerei einer Dorfstraße direkt vor Ort
+  category: Арт
+  language: de
+  subtheme: drawing_painting
+  method: art_creation_process
+  pool: expansion_wave2
+- query: dessin d'observation d'un marché local dans un carnet
+  category: Арт
+  language: fr
+  subtheme: drawing_painting
+  method: art_creation_process
+  pool: expansion_wave2
+- query: pittura ad acquerello dal vero in una piccola piazza
+  category: Арт
+  language: it
+  subtheme: drawing_painting
+  method: art_creation_process
+  pool: expansion_wave2
+- query: malowanie akwarelą lokalnego krajobrazu krok po kroku
+  category: Арт
+  language: pl
+  subtheme: drawing_painting
+  method: art_creation_process
+  pool: expansion_wave2
+- query: художник пишет акварелью городской пейзаж с натуры
+  category: Арт
+  language: ru
+  subtheme: drawing_painting
+  method: art_creation_process
+  pool: expansion_wave2
+- query: ζωγράφος δημιουργεί ακουαρέλα από ένα τοπικό τοπίο
+  category: Арт
+  language: el
+  subtheme: drawing_painting
+  method: art_creation_process
+  pool: expansion_wave2
+- query: vẽ màu nước phong cảnh phố cổ trực tiếp ngoài trời
+  category: Арт
+  language: vi
+  subtheme: drawing_painting
+  method: art_creation_process
+  pool: expansion_wave2
+- query: சிறிய கலை ஸ்டுடியோவில் நீர்வண்ண ஓவியம் வரையும் கலைஞர்
+  category: Арт
+  language: ta
+  subtheme: sketchbooks_textiles_handcraft
+  method: surface_decoration_process
+  pool: expansion_wave2
+- query: bordado artístico a mano creando un diseño floral en tela
+  category: Арт
+  language: es
+  subtheme: sketchbooks_textiles_handcraft
+  method: surface_decoration_process
+  pool: expansion_wave2
+- query: artista faz impressão botânica manual em papel artesanal
+  category: Арт
+  language: pt
+  subtheme: sketchbooks_textiles_handcraft
+  method: surface_decoration_process
+  pool: expansion_wave2
+- query: Skizzenbuchseite mit Tusche und Aquarell von Hand gestalten
+  category: Арт
+  language: de
+  subtheme: sketchbooks_textiles_handcraft
+  method: surface_decoration_process
+  pool: expansion_wave2
+- query: broderie artistique d'un motif botanique dans un petit atelier
+  category: Арт
+  language: fr
+  subtheme: sketchbooks_textiles_handcraft
+  method: surface_decoration_process
+  pool: expansion_wave2
+- query: decorazione a mano di un quaderno d'artista con collage
+  category: Арт
+  language: it
+  subtheme: sketchbooks_textiles_handcraft
+  method: surface_decoration_process
+  pool: expansion_wave2
+- query: ręczne zdobienie szkicownika tuszem i akwarelą
+  category: Арт
+  language: pl
+  subtheme: sketchbooks_textiles_handcraft
+  method: surface_decoration_process
+  pool: expansion_wave2
+- query: художник вручную оформляет страницу скетчбука акварелью
+  category: Арт
+  language: ru
+  subtheme: sketchbooks_textiles_handcraft
+  method: surface_decoration_process
+  pool: expansion_wave2
+- query: handgemaakte linodruk maken in een kleine kunstwerkplaats
+  category: Арт
+  language: nl
+  subtheme: sketchbooks_textiles_handcraft
+  method: surface_decoration_process
+  pool: expansion_wave2
+- query: kézzel készített textilminta festése egy kis műhelyben
+  category: Арт
+  language: hu
+  subtheme: sketchbooks_textiles_handcraft
+  method: surface_decoration_process
+  pool: expansion_wave2
+- query: high quality macro stock footage of dew drops on a fern leaf
+  category: Высококачественные стоковые клипы
+  language: en
+  subtheme: macro_nature
+  method: stock_visual_subject
+  pool: expansion_wave2
+- query: video stock macro de una abeja polinizando una flor sin texto
+  category: Высококачественные стоковые клипы
+  language: es
+  subtheme: macro_nature
+  method: stock_visual_subject
+  pool: expansion_wave2
+- query: filmagem macro de gotas de chuva em uma folha verde
+  category: Высококачественные стоковые клипы
+  language: pt
+  subtheme: macro_nature
+  method: stock_visual_subject
+  pool: expansion_wave2
+- query: hochwertige Makroaufnahme von Wassertropfen auf Moos
+  category: Высококачественные стоковые клипы
+  language: de
+  subtheme: macro_nature
+  method: stock_visual_subject
+  pool: expansion_wave2
+- query: vidéo macro nette d'une graine qui germe en terre
+  category: Высококачественные стоковые клипы
+  language: fr
+  subtheme: macro_nature
+  method: stock_visual_subject
+  pool: expansion_wave2
+- query: filmato macro di una farfalla su un fiore in luce naturale
+  category: Высококачественные стоковые клипы
+  language: it
+  subtheme: macro_nature
+  method: stock_visual_subject
+  pool: expansion_wave2
+- query: ujęcie makro kropli wody na liściu bez napisów
+  category: Высококачественные стоковые клипы
+  language: pl
+  subtheme: macro_nature
+  method: stock_visual_subject
+  pool: expansion_wave2
+- query: макросъёмка капель росы на траве без текста
+  category: Высококачественные стоковые клипы
+  language: ru
+  subtheme: macro_nature
+  method: stock_visual_subject
+  pool: expansion_wave2
+- query: 葉の上の水滴を接写した高画質ストック映像
+  category: Высококачественные стоковые клипы
+  language: ja
+  subtheme: macro_nature
+  method: stock_visual_subject
+  pool: expansion_wave2
+- query: 이슬 맺힌 잎을 선명하게 촬영한 매크로 스톡 영상
+  category: Высококачественные стоковые клипы
+  language: ko
+  subtheme: macro_nature
+  method: stock_visual_subject
+  pool: expansion_wave2
+- query: چھلنی سے گرتے آٹے کی اعلیٰ معیار کی اسٹاک ویڈیو
+  category: Высококачественные стоковые клипы
+  language: ur
+  subtheme: industrial_process
+  method: stock_process_closeup
+  pool: expansion_wave2
+- query: video de stock de engranajes industriales girando con fondo limpio
+  category: Высококачественные стоковые клипы
+  language: es
+  subtheme: industrial_process
+  method: stock_process_closeup
+  pool: expansion_wave2
+- query: filmagem de correia transportadora industrial em movimento contínuo
+  category: Высококачественные стоковые клипы
+  language: pt
+  subtheme: industrial_process
+  method: stock_process_closeup
+  pool: expansion_wave2
+- query: hochwertiges Stockvideo von laufenden Zahnrädern im Detail
+  category: Высококачественные стоковые клипы
+  language: de
+  subtheme: industrial_process
+  method: stock_process_closeup
+  pool: expansion_wave2
+- query: vidéo stock d'un bras robotisé industriel en fonctionnement
+  category: Высококачественные стоковые клипы
+  language: fr
+  subtheme: industrial_process
+  method: stock_process_closeup
+  pool: expansion_wave2
+- query: filmato pulito di una pressa meccanica in movimento
+  category: Высококачественные стоковые клипы
+  language: it
+  subtheme: industrial_process
+  method: stock_process_closeup
+  pool: expansion_wave2
+- query: wysokiej jakości ujęcie obracających się kół zębatych
+  category: Высококачественные стоковые клипы
+  language: pl
+  subtheme: industrial_process
+  method: stock_process_closeup
+  pool: expansion_wave2
+- query: стоковый крупный план работающих шестерён без водяного знака
+  category: Высококачественные стоковые клипы
+  language: ru
+  subtheme: industrial_process
+  method: stock_process_closeup
+  pool: expansion_wave2
+- query: çalışan konveyör bandının temiz stok görüntüsü
+  category: Высококачественные стоковые клипы
+  language: tr
+  subtheme: industrial_process
+  method: stock_process_closeup
+  pool: expansion_wave2
+- query: चलती औद्योगिक मशीन का साफ क्लोज़-अप स्टॉक वीडियो
+  category: Высококачественные стоковые клипы
+  language: hi
+  subtheme: industrial_process
+  method: stock_process_closeup
+  pool: expansion_wave2
+- query: rakaman stok bersih roda gear industri berputar dari dekat
+  category: Высококачественные стоковые клипы
+  language: ms
+  subtheme: city_transport
+  method: stock_location_movement
+  pool: expansion_wave2
+- query: video stock de bicicletas cruzando un puente urbano al amanecer
+  category: Высококачественные стоковые клипы
+  language: es
+  subtheme: city_transport
+  method: stock_location_movement
+  pool: expansion_wave2
+- query: filmagem stock de barcos passando por um canal da cidade
+  category: Высококачественные стоковые клипы
+  language: pt
+  subtheme: city_transport
+  method: stock_location_movement
+  pool: expansion_wave2
+- query: Stockaufnahme eines Zuges auf einer grünen Nebenstrecke
+  category: Высококачественные стоковые клипы
+  language: de
+  subtheme: city_transport
+  method: stock_location_movement
+  pool: expansion_wave2
+- query: vidéo stock d'un marché de rue qui s'ouvre le matin
+  category: Высококачественные стоковые клипы
+  language: fr
+  subtheme: city_transport
+  method: stock_location_movement
+  pool: expansion_wave2
+- query: ripresa stock di un ponte pedonale in una città storica
+  category: Высококачественные стоковые клипы
+  language: it
+  subtheme: city_transport
+  method: stock_location_movement
+  pool: expansion_wave2
+- query: ujęcie stockowe tramwaju jadącego przez stare centrum
+  category: Высококачественные стоковые клипы
+  language: pl
+  subtheme: city_transport
+  method: stock_location_movement
+  pool: expansion_wave2
+- query: качественный стоковый кадр поезда на железнодорожном мосту
+  category: Высококачественные стоковые клипы
+  language: ru
+  subtheme: city_transport
+  method: stock_location_movement
+  pool: expansion_wave2
+- query: 清晰的城市有轨电车驶过老街的素材视频
+  category: Высококачественные стоковые клипы
+  language: zh
+  subtheme: city_transport
+  method: stock_location_movement
+  pool: expansion_wave2
+- query: วิดีโอสต็อกคุณภาพสูงของรถไฟผ่านสะพานชนบท
+  category: Высококачественные стоковые клипы
+  language: th
+  subtheme: city_transport
+  method: stock_location_movement
+  pool: expansion_wave2
+- query: högkvalitativ stockfilm av spårvagn som passerar gamla stadsgator
+  category: Высококачественные стоковые клипы
+  language: sv
+  subtheme: water_weather
+  method: stock_natural_motion
+  pool: expansion_wave2
+- query: video stock de lluvia intensa resbalando por una ventana
+  category: Высококачественные стоковые клипы
+  language: es
+  subtheme: water_weather
+  method: stock_natural_motion
+  pool: expansion_wave2
+- query: filmagem de água correndo sobre pedras em um riacho
+  category: Высококачественные стоковые клипы
+  language: pt
+  subtheme: water_weather
+  method: stock_natural_motion
+  pool: expansion_wave2
+- query: Stockvideo von Regenringen auf einer stillen Wasseroberfläche
+  category: Высококачественные стоковые клипы
+  language: de
+  subtheme: water_weather
+  method: stock_natural_motion
+  pool: expansion_wave2
+- query: vidéo haute qualité de vagues lentes dans un port
+  category: Высококачественные стоковые клипы
+  language: fr
+  subtheme: water_weather
+  method: stock_natural_motion
+  pool: expansion_wave2
+- query: filmato stock di una fontana con acqua in controluce
+  category: Высококачественные стоковые клипы
+  language: it
+  subtheme: water_weather
+  method: stock_natural_motion
+  pool: expansion_wave2
+- query: ujęcie wody spływającej po kamieniach w potoku
+  category: Высококачественные стоковые клипы
+  language: pl
+  subtheme: water_weather
+  method: stock_natural_motion
+  pool: expansion_wave2
+- query: стоковая съёмка волн на озере при боковом свете
+  category: Высококачественные стоковые клипы
+  language: ru
+  subtheme: water_weather
+  method: stock_natural_motion
+  pool: expansion_wave2
+- query: لقطة مخزون عالية الجودة لتموجات الماء في بركة
+  category: Высококачественные стоковые клипы
+  language: ar
+  subtheme: water_weather
+  method: stock_natural_motion
+  pool: expansion_wave2
+- query: video stock cận cảnh nước chảy qua đá cuội
+  category: Высококачественные стоковые клипы
+  language: vi
+  subtheme: water_weather
+  method: stock_natural_motion
+  pool: expansion_wave2
+- query: høykvalitets stockopptak av havbølger som slår mot mørke steiner
+  category: Высококачественные стоковые клипы
+  language: 'no'
+  subtheme: food_material_texture
+  method: stock_macro_texture
+  pool: expansion_wave2
+- query: video macro de miel vertiéndose lentamente sobre una cuchara
+  category: Высококачественные стоковые клипы
+  language: es
+  subtheme: food_material_texture
+  method: stock_macro_texture
+  pool: expansion_wave2
+- query: filmagem detalhada de grãos de café sendo despejados
+  category: Высококачественные стоковые клипы
+  language: pt
+  subtheme: food_material_texture
+  method: stock_macro_texture
+  pool: expansion_wave2
+- query: hochwertige Nahaufnahme von Mehl, das durch ein Sieb fällt
+  category: Высококачественные стоковые клипы
+  language: de
+  subtheme: food_material_texture
+  method: stock_macro_texture
+  pool: expansion_wave2
+- query: vidéo macro d'huile versée dans une poêle chaude
+  category: Высококачественные стоковые клипы
+  language: fr
+  subtheme: food_material_texture
+  method: stock_macro_texture
+  pool: expansion_wave2
+- query: filmato ravvicinato di cioccolato fuso che scorre
+  category: Высококачественные стоковые клипы
+  language: it
+  subtheme: food_material_texture
+  method: stock_macro_texture
+  pool: expansion_wave2
+- query: makro ujęcie ziaren kawy przesypywanych do pojemnika
+  category: Высококачественные стоковые клипы
+  language: pl
+  subtheme: food_material_texture
+  method: stock_macro_texture
+  pool: expansion_wave2
+- query: стоковое макро текучего расплавленного шоколада
+  category: Высококачественные стоковые клипы
+  language: ru
+  subtheme: food_material_texture
+  method: stock_macro_texture
+  pool: expansion_wave2
+- query: rekaman stok biji kopi dituangkan ke wadah dari dekat
+  category: Высококачественные стоковые клипы
+  language: id
+  subtheme: food_material_texture
+  method: stock_macro_texture
+  pool: expansion_wave2
+- query: μακροπλάνο αλευριού που πέφτει μέσα από κόσκινο
+  category: Высококачественные стоковые клипы
+  language: el
+  subtheme: food_material_texture
+  method: stock_macro_texture
+  pool: expansion_wave2
+- query: small bakery shaping sourdough loaves by hand before baking
+  category: Кулинария
+  language: en
+  subtheme: bread_and_dough
+  method: cooking_process
+  pool: expansion_wave2
+- query: amasado manual de masa para pan en una panadería de barrio
+  category: Кулинария
+  language: es
+  subtheme: bread_and_dough
+  method: cooking_process
+  pool: expansion_wave2
+- query: modelagem de pão de fermentação natural em pequena padaria
+  category: Кулинария
+  language: pt
+  subtheme: bread_and_dough
+  method: cooking_process
+  pool: expansion_wave2
+- query: Bäcker formt Sauerteiglaibe von Hand in einer kleinen Backstube
+  category: Кулинария
+  language: de
+  subtheme: bread_and_dough
+  method: cooking_process
+  pool: expansion_wave2
+- query: façonnage manuel d'une pâte à pain au levain
+  category: Кулинария
+  language: fr
+  subtheme: bread_and_dough
+  method: cooking_process
+  pool: expansion_wave2
+- query: impasto e formatura del pane in un forno artigianale
+  category: Кулинария
+  language: it
+  subtheme: bread_and_dough
+  method: cooking_process
+  pool: expansion_wave2
+- query: ręczne formowanie chleba na zakwasie w małej piekarni
+  category: Кулинария
+  language: pl
+  subtheme: bread_and_dough
+  method: cooking_process
+  pool: expansion_wave2
+- query: ручная формовка хлеба на закваске в маленькой пекарне
+  category: Кулинария
+  language: ru
+  subtheme: bread_and_dough
+  method: cooking_process
+  pool: expansion_wave2
+- query: küçük fırında ekşi mayalı ekmek hamuru yoğurma
+  category: Кулинария
+  language: tr
+  subtheme: bread_and_dough
+  method: cooking_process
+  pool: expansion_wave2
+- query: छोटी बेकरी में हाथ से खट्टी खमीर वाली रोटी बनाना
+  category: Кулинария
+  language: hi
+  subtheme: bread_and_dough
+  method: cooking_process
+  pool: expansion_wave2
+- query: lille bager former surdejsbrød i hånden før bagning
+  category: Кулинария
+  language: da
+  subtheme: traditional_dishes
+  method: traditional_cooking_process
+  pool: expansion_wave2
+- query: preparación tradicional de tamales paso a paso en casa
+  category: Кулинария
+  language: es
+  subtheme: traditional_dishes
+  method: traditional_cooking_process
+  pool: expansion_wave2
+- query: preparo de pamonha artesanal em cozinha familiar
+  category: Кулинария
+  language: pt
+  subtheme: traditional_dishes
+  method: traditional_cooking_process
+  pool: expansion_wave2
+- query: traditionelle Spätzle-Zubereitung in einer kleinen Familienküche
+  category: Кулинария
+  language: de
+  subtheme: traditional_dishes
+  method: traditional_cooking_process
+  pool: expansion_wave2
+- query: préparation de ravioles maison à la main
+  category: Кулинария
+  language: fr
+  subtheme: traditional_dishes
+  method: traditional_cooking_process
+  pool: expansion_wave2
+- query: preparazione di pasta fresca ripiena in una cucina domestica
+  category: Кулинария
+  language: it
+  subtheme: traditional_dishes
+  method: traditional_cooking_process
+  pool: expansion_wave2
+- query: ręczne lepienie pierogów w tradycyjnej kuchni
+  category: Кулинария
+  language: pl
+  subtheme: traditional_dishes
+  method: traditional_cooking_process
+  pool: expansion_wave2
+- query: приготовление домашних пельменей вручную с нуля
+  category: Кулинария
+  language: ru
+  subtheme: traditional_dishes
+  method: traditional_cooking_process
+  pool: expansion_wave2
+- query: تحضير عجينة خبز تقليدي في مطبخ عائلي
+  category: Кулинария
+  language: ar
+  subtheme: traditional_dishes
+  method: traditional_cooking_process
+  pool: expansion_wave2
+- query: สาธิตทำขนมพื้นบ้านจากแป้งในครัวครอบครัว
+  category: Кулинария
+  language: th
+  subtheme: traditional_dishes
+  method: traditional_cooking_process
+  pool: expansion_wave2
+- query: käsintehtyjen nyyttien valmistus perhekeittiössä
+  category: Кулинария
+  language: fi
+  subtheme: vegetables_meat_fish
+  method: ingredient_preparation
+  pool: expansion_wave2
+- query: corte de verduras para un guiso tradicional en cocina doméstica
+  category: Кулинария
+  language: es
+  subtheme: vegetables_meat_fish
+  method: ingredient_preparation
+  pool: expansion_wave2
+- query: limpeza e preparo de peixe fresco para assar
+  category: Кулинария
+  language: pt
+  subtheme: vegetables_meat_fish
+  method: ingredient_preparation
+  pool: expansion_wave2
+- query: frisches Gemüse schneiden und einen Eintopf vorbereiten
+  category: Кулинария
+  language: de
+  subtheme: vegetables_meat_fish
+  method: ingredient_preparation
+  pool: expansion_wave2
+- query: préparation d'un poisson entier avant cuisson au four
+  category: Кулинария
+  language: fr
+  subtheme: vegetables_meat_fish
+  method: ingredient_preparation
+  pool: expansion_wave2
+- query: preparazione di verdure ripiene in una cucina di casa
+  category: Кулинария
+  language: it
+  subtheme: vegetables_meat_fish
+  method: ingredient_preparation
+  pool: expansion_wave2
+- query: przygotowanie świeżej ryby do pieczenia w kuchni
+  category: Кулинария
+  language: pl
+  subtheme: vegetables_meat_fish
+  method: ingredient_preparation
+  pool: expansion_wave2
+- query: подготовка свежей рыбы к запеканию в домашней кухне
+  category: Кулинария
+  language: ru
+  subtheme: vegetables_meat_fish
+  method: ingredient_preparation
+  pool: expansion_wave2
+- query: proses membersihkan dan menyiapkan ikan untuk dimasak
+  category: Кулинария
+  language: id
+  subtheme: vegetables_meat_fish
+  method: ingredient_preparation
+  pool: expansion_wave2
+- query: sơ chế rau củ cho món hầm trong bếp gia đình
+  category: Кулинария
+  language: vi
+  subtheme: vegetables_meat_fish
+  method: ingredient_preparation
+  pool: expansion_wave2
+- query: paghahanda ng sariwang isda para lutuin sa maliit na kusina
+  category: Кулинария
+  language: tl
+  subtheme: pastry_and_sweets
+  method: pastry_process
+  pool: expansion_wave2
+- query: elaboración manual de empanadas dulces en obrador pequeño
+  category: Кулинария
+  language: es
+  subtheme: pastry_and_sweets
+  method: pastry_process
+  pool: expansion_wave2
+- query: confeitaria artesanal decorando pequenos bolos à mão
+  category: Кулинария
+  language: pt
+  subtheme: pastry_and_sweets
+  method: pastry_process
+  pool: expansion_wave2
+- query: kleine Konditorei spritzt Creme auf einzelne Windbeutel
+  category: Кулинария
+  language: de
+  subtheme: pastry_and_sweets
+  method: pastry_process
+  pool: expansion_wave2
+- query: dressage à la poche de petites pâtisseries en atelier
+  category: Кулинария
+  language: fr
+  subtheme: pastry_and_sweets
+  method: pastry_process
+  pool: expansion_wave2
+- query: decorazione manuale di biscotti in una piccola pasticceria
+  category: Кулинария
+  language: it
+  subtheme: pastry_and_sweets
+  method: pastry_process
+  pool: expansion_wave2
+- query: ręczne nadziewanie i pieczenie drożdżówek w piekarni
+  category: Кулинария
+  language: pl
+  subtheme: pastry_and_sweets
+  method: pastry_process
+  pool: expansion_wave2
+- query: кондитер вручную украшает небольшие пирожные кремом
+  category: Кулинария
+  language: ru
+  subtheme: pastry_and_sweets
+  method: pastry_process
+  pool: expansion_wave2
+- query: 작은 제과점에서 슈 페이스트리에 크림을 짜 넣는 과정
+  category: Кулинария
+  language: ko
+  subtheme: pastry_and_sweets
+  method: pastry_process
+  pool: expansion_wave2
+- query: παρασκευή μικρών γλυκών με χειροποίητη διακόσμηση
+  category: Кулинария
+  language: el
+  subtheme: pastry_and_sweets
+  method: pastry_process
+  pool: expansion_wave2
+- query: घरच्या स्वयंपाकघरात भाज्या आंबवून काचेच्या बरण्यांत ठेवणे
+  category: Кулинария
+  language: mr
+  subtheme: fermentation_preservation
+  method: food_preservation_process
+  pool: expansion_wave2
+- query: preparación casera de aceitunas fermentadas en tarros
+  category: Кулинария
+  language: es
+  subtheme: fermentation_preservation
+  method: food_preservation_process
+  pool: expansion_wave2
+- query: conserva artesanal de pimenta em pequenos potes
+  category: Кулинария
+  language: pt
+  subtheme: fermentation_preservation
+  method: food_preservation_process
+  pool: expansion_wave2
+- query: Gemüse in Gläsern für die Fermentation vorbereiten
+  category: Кулинария
+  language: de
+  subtheme: fermentation_preservation
+  method: food_preservation_process
+  pool: expansion_wave2
+- query: préparation de légumes lactofermentés dans une cuisine familiale
+  category: Кулинария
+  language: fr
+  subtheme: fermentation_preservation
+  method: food_preservation_process
+  pool: expansion_wave2
+- query: conservazione casalinga di pomodori in vasetti
+  category: Кулинария
+  language: it
+  subtheme: fermentation_preservation
+  method: food_preservation_process
+  pool: expansion_wave2
+- query: kiszenie ogórków w słoikach w domowej kuchni
+  category: Кулинария
+  language: pl
+  subtheme: fermentation_preservation
+  method: food_preservation_process
+  pool: expansion_wave2
+- query: квашение капусты в банке в домашней кухне
+  category: Кулинария
+  language: ru
+  subtheme: fermentation_preservation
+  method: food_preservation_process
+  pool: expansion_wave2
+- query: házi savanyított zöldségek készítése üvegekben
+  category: Кулинария
+  language: hu
+  subtheme: fermentation_preservation
+  method: food_preservation_process
+  pool: expansion_wave2
+- query: paggawa ng atsarang gulay sa maliliit na garapon
+  category: Кулинария
+  language: tl
+  subtheme: fermentation_preservation
+  method: food_preservation_process
+  pool: expansion_wave2
+- query: local street vendor serving fresh grilled corn at a market
+  category: Еда
+  language: en
+  subtheme: street_food
+  method: prepared_food_vendor
+  pool: expansion_wave2
+- query: puesto callejero preparando arepas para clientes en una plaza
+  category: Еда
+  language: es
+  subtheme: street_food
+  method: prepared_food_vendor
+  pool: expansion_wave2
+- query: vendedor de rua preparando tapioca recheada na hora
+  category: Еда
+  language: pt
+  subtheme: street_food
+  method: prepared_food_vendor
+  pool: expansion_wave2
+- query: Straßenstand verkauft frisch zubereitete Kartoffelpuffer
+  category: Еда
+  language: de
+  subtheme: street_food
+  method: prepared_food_vendor
+  pool: expansion_wave2
+- query: vendeur ambulant prépare des crêpes sur un marché local
+  category: Еда
+  language: fr
+  subtheme: street_food
+  method: prepared_food_vendor
+  pool: expansion_wave2
+- query: venditore di strada prepara arancini appena fritti
+  category: Еда
+  language: it
+  subtheme: street_food
+  method: prepared_food_vendor
+  pool: expansion_wave2
+- query: lokalny sprzedawca przygotowuje zapiekanki na targu
+  category: Еда
+  language: pl
+  subtheme: street_food
+  method: prepared_food_vendor
+  pool: expansion_wave2
+- query: уличный продавец готовит шаурму на небольшом рынке
+  category: Еда
+  language: ru
+  subtheme: street_food
+  method: prepared_food_vendor
+  pool: expansion_wave2
+- query: ร้านริมทางทำข้าวเหนียวหมูปิ้งสดในตลาดท้องถิ่น
+  category: Еда
+  language: th
+  subtheme: street_food
+  method: prepared_food_vendor
+  pool: expansion_wave2
+- query: स्थानीय बाजार में ताज़ा चाट बेचने वाला स्टॉल
+  category: Еда
+  language: hi
+  subtheme: street_food
+  method: prepared_food_vendor
+  pool: expansion_wave2
+- query: స్థానిక వీధి దుకాణంలో తాజాగా కాల్చిన మొక్కజొన్న అమ్మకం
+  category: Еда
+  language: te
+  subtheme: restaurant_cafe_dishes
+  method: finished_dish_local_business
+  pool: expansion_wave2
+- query: plato del día servido en un restaurante familiar local
+  category: Еда
+  language: es
+  subtheme: restaurant_cafe_dishes
+  method: finished_dish_local_business
+  pool: expansion_wave2
+- query: prato executivo servido em restaurante de bairro
+  category: Еда
+  language: pt
+  subtheme: restaurant_cafe_dishes
+  method: finished_dish_local_business
+  pool: expansion_wave2
+- query: Tagesgericht in einem kleinen Landgasthof angerichtet
+  category: Еда
+  language: de
+  subtheme: restaurant_cafe_dishes
+  method: finished_dish_local_business
+  pool: expansion_wave2
+- query: plat du jour servi dans un petit bistrot de quartier
+  category: Еда
+  language: fr
+  subtheme: restaurant_cafe_dishes
+  method: finished_dish_local_business
+  pool: expansion_wave2
+- query: piatto del giorno servito in una trattoria di paese
+  category: Еда
+  language: it
+  subtheme: restaurant_cafe_dishes
+  method: finished_dish_local_business
+  pool: expansion_wave2
+- query: domowy obiad podany w małej lokalnej restauracji
+  category: Еда
+  language: pl
+  subtheme: restaurant_cafe_dishes
+  method: finished_dish_local_business
+  pool: expansion_wave2
+- query: готовое блюдо дня в небольшом семейном кафе
+  category: Еда
+  language: ru
+  subtheme: restaurant_cafe_dishes
+  method: finished_dish_local_business
+  pool: expansion_wave2
+- query: παραδοσιακό πιάτο σε μικρή οικογενειακή ταβέρνα
+  category: Еда
+  language: el
+  subtheme: restaurant_cafe_dishes
+  method: finished_dish_local_business
+  pool: expansion_wave2
+- query: hidangan harian di warung makan keluarga kecil
+  category: Еда
+  language: id
+  subtheme: restaurant_cafe_dishes
+  method: finished_dish_local_business
+  pool: expansion_wave2
+- query: ചെറിയ നാട്ടുകഫേയിലെ ഇന്നത്തെ ഉച്ചഭക്ഷണ വിഭവം വിളമ്പുന്നത്
+  category: Еда
+  language: ml
+  subtheme: sweets_bakery_products
+  method: food_product_display
+  pool: expansion_wave2
+- query: degustación de dulces tradicionales de una panadería local
+  category: Еда
+  language: es
+  subtheme: sweets_bakery_products
+  method: food_product_display
+  pool: expansion_wave2
+- query: vitrine de doces regionais em uma pequena confeitaria
+  category: Еда
+  language: pt
+  subtheme: sweets_bakery_products
+  method: food_product_display
+  pool: expansion_wave2
+- query: regionale Pralinen und Gebäck in einer kleinen Konditorei
+  category: Еда
+  language: de
+  subtheme: sweets_bakery_products
+  method: food_product_display
+  pool: expansion_wave2
+- query: présentation de confiseries artisanales dans une boutique locale
+  category: Еда
+  language: fr
+  subtheme: sweets_bakery_products
+  method: food_product_display
+  pool: expansion_wave2
+- query: assaggio di biscotti regionali in una pasticceria di paese
+  category: Еда
+  language: it
+  subtheme: sweets_bakery_products
+  method: food_product_display
+  pool: expansion_wave2
+- query: przegląd tradycyjnych słodyczy z lokalnej cukierni
+  category: Еда
+  language: pl
+  subtheme: sweets_bakery_products
+  method: food_product_display
+  pool: expansion_wave2
+- query: обзор традиционных сладостей из небольшой кондитерской
+  category: Еда
+  language: ru
+  subtheme: sweets_bakery_products
+  method: food_product_display
+  pool: expansion_wave2
+- query: 小さな菓子店の手作り和菓子を紹介する動画
+  category: Еда
+  language: ja
+  subtheme: sweets_bakery_products
+  method: food_product_display
+  pool: expansion_wave2
+- query: 지역 작은 빵집의 수제 디저트와 과자 소개
+  category: Еда
+  language: ko
+  subtheme: sweets_bakery_products
+  method: food_product_display
+  pool: expansion_wave2
+- query: معرفی شیرینی‌های محلی دست‌ساز در یک شیرینی‌فروشی کوچک
+  category: Еда
+  language: fa
+  subtheme: food_reviews_mukbang
+  method: food_tasting_review
+  pool: expansion_wave2
+- query: prueba de varios quesos locales en un video de degustación
+  category: Еда
+  language: es
+  subtheme: food_reviews_mukbang
+  method: food_tasting_review
+  pool: expansion_wave2
+- query: degustação de salgados regionais comprados no mercado
+  category: Еда
+  language: pt
+  subtheme: food_reviews_mukbang
+  method: food_tasting_review
+  pool: expansion_wave2
+- query: kleiner Foodkanal probiert regionale Käsesorten vor der Kamera
+  category: Еда
+  language: de
+  subtheme: food_reviews_mukbang
+  method: food_tasting_review
+  pool: expansion_wave2
+- query: dégustation de spécialités d'un marché fermier local
+  category: Еда
+  language: fr
+  subtheme: food_reviews_mukbang
+  method: food_tasting_review
+  pool: expansion_wave2
+- query: assaggio di diversi formaggi di una piccola produzione locale
+  category: Еда
+  language: it
+  subtheme: food_reviews_mukbang
+  method: food_tasting_review
+  pool: expansion_wave2
+- query: degustacja lokalnych pierogów zamówionych w barze
+  category: Еда
+  language: pl
+  subtheme: food_reviews_mukbang
+  method: food_tasting_review
+  pool: expansion_wave2
+- query: дегустация местных сыров и закусок небольшим автором
+  category: Еда
+  language: ru
+  subtheme: food_reviews_mukbang
+  method: food_tasting_review
+  pool: expansion_wave2
+- query: küçük içerik üreticisi yerel tatlıları tadıyor
+  category: Еда
+  language: tr
+  subtheme: food_reviews_mukbang
+  method: food_tasting_review
+  pool: expansion_wave2
+- query: thử các món ăn địa phương tại quán nhỏ trong video
+  category: Еда
+  language: vi
+  subtheme: food_reviews_mukbang
+  method: food_tasting_review
+  pool: expansion_wave2
+- query: טעימות של גבינות אזוריות שמכין יוצר קטן בבית
+  category: Еда
+  language: he
+  subtheme: ingredients_products
+  method: food_product_exploration
+  pool: expansion_wave2
+- query: presentación de frutas exóticas compradas en un mercado local
+  category: Еда
+  language: es
+  subtheme: ingredients_products
+  method: food_product_exploration
+  pool: expansion_wave2
+- query: mostrando diferentes tipos de mandioca e raízes no mercado
+  category: Еда
+  language: pt
+  subtheme: ingredients_products
+  method: food_product_exploration
+  pool: expansion_wave2
+- query: regionale Apfelsorten auf einem Wochenmarkt vorgestellt
+  category: Еда
+  language: de
+  subtheme: ingredients_products
+  method: food_product_exploration
+  pool: expansion_wave2
+- query: présentation de variétés de tomates anciennes au marché
+  category: Еда
+  language: fr
+  subtheme: ingredients_products
+  method: food_product_exploration
+  pool: expansion_wave2
+- query: panoramica di olive e conserve artigianali di un produttore locale
+  category: Еда
+  language: it
+  subtheme: ingredients_products
+  method: food_product_exploration
+  pool: expansion_wave2
+- query: prezentacja lokalnych odmian jabłek na targu
+  category: Еда
+  language: pl
+  subtheme: ingredients_products
+  method: food_product_exploration
+  pool: expansion_wave2
+- query: обзор местных сортов яблок и груш с рынка
+  category: Еда
+  language: ru
+  subtheme: ingredients_products
+  method: food_product_exploration
+  pool: expansion_wave2
+- query: عرض أنواع التمور المحلية في سوق تقليدي
+  category: Еда
+  language: ar
+  subtheme: ingredients_products
+  method: food_product_exploration
+  pool: expansion_wave2
+- query: pengenalan buah tempatan yang dijual di pasar kecil
+  category: Еда
+  language: ms
+  subtheme: ingredients_products
+  method: food_product_exploration
+  pool: expansion_wave2
+- query: person deep cleaning an old workshop floor by hand
+  category: Видео с активностями
+  language: en
+  subtheme: cleaning_manual_work
+  method: human_activity_process
+  pool: expansion_wave2
+- query: limpieza manual de un patio rural con herramientas sencillas
+  category: Видео с активностями
+  language: es
+  subtheme: cleaning_manual_work
+  method: human_activity_process
+  pool: expansion_wave2
+- query: limpeza detalhada de uma pequena oficina doméstica
+  category: Видео с активностями
+  language: pt
+  subtheme: cleaning_manual_work
+  method: human_activity_process
+  pool: expansion_wave2
+- query: gründliche Handreinigung eines alten Werkstattbodens
+  category: Видео с активностями
+  language: de
+  subtheme: cleaning_manual_work
+  method: human_activity_process
+  pool: expansion_wave2
+- query: nettoyage manuel d'une cour avec outils traditionnels
+  category: Видео с активностями
+  language: fr
+  subtheme: cleaning_manual_work
+  method: human_activity_process
+  pool: expansion_wave2
+- query: pulizia approfondita di un piccolo laboratorio artigianale
+  category: Видео с активностями
+  language: it
+  subtheme: cleaning_manual_work
+  method: human_activity_process
+  pool: expansion_wave2
+- query: ręczne porządkowanie starej pracowni narzędziowej
+  category: Видео с активностями
+  language: pl
+  subtheme: cleaning_manual_work
+  method: human_activity_process
+  pool: expansion_wave2
+- query: ручная уборка старой мастерской с инструментами
+  category: Видео с активностями
+  language: ru
+  subtheme: cleaning_manual_work
+  method: human_activity_process
+  pool: expansion_wave2
+- query: ทำความสะอาดพื้นเวิร์กช็อปเก่าด้วยมือ
+  category: Видео с активностями
+  language: th
+  subtheme: cleaning_manual_work
+  method: human_activity_process
+  pool: expansion_wave2
+- query: छोटी कार्यशाला की हाथ से गहरी सफाई
+  category: Видео с активностями
+  language: hi
+  subtheme: cleaning_manual_work
+  method: human_activity_process
+  pool: expansion_wave2
+- query: ছোট কর্মশালার মেঝে হাতে গভীরভাবে পরিষ্কার করা
+  category: Видео с активностями
+  language: bn
+  subtheme: dance_gymnastics
+  method: physical_activity_rehearsal
+  pool: expansion_wave2
+- query: ensayo de baile tradicional de un grupo comunitario
+  category: Видео с активностями
+  language: es
+  subtheme: dance_gymnastics
+  method: physical_activity_rehearsal
+  pool: expansion_wave2
+- query: grupo amador treinando dança regional em salão pequeno
+  category: Видео с активностями
+  language: pt
+  subtheme: dance_gymnastics
+  method: physical_activity_rehearsal
+  pool: expansion_wave2
+- query: Tanzgruppe übt traditionelle Schritte in einem Gemeindehaus
+  category: Видео с активностями
+  language: de
+  subtheme: dance_gymnastics
+  method: physical_activity_rehearsal
+  pool: expansion_wave2
+- query: répétition de danse folklorique par une association locale
+  category: Видео с активностями
+  language: fr
+  subtheme: dance_gymnastics
+  method: physical_activity_rehearsal
+  pool: expansion_wave2
+- query: gruppo locale prova una danza tradizionale in sala
+  category: Видео с активностями
+  language: it
+  subtheme: dance_gymnastics
+  method: physical_activity_rehearsal
+  pool: expansion_wave2
+- query: amatorski zespół ćwiczy taniec ludowy w świetlicy
+  category: Видео с активностями
+  language: pl
+  subtheme: dance_gymnastics
+  method: physical_activity_rehearsal
+  pool: expansion_wave2
+- query: репетиция народного танца в небольшом сельском клубе
+  category: Видео с активностями
+  language: ru
+  subtheme: dance_gymnastics
+  method: physical_activity_rehearsal
+  pool: expansion_wave2
+- query: ομάδα χορού εξασκείται σε παραδοσιακά βήματα σε αίθουσα
+  category: Видео с активностями
+  language: el
+  subtheme: dance_gymnastics
+  method: physical_activity_rehearsal
+  pool: expansion_wave2
+- query: nhóm cộng đồng tập múa truyền thống tại nhà văn hóa
+  category: Видео с активностями
+  language: vi
+  subtheme: dance_gymnastics
+  method: physical_activity_rehearsal
+  pool: expansion_wave2
+- query: கிராமக் கூடத்தில் பாரம்பரிய நடனப் பயிற்சி
+  category: Видео с активностями
+  language: ta
+  subtheme: workshop_hobbies
+  method: hands_on_activity
+  pool: expansion_wave2
+- query: restauración manual de una bicicleta vieja en un garaje
+  category: Видео с активностями
+  language: es
+  subtheme: workshop_hobbies
+  method: hands_on_activity
+  pool: expansion_wave2
+- query: conserto de ferramentas manuais em uma oficina caseira
+  category: Видео с активностями
+  language: pt
+  subtheme: workshop_hobbies
+  method: hands_on_activity
+  pool: expansion_wave2
+- query: Hobbybastler repariert einen alten Holzstuhl in der Garage
+  category: Видео с активностями
+  language: de
+  subtheme: workshop_hobbies
+  method: hands_on_activity
+  pool: expansion_wave2
+- query: réparation artisanale d'un vélo ancien dans un petit atelier
+  category: Видео с активностями
+  language: fr
+  subtheme: workshop_hobbies
+  method: hands_on_activity
+  pool: expansion_wave2
+- query: riparazione di una sedia in legno in un laboratorio domestico
+  category: Видео с активностями
+  language: it
+  subtheme: workshop_hobbies
+  method: hands_on_activity
+  pool: expansion_wave2
+- query: amatorska naprawa drewnianego krzesła w garażu
+  category: Видео с активностями
+  language: pl
+  subtheme: workshop_hobbies
+  method: hands_on_activity
+  pool: expansion_wave2
+- query: любительский ремонт старого велосипеда в гараже
+  category: Видео с активностями
+  language: ru
+  subtheme: workshop_hobbies
+  method: hands_on_activity
+  pool: expansion_wave2
+- query: ev garajında eski bir ahşap sandalyeyi tamir etme
+  category: Видео с активностями
+  language: tr
+  subtheme: workshop_hobbies
+  method: hands_on_activity
+  pool: expansion_wave2
+- query: memperbaiki kursi kayu tua di bengkel rumahan
+  category: Видео с активностями
+  language: id
+  subtheme: workshop_hobbies
+  method: hands_on_activity
+  pool: expansion_wave2
+- query: گھر کے گیراج میں لکڑی کی پرانی کرسی کی مرمت
+  category: Видео с активностями
+  language: ur
+  subtheme: beekeeping_treasure_hunting
+  method: active_task
+  pool: expansion_wave2
+- query: apicultor revisa los cuadros de una colmena durante el trabajo
+  category: Видео с активностями
+  language: es
+  subtheme: beekeeping_treasure_hunting
+  method: active_task
+  pool: expansion_wave2
+- query: apicultor fazendo manejo diário das caixas de abelhas
+  category: Видео с активностями
+  language: pt
+  subtheme: beekeeping_treasure_hunting
+  method: active_task
+  pool: expansion_wave2
+- query: Imker kontrolliert Waben bei der normalen Arbeit am Bienenstock
+  category: Видео с активностями
+  language: de
+  subtheme: beekeeping_treasure_hunting
+  method: active_task
+  pool: expansion_wave2
+- query: apiculteur inspecte les cadres d'une ruche pendant l'entretien
+  category: Видео с активностями
+  language: fr
+  subtheme: beekeeping_treasure_hunting
+  method: active_task
+  pool: expansion_wave2
+- query: pszczelarz wykonuje przegląd ula podczas codziennej pracy
+  category: Видео с активностями
+  language: pl
+  subtheme: beekeeping_treasure_hunting
+  method: active_task
+  pool: expansion_wave2
+- query: пчеловод осматривает рамки и обслуживает улей
+  category: Видео с активностями
+  language: ru
+  subtheme: beekeeping_treasure_hunting
+  method: active_task
+  pool: expansion_wave2
+- query: मधुमक्खी पालक छत्ते के फ्रेम की नियमित जांच करता है
+  category: Видео с активностями
+  language: hi
+  subtheme: beekeeping_treasure_hunting
+  method: active_task
+  pool: expansion_wave2
+- query: คนเลี้ยงผึ้งตรวจกรอบรังผึ้งระหว่างงานประจำ
+  category: Видео с активностями
+  language: th
+  subtheme: beekeeping_treasure_hunting
+  method: active_task
+  pool: expansion_wave2
+- query: búsqueda de objetos con detector y excavación activa en campo
+  category: Видео с активностями
+  language: es
+  subtheme: beekeeping_treasure_hunting
+  method: active_task
+  pool: expansion_wave2
+- query: penternak lebah memeriksa bingkai sarang semasa kerja rutin
+  category: Видео с активностями
+  language: ms
+  subtheme: outdoor_physical_tasks
+  method: outdoor_manual_activity
+  pool: expansion_wave2
+- query: personas reparando un sendero rural después de la lluvia
+  category: Видео с активностями
+  language: es
+  subtheme: outdoor_physical_tasks
+  method: outdoor_manual_activity
+  pool: expansion_wave2
+- query: trabalho manual para abrir uma trilha em terreno arborizado
+  category: Видео с активностями
+  language: pt
+  subtheme: outdoor_physical_tasks
+  method: outdoor_manual_activity
+  pool: expansion_wave2
+- query: Wanderweg wird von Freiwilligen mit Handwerkzeug freigeräumt
+  category: Видео с активностями
+  language: de
+  subtheme: outdoor_physical_tasks
+  method: outdoor_manual_activity
+  pool: expansion_wave2
+- query: bénévoles dégagent un sentier forestier avec des outils manuels
+  category: Видео с активностями
+  language: fr
+  subtheme: outdoor_physical_tasks
+  method: outdoor_manual_activity
+  pool: expansion_wave2
+- query: volontari sistemano un sentiero di campagna dopo una tempesta
+  category: Видео с активностями
+  language: it
+  subtheme: outdoor_physical_tasks
+  method: outdoor_manual_activity
+  pool: expansion_wave2
+- query: wolontariusze oczyszczają leśną ścieżkę ręcznymi narzędziami
+  category: Видео с активностями
+  language: pl
+  subtheme: outdoor_physical_tasks
+  method: outdoor_manual_activity
+  pool: expansion_wave2
+- query: добровольцы расчищают лесную тропу ручным инструментом
+  category: Видео с активностями
+  language: ru
+  subtheme: outdoor_physical_tasks
+  method: outdoor_manual_activity
+  pool: expansion_wave2
+- query: watu wakisafisha njia ya matembezi kwa kutumia zana za mkono
+  category: Видео с активностями
+  language: sw
+  subtheme: outdoor_physical_tasks
+  method: outdoor_manual_activity
+  pool: expansion_wave2
+- query: mga boluntaryong naglilinis ng makitid na daanan sa kagubatan
+  category: Видео с активностями
+  language: tl
+  subtheme: outdoor_physical_tasks
+  method: outdoor_manual_activity
+  pool: expansion_wave2
+- query: local amateur badminton tournament final with scoreboard
+  category: Спортивные трансляции
+  language: en
+  subtheme: racket_sports_competitions
+  method: competition_score_context
+  pool: expansion_wave2
+- query: partido de tenis de mesa de un torneo regional con marcador
+  category: Спортивные трансляции
+  language: es
+  subtheme: racket_sports_competitions
+  method: competition_score_context
+  pool: expansion_wave2
+- query: final de torneio local de badminton com placar visível
+  category: Спортивные трансляции
+  language: pt
+  subtheme: racket_sports_competitions
+  method: competition_score_context
+  pool: expansion_wave2
+- query: Finale eines regionalen Tischtennisturniers mit Spielstand
+  category: Спортивные трансляции
+  language: de
+  subtheme: racket_sports_competitions
+  method: competition_score_context
+  pool: expansion_wave2
+- query: match de badminton amateur avec score affiché
+  category: Спортивные трансляции
+  language: fr
+  subtheme: racket_sports_competitions
+  method: competition_score_context
+  pool: expansion_wave2
+- query: partita di tennis tavolo in un torneo locale con punteggio
+  category: Спортивные трансляции
+  language: it
+  subtheme: racket_sports_competitions
+  method: competition_score_context
+  pool: expansion_wave2
+- query: finał lokalnego turnieju badmintona z wynikiem na tablicy
+  category: Спортивные трансляции
+  language: pl
+  subtheme: racket_sports_competitions
+  method: competition_score_context
+  pool: expansion_wave2
+- query: финал любительского турнира по настольному теннису со счётом
+  category: Спортивные трансляции
+  language: ru
+  subtheme: racket_sports_competitions
+  method: competition_score_context
+  pool: expansion_wave2
+- query: การแข่งขันแบดมินตันระดับท้องถิ่นพร้อมป้ายคะแนน
+  category: Спортивные трансляции
+  language: th
+  subtheme: racket_sports_competitions
+  method: competition_score_context
+  pool: expansion_wave2
+- query: 地域の卓球大会の試合とスコア表示
+  category: Спортивные трансляции
+  language: ja
+  subtheme: racket_sports_competitions
+  method: competition_score_context
+  pool: expansion_wave2
+- query: lokal amatörfinal i badminton med resultattavla
+  category: Спортивные трансляции
+  language: sv
+  subtheme: combat_and_martial_sport_matches
+  method: judged_competition
+  pool: expansion_wave2
+- query: combate de judo de un torneo local con árbitro y marcador
+  category: Спортивные трансляции
+  language: es
+  subtheme: combat_and_martial_sport_matches
+  method: judged_competition
+  pool: expansion_wave2
+- query: luta de taekwondo em campeonato regional com placar
+  category: Спортивные трансляции
+  language: pt
+  subtheme: combat_and_martial_sport_matches
+  method: judged_competition
+  pool: expansion_wave2
+- query: Amateurboxkampf bei einem regionalen Turnier mit Ringrichter
+  category: Спортивные трансляции
+  language: de
+  subtheme: combat_and_martial_sport_matches
+  method: judged_competition
+  pool: expansion_wave2
+- query: combat de lutte dans un tournoi local avec arbitre
+  category: Спортивные трансляции
+  language: fr
+  subtheme: combat_and_martial_sport_matches
+  method: judged_competition
+  pool: expansion_wave2
+- query: incontro di scherma in una competizione regionale
+  category: Спортивные трансляции
+  language: it
+  subtheme: combat_and_martial_sport_matches
+  method: judged_competition
+  pool: expansion_wave2
+- query: walka karate podczas turnieju z sędziami i wynikiem
+  category: Спортивные трансляции
+  language: pl
+  subtheme: combat_and_martial_sport_matches
+  method: judged_competition
+  pool: expansion_wave2
+- query: соревнование по дзюдо на местном турнире с судьями
+  category: Спортивные трансляции
+  language: ru
+  subtheme: combat_and_martial_sport_matches
+  method: judged_competition
+  pool: expansion_wave2
+- query: yerel kickboks turnuvasında hakemli müsabaka
+  category: Спортивные трансляции
+  language: tr
+  subtheme: combat_and_martial_sport_matches
+  method: judged_competition
+  pool: expansion_wave2
+- query: مباراة ملاكمة للهواة في بطولة محلية مع حكم
+  category: Спортивные трансляции
+  language: ar
+  subtheme: combat_and_martial_sport_matches
+  method: judged_competition
+  pool: expansion_wave2
+- query: lokal boksekamp med dommer og poengtavle
+  category: Спортивные трансляции
+  language: 'no'
+  subtheme: team_sports_matches
+  method: match_score_context
+  pool: expansion_wave2
+- query: partido de baloncesto de liga local con marcador visible
+  category: Спортивные трансляции
+  language: es
+  subtheme: team_sports_matches
+  method: match_score_context
+  pool: expansion_wave2
+- query: jogo de futsal de campeonato municipal com placar
+  category: Спортивные трансляции
+  language: pt
+  subtheme: team_sports_matches
+  method: match_score_context
+  pool: expansion_wave2
+- query: Amateur-Volleyballspiel in einer lokalen Liga mit Ergebnis
+  category: Спортивные трансляции
+  language: de
+  subtheme: team_sports_matches
+  method: match_score_context
+  pool: expansion_wave2
+- query: match de rugby amateur avec arbitre et tableau d'affichage
+  category: Спортивные трансляции
+  language: fr
+  subtheme: team_sports_matches
+  method: match_score_context
+  pool: expansion_wave2
+- query: partita di pallavolo di un campionato locale con punteggio
+  category: Спортивные трансляции
+  language: it
+  subtheme: team_sports_matches
+  method: match_score_context
+  pool: expansion_wave2
+- query: mecz piłki ręcznej w lokalnej lidze z tablicą wyników
+  category: Спортивные трансляции
+  language: pl
+  subtheme: team_sports_matches
+  method: match_score_context
+  pool: expansion_wave2
+- query: матч по волейболу местной лиги со счётом и судьями
+  category: Спортивные трансляции
+  language: ru
+  subtheme: team_sports_matches
+  method: match_score_context
+  pool: expansion_wave2
+- query: τοπικός αγώνας μπάσκετ με διαιτητές και πίνακα σκορ
+  category: Спортивные трансляции
+  language: el
+  subtheme: team_sports_matches
+  method: match_score_context
+  pool: expansion_wave2
+- query: trận bóng chuyền giải địa phương có bảng điểm
+  category: Спортивные трансляции
+  language: vi
+  subtheme: team_sports_matches
+  method: match_score_context
+  pool: expansion_wave2
+- query: regionalt håndboldopgør med dommere og synlig stilling
+  category: Спортивные трансляции
+  language: da
+  subtheme: athletics_and_racing
+  method: race_result_context
+  pool: expansion_wave2
+- query: carrera regional de atletismo con jueces y clasificación
+  category: Спортивные трансляции
+  language: es
+  subtheme: athletics_and_racing
+  method: race_result_context
+  pool: expansion_wave2
+- query: corrida de kart amadora com bandeiras e resultado final
+  category: Спортивные трансляции
+  language: pt
+  subtheme: athletics_and_racing
+  method: race_result_context
+  pool: expansion_wave2
+- query: regionaler Laufwettbewerb mit Zeitnahme und Ergebnisliste
+  category: Спортивные трансляции
+  language: de
+  subtheme: athletics_and_racing
+  method: race_result_context
+  pool: expansion_wave2
+- query: course de cyclisme amateur avec classement à l'arrivée
+  category: Спортивные трансляции
+  language: fr
+  subtheme: athletics_and_racing
+  method: race_result_context
+  pool: expansion_wave2
+- query: gara di canottaggio locale con cronometro e classifica
+  category: Спортивные трансляции
+  language: it
+  subtheme: athletics_and_racing
+  method: race_result_context
+  pool: expansion_wave2
+- query: lokalny bieg przełajowy z pomiarem czasu i wynikami
+  category: Спортивные трансляции
+  language: pl
+  subtheme: athletics_and_racing
+  method: race_result_context
+  pool: expansion_wave2
+- query: соревнования по гребле с финишем и таблицей результатов
+  category: Спортивные трансляции
+  language: ru
+  subtheme: athletics_and_racing
+  method: race_result_context
+  pool: expansion_wave2
+- query: 지역 육상 대회에서 선수들과 기록판이 보이는 경기
+  category: Спортивные трансляции
+  language: ko
+  subtheme: athletics_and_racing
+  method: race_result_context
+  pool: expansion_wave2
+- query: स्थानीय दौड़ प्रतियोगिता जिसमें समय और परिणाम दर्ज हों
+  category: Спортивные трансляции
+  language: hi
+  subtheme: athletics_and_racing
+  method: race_result_context
+  pool: expansion_wave2
+- query: paikallinen shakkiturnaus jossa näkyvät kellot ja tulokset
+  category: Спортивные трансляции
+  language: fi
+  subtheme: board_skill_competitions
+  method: competitive_event_context
+  pool: expansion_wave2
+- query: competición de billar local con marcador y árbitro
+  category: Спортивные трансляции
+  language: es
+  subtheme: board_skill_competitions
+  method: competitive_event_context
+  pool: expansion_wave2
+- query: torneio presencial de xadrez rápido com relógios e classificação
+  category: Спортивные трансляции
+  language: pt
+  subtheme: board_skill_competitions
+  method: competitive_event_context
+  pool: expansion_wave2
+- query: Schachturnier in einem Verein mit Turnieruhren und Ergebnissen
+  category: Спортивные трансляции
+  language: de
+  subtheme: board_skill_competitions
+  method: competitive_event_context
+  pool: expansion_wave2
+- query: match de pétanque en compétition locale avec score
+  category: Спортивные трансляции
+  language: fr
+  subtheme: board_skill_competitions
+  method: competitive_event_context
+  pool: expansion_wave2
+- query: gara di biliardo locale con arbitro e punteggio
+  category: Спортивные трансляции
+  language: it
+  subtheme: board_skill_competitions
+  method: competitive_event_context
+  pool: expansion_wave2
+- query: turniej szachowy przy klubowych zegarach i tabeli wyników
+  category: Спортивные трансляции
+  language: pl
+  subtheme: board_skill_competitions
+  method: competitive_event_context
+  pool: expansion_wave2
+- query: турнир по шахматам с часами, соперниками и таблицей
+  category: Спортивные трансляции
+  language: ru
+  subtheme: board_skill_competitions
+  method: competitive_event_context
+  pool: expansion_wave2
+- query: lokale dartswedstrijd met scorebord en scheidsrechter
+  category: Спортивные трансляции
+  language: nl
+  subtheme: board_skill_competitions
+  method: competitive_event_context
+  pool: expansion_wave2
+- query: competiție locală de biliard cu scor și arbitru
+  category: Спортивные трансляции
+  language: ro
+  subtheme: board_skill_competitions
+  method: competitive_event_context
+  pool: expansion_wave2
+- query: close observation of leafcutter ants carrying leaves in a nest
+  category: Животные
+  language: en
+  subtheme: insects_bees_ants
+  method: animal_close_observation
+  pool: expansion_wave2
+- query: abejas obreras trabajando dentro de una colmena observada de cerca
+  category: Животные
+  language: es
+  subtheme: insects_bees_ants
+  method: animal_close_observation
+  pool: expansion_wave2
+- query: formigas cortadeiras transportando folhas em trilha natural
+  category: Животные
+  language: pt
+  subtheme: insects_bees_ants
+  method: animal_close_observation
+  pool: expansion_wave2
+- query: Ameisenkolonie beim Transport von Futter aus nächster Nähe
+  category: Животные
+  language: de
+  subtheme: insects_bees_ants
+  method: animal_close_observation
+  pool: expansion_wave2
+- query: observation rapprochée d'abeilles sur les cadres d'une ruche
+  category: Животные
+  language: fr
+  subtheme: insects_bees_ants
+  method: animal_close_observation
+  pool: expansion_wave2
+- query: colonia di formiche che trasporta cibo lungo un sentiero
+  category: Животные
+  language: it
+  subtheme: insects_bees_ants
+  method: animal_close_observation
+  pool: expansion_wave2
+- query: obserwacja mrówek przenoszących pokarm do gniazda
+  category: Животные
+  language: pl
+  subtheme: insects_bees_ants
+  method: animal_close_observation
+  pool: expansion_wave2
+- query: крупный план муравьиной колонии во время работы
+  category: Животные
+  language: ru
+  subtheme: insects_bees_ants
+  method: animal_close_observation
+  pool: expansion_wave2
+- query: สังเกตมดงานขนใบไม้เข้าสู่รังอย่างใกล้ชิด
+  category: Животные
+  language: th
+  subtheme: insects_bees_ants
+  method: animal_close_observation
+  pool: expansion_wave2
+- query: مراقبة النحل العامل داخل خلية عن قرب
+  category: Животные
+  language: ar
+  subtheme: insects_bees_ants
+  method: animal_close_observation
+  pool: expansion_wave2
+- query: pagmamasid sa mga hipon sa maliit na freshwater aquarium
+  category: Животные
+  language: tl
+  subtheme: fish_aquarium_pond
+  method: animal_habitat_feeding
+  pool: expansion_wave2
+- query: peces de estanque alimentándose en una granja familiar
+  category: Животные
+  language: es
+  subtheme: fish_aquarium_pond
+  method: animal_habitat_feeding
+  pool: expansion_wave2
+- query: observação de peixes ornamentais em aquário plantado pequeno
+  category: Животные
+  language: pt
+  subtheme: fish_aquarium_pond
+  method: animal_habitat_feeding
+  pool: expansion_wave2
+- query: Süßwasserfische fressen in einem kleinen Gartenteich
+  category: Животные
+  language: de
+  subtheme: fish_aquarium_pond
+  method: animal_habitat_feeding
+  pool: expansion_wave2
+- query: crevettes d'aquarium se nourrissant sur une plante aquatique
+  category: Животные
+  language: fr
+  subtheme: fish_aquarium_pond
+  method: animal_habitat_feeding
+  pool: expansion_wave2
+- query: pesci rossi in un laghetto domestico mentre vengono nutriti
+  category: Животные
+  language: it
+  subtheme: fish_aquarium_pond
+  method: animal_habitat_feeding
+  pool: expansion_wave2
+- query: krewetki akwariowe żerują na mchach z bliska
+  category: Животные
+  language: pl
+  subtheme: fish_aquarium_pond
+  method: animal_habitat_feeding
+  pool: expansion_wave2
+- query: рыбы кормятся в небольшом пруду на ферме
+  category: Животные
+  language: ru
+  subtheme: fish_aquarium_pond
+  method: animal_habitat_feeding
+  pool: expansion_wave2
+- query: udang kecil mencari makan di akuarium air tawar
+  category: Животные
+  language: id
+  subtheme: fish_aquarium_pond
+  method: animal_habitat_feeding
+  pool: expansion_wave2
+- query: cá trong ao nhỏ đang ăn thức ăn tại trang trại
+  category: Животные
+  language: vi
+  subtheme: fish_aquarium_pond
+  method: animal_habitat_feeding
+  pool: expansion_wave2
+- query: लहान घरट्यात पक्षी पिलांना अन्न भरवताना निरीक्षण
+  category: Животные
+  language: mr
+  subtheme: birds_wildlife
+  method: wildlife_behavior
+  pool: expansion_wave2
+- query: aves silvestres alimentándose en un bebedero de jardín
+  category: Животные
+  language: es
+  subtheme: birds_wildlife
+  method: wildlife_behavior
+  pool: expansion_wave2
+- query: observação de pássaros nativos em um quintal rural
+  category: Животные
+  language: pt
+  subtheme: birds_wildlife
+  method: wildlife_behavior
+  pool: expansion_wave2
+- query: Wildvögel füttern ihre Jungen in einem Nistkasten
+  category: Животные
+  language: de
+  subtheme: birds_wildlife
+  method: wildlife_behavior
+  pool: expansion_wave2
+- query: oiseaux de jardin nourrissant leurs petits dans un nichoir
+  category: Животные
+  language: fr
+  subtheme: birds_wildlife
+  method: wildlife_behavior
+  pool: expansion_wave2
+- query: uccelli selvatici che portano cibo ai nidiacei
+  category: Животные
+  language: it
+  subtheme: birds_wildlife
+  method: wildlife_behavior
+  pool: expansion_wave2
+- query: ptaki karmią pisklęta w budce lęgowej w ogrodzie
+  category: Животные
+  language: pl
+  subtheme: birds_wildlife
+  method: wildlife_behavior
+  pool: expansion_wave2
+- query: птицы кормят птенцов в небольшом скворечнике
+  category: Животные
+  language: ru
+  subtheme: birds_wildlife
+  method: wildlife_behavior
+  pool: expansion_wave2
+- query: παρατήρηση πουλιών που ταΐζουν νεοσσούς σε φωλιά
+  category: Животные
+  language: el
+  subtheme: birds_wildlife
+  method: wildlife_behavior
+  pool: expansion_wave2
+- query: ndege wa porini wakilisha vifaranga kwenye kiota
+  category: Животные
+  language: sw
+  subtheme: birds_wildlife
+  method: wildlife_behavior
+  pool: expansion_wave2
+- query: చిన్న గూడు పెట్టెలో పక్షులు పిల్లలకు ఆహారం పెడుతున్న దృశ్యం
+  category: Животные
+  language: te
+  subtheme: farm_and_domestic_animals
+  method: animal_care_behavior
+  pool: expansion_wave2
+- query: gallinas de una granja pequeña buscando alimento al aire libre
+  category: Животные
+  language: es
+  subtheme: farm_and_domestic_animals
+  method: animal_care_behavior
+  pool: expansion_wave2
+- query: cabras leiteiras em pequeno sítio durante a alimentação
+  category: Животные
+  language: pt
+  subtheme: farm_and_domestic_animals
+  method: animal_care_behavior
+  pool: expansion_wave2
+- query: Ziegenherde auf einem kleinen Hof beim Füttern
+  category: Животные
+  language: de
+  subtheme: farm_and_domestic_animals
+  method: animal_care_behavior
+  pool: expansion_wave2
+- query: moutons d'une petite ferme regroupés au moment du repas
+  category: Животные
+  language: fr
+  subtheme: farm_and_domestic_animals
+  method: animal_care_behavior
+  pool: expansion_wave2
+- query: conigli domestici in un recinto mentre mangiano
+  category: Животные
+  language: it
+  subtheme: farm_and_domestic_animals
+  method: animal_care_behavior
+  pool: expansion_wave2
+- query: kozy na małym gospodarstwie podczas karmienia
+  category: Животные
+  language: pl
+  subtheme: farm_and_domestic_animals
+  method: animal_care_behavior
+  pool: expansion_wave2
+- query: козы на небольшой ферме во время кормления
+  category: Животные
+  language: ru
+  subtheme: farm_and_domestic_animals
+  method: animal_care_behavior
+  pool: expansion_wave2
+- query: küçük çiftlikte ördeklerin yemlenmesini yakından izleme
+  category: Животные
+  language: tr
+  subtheme: farm_and_domestic_animals
+  method: animal_care_behavior
+  pool: expansion_wave2
+- query: छोटे खेत में बकरियों को चारा खिलाते हुए
+  category: Животные
+  language: hi
+  subtheme: farm_and_domestic_animals
+  method: animal_care_behavior
+  pool: expansion_wave2
+- query: ചെറിയ ഫാമിൽ ആടുകൾക്ക് തീറ്റ കൊടുക്കുന്ന സമയം
+  category: Животные
+  language: ml
+  subtheme: amphibians_reptiles_small_creatures
+  method: small_animal_observation
+  pool: expansion_wave2
+- query: lagartija tomando el sol sobre una piedra en el jardín
+  category: Животные
+  language: es
+  subtheme: amphibians_reptiles_small_creatures
+  method: small_animal_observation
+  pool: expansion_wave2
+- query: sapo pequeno observado de perto perto de um riacho
+  category: Животные
+  language: pt
+  subtheme: amphibians_reptiles_small_creatures
+  method: small_animal_observation
+  pool: expansion_wave2
+- query: Eidechse bewegt sich zwischen Steinen im Garten
+  category: Животные
+  language: de
+  subtheme: amphibians_reptiles_small_creatures
+  method: small_animal_observation
+  pool: expansion_wave2
+- query: grenouille dans un bassin de jardin filmée de près
+  category: Животные
+  language: fr
+  subtheme: amphibians_reptiles_small_creatures
+  method: small_animal_observation
+  pool: expansion_wave2
+- query: geco osservato mentre cammina su una parete esterna
+  category: Животные
+  language: it
+  subtheme: amphibians_reptiles_small_creatures
+  method: small_animal_observation
+  pool: expansion_wave2
+- query: żaba siedzi przy brzegu małego stawu ogrodowego
+  category: Животные
+  language: pl
+  subtheme: amphibians_reptiles_small_creatures
+  method: small_animal_observation
+  pool: expansion_wave2
+- query: ящерица передвигается по камням крупным планом
+  category: Животные
+  language: ru
+  subtheme: amphibians_reptiles_small_creatures
+  method: small_animal_observation
+  pool: expansion_wave2
+- query: 庭の水辺でカエルを近距離から観察する映像
+  category: Животные
+  language: ja
+  subtheme: amphibians_reptiles_small_creatures
+  method: small_animal_observation
+  pool: expansion_wave2
+- query: 젖은 잎 위에 앉아 있는 청개구리 관찰 영상
+  category: Животные
+  language: ko
+  subtheme: amphibians_reptiles_small_creatures
+  method: small_animal_observation
+  pool: expansion_wave2
+- query: walkthrough of an unmarked forest trail showing roots and rock formations
+  category: Природа
+  language: en
+  subtheme: forest_mountain_routes
+  method: landscape_route_context
+  pool: expansion_wave2
+- query: sendero poco conocido entre pinares de montaña filmado a pie
+  category: Природа
+  language: es
+  subtheme: forest_mountain_routes
+  method: landscape_route_context
+  pool: expansion_wave2
+- query: caminhada por trilha de mata nativa em região serrana
+  category: Природа
+  language: pt
+  subtheme: forest_mountain_routes
+  method: landscape_route_context
+  pool: expansion_wave2
+- query: Wanderung auf einem schmalen Waldweg durch ein abgelegenes Tal
+  category: Природа
+  language: de
+  subtheme: forest_mountain_routes
+  method: landscape_route_context
+  pool: expansion_wave2
+- query: promenade sur un sentier forestier isolé après la pluie
+  category: Природа
+  language: fr
+  subtheme: forest_mountain_routes
+  method: landscape_route_context
+  pool: expansion_wave2
+- query: percorso a piedi in un bosco di montagna fuori dai sentieri turistici
+  category: Природа
+  language: it
+  subtheme: forest_mountain_routes
+  method: landscape_route_context
+  pool: expansion_wave2
+- query: spacer leśną ścieżką w górach z widokiem na dolinę
+  category: Природа
+  language: pl
+  subtheme: forest_mountain_routes
+  method: landscape_route_context
+  pool: expansion_wave2
+- query: поход по малопосещаемой лесной тропе в горах
+  category: Природа
+  language: ru
+  subtheme: forest_mountain_routes
+  method: landscape_route_context
+  pool: expansion_wave2
+- query: đi bộ trên đường mòn rừng núi ít người biết
+  category: Природа
+  language: vi
+  subtheme: forest_mountain_routes
+  method: landscape_route_context
+  pool: expansion_wave2
+- query: เดินตามเส้นทางป่าเขาที่ไม่ค่อยมีคนไป
+  category: Природа
+  language: th
+  subtheme: forest_mountain_routes
+  method: landscape_route_context
+  pool: expansion_wave2
+- query: مسیر جنگلی دورافتاده در دره کوهستانی در بهار
+  category: Природа
+  language: fa
+  subtheme: rivers_waterfalls_lakes
+  method: natural_landscape
+  pool: expansion_wave2
+- query: arroyo de montaña recorriendo un valle boscoso poco visitado
+  category: Природа
+  language: es
+  subtheme: rivers_waterfalls_lakes
+  method: natural_landscape
+  pool: expansion_wave2
+- query: nascente de riacho em floresta preservada filmada de perto
+  category: Природа
+  language: pt
+  subtheme: rivers_waterfalls_lakes
+  method: natural_landscape
+  pool: expansion_wave2
+- query: abgelegener Waldsee mit natürlicher Uferlinie im Herbst
+  category: Природа
+  language: de
+  subtheme: rivers_waterfalls_lakes
+  method: natural_landscape
+  pool: expansion_wave2
+- query: petite cascade dans une vallée boisée filmée depuis le sentier
+  category: Природа
+  language: fr
+  subtheme: rivers_waterfalls_lakes
+  method: natural_landscape
+  pool: expansion_wave2
+- query: torrente di montagna che attraversa un bosco remoto
+  category: Природа
+  language: it
+  subtheme: rivers_waterfalls_lakes
+  method: natural_landscape
+  pool: expansion_wave2
+- query: mały leśny potok płynący między omszałymi kamieniami
+  category: Природа
+  language: pl
+  subtheme: rivers_waterfalls_lakes
+  method: natural_landscape
+  pool: expansion_wave2
+- query: лесная река проходит через удалённую долину весной
+  category: Природа
+  language: ru
+  subtheme: rivers_waterfalls_lakes
+  method: natural_landscape
+  pool: expansion_wave2
+- query: وادي جبلي أخضر مع مجرى نهر طبيعي
+  category: Природа
+  language: ar
+  subtheme: rivers_waterfalls_lakes
+  method: natural_landscape
+  pool: expansion_wave2
+- query: sungai kecil berkelok di lembah hutan terpencil
+  category: Природа
+  language: id
+  subtheme: rivers_waterfalls_lakes
+  method: natural_landscape
+  pool: expansion_wave2
+- query: שביל הליכה צר ביער מרוחק בעונת הסתיו
+  category: Природа
+  language: he
+  subtheme: coastal_desert_wetlands
+  method: ecosystem_location
+  pool: expansion_wave2
+- query: dunas costeras con vegetación nativa en una zona remota
+  category: Природа
+  language: es
+  subtheme: coastal_desert_wetlands
+  method: ecosystem_location
+  pool: expansion_wave2
+- query: paisagem de manguezal em maré baixa filmada de terra
+  category: Природа
+  language: pt
+  subtheme: coastal_desert_wetlands
+  method: ecosystem_location
+  pool: expansion_wave2
+- query: Küstenheide und Dünenlandschaft abseits des Strandes
+  category: Природа
+  language: de
+  subtheme: coastal_desert_wetlands
+  method: ecosystem_location
+  pool: expansion_wave2
+- query: marais salant naturel avec petits chenaux côtiers
+  category: Природа
+  language: fr
+  subtheme: coastal_desert_wetlands
+  method: ecosystem_location
+  pool: expansion_wave2
+- query: paesaggio di dune e macchia mediterranea lontano dal resort
+  category: Природа
+  language: it
+  subtheme: coastal_desert_wetlands
+  method: ecosystem_location
+  pool: expansion_wave2
+- query: nadmorskie wydmy z roślinnością i ścieżką pieszą
+  category: Природа
+  language: pl
+  subtheme: coastal_desert_wetlands
+  method: ecosystem_location
+  pool: expansion_wave2
+- query: прибрежные дюны с естественной растительностью вдали от пляжа
+  category: Природа
+  language: ru
+  subtheme: coastal_desert_wetlands
+  method: ecosystem_location
+  pool: expansion_wave2
+- query: παράκτιος υγρότοπος με φυσική βλάστηση και μικρά κανάλια
+  category: Природа
+  language: el
+  subtheme: coastal_desert_wetlands
+  method: ecosystem_location
+  pool: expansion_wave2
+- query: mandhari ya kinamasi cha pwani yenye mimea ya asili
+  category: Природа
+  language: sw
+  subtheme: coastal_desert_wetlands
+  method: ecosystem_location
+  pool: expansion_wave2
+- query: দূরবর্তী উপকূলীয় জলাভূমির প্রাকৃতিক দৃশ্য
+  category: Природа
+  language: bn
+  subtheme: seasonal_phenomena
+  method: seasonal_nature_observation
+  pool: expansion_wave2
+- query: niebla matinal entre árboles de un valle rural
+  category: Природа
+  language: es
+  subtheme: seasonal_phenomena
+  method: seasonal_nature_observation
+  pool: expansion_wave2
+- query: geada cobrindo capim em uma manhã fria no campo
+  category: Природа
+  language: pt
+  subtheme: seasonal_phenomena
+  method: seasonal_nature_observation
+  pool: expansion_wave2
+- query: Nebel zieht am frühen Morgen durch ein abgelegenes Waldtal
+  category: Природа
+  language: de
+  subtheme: seasonal_phenomena
+  method: seasonal_nature_observation
+  pool: expansion_wave2
+- query: brume matinale qui traverse une prairie au lever du soleil
+  category: Природа
+  language: fr
+  subtheme: seasonal_phenomena
+  method: seasonal_nature_observation
+  pool: expansion_wave2
+- query: brina sulle erbe di un prato in una mattina autunnale
+  category: Природа
+  language: it
+  subtheme: seasonal_phenomena
+  method: seasonal_nature_observation
+  pool: expansion_wave2
+- query: poranna mgła nad łąką w pobliżu lasu
+  category: Природа
+  language: pl
+  subtheme: seasonal_phenomena
+  method: seasonal_nature_observation
+  pool: expansion_wave2
+- query: первый иней на траве холодным утром в поле
+  category: Природа
+  language: ru
+  subtheme: seasonal_phenomena
+  method: seasonal_nature_observation
+  pool: expansion_wave2
+- query: 山あいの草地に朝霧がゆっくり流れる自然映像
+  category: Природа
+  language: ja
+  subtheme: seasonal_phenomena
+  method: seasonal_nature_observation
+  pool: expansion_wave2
+- query: 가을 아침 들판에 서리가 내리는 자연 풍경
+  category: Природа
+  language: ko
+  subtheme: seasonal_phenomena
+  method: seasonal_nature_observation
+  pool: expansion_wave2
+- query: குளிர் காலையில் புல்வெளியில் உருவாகும் முதல் பனித்துளிகள்
+  category: Природа
+  language: ta
+  subtheme: geological_landscapes
+  method: geological_feature_context
+  pool: expansion_wave2
+- query: formaciones de roca volcánica en un sendero poco transitado
+  category: Природа
+  language: es
+  subtheme: geological_landscapes
+  method: geological_feature_context
+  pool: expansion_wave2
+- query: paredões rochosos naturais em uma trilha de interior
+  category: Природа
+  language: pt
+  subtheme: geological_landscapes
+  method: geological_feature_context
+  pool: expansion_wave2
+- query: ungewöhnliche Felsformationen entlang eines abgelegenen Wanderwegs
+  category: Природа
+  language: de
+  subtheme: geological_landscapes
+  method: geological_feature_context
+  pool: expansion_wave2
+- query: affleurements rocheux dans un paysage de montagne isolé
+  category: Природа
+  language: fr
+  subtheme: geological_landscapes
+  method: geological_feature_context
+  pool: expansion_wave2
+- query: calanchi argillosi osservati lungo un sentiero rurale
+  category: Природа
+  language: it
+  subtheme: geological_landscapes
+  method: geological_feature_context
+  pool: expansion_wave2
+- query: naturalne formacje skalne przy mało uczęszczanym szlaku
+  category: Природа
+  language: pl
+  subtheme: geological_landscapes
+  method: geological_feature_context
+  pool: expansion_wave2
+- query: выветренные скальные образования вдоль удалённой тропы
+  category: Природа
+  language: ru
+  subtheme: geological_landscapes
+  method: geological_feature_context
+  pool: expansion_wave2
+- query: uzak yürüyüş rotasındaki doğal kaya oluşumları
+  category: Природа
+  language: tr
+  subtheme: geological_landscapes
+  method: geological_feature_context
+  pool: expansion_wave2
+- query: दूरस्थ पहाड़ी पगडंडी पर प्राकृतिक चट्टानों की संरचना
+  category: Природа
+  language: hi
+  subtheme: geological_landscapes
+  method: geological_feature_context
+  pool: expansion_wave2
+- query: independent hand drawn short animation showing a rainy village street
+  category: Аниме / анимация
+  language: en
+  subtheme: hand_drawn_animation
+  method: animation_format_story
+  pool: expansion_wave2
+- query: cortometraje de animación dibujada a mano sobre un pueblo costero
+  category: Аниме / анимация
+  language: es
+  subtheme: hand_drawn_animation
+  method: animation_format_story
+  pool: expansion_wave2
+- query: animação artesanal quadro a quadro de uma pequena cidade
+  category: Аниме / анимация
+  language: pt
+  subtheme: hand_drawn_animation
+  method: animation_format_story
+  pool: expansion_wave2
+- query: handgezeichnete Kurzanimation über einen Bahnhof im Regen
+  category: Аниме / анимация
+  language: de
+  subtheme: hand_drawn_animation
+  method: animation_format_story
+  pool: expansion_wave2
+- query: court métrage d'animation dessinée sur un atelier miniature
+  category: Аниме / анимация
+  language: fr
+  subtheme: hand_drawn_animation
+  method: animation_format_story
+  pool: expansion_wave2
+- query: animazione disegnata a mano di una strada di paese
+  category: Аниме / анимация
+  language: it
+  subtheme: hand_drawn_animation
+  method: animation_format_story
+  pool: expansion_wave2
+- query: krótka animacja rysunkowa przedstawiająca życie na wsi
+  category: Аниме / анимация
+  language: pl
+  subtheme: hand_drawn_animation
+  method: animation_format_story
+  pool: expansion_wave2
+- query: авторская рисованная анимация о маленькой железнодорожной станции
+  category: Аниме / анимация
+  language: ru
+  subtheme: hand_drawn_animation
+  method: animation_format_story
+  pool: expansion_wave2
+- query: 手描きの短編アニメーション 小さな港町の一日
+  category: Аниме / анимация
+  language: ja
+  subtheme: hand_drawn_animation
+  method: animation_format_story
+  pool: expansion_wave2
+- query: 비 오는 골목을 배경으로 한 독립 손그림 애니메이션
+  category: Аниме / анимация
+  language: ko
+  subtheme: hand_drawn_animation
+  method: animation_format_story
+  pool: expansion_wave2
+- query: ہاتھ سے بنائی گئی مختصر اینیمیشن میں بارش والی گاؤں کی سڑک
+  category: Аниме / анимация
+  language: ur
+  subtheme: stop_motion_models
+  method: stop_motion_process
+  pool: expansion_wave2
+- query: animación stop motion con figuras de papel hechas a mano
+  category: Аниме / анимация
+  language: es
+  subtheme: stop_motion_models
+  method: stop_motion_process
+  pool: expansion_wave2
+- query: animação em stop motion com miniaturas de madeira artesanais
+  category: Аниме / анимация
+  language: pt
+  subtheme: stop_motion_models
+  method: stop_motion_process
+  pool: expansion_wave2
+- query: Stop-Motion-Film mit selbstgebauten Miniaturhäusern
+  category: Аниме / анимация
+  language: de
+  subtheme: stop_motion_models
+  method: stop_motion_process
+  pool: expansion_wave2
+- query: animation image par image avec figurines en pâte à modeler
+  category: Аниме / анимация
+  language: fr
+  subtheme: stop_motion_models
+  method: stop_motion_process
+  pool: expansion_wave2
+- query: cortometraggio stop motion con piccoli modelli costruiti a mano
+  category: Аниме / анимация
+  language: it
+  subtheme: stop_motion_models
+  method: stop_motion_process
+  pool: expansion_wave2
+- query: animacja poklatkowa z ręcznie wykonanymi papierowymi postaciami
+  category: Аниме / анимация
+  language: pl
+  subtheme: stop_motion_models
+  method: stop_motion_process
+  pool: expansion_wave2
+- query: покадровая анимация с самодельными глиняными фигурками
+  category: Аниме / анимация
+  language: ru
+  subtheme: stop_motion_models
+  method: stop_motion_process
+  pool: expansion_wave2
+- query: แอนิเมชันสต็อปโมชันด้วยหุ่นดินปั้นทำมือ
+  category: Аниме / анимация
+  language: th
+  subtheme: stop_motion_models
+  method: stop_motion_process
+  pool: expansion_wave2
+- query: animasi stop motion memakai miniatur buatan tangan
+  category: Аниме / анимация
+  language: id
+  subtheme: stop_motion_models
+  method: stop_motion_process
+  pool: expansion_wave2
+- query: animasi stop motion menggunakan patung tanah liat buatan tangan
+  category: Аниме / анимация
+  language: ms
+  subtheme: independent_anime_scenes
+  method: independent_animation_context
+  pool: expansion_wave2
+- query: corto anime independiente sobre una pequeña ciudad de montaña
+  category: Аниме / анимация
+  language: es
+  subtheme: independent_anime_scenes
+  method: independent_animation_context
+  pool: expansion_wave2
+- query: curta de anime independente sobre uma oficina de bicicletas
+  category: Аниме / анимация
+  language: pt
+  subtheme: independent_anime_scenes
+  method: independent_animation_context
+  pool: expansion_wave2
+- query: unabhängiger Anime-Kurzfilm über einen nächtlichen Zug
+  category: Аниме / анимация
+  language: de
+  subtheme: independent_anime_scenes
+  method: independent_animation_context
+  pool: expansion_wave2
+- query: court anime indépendant sur une petite île de pêcheurs
+  category: Аниме / анимация
+  language: fr
+  subtheme: independent_anime_scenes
+  method: independent_animation_context
+  pool: expansion_wave2
+- query: corto anime indipendente ambientato in una città di provincia
+  category: Аниме / анимация
+  language: it
+  subtheme: independent_anime_scenes
+  method: independent_animation_context
+  pool: expansion_wave2
+- query: niezależna krótka animacja anime o podróży pociągiem
+  category: Аниме / анимация
+  language: pl
+  subtheme: independent_anime_scenes
+  method: independent_animation_context
+  pool: expansion_wave2
+- query: независимый короткий аниме-эпизод о дороге через горы
+  category: Аниме / анимация
+  language: ru
+  subtheme: independent_anime_scenes
+  method: independent_animation_context
+  pool: expansion_wave2
+- query: 自主制作アニメ 短編 田舎の駅の日常
+  category: Аниме / анимация
+  language: ja
+  subtheme: independent_anime_scenes
+  method: independent_animation_context
+  pool: expansion_wave2
+- query: 시골 기차역의 하루를 다룬 독립 애니메이션 단편
+  category: Аниме / анимация
+  language: ko
+  subtheme: independent_anime_scenes
+  method: independent_animation_context
+  pool: expansion_wave2
+- query: oberoende kort anime om en stillsam tågresa på landsbygden
+  category: Аниме / анимация
+  language: sv
+  subtheme: stylized_process_animation
+  method: animation_style_context
+  pool: expansion_wave2
+- query: animación 2D estilizada de una máquina imaginaria en movimiento
+  category: Аниме / анимация
+  language: es
+  subtheme: stylized_process_animation
+  method: animation_style_context
+  pool: expansion_wave2
+- query: animação estilizada quadro a quadro de uma cidade em miniatura
+  category: Аниме / анимация
+  language: pt
+  subtheme: stylized_process_animation
+  method: animation_style_context
+  pool: expansion_wave2
+- query: stilisiertes 2D-Animationsvideo mit handgemalten Hintergründen
+  category: Аниме / анимация
+  language: de
+  subtheme: stylized_process_animation
+  method: animation_style_context
+  pool: expansion_wave2
+- query: animation stylisée avec décors peints à la main et personnages simples
+  category: Аниме / анимация
+  language: fr
+  subtheme: stylized_process_animation
+  method: animation_style_context
+  pool: expansion_wave2
+- query: animazione 2D stilizzata con fondali dipinti a mano
+  category: Аниме / анимация
+  language: it
+  subtheme: stylized_process_animation
+  method: animation_style_context
+  pool: expansion_wave2
+- query: stylizowana animacja 2D z ręcznie malowanym tłem
+  category: Аниме / анимация
+  language: pl
+  subtheme: stylized_process_animation
+  method: animation_style_context
+  pool: expansion_wave2
+- query: стилизованная 2D-анимация с нарисованными декорациями
+  category: Аниме / анимация
+  language: ru
+  subtheme: stylized_process_animation
+  method: animation_style_context
+  pool: expansion_wave2
+- query: 手绘背景的独立二维短动画小故事
+  category: Аниме / анимация
+  language: zh
+  subtheme: stylized_process_animation
+  method: animation_style_context
+  pool: expansion_wave2
+- query: phim hoạt hình 2D phong cách vẽ tay về chuyến tàu nhỏ
+  category: Аниме / анимация
+  language: vi
+  subtheme: stylized_process_animation
+  method: animation_style_context
+  pool: expansion_wave2
+- query: håndtegnet figur i en enkel animasjonstest bilde for bilde
+  category: Аниме / анимация
+  language: 'no'
+  subtheme: animation_workshop
+  method: animation_creation_process
+  pool: expansion_wave2
+- query: proceso de animación cuadro a cuadro de un personaje dibujado
+  category: Аниме / анимация
+  language: es
+  subtheme: animation_workshop
+  method: animation_creation_process
+  pool: expansion_wave2
+- query: teste de movimento de personagem em animação 2D independente
+  category: Аниме / анимация
+  language: pt
+  subtheme: animation_workshop
+  method: animation_creation_process
+  pool: expansion_wave2
+- query: Animationsprobe einer handgezeichneten Figur Bild für Bild
+  category: Аниме / анимация
+  language: de
+  subtheme: animation_workshop
+  method: animation_creation_process
+  pool: expansion_wave2
+- query: test de mouvement d'un personnage animé dessin par dessin
+  category: Аниме / анимация
+  language: fr
+  subtheme: animation_workshop
+  method: animation_creation_process
+  pool: expansion_wave2
+- query: prova di animazione di un personaggio disegnato fotogramma per fotogramma
+  category: Аниме / анимация
+  language: it
+  subtheme: animation_workshop
+  method: animation_creation_process
+  pool: expansion_wave2
+- query: test ruchu postaci w niezależnej animacji poklatkowej
+  category: Аниме / анимация
+  language: pl
+  subtheme: animation_workshop
+  method: animation_creation_process
+  pool: expansion_wave2
+- query: аниматор показывает покадровую проверку движения персонажа
+  category: Аниме / анимация
+  language: ru
+  subtheme: animation_workshop
+  method: animation_creation_process
+  pool: expansion_wave2
+- query: 自主制作アニメのキャラクター動作テスト制作過程
+  category: Аниме / анимация
+  language: ja
+  subtheme: animation_workshop
+  method: animation_creation_process
+  pool: expansion_wave2
+- query: 독립 애니메이터의 캐릭터 움직임 프레임 테스트
+  category: Аниме / анимация
+  language: ko
+  subtheme: animation_workshop
+  method: animation_creation_process
+  pool: expansion_wave2
+- query: repairing a failed power supply board in a small electronics workshop
+  category: Наука и технологии
+  language: en
+  subtheme: electronics_repair
+  method: device_repair_process
+  pool: expansion_wave2
+- query: reparación de una placa electrónica con multímetro en taller
+  category: Наука и технологии
+  language: es
+  subtheme: electronics_repair
+  method: device_repair_process
+  pool: expansion_wave2
+- query: diagnóstico de placa eletrônica com osciloscópio em bancada
+  category: Наука и технологии
+  language: pt
+  subtheme: electronics_repair
+  method: device_repair_process
+  pool: expansion_wave2
+- query: Fehlersuche auf einer Leiterplatte mit Multimeter in der Werkstatt
+  category: Наука и технологии
+  language: de
+  subtheme: electronics_repair
+  method: device_repair_process
+  pool: expansion_wave2
+- query: diagnostic d'une carte électronique au multimètre sur établi
+  category: Наука и технологии
+  language: fr
+  subtheme: electronics_repair
+  method: device_repair_process
+  pool: expansion_wave2
+- query: riparazione di una scheda elettronica in un piccolo laboratorio
+  category: Наука и технологии
+  language: it
+  subtheme: electronics_repair
+  method: device_repair_process
+  pool: expansion_wave2
+- query: diagnostyka uszkodzonej płytki elektronicznej multimetrem
+  category: Наука и технологии
+  language: pl
+  subtheme: electronics_repair
+  method: device_repair_process
+  pool: expansion_wave2
+- query: поиск неисправности на электронной плате мультиметром
+  category: Наука и технологии
+  language: ru
+  subtheme: electronics_repair
+  method: device_repair_process
+  pool: expansion_wave2
+- query: küçük elektronik atölyesinde devre kartı arızası onarımı
+  category: Наука и технологии
+  language: tr
+  subtheme: electronics_repair
+  method: device_repair_process
+  pool: expansion_wave2
+- query: छोटी इलेक्ट्रॉनिक्स कार्यशाला में सर्किट बोर्ड की मरम्मत
+  category: Наука и технологии
+  language: hi
+  subtheme: electronics_repair
+  method: device_repair_process
+  pool: expansion_wave2
+- query: reparation af et defekt strømforsyningskort i et lille elektronikværksted
+  category: Наука и технологии
+  language: da
+  subtheme: robotics_automation
+  method: robot_build_test
+  pool: expansion_wave2
+- query: robot móvil casero siguiendo una línea en una pista de pruebas
+  category: Наука и технологии
+  language: es
+  subtheme: robotics_automation
+  method: robot_build_test
+  pool: expansion_wave2
+- query: montagem de um braço robótico simples com peças impressas
+  category: Наука и технологии
+  language: pt
+  subtheme: robotics_automation
+  method: robot_build_test
+  pool: expansion_wave2
+- query: kleiner selbstgebauter Roboter folgt einer Linie auf Teststrecke
+  category: Наука и технологии
+  language: de
+  subtheme: robotics_automation
+  method: robot_build_test
+  pool: expansion_wave2
+- query: construction d'un petit robot suiveur de ligne en atelier
+  category: Наука и технологии
+  language: fr
+  subtheme: robotics_automation
+  method: robot_build_test
+  pool: expansion_wave2
+- query: assemblaggio di un braccio robotico didattico da banco
+  category: Наука и технологии
+  language: it
+  subtheme: robotics_automation
+  method: robot_build_test
+  pool: expansion_wave2
+- query: budowa małego robota podążającego za linią w warsztacie
+  category: Наука и технологии
+  language: pl
+  subtheme: robotics_automation
+  method: robot_build_test
+  pool: expansion_wave2
+- query: сборка небольшого робота с датчиками на рабочем столе
+  category: Наука и технологии
+  language: ru
+  subtheme: robotics_automation
+  method: robot_build_test
+  pool: expansion_wave2
+- query: 小型ロボットの配線と動作テストを行う工作室
+  category: Наука и технологии
+  language: ja
+  subtheme: robotics_automation
+  method: robot_build_test
+  pool: expansion_wave2
+- query: 작업대에서 소형 로봇 팔을 조립하고 시험하는 영상
+  category: Наука и технологии
+  language: ko
+  subtheme: robotics_automation
+  method: robot_build_test
+  pool: expansion_wave2
+- query: pienen viivaa seuraavan robotin rakentaminen työpajassa
+  category: Наука и технологии
+  language: fi
+  subtheme: 3d_printing_cad
+  method: prototype_process
+  pool: expansion_wave2
+- query: impresión 3D de una pieza de repuesto y prueba mecánica
+  category: Наука и технологии
+  language: es
+  subtheme: 3d_printing_cad
+  method: prototype_process
+  pool: expansion_wave2
+- query: impressão 3D de um suporte personalizado e teste de encaixe
+  category: Наука и технологии
+  language: pt
+  subtheme: 3d_printing_cad
+  method: prototype_process
+  pool: expansion_wave2
+- query: 3D-Druck eines Ersatzteils mit anschließendem Funktionstest
+  category: Наука и технологии
+  language: de
+  subtheme: 3d_printing_cad
+  method: prototype_process
+  pool: expansion_wave2
+- query: impression 3D d'une pièce mécanique puis essai de montage
+  category: Наука и технологии
+  language: fr
+  subtheme: 3d_printing_cad
+  method: prototype_process
+  pool: expansion_wave2
+- query: stampa 3D di un piccolo ingranaggio e prova sul meccanismo
+  category: Наука и технологии
+  language: it
+  subtheme: 3d_printing_cad
+  method: prototype_process
+  pool: expansion_wave2
+- query: druk 3D części zamiennej i sprawdzanie jej w urządzeniu
+  category: Наука и технологии
+  language: pl
+  subtheme: 3d_printing_cad
+  method: prototype_process
+  pool: expansion_wave2
+- query: печать на 3D-принтере шестерни с проверкой работы механизма
+  category: Наука и технологии
+  language: ru
+  subtheme: 3d_printing_cad
+  method: prototype_process
+  pool: expansion_wave2
+- query: 3D yazıcıda üretilen parçanın gerçek düzende denenmesi
+  category: Наука и технологии
+  language: tr
+  subtheme: 3d_printing_cad
+  method: prototype_process
+  pool: expansion_wave2
+- query: mencetak komponen pengganti dengan printer 3D lalu mengujinya
+  category: Наука и технологии
+  language: id
+  subtheme: 3d_printing_cad
+  method: prototype_process
+  pool: expansion_wave2
+- query: pag-print ng 3D replacement gear at pagsubok nito sa tunay na mekanismo
+  category: Наука и технологии
+  language: tl
+  subtheme: measurement_scientific_devices
+  method: instrument_test_calibration
+  pool: expansion_wave2
+- query: prueba de un sensor de temperatura con equipo de laboratorio
+  category: Наука и технологии
+  language: es
+  subtheme: measurement_scientific_devices
+  method: instrument_test_calibration
+  pool: expansion_wave2
+- query: calibração de um instrumento de medição em bancada caseira
+  category: Наука и технологии
+  language: pt
+  subtheme: measurement_scientific_devices
+  method: instrument_test_calibration
+  pool: expansion_wave2
+- query: einen Temperatursensor mit einem einfachen Prüfstand kalibrieren
+  category: Наука и технологии
+  language: de
+  subtheme: measurement_scientific_devices
+  method: instrument_test_calibration
+  pool: expansion_wave2
+- query: étalonnage d'un petit capteur de pression sur banc d'essai
+  category: Наука и технологии
+  language: fr
+  subtheme: measurement_scientific_devices
+  method: instrument_test_calibration
+  pool: expansion_wave2
+- query: taratura di un sensore di pressione su un banco sperimentale
+  category: Наука и технологии
+  language: it
+  subtheme: measurement_scientific_devices
+  method: instrument_test_calibration
+  pool: expansion_wave2
+- query: kalibracja czujnika temperatury na prostym stanowisku
+  category: Наука и технологии
+  language: pl
+  subtheme: measurement_scientific_devices
+  method: instrument_test_calibration
+  pool: expansion_wave2
+- query: калибровка датчика давления на самодельном стенде
+  category: Наука и технологии
+  language: ru
+  subtheme: measurement_scientific_devices
+  method: instrument_test_calibration
+  pool: expansion_wave2
+- query: βαθμονόμηση αισθητήρα θερμοκρασίας σε μικρό εργαστήριο
+  category: Наука и технологии
+  language: el
+  subtheme: measurement_scientific_devices
+  method: instrument_test_calibration
+  pool: expansion_wave2
+- query: hiệu chuẩn cảm biến áp suất bằng bộ thử tự chế
+  category: Наука и технологии
+  language: vi
+  subtheme: measurement_scientific_devices
+  method: instrument_test_calibration
+  pool: expansion_wave2
+- query: घरगुती मायक्रोकंट्रोलर वापरून हरितगृह आर्द्रता नियंत्रक तयार करणे
+  category: Наука и технологии
+  language: mr
+  subtheme: microcontrollers_makers
+  method: microcontroller_project
+  pool: expansion_wave2
+- query: proyecto ESP32 para registrar datos de un pequeño invernadero
+  category: Наука и технологии
+  language: es
+  subtheme: microcontrollers_makers
+  method: microcontroller_project
+  pool: expansion_wave2
+- query: montagem de um controlador de irrigação com microcontrolador
+  category: Наука и технологии
+  language: pt
+  subtheme: microcontrollers_makers
+  method: microcontroller_project
+  pool: expansion_wave2
+- query: Arduino-Steuerung für eine kleine Gewächshausbewässerung bauen
+  category: Наука и технологии
+  language: de
+  subtheme: microcontrollers_makers
+  method: microcontroller_project
+  pool: expansion_wave2
+- query: montage d'un enregistreur de température avec microcontrôleur
+  category: Наука и технологии
+  language: fr
+  subtheme: microcontrollers_makers
+  method: microcontroller_project
+  pool: expansion_wave2
+- query: progetto con Arduino per misurare la qualità dell'aria
+  category: Наука и технологии
+  language: it
+  subtheme: microcontrollers_makers
+  method: microcontroller_project
+  pool: expansion_wave2
+- query: projekt Arduino do pomiaru wilgotności gleby w doniczce
+  category: Наука и технологии
+  language: pl
+  subtheme: microcontrollers_makers
+  method: microcontroller_project
+  pool: expansion_wave2
+- query: сборка контроллера полива на Arduino для теплицы
+  category: Наука и технологии
+  language: ru
+  subtheme: microcontrollers_makers
+  method: microcontroller_project
+  pool: expansion_wave2
+- query: สร้างเครื่องวัดอุณหภูมิขนาดเล็กด้วยไมโครคอนโทรลเลอร์
+  category: Наука и технологии
+  language: th
+  subtheme: microcontrollers_makers
+  method: microcontroller_project
+  pool: expansion_wave2
+- query: projek Arduino untuk merekod suhu rumah hijau kecil
+  category: Наука и технологии
+  language: ms
+  subtheme: microcontrollers_makers
+  method: microcontroller_project
+  pool: expansion_wave2
+- query: close continuous footage of clear water flowing over a rocky streambed
+  category: Вода
+  language: en
+  subtheme: rivers_streams
+  method: water_flow_context
+  pool: expansion_wave2
+- query: agua de un arroyo transparente pasando sobre piedras pequeñas
+  category: Вода
+  language: es
+  subtheme: rivers_streams
+  method: water_flow_context
+  pool: expansion_wave2
+- query: filmagem contínua de água corrente em um riacho de serra
+  category: Вода
+  language: pt
+  subtheme: rivers_streams
+  method: water_flow_context
+  pool: expansion_wave2
+- query: klares Bachwasser fließt über Kies und kleine Felsen
+  category: Вода
+  language: de
+  subtheme: rivers_streams
+  method: water_flow_context
+  pool: expansion_wave2
+- query: eau claire qui traverse un lit de galets filmée de près
+  category: Вода
+  language: fr
+  subtheme: rivers_streams
+  method: water_flow_context
+  pool: expansion_wave2
+- query: acqua di torrente che scorre tra pietre levigate
+  category: Вода
+  language: it
+  subtheme: rivers_streams
+  method: water_flow_context
+  pool: expansion_wave2
+- query: czysta woda płynie po kamienistym dnie strumienia
+  category: Вода
+  language: pl
+  subtheme: rivers_streams
+  method: water_flow_context
+  pool: expansion_wave2
+- query: чистая вода течёт по каменистому дну ручья
+  category: Вода
+  language: ru
+  subtheme: rivers_streams
+  method: water_flow_context
+  pool: expansion_wave2
+- query: 小川の透明な水が石の上を流れる連続映像
+  category: Вода
+  language: ja
+  subtheme: rivers_streams
+  method: water_flow_context
+  pool: expansion_wave2
+- query: 돌이 있는 얕은 개울에서 맑은 물이 흐르는 영상
+  category: Вода
+  language: ko
+  subtheme: rivers_streams
+  method: water_flow_context
+  pool: expansion_wave2
+- query: రాతి ప్రవాహంలో స్వచ్ఛమైన నీరు రాళ్లపై ప్రవహించే దృశ్యం
+  category: Вода
+  language: te
+  subtheme: waterfalls_waves
+  method: water_motion_landscape
+  pool: expansion_wave2
+- query: cascada estrecha cayendo sobre rocas oscuras en el bosque
+  category: Вода
+  language: es
+  subtheme: waterfalls_waves
+  method: water_motion_landscape
+  pool: expansion_wave2
+- query: ondas pequenas quebrando repetidamente em pedras costeiras
+  category: Вода
+  language: pt
+  subtheme: waterfalls_waves
+  method: water_motion_landscape
+  pool: expansion_wave2
+- query: kleiner Wasserfall stürzt über eine dunkle Felskante
+  category: Вода
+  language: de
+  subtheme: waterfalls_waves
+  method: water_motion_landscape
+  pool: expansion_wave2
+- query: vagues régulières qui se brisent contre une digue en pierre
+  category: Вода
+  language: fr
+  subtheme: waterfalls_waves
+  method: water_motion_landscape
+  pool: expansion_wave2
+- query: cascata bassa che scorre su rocce stratificate
+  category: Вода
+  language: it
+  subtheme: waterfalls_waves
+  method: water_motion_landscape
+  pool: expansion_wave2
+- query: mały wodospad spływający po warstwowych skałach
+  category: Вода
+  language: pl
+  subtheme: waterfalls_waves
+  method: water_motion_landscape
+  pool: expansion_wave2
+- query: небольшой водопад стекает по скальным уступам
+  category: Вода
+  language: ru
+  subtheme: waterfalls_waves
+  method: water_motion_landscape
+  pool: expansion_wave2
+- query: أمواج البحر تضرب الصخور على الساحل في لقطة قريبة
+  category: Вода
+  language: ar
+  subtheme: waterfalls_waves
+  method: water_motion_landscape
+  pool: expansion_wave2
+- query: น้ำตกขนาดเล็กไหลผ่านชั้นหินในหุบเขา
+  category: Вода
+  language: th
+  subtheme: waterfalls_waves
+  method: water_motion_landscape
+  pool: expansion_wave2
+- query: പാറകളിലൂടെ ഒഴുകുന്ന ചെറിയ വെള്ളച്ചാട്ടത്തിന്റെ തുടർച്ചയായ ദൃശ്യം
+  category: Вода
+  language: ml
+  subtheme: canals_dams_waterworks
+  method: water_infrastructure_operation
+  pool: expansion_wave2
+- query: compuertas de un canal abriéndose y dejando pasar el agua
+  category: Вода
+  language: es
+  subtheme: canals_dams_waterworks
+  method: water_infrastructure_operation
+  pool: expansion_wave2
+- query: água atravessando uma eclusa antiga durante a operação
+  category: Вода
+  language: pt
+  subtheme: canals_dams_waterworks
+  method: water_infrastructure_operation
+  pool: expansion_wave2
+- query: Wasser strömt durch eine alte Schleuse beim Öffnen der Tore
+  category: Вода
+  language: de
+  subtheme: canals_dams_waterworks
+  method: water_infrastructure_operation
+  pool: expansion_wave2
+- query: fonctionnement d'une écluse fluviale avec montée du niveau d'eau
+  category: Вода
+  language: fr
+  subtheme: canals_dams_waterworks
+  method: water_infrastructure_operation
+  pool: expansion_wave2
+- query: acqua che passa attraverso una piccola chiusa durante l'apertura
+  category: Вода
+  language: it
+  subtheme: canals_dams_waterworks
+  method: water_infrastructure_operation
+  pool: expansion_wave2
+- query: woda przepływa przez śluzę kanałową podczas pracy
+  category: Вода
+  language: pl
+  subtheme: canals_dams_waterworks
+  method: water_infrastructure_operation
+  pool: expansion_wave2
+- query: работа шлюза на канале во время изменения уровня воды
+  category: Вода
+  language: ru
+  subtheme: canals_dams_waterworks
+  method: water_infrastructure_operation
+  pool: expansion_wave2
+- query: eski bir kanal kapısından suyun kontrollü geçişi
+  category: Вода
+  language: tr
+  subtheme: canals_dams_waterworks
+  method: water_infrastructure_operation
+  pool: expansion_wave2
+- query: 老式运河船闸开闸放水的连续实拍
+  category: Вода
+  language: zh
+  subtheme: canals_dams_waterworks
+  method: water_infrastructure_operation
+  pool: expansion_wave2
+- query: دریچه‌های کانال قدیمی باز می‌شوند و آب از آن عبور می‌کند
+  category: Вода
+  language: fa
+  subtheme: rain_ice_snow_water
+  method: weather_water_flow
+  pool: expansion_wave2
+- query: lluvia intensa formando pequeños canales de agua sobre piedra
+  category: Вода
+  language: es
+  subtheme: rain_ice_snow_water
+  method: weather_water_flow
+  pool: expansion_wave2
+- query: água de chuva escorrendo por uma calha durante tempestade
+  category: Вода
+  language: pt
+  subtheme: rain_ice_snow_water
+  method: weather_water_flow
+  pool: expansion_wave2
+- query: Regenwasser fließt durch eine offene Entwässerungsrinne
+  category: Вода
+  language: de
+  subtheme: rain_ice_snow_water
+  method: weather_water_flow
+  pool: expansion_wave2
+- query: eau de pluie qui ruisselle sur des pavés en pente
+  category: Вода
+  language: fr
+  subtheme: rain_ice_snow_water
+  method: weather_water_flow
+  pool: expansion_wave2
+- query: scioglimento della neve che forma un piccolo rivolo
+  category: Вода
+  language: it
+  subtheme: rain_ice_snow_water
+  method: weather_water_flow
+  pool: expansion_wave2
+- query: woda deszczowa spływa rynsztokiem po ulewie
+  category: Вода
+  language: pl
+  subtheme: rain_ice_snow_water
+  method: weather_water_flow
+  pool: expansion_wave2
+- query: потоки дождевой воды стекают по каменной канаве
+  category: Вода
+  language: ru
+  subtheme: rain_ice_snow_water
+  method: weather_water_flow
+  pool: expansion_wave2
+- query: बारिश का पानी पत्थर की नाली में बहता हुआ
+  category: Вода
+  language: hi
+  subtheme: rain_ice_snow_water
+  method: weather_water_flow
+  pool: expansion_wave2
+- query: nước mưa chảy thành dòng trên mặt đường dốc
+  category: Вода
+  language: vi
+  subtheme: rain_ice_snow_water
+  method: weather_water_flow
+  pool: expansion_wave2
+- query: מי גשם זורמים לאורך תעלת ניקוז בצד הדרך
+  category: Вода
+  language: he
+  subtheme: fountains_pools_bubbles
+  method: water_surface_detail
+  pool: expansion_wave2
+- query: burbujas subiendo desde el fondo de una poza natural
+  category: Вода
+  language: es
+  subtheme: fountains_pools_bubbles
+  method: water_surface_detail
+  pool: expansion_wave2
+- query: água borbulhando em uma nascente natural rasa
+  category: Вода
+  language: pt
+  subtheme: fountains_pools_bubbles
+  method: water_surface_detail
+  pool: expansion_wave2
+- query: Wasserblasen steigen in einem kleinen Quellbecken auf
+  category: Вода
+  language: de
+  subtheme: fountains_pools_bubbles
+  method: water_surface_detail
+  pool: expansion_wave2
+- query: bulles d'eau remontant dans une petite source naturelle
+  category: Вода
+  language: fr
+  subtheme: fountains_pools_bubbles
+  method: water_surface_detail
+  pool: expansion_wave2
+- query: piccole bolle d'acqua che salgono dal fondo di una sorgente
+  category: Вода
+  language: it
+  subtheme: fountains_pools_bubbles
+  method: water_surface_detail
+  pool: expansion_wave2
+- query: bąbelki wody unoszące się z dna naturalnego źródła
+  category: Вода
+  language: pl
+  subtheme: fountains_pools_bubbles
+  method: water_surface_detail
+  pool: expansion_wave2
+- query: пузырьки выходят со дна небольшого природного источника
+  category: Вода
+  language: ru
+  subtheme: fountains_pools_bubbles
+  method: water_surface_detail
+  pool: expansion_wave2
+- query: gelembung air naik dari dasar kolam mata air kecil
+  category: Вода
+  language: id
+  subtheme: fountains_pools_bubbles
+  method: water_surface_detail
+  pool: expansion_wave2
+- query: φυσαλίδες νερού ανεβαίνουν από τον πυθμένα μικρής πηγής
+  category: Вода
+  language: el
+  subtheme: fountains_pools_bubbles
+  method: water_surface_detail
+  pool: expansion_wave2

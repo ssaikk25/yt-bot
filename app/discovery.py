@@ -33,6 +33,7 @@ from .access_control import (
 )
 from .expansion_pool import EXPANSION_POOL, EXPERIMENT_POOL
 from .expansion_pool_950 import EXPANSION_950
+from .expansion_pool_wave2 import EXPANSION_WAVE2
 from .logger import get_logger
 from .models import ChannelCandidate
 from .query_pool import QueryPool, QUERY_POOL, load_pool_from_yaml, normalize_query
@@ -164,7 +165,11 @@ class DiscoveryEngine:
         # BASE (нетронутый) + EXPANSION + EXPERIMENT. BASE тегируется pool="base".
         base = [dict(q, pool="base", subtheme=q.get("category", "")) for q in QUERY_POOL]
         base += [dict(q, pool="base", subtheme=q.get("category", "")) for q in load_pool_from_yaml(settings)]
-        all_queries = base + [dict(q) for q in EXPANSION_POOL] + [dict(q) for q in EXPERIMENT_POOL] + [dict(q) for q in EXPANSION_950]
+        all_queries = (base
+                       + [dict(q) for q in EXPANSION_POOL]
+                       + [dict(q) for q in EXPERIMENT_POOL]
+                       + [dict(q) for q in EXPANSION_950]
+                       + [dict(q) for q in EXPANSION_WAVE2])
         # Не ищем по исключённым категориям (аниме и т.п.).
         all_queries = [
             q for q in all_queries
