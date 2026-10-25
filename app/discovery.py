@@ -293,7 +293,9 @@ class DiscoveryEngine:
         """Смешивание пулов по конфигурируемым ratio (BASE/EXPANSION/EXPERIMENT)."""
         queries = self.pool.queries
         base = [q for q in queries if q.get("pool") == "base"]
-        exp = [q for q in queries if q.get("pool") == "expansion"]
+        # expansion_wave2 участвует в том же бакете, что и expansion:
+        # untried-бонус даёт новым запросам приоритет, затем идут старые.
+        exp = [q for q in queries if q.get("pool") in ("expansion", "expansion_wave2")]
         exr = [q for q in queries if q.get("pool") == "experiment"]
         n = self.settings.discovery_queries_per_run
         n_base = int(round(n * self.settings.base_query_ratio))

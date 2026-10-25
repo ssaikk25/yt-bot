@@ -79,7 +79,8 @@ class TestQueryMix(unittest.TestCase):
         eng = self._engine()
         mixed = eng._mixed_queries()
         n_base = sum(1 for q in mixed if q.get("pool") == "base")
-        n_exp = sum(1 for q in mixed if q.get("pool") == "expansion")
+        # expansion-бакет теперь включает и expansion_wave2
+        n_exp = sum(1 for q in mixed if q.get("pool") in ("expansion", "expansion_wave2"))
         n_exr = sum(1 for q in mixed if q.get("pool") == "experiment")
         self.assertEqual(n_base, 70)
         self.assertEqual(n_exp, 20)

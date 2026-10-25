@@ -113,6 +113,12 @@ class TestExpansionWave2(unittest.TestCase):
     def test_load_idempotent(self):
         self.assertEqual(load_expansion_wave2(), load_expansion_wave2())
 
+    # TEST 14: _mixed_queries действительно включает волну 2
+    def test_mixed_queries_include_wave2(self):
+        mixed = self.engine._mixed_queries()
+        wave = [q for q in mixed if q.get("pool") == "expansion_wave2"]
+        self.assertGreater(len(wave), 0)
+
 
 if __name__ == "__main__":
     unittest.main()
