@@ -101,7 +101,8 @@ class Settings:
     min_required_checked: int = 3
     max_videos_per_channel: int = 20
     max_shorts_ratio: float = 0.0  # 0.0 = строго: Shorts/live запрещены
-    max_subscribers: int = 0       # 0 = не ограничивать (но приоритет ниже при малых)
+    max_subscribers: int = 1000    # 0 = не ограничивать; >лимита — канал не берём
+    max_avg_views: int = 1000      # 0 = не ограничивать; средние просмотры/видео >лимита — не берём
     max_views: int = 0             # 0 = не ограничивать
 
     # --- Фильтры видео ---
@@ -290,7 +291,8 @@ def load_settings() -> Settings:
         min_required_checked=_env_int("MIN_REQUIRED_CHECKED", 3),
         max_videos_per_channel=_env_int("MAX_VIDEOS_PER_CHANNEL", 20),
         max_shorts_ratio=_env_float("MAX_SHORTS_RATIO", 0.0),
-        max_subscribers=_env_int("MAX_SUBSCRIBERS", 0),
+        max_subscribers=_env_int("MAX_SUBSCRIBERS", 1000),
+        max_avg_views=_env_int("MAX_AVG_VIEWS", 1000),
         max_views=_env_int("MAX_VIEWS", 0),
         min_duration_seconds=_env_float("MIN_DURATION_SECONDS", 5.0),
         max_duration_seconds=_env_float("MAX_DURATION_SECONDS", 4 * 3600.0),

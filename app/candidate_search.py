@@ -145,6 +145,13 @@ def build_channel_candidates(youtube: YouTubeClient, videos: list[VideoCandidate
             handle = custom_url.split("@", 1)[1].split("/")[0].strip()
 
         subs = int(stats.get("subscriberCount", 0) or 0)
+        total_views = int(stats.get("viewCount", 0) or 0)
+        # Лимиты популярности: >MAX_SUBSCRIBERS или >MAX_AVG_VIEWS — не берём.
+        if settings.max_subscribers and subs > settings.max_subscribers:
+            continue
+        channel_avg = (total_views / video_count) if video_count else 0.0
+        if settings.max_avg_views and channel_avg > settings.max_avg_views:
+            continue
         avg_views = sum(v.view_count for v in vids) / max(1, len(vids))
         popularity_score = subs + avg_views
 
@@ -155,6 +162,7 @@ def build_channel_candidates(youtube: YouTubeClient, videos: list[VideoCandidate
             handle=handle,
             subscriber_count=subs,
             video_count=video_count,
+            view_count=total_views,
             uploads_playlist_id=(content.get("relatedPlaylists", {}) or {}).get("uploads", ""),
             country=snippet.get("country", "") or "",
             popularity_score=popularity_score,

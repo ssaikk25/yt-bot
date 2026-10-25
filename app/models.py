@@ -39,6 +39,7 @@ class ChannelCandidate:
     handle: str = ""          # только часть после @ (без "@")
     subscriber_count: int = 0
     video_count: int = 0
+    view_count: int = 0        # суммарные просмотры канала (для средних на видео)
     uploads_playlist_id: str = ""
     country: str = ""
     popularity_score: float = 0.0  # меньше = более непопулярный (приоритетнее)

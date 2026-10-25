@@ -471,6 +471,14 @@ class DiscoveryEngine:
             if "@" in custom_url:
                 handle = custom_url.split("@", 1)[1].split("/")[0].strip()
             subs = int(stats.get("subscriberCount", 0) or 0)
+            total_views = int(stats.get("viewCount", 0) or 0)
+            # Лимиты популярности: >MAX_SUBSCRIBERS подписчиков или
+            # >MAX_AVG_VIEWS средних просмотров на видео — не берём.
+            if settings.max_subscribers and subs > settings.max_subscribers:
+                continue
+            avg_views = (total_views / video_count) if video_count else 0.0
+            if settings.max_avg_views and avg_views > settings.max_avg_views:
+                continue
             views = channel_views.get(cid, [0])
             score = _candidate_score(subs, views)
             out.append(ChannelCandidate(
@@ -480,6 +488,7 @@ class DiscoveryEngine:
                 handle=handle,
                 subscriber_count=subs,
                 video_count=video_count,
+                view_count=total_views,
                 uploads_playlist_id=(content.get("relatedPlaylists", {}) or {}).get("uploads", ""),
                 country=snippet.get("country", "") or "",
                 popularity_score=score,
