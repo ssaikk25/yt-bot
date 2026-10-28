@@ -69,7 +69,7 @@ def start_runner():
     log("ЗАПУСК python -m app.overnight")
     env = os.environ.copy()
     env.update({
-        "MAX_VIEWS": "10000", "TARGET_CHANNELS": "1800", "MAX_HOURS": "48",
+        "MAX_VIEWS": "10000", "TARGET_CHANNELS": "999999999", "MAX_HOURS": "48",
         "QUOTA_WAIT_SECONDS": "900", "MAX_VIDEOS_PER_CHANNEL": "20",
         "EVAL_PARALLEL": "6", "YTDLP_DELAY": "3.0",
         "PROBE_MIN_INTERVAL": "0",
