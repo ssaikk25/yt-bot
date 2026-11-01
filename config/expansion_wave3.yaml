@@ -1,0 +1,5400 @@
+- query: การจัดดอกไม้ในแจกันแก้ว
+  category: Flowers
+  language: th
+  subtheme: cut_flower_arrangement
+  method: cut_flower_arrangement
+  pool: expansion_wave3
+- query: cắm hoa trong bình thủy tinh
+  category: Flowers
+  language: vi
+  subtheme: cut_flower_arrangement
+  method: cut_flower_arrangement
+  pool: expansion_wave3
+- query: फूलों को फूलदान में सजाना
+  category: Flowers
+  language: hi
+  subtheme: cut_flower_arrangement
+  method: cut_flower_arrangement
+  pool: expansion_wave3
+- query: تنسيق الزهور في مزهرية زجاجية
+  category: Flowers
+  language: ar
+  subtheme: cut_flower_arrangement
+  method: cut_flower_arrangement
+  pool: expansion_wave3
+- query: گل آرایی در گلدان شیشه ای
+  category: Flowers
+  language: fa
+  subtheme: cut_flower_arrangement
+  method: cut_flower_arrangement
+  pool: expansion_wave3
+- query: σύνθεση λουλουδιών σε γυάλινο βάζο
+  category: Flowers
+  language: el
+  subtheme: cut_flower_arrangement
+  method: cut_flower_arrangement
+  pool: expansion_wave3
+- query: סידור פרחים באגרטל זכוכית
+  category: Flowers
+  language: he
+  subtheme: cut_flower_arrangement
+  method: cut_flower_arrangement
+  pool: expansion_wave3
+- query: gubahan bunga dalam pasu kaca
+  category: Flowers
+  language: ms
+  subtheme: cut_flower_arrangement
+  method: cut_flower_arrangement
+  pool: expansion_wave3
+- query: pag-aayos ng bulaklak sa plorera
+  category: Flowers
+  language: tl
+  subtheme: cut_flower_arrangement
+  method: cut_flower_arrangement
+  pool: expansion_wave3
+- query: কাচের ফুলদানিতে ফুল সাজানো
+  category: Flowers
+  language: bn
+  subtheme: cut_flower_arrangement
+  method: cut_flower_arrangement
+  pool: expansion_wave3
+- query: การดูแลสวนกุหลาบในฤดูร้อน
+  category: Flowers
+  language: th
+  subtheme: rose_garden_care
+  method: rose_garden_care
+  pool: expansion_wave3
+- query: chăm sóc vườn hồng mùa hè
+  category: Flowers
+  language: vi
+  subtheme: rose_garden_care
+  method: rose_garden_care
+  pool: expansion_wave3
+- query: गर्मियों में गुलाब के बगीचे की देखभाल
+  category: Flowers
+  language: hi
+  subtheme: rose_garden_care
+  method: rose_garden_care
+  pool: expansion_wave3
+- query: العناية بحديقة الورد في الصيف
+  category: Flowers
+  language: ar
+  subtheme: rose_garden_care
+  method: rose_garden_care
+  pool: expansion_wave3
+- query: مراقبت از باغ گل رز در تابستان
+  category: Flowers
+  language: fa
+  subtheme: rose_garden_care
+  method: rose_garden_care
+  pool: expansion_wave3
+- query: φροντίδα τριανταφυλλιάς το καλοκαίρι
+  category: Flowers
+  language: el
+  subtheme: rose_garden_care
+  method: rose_garden_care
+  pool: expansion_wave3
+- query: טיפול בגן ורדים בקיץ
+  category: Flowers
+  language: he
+  subtheme: rose_garden_care
+  method: rose_garden_care
+  pool: expansion_wave3
+- query: penjagaan taman ros pada musim panas
+  category: Flowers
+  language: ms
+  subtheme: rose_garden_care
+  method: rose_garden_care
+  pool: expansion_wave3
+- query: pag-aalaga ng hardin ng rosas tuwing tag-init
+  category: Flowers
+  language: tl
+  subtheme: rose_garden_care
+  method: rose_garden_care
+  pool: expansion_wave3
+- query: গ্রীষ্মে গোলাপ বাগানের যত্ন
+  category: Flowers
+  language: bn
+  subtheme: rose_garden_care
+  method: rose_garden_care
+  pool: expansion_wave3
+- query: ทุ่งดอกไม้บานในฤดูใบไม้ผลิ
+  category: Flowers
+  language: th
+  subtheme: spring_flower_field
+  method: spring_flower_field
+  pool: expansion_wave3
+- query: cánh đồng hoa nở mùa xuân
+  category: Flowers
+  language: vi
+  subtheme: spring_flower_field
+  method: spring_flower_field
+  pool: expansion_wave3
+- query: वसंत में खिलते फूलों का खेत
+  category: Flowers
+  language: hi
+  subtheme: spring_flower_field
+  method: spring_flower_field
+  pool: expansion_wave3
+- query: حقل زهور مزهر في الربيع
+  category: Flowers
+  language: ar
+  subtheme: spring_flower_field
+  method: spring_flower_field
+  pool: expansion_wave3
+- query: دشت گل های شکفته در بهار
+  category: Flowers
+  language: fa
+  subtheme: spring_flower_field
+  method: spring_flower_field
+  pool: expansion_wave3
+- query: ανοιξιάτικο λιβάδι με λουλούδια
+  category: Flowers
+  language: el
+  subtheme: spring_flower_field
+  method: spring_flower_field
+  pool: expansion_wave3
+- query: שדה פרחים פורח באביב
+  category: Flowers
+  language: he
+  subtheme: spring_flower_field
+  method: spring_flower_field
+  pool: expansion_wave3
+- query: padang bunga mekar musim bunga
+  category: Flowers
+  language: ms
+  subtheme: spring_flower_field
+  method: spring_flower_field
+  pool: expansion_wave3
+- query: bukirin ng bulaklak tuwing tagsibol
+  category: Flowers
+  language: tl
+  subtheme: spring_flower_field
+  method: spring_flower_field
+  pool: expansion_wave3
+- query: বসন্তে ফোটানো ফুলের মাঠ
+  category: Flowers
+  language: bn
+  subtheme: spring_flower_field
+  method: spring_flower_field
+  pool: expansion_wave3
+- query: การย้ายต้นไม้ในบ้านลงกระถางใหม่
+  category: Flowers
+  language: th
+  subtheme: home_flower_potting
+  method: home_flower_potting
+  pool: expansion_wave3
+- query: thay chậu cho cây cảnh trong nhà
+  category: Flowers
+  language: vi
+  subtheme: home_flower_potting
+  method: home_flower_potting
+  pool: expansion_wave3
+- query: घर के पौधों को नए गमले में लगाना
+  category: Flowers
+  language: hi
+  subtheme: home_flower_potting
+  method: home_flower_potting
+  pool: expansion_wave3
+- query: نقل النباتات المنزلية إلى أصيص جديد
+  category: Flowers
+  language: ar
+  subtheme: home_flower_potting
+  method: home_flower_potting
+  pool: expansion_wave3
+- query: تعویض گلدان گیاهان آپارتمانی
+  category: Flowers
+  language: fa
+  subtheme: home_flower_potting
+  method: home_flower_potting
+  pool: expansion_wave3
+- query: μεταφύτευση φυτών εσωτερικού χώρου
+  category: Flowers
+  language: el
+  subtheme: home_flower_potting
+  method: home_flower_potting
+  pool: expansion_wave3
+- query: העברת צמחי בית לעציץ חדש
+  category: Flowers
+  language: he
+  subtheme: home_flower_potting
+  method: home_flower_potting
+  pool: expansion_wave3
+- query: memindahkan pokok hiasan ke pasu baharu
+  category: Flowers
+  language: ms
+  subtheme: home_flower_potting
+  method: home_flower_potting
+  pool: expansion_wave3
+- query: paglilipat ng halaman sa bagong paso
+  category: Flowers
+  language: tl
+  subtheme: home_flower_potting
+  method: home_flower_potting
+  pool: expansion_wave3
+- query: ঘরের গাছ নতুন টবে লাগানো
+  category: Flowers
+  language: bn
+  subtheme: home_flower_potting
+  method: home_flower_potting
+  pool: expansion_wave3
+- query: งานฝีมือจากดอกไม้แห้ง
+  category: Flowers
+  language: th
+  subtheme: dried_flower_craft
+  method: dried_flower_craft
+  pool: expansion_wave3
+- query: làm đồ thủ công từ hoa khô
+  category: Flowers
+  language: vi
+  subtheme: dried_flower_craft
+  method: dried_flower_craft
+  pool: expansion_wave3
+- query: सूखे फूलों से हस्तशिल्प बनाना
+  category: Flowers
+  language: hi
+  subtheme: dried_flower_craft
+  method: dried_flower_craft
+  pool: expansion_wave3
+- query: أعمال يدوية من الزهور المجففة
+  category: Flowers
+  language: ar
+  subtheme: dried_flower_craft
+  method: dried_flower_craft
+  pool: expansion_wave3
+- query: کاردستی با گل های خشک
+  category: Flowers
+  language: fa
+  subtheme: dried_flower_craft
+  method: dried_flower_craft
+  pool: expansion_wave3
+- query: χειροτεχνίες με αποξηραμένα λουλούδια
+  category: Flowers
+  language: el
+  subtheme: dried_flower_craft
+  method: dried_flower_craft
+  pool: expansion_wave3
+- query: עבודות יד מפרחים מיובשים
+  category: Flowers
+  language: he
+  subtheme: dried_flower_craft
+  method: dried_flower_craft
+  pool: expansion_wave3
+- query: kraf tangan daripada bunga kering
+  category: Flowers
+  language: ms
+  subtheme: dried_flower_craft
+  method: dried_flower_craft
+  pool: expansion_wave3
+- query: gawaing kamay mula sa tuyong bulaklak
+  category: Flowers
+  language: tl
+  subtheme: dried_flower_craft
+  method: dried_flower_craft
+  pool: expansion_wave3
+- query: শুকনো ফুল দিয়ে হস্তশিল্প
+  category: Flowers
+  language: bn
+  subtheme: dried_flower_craft
+  method: dried_flower_craft
+  pool: expansion_wave3
+- query: การวาดภาพทิวทัศน์ด้วยสีน้ำ
+  category: Art
+  language: th
+  subtheme: watercolor_landscape
+  method: watercolor_landscape
+  pool: expansion_wave3
+- query: vẽ phong cảnh bằng màu nước
+  category: Art
+  language: vi
+  subtheme: watercolor_landscape
+  method: watercolor_landscape
+  pool: expansion_wave3
+- query: जल रंग से परिदृश्य चित्र बनाना
+  category: Art
+  language: hi
+  subtheme: watercolor_landscape
+  method: watercolor_landscape
+  pool: expansion_wave3
+- query: رسم منظر طبيعي بالألوان المائية
+  category: Art
+  language: ar
+  subtheme: watercolor_landscape
+  method: watercolor_landscape
+  pool: expansion_wave3
+- query: نقاشی منظره با آبرنگ
+  category: Art
+  language: fa
+  subtheme: watercolor_landscape
+  method: watercolor_landscape
+  pool: expansion_wave3
+- query: ζωγραφική τοπίου με νερομπογιές
+  category: Art
+  language: el
+  subtheme: watercolor_landscape
+  method: watercolor_landscape
+  pool: expansion_wave3
+- query: ציור נוף בצבעי מים
+  category: Art
+  language: he
+  subtheme: watercolor_landscape
+  method: watercolor_landscape
+  pool: expansion_wave3
+- query: melukis pemandangan dengan cat air
+  category: Art
+  language: ms
+  subtheme: watercolor_landscape
+  method: watercolor_landscape
+  pool: expansion_wave3
+- query: pagpipinta ng tanawin gamit ang watercolor
+  category: Art
+  language: tl
+  subtheme: watercolor_landscape
+  method: watercolor_landscape
+  pool: expansion_wave3
+- query: জলরঙে প্রাকৃতিক দৃশ্য আঁকা
+  category: Art
+  language: bn
+  subtheme: watercolor_landscape
+  method: watercolor_landscape
+  pool: expansion_wave3
+- query: การวาดภาพเหมือนด้วยดินสอ
+  category: Art
+  language: th
+  subtheme: pencil_portrait
+  method: pencil_portrait
+  pool: expansion_wave3
+- query: vẽ chân dung bằng bút chì
+  category: Art
+  language: vi
+  subtheme: pencil_portrait
+  method: pencil_portrait
+  pool: expansion_wave3
+- query: पेंसिल से चेहरे का चित्र बनाना
+  category: Art
+  language: hi
+  subtheme: pencil_portrait
+  method: pencil_portrait
+  pool: expansion_wave3
+- query: رسم بورتريه بالرصاص
+  category: Art
+  language: ar
+  subtheme: pencil_portrait
+  method: pencil_portrait
+  pool: expansion_wave3
+- query: طراحی چهره با مداد
+  category: Art
+  language: fa
+  subtheme: pencil_portrait
+  method: pencil_portrait
+  pool: expansion_wave3
+- query: σχέδιο πορτρέτου με μολύβι
+  category: Art
+  language: el
+  subtheme: pencil_portrait
+  method: pencil_portrait
+  pool: expansion_wave3
+- query: ציור דיוקן בעיפרון
+  category: Art
+  language: he
+  subtheme: pencil_portrait
+  method: pencil_portrait
+  pool: expansion_wave3
+- query: melukis potret dengan pensel
+  category: Art
+  language: ms
+  subtheme: pencil_portrait
+  method: pencil_portrait
+  pool: expansion_wave3
+- query: pagguhit ng larawan gamit ang lapis
+  category: Art
+  language: tl
+  subtheme: pencil_portrait
+  method: pencil_portrait
+  pool: expansion_wave3
+- query: পেন্সিলে প্রতিকৃতি আঁকা
+  category: Art
+  language: bn
+  subtheme: pencil_portrait
+  method: pencil_portrait
+  pool: expansion_wave3
+- query: การปั้นดินเหนียวเป็นรูปทรงต่างๆ
+  category: Art
+  language: th
+  subtheme: clay_sculpting
+  method: clay_sculpting
+  pool: expansion_wave3
+- query: nặn đất sét thành hình
+  category: Art
+  language: vi
+  subtheme: clay_sculpting
+  method: clay_sculpting
+  pool: expansion_wave3
+- query: मिट्टी से मूर्ति बनाना
+  category: Art
+  language: hi
+  subtheme: clay_sculpting
+  method: clay_sculpting
+  pool: expansion_wave3
+- query: تشكيل الطين لعمل مجسمات
+  category: Art
+  language: ar
+  subtheme: clay_sculpting
+  method: clay_sculpting
+  pool: expansion_wave3
+- query: مجسمه سازی با گل رس
+  category: Art
+  language: fa
+  subtheme: clay_sculpting
+  method: clay_sculpting
+  pool: expansion_wave3
+- query: πλάσιμο πηλού για γλυπτά
+  category: Art
+  language: el
+  subtheme: clay_sculpting
+  method: clay_sculpting
+  pool: expansion_wave3
+- query: פיסול דמויות קטנות מחימר
+  category: Art
+  language: he
+  subtheme: clay_sculpting
+  method: clay_sculpting
+  pool: expansion_wave3
+- query: membentuk tanah liat menjadi arca
+  category: Art
+  language: ms
+  subtheme: clay_sculpting
+  method: clay_sculpting
+  pool: expansion_wave3
+- query: paghubog ng luad na pigura
+  category: Art
+  language: tl
+  subtheme: clay_sculpting
+  method: clay_sculpting
+  pool: expansion_wave3
+- query: মাটি দিয়ে মূর্তি গড়া
+  category: Art
+  language: bn
+  subtheme: clay_sculpting
+  method: clay_sculpting
+  pool: expansion_wave3
+- query: เดินชมภาพวาดในพิพิธภัณฑ์ศิลปะ
+  category: Art
+  language: th
+  subtheme: museum_walkthrough
+  method: museum_walkthrough
+  pool: expansion_wave3
+- query: dạo quanh bảo tàng nghệ thuật
+  category: Art
+  language: vi
+  subtheme: museum_walkthrough
+  method: museum_walkthrough
+  pool: expansion_wave3
+- query: कला संग्रहालय में घूमकर देखना
+  category: Art
+  language: hi
+  subtheme: museum_walkthrough
+  method: museum_walkthrough
+  pool: expansion_wave3
+- query: جولة داخل متحف فني
+  category: Art
+  language: ar
+  subtheme: museum_walkthrough
+  method: museum_walkthrough
+  pool: expansion_wave3
+- query: قدم زدن در موزه هنر
+  category: Art
+  language: fa
+  subtheme: museum_walkthrough
+  method: museum_walkthrough
+  pool: expansion_wave3
+- query: περιήγηση σε μουσείο τέχνης
+  category: Art
+  language: el
+  subtheme: museum_walkthrough
+  method: museum_walkthrough
+  pool: expansion_wave3
+- query: סיור במוזיאון אמנות
+  category: Art
+  language: he
+  subtheme: museum_walkthrough
+  method: museum_walkthrough
+  pool: expansion_wave3
+- query: melawat muzium seni
+  category: Art
+  language: ms
+  subtheme: museum_walkthrough
+  method: museum_walkthrough
+  pool: expansion_wave3
+- query: paglilibot sa museo ng sining
+  category: Art
+  language: tl
+  subtheme: museum_walkthrough
+  method: museum_walkthrough
+  pool: expansion_wave3
+- query: শিল্প জাদুঘরে ঘুরে দেখা
+  category: Art
+  language: bn
+  subtheme: museum_walkthrough
+  method: museum_walkthrough
+  pool: expansion_wave3
+- query: ภาพวาดสีสเปรย์บนกำแพงข้างถนน
+  category: Art
+  language: th
+  subtheme: street_art_wall
+  method: street_art_wall
+  pool: expansion_wave3
+- query: tranh phun sơn trên tường đường phố
+  category: Art
+  language: vi
+  subtheme: street_art_wall
+  method: street_art_wall
+  pool: expansion_wave3
+- query: सड़क की दीवार पर भित्ति चित्र
+  category: Art
+  language: hi
+  subtheme: street_art_wall
+  method: street_art_wall
+  pool: expansion_wave3
+- query: رسم جداريات على حائط الشارع
+  category: Art
+  language: ar
+  subtheme: street_art_wall
+  method: street_art_wall
+  pool: expansion_wave3
+- query: نقاشی دیواری در خیابان
+  category: Art
+  language: fa
+  subtheme: street_art_wall
+  method: street_art_wall
+  pool: expansion_wave3
+- query: τοιχογραφία σε δρόμο της πόλης
+  category: Art
+  language: el
+  subtheme: street_art_wall
+  method: street_art_wall
+  pool: expansion_wave3
+- query: ציור קיר ברחוב העיר
+  category: Art
+  language: he
+  subtheme: street_art_wall
+  method: street_art_wall
+  pool: expansion_wave3
+- query: lukisan dinding di jalan bandar
+  category: Art
+  language: ms
+  subtheme: street_art_wall
+  method: street_art_wall
+  pool: expansion_wave3
+- query: mural sa pader ng kalsada
+  category: Art
+  language: tl
+  subtheme: street_art_wall
+  method: street_art_wall
+  pool: expansion_wave3
+- query: রাস্তার দেয়ালে দেয়ালচিত্র
+  category: Art
+  language: bn
+  subtheme: street_art_wall
+  method: street_art_wall
+  pool: expansion_wave3
+- query: คลื่นทะเลซัดเข้าหาฝั่ง
+  category: Water
+  language: th
+  subtheme: ocean_waves
+  method: ocean_waves
+  pool: expansion_wave3
+- query: sóng biển vỗ vào bờ
+  category: Water
+  language: vi
+  subtheme: ocean_waves
+  method: ocean_waves
+  pool: expansion_wave3
+- query: समुद्र की लहरें किनारे से टकराती
+  category: Water
+  language: hi
+  subtheme: ocean_waves
+  method: ocean_waves
+  pool: expansion_wave3
+- query: أمواج المحيط تتدفق نحو الشاطئ
+  category: Water
+  language: ar
+  subtheme: ocean_waves
+  method: ocean_waves
+  pool: expansion_wave3
+- query: موج های اقیانوس به ساحل می رسند
+  category: Water
+  language: fa
+  subtheme: ocean_waves
+  method: ocean_waves
+  pool: expansion_wave3
+- query: κύματα ωκεανού που σκάνε στην ακτή
+  category: Water
+  language: el
+  subtheme: ocean_waves
+  method: ocean_waves
+  pool: expansion_wave3
+- query: גלי ים נשברים על החוף
+  category: Water
+  language: he
+  subtheme: ocean_waves
+  method: ocean_waves
+  pool: expansion_wave3
+- query: ombak laut memecah di pantai
+  category: Water
+  language: ms
+  subtheme: ocean_waves
+  method: ocean_waves
+  pool: expansion_wave3
+- query: alon ng dagat sa dalampasigan
+  category: Water
+  language: tl
+  subtheme: ocean_waves
+  method: ocean_waves
+  pool: expansion_wave3
+- query: সমুদ্রের ঢেউ তীরে আছড়ে পড়ছে
+  category: Water
+  language: bn
+  subtheme: ocean_waves
+  method: ocean_waves
+  pool: expansion_wave3
+- query: ลำธารใสไหลผ่านหุบเขา
+  category: Water
+  language: th
+  subtheme: mountain_stream
+  method: mountain_stream
+  pool: expansion_wave3
+- query: suối nhỏ chảy qua thung lũng
+  category: Water
+  language: vi
+  subtheme: mountain_stream
+  method: mountain_stream
+  pool: expansion_wave3
+- query: पहाड़ी झरना घाटी में बहता है
+  category: Water
+  language: hi
+  subtheme: mountain_stream
+  method: mountain_stream
+  pool: expansion_wave3
+- query: جدول ماء يجري في الوادي
+  category: Water
+  language: ar
+  subtheme: mountain_stream
+  method: mountain_stream
+  pool: expansion_wave3
+- query: جویبار کوهستانی در دره جاری است
+  category: Water
+  language: fa
+  subtheme: mountain_stream
+  method: mountain_stream
+  pool: expansion_wave3
+- query: ρυάκι βουνού κυλά στην κοιλάδα
+  category: Water
+  language: el
+  subtheme: mountain_stream
+  method: mountain_stream
+  pool: expansion_wave3
+- query: נחל הרים זורם בעמק
+  category: Water
+  language: he
+  subtheme: mountain_stream
+  method: mountain_stream
+  pool: expansion_wave3
+- query: anak sungai gunung mengalir di lembah
+  category: Water
+  language: ms
+  subtheme: mountain_stream
+  method: mountain_stream
+  pool: expansion_wave3
+- query: batis sa bundok na dumadaloy sa lambak
+  category: Water
+  language: tl
+  subtheme: mountain_stream
+  method: mountain_stream
+  pool: expansion_wave3
+- query: পাহাড়ি ঝরনা উপত্যকায় বয়ে চলেছে
+  category: Water
+  language: bn
+  subtheme: mountain_stream
+  method: mountain_stream
+  pool: expansion_wave3
+- query: น้ำตกสูงไหลลงสู่แอ่งน้ำ
+  category: Water
+  language: th
+  subtheme: waterfall_flow
+  method: waterfall_flow
+  pool: expansion_wave3
+- query: thác nước đổ xuống hồ
+  category: Water
+  language: vi
+  subtheme: waterfall_flow
+  method: waterfall_flow
+  pool: expansion_wave3
+- query: ऊंचा जलप्रपात नीचे गिरता हुआ
+  category: Water
+  language: hi
+  subtheme: waterfall_flow
+  method: waterfall_flow
+  pool: expansion_wave3
+- query: شلال مرتفع يتدفق إلى البركة
+  category: Water
+  language: ar
+  subtheme: waterfall_flow
+  method: waterfall_flow
+  pool: expansion_wave3
+- query: آبشار بلند در حوضچه می ریزد
+  category: Water
+  language: fa
+  subtheme: waterfall_flow
+  method: waterfall_flow
+  pool: expansion_wave3
+- query: ψηλός καταρράκτης πέφτει στη λίμνη
+  category: Water
+  language: el
+  subtheme: waterfall_flow
+  method: waterfall_flow
+  pool: expansion_wave3
+- query: מפל גבוה נופל אל הבריכה
+  category: Water
+  language: he
+  subtheme: waterfall_flow
+  method: waterfall_flow
+  pool: expansion_wave3
+- query: air terjun tinggi jatuh ke kolam
+  category: Water
+  language: ms
+  subtheme: waterfall_flow
+  method: waterfall_flow
+  pool: expansion_wave3
+- query: mataas na talon bumabagsak sa lawa
+  category: Water
+  language: tl
+  subtheme: waterfall_flow
+  method: waterfall_flow
+  pool: expansion_wave3
+- query: উঁচু জলপ্রপাত পুকুরে পড়ছে
+  category: Water
+  language: bn
+  subtheme: waterfall_flow
+  method: waterfall_flow
+  pool: expansion_wave3
+- query: เม็ดฝนเกาะกระจกหน้าต่าง
+  category: Water
+  language: th
+  subtheme: rain_on_window
+  method: rain_on_window
+  pool: expansion_wave3
+- query: giọt mưa rơi trên cửa sổ
+  category: Water
+  language: vi
+  subtheme: rain_on_window
+  method: rain_on_window
+  pool: expansion_wave3
+- query: बारिश की बूंदें खिड़की पर गिरती
+  category: Water
+  language: hi
+  subtheme: rain_on_window
+  method: rain_on_window
+  pool: expansion_wave3
+- query: قطرات المطر على زجاج النافذة
+  category: Water
+  language: ar
+  subtheme: rain_on_window
+  method: rain_on_window
+  pool: expansion_wave3
+- query: قطرات باران روی شیشه پنجره
+  category: Water
+  language: fa
+  subtheme: rain_on_window
+  method: rain_on_window
+  pool: expansion_wave3
+- query: σταγόνες βροχής στο τζάμι
+  category: Water
+  language: el
+  subtheme: rain_on_window
+  method: rain_on_window
+  pool: expansion_wave3
+- query: טיפות גשם על חלון הזכוכית
+  category: Water
+  language: he
+  subtheme: rain_on_window
+  method: rain_on_window
+  pool: expansion_wave3
+- query: titisan hujan pada cermin tingkap
+  category: Water
+  language: ms
+  subtheme: rain_on_window
+  method: rain_on_window
+  pool: expansion_wave3
+- query: patak ng ulan sa bintana
+  category: Water
+  language: tl
+  subtheme: rain_on_window
+  method: rain_on_window
+  pool: expansion_wave3
+- query: জানালার কাচে বৃষ্টির ফোঁটা
+  category: Water
+  language: bn
+  subtheme: rain_on_window
+  method: rain_on_window
+  pool: expansion_wave3
+- query: พระอาทิตย์ตกเงียบสงบเหนือทะเลสาบ
+  category: Water
+  language: th
+  subtheme: calm_lake_sunset
+  method: calm_lake_sunset
+  pool: expansion_wave3
+- query: hoàng hôn yên bình trên hồ
+  category: Water
+  language: vi
+  subtheme: calm_lake_sunset
+  method: calm_lake_sunset
+  pool: expansion_wave3
+- query: शांत झील पर सूर्यास्त
+  category: Water
+  language: hi
+  subtheme: calm_lake_sunset
+  method: calm_lake_sunset
+  pool: expansion_wave3
+- query: غروب هادئ على البحيرة
+  category: Water
+  language: ar
+  subtheme: calm_lake_sunset
+  method: calm_lake_sunset
+  pool: expansion_wave3
+- query: غروب آرام روی دریاچه
+  category: Water
+  language: fa
+  subtheme: calm_lake_sunset
+  method: calm_lake_sunset
+  pool: expansion_wave3
+- query: ήσυχο ηλιοβασίλεμα στη λίμνη
+  category: Water
+  language: el
+  subtheme: calm_lake_sunset
+  method: calm_lake_sunset
+  pool: expansion_wave3
+- query: שקיעה שקטה על האגם
+  category: Water
+  language: he
+  subtheme: calm_lake_sunset
+  method: calm_lake_sunset
+  pool: expansion_wave3
+- query: matahari terbenam tenang di tasik
+  category: Water
+  language: ms
+  subtheme: calm_lake_sunset
+  method: calm_lake_sunset
+  pool: expansion_wave3
+- query: tahimik na paglubog ng araw sa lawa
+  category: Water
+  language: tl
+  subtheme: calm_lake_sunset
+  method: calm_lake_sunset
+  pool: expansion_wave3
+- query: শান্ত হ্রদে সূর্যাস্ত
+  category: Water
+  language: bn
+  subtheme: calm_lake_sunset
+  method: calm_lake_sunset
+  pool: expansion_wave3
+- query: บินโดรน FPV ผ่านป่า
+  category: Съемки с дронов, goPRO
+  language: th
+  subtheme: fpv_drone_flight
+  method: fpv_drone_flight
+  pool: expansion_wave3
+- query: bay drone FPV xuyên rừng
+  category: Съемки с дронов, goPRO
+  language: vi
+  subtheme: fpv_drone_flight
+  method: fpv_drone_flight
+  pool: expansion_wave3
+- query: एफपीवी ड्रोन से जंगल में उड़ान
+  category: Съемки с дронов, goPRO
+  language: hi
+  subtheme: fpv_drone_flight
+  method: fpv_drone_flight
+  pool: expansion_wave3
+- query: تحليق طائرة بدون طيار فوق الغابة
+  category: Съемки с дронов, goPRO
+  language: ar
+  subtheme: fpv_drone_flight
+  method: fpv_drone_flight
+  pool: expansion_wave3
+- query: پرواز با پهپاد در جنگل
+  category: Съемки с дронов, goPRO
+  language: fa
+  subtheme: fpv_drone_flight
+  method: fpv_drone_flight
+  pool: expansion_wave3
+- query: πτήση drone μέσα στο δάσος
+  category: Съемки с дронов, goPRO
+  language: el
+  subtheme: fpv_drone_flight
+  method: fpv_drone_flight
+  pool: expansion_wave3
+- query: טיסת רחפן בין עצי היער
+  category: Съемки с дронов, goPRO
+  language: he
+  subtheme: fpv_drone_flight
+  method: fpv_drone_flight
+  pool: expansion_wave3
+- query: penerbangan dron fpv di hutan
+  category: Съемки с дронов, goPRO
+  language: ms
+  subtheme: fpv_drone_flight
+  method: fpv_drone_flight
+  pool: expansion_wave3
+- query: paglipad ng drone sa kagubatan
+  category: Съемки с дронов, goPRO
+  language: tl
+  subtheme: fpv_drone_flight
+  method: fpv_drone_flight
+  pool: expansion_wave3
+- query: এফপিভি ড্রোনে বনের ওপর দিয়ে উড়ান
+  category: Съемки с дронов, goPRO
+  language: bn
+  subtheme: fpv_drone_flight
+  method: fpv_drone_flight
+  pool: expansion_wave3
+- query: ภาพทางอากาศของชายฝั่งทะเล
+  category: Съемки с дронов, goPRO
+  language: th
+  subtheme: drone_coastline
+  method: drone_coastline
+  pool: expansion_wave3
+- query: quay phim bờ biển bằng flycam
+  category: Съемки с дронов, goPRO
+  language: vi
+  subtheme: drone_coastline
+  method: drone_coastline
+  pool: expansion_wave3
+- query: ड्रोन से समुद्री तट का दृश्य
+  category: Съемки с дронов, goPRO
+  language: hi
+  subtheme: drone_coastline
+  method: drone_coastline
+  pool: expansion_wave3
+- query: تصوير الساحل من الجو بطائرة مسيرة
+  category: Съемки с дронов, goPRO
+  language: ar
+  subtheme: drone_coastline
+  method: drone_coastline
+  pool: expansion_wave3
+- query: فیلمبرداری هوایی از خط ساحلی
+  category: Съемки с дронов, goPRO
+  language: fa
+  subtheme: drone_coastline
+  method: drone_coastline
+  pool: expansion_wave3
+- query: εναέρια λήψη ακτογραμμής με drone
+  category: Съемки с дронов, goPRO
+  language: el
+  subtheme: drone_coastline
+  method: drone_coastline
+  pool: expansion_wave3
+- query: צילום אווירי של קו החוף
+  category: Съемки с дронов, goPRO
+  language: he
+  subtheme: drone_coastline
+  method: drone_coastline
+  pool: expansion_wave3
+- query: rakaman udara garis pantai
+  category: Съемки с дронов, goPRO
+  language: ms
+  subtheme: drone_coastline
+  method: drone_coastline
+  pool: expansion_wave3
+- query: aerial na kuha ng baybayin
+  category: Съемки с дронов, goPRO
+  language: tl
+  subtheme: drone_coastline
+  method: drone_coastline
+  pool: expansion_wave3
+- query: ড্রোনে উপকূলের আকাশ দৃশ্য
+  category: Съемки с дронов, goPRO
+  language: bn
+  subtheme: drone_coastline
+  method: drone_coastline
+  pool: expansion_wave3
+- query: ปั่นจักรยานพร้อมกล้อง gopro
+  category: Съемки с дронов, goPRO
+  language: th
+  subtheme: gopro_bike_ride
+  method: gopro_bike_ride
+  pool: expansion_wave3
+- query: đạp xe với camera hành trình
+  category: Съемки с дронов, goPRO
+  language: vi
+  subtheme: gopro_bike_ride
+  method: gopro_bike_ride
+  pool: expansion_wave3
+- query: साइकिल चलाते हुए एक्शन कैमरा
+  category: Съемки с дронов, goPRO
+  language: hi
+  subtheme: gopro_bike_ride
+  method: gopro_bike_ride
+  pool: expansion_wave3
+- query: ركوب الدراجة مع كاميرا أكشن
+  category: Съемки с дронов, goPRO
+  language: ar
+  subtheme: gopro_bike_ride
+  method: gopro_bike_ride
+  pool: expansion_wave3
+- query: دوچرخه سواری با دوربین اکشن
+  category: Съемки с дронов, goPRO
+  language: fa
+  subtheme: gopro_bike_ride
+  method: gopro_bike_ride
+  pool: expansion_wave3
+- query: ποδήλατο με κάμερα δράσης
+  category: Съемки с дронов, goPRO
+  language: el
+  subtheme: gopro_bike_ride
+  method: gopro_bike_ride
+  pool: expansion_wave3
+- query: רכיבה על אופניים עם מצלמת אקשן
+  category: Съемки с дронов, goPRO
+  language: he
+  subtheme: gopro_bike_ride
+  method: gopro_bike_ride
+  pool: expansion_wave3
+- query: berbasikal dengan kamera aksi
+  category: Съемки с дронов, goPRO
+  language: ms
+  subtheme: gopro_bike_ride
+  method: gopro_bike_ride
+  pool: expansion_wave3
+- query: pagbibisikleta gamit ang action camera
+  category: Съемки с дронов, goPRO
+  language: tl
+  subtheme: gopro_bike_ride
+  method: gopro_bike_ride
+  pool: expansion_wave3
+- query: অ্যাকশন ক্যামেরায় সাইকেল চালানো
+  category: Съемки с дронов, goPRO
+  language: bn
+  subtheme: gopro_bike_ride
+  method: gopro_bike_ride
+  pool: expansion_wave3
+- query: มุมมองจากโดรนเหนือยอดไม้
+  category: Съемки с дронов, goPRO
+  language: th
+  subtheme: drone_forest_top
+  method: drone_forest_top
+  pool: expansion_wave3
+- query: nhìn từ trên cao xuống rừng
+  category: Съемки с дронов, goPRO
+  language: vi
+  subtheme: drone_forest_top
+  method: drone_forest_top
+  pool: expansion_wave3
+- query: पेड़ों के ऊपर से ड्रोन का दृश्य
+  category: Съемки с дронов, goPRO
+  language: hi
+  subtheme: drone_forest_top
+  method: drone_forest_top
+  pool: expansion_wave3
+- query: منظر الغابة من فوق الأشجار
+  category: Съемки с дронов, goPRO
+  language: ar
+  subtheme: drone_forest_top
+  method: drone_forest_top
+  pool: expansion_wave3
+- query: نمای جنگل از بالای درختان
+  category: Съемки с дронов, goPRO
+  language: fa
+  subtheme: drone_forest_top
+  method: drone_forest_top
+  pool: expansion_wave3
+- query: θέα του δάσους από ψηλά
+  category: Съемки с дронов, goPRO
+  language: el
+  subtheme: drone_forest_top
+  method: drone_forest_top
+  pool: expansion_wave3
+- query: מבט מלמעלה על צמרות העצים
+  category: Съемки с дронов, goPRO
+  language: he
+  subtheme: drone_forest_top
+  method: drone_forest_top
+  pool: expansion_wave3
+- query: pandangan dari atas pokok hutan
+  category: Съемки с дронов, goPRO
+  language: ms
+  subtheme: drone_forest_top
+  method: drone_forest_top
+  pool: expansion_wave3
+- query: tanawin ng gubat mula sa itaas
+  category: Съемки с дронов, goPRO
+  language: tl
+  subtheme: drone_forest_top
+  method: drone_forest_top
+  pool: expansion_wave3
+- query: গাছের ওপর থেকে বনের দৃশ্য
+  category: Съемки с дронов, goPRO
+  language: bn
+  subtheme: drone_forest_top
+  method: drone_forest_top
+  pool: expansion_wave3
+- query: ดำน้ำถ่ายคลิปใต้น้ำ
+  category: Съемки с дронов, goPRO
+  language: th
+  subtheme: underwater_gopro
+  method: underwater_gopro
+  pool: expansion_wave3
+- query: quay clip dưới nước khi lặn
+  category: Съемки с дронов, goPRO
+  language: vi
+  subtheme: underwater_gopro
+  method: underwater_gopro
+  pool: expansion_wave3
+- query: पानी के नीचे गोप्रो से रिकॉर्डिंग
+  category: Съемки с дронов, goPRO
+  language: hi
+  subtheme: underwater_gopro
+  method: underwater_gopro
+  pool: expansion_wave3
+- query: تصوير تحت الماء بكاميرا أكشن
+  category: Съемки с дронов, goPRO
+  language: ar
+  subtheme: underwater_gopro
+  method: underwater_gopro
+  pool: expansion_wave3
+- query: فیلمبرداری زیر آب با دوربین اکشن
+  category: Съемки с дронов, goPRO
+  language: fa
+  subtheme: underwater_gopro
+  method: underwater_gopro
+  pool: expansion_wave3
+- query: υποβρύχια λήψη με κάμερα
+  category: Съемки с дронов, goPRO
+  language: el
+  subtheme: underwater_gopro
+  method: underwater_gopro
+  pool: expansion_wave3
+- query: צילום מתחת למים עם מצלמת אקשן
+  category: Съемки с дронов, goPRO
+  language: he
+  subtheme: underwater_gopro
+  method: underwater_gopro
+  pool: expansion_wave3
+- query: rakaman bawah air dengan kamera aksi
+  category: Съемки с дронов, goPRO
+  language: ms
+  subtheme: underwater_gopro
+  method: underwater_gopro
+  pool: expansion_wave3
+- query: kuha sa ilalim ng tubig
+  category: Съемки с дронов, goPRO
+  language: tl
+  subtheme: underwater_gopro
+  method: underwater_gopro
+  pool: expansion_wave3
+- query: পানির নিচে অ্যাকশন ক্যামেরায় ভিডিও
+  category: Съемки с дронов, goPRO
+  language: bn
+  subtheme: underwater_gopro
+  method: underwater_gopro
+  pool: expansion_wave3
+- query: ควันลอยช้าๆ ในฉากมืด
+  category: Высококачественные стоковые клипы
+  language: th
+  subtheme: slow_motion_smoke
+  method: slow_motion_smoke
+  pool: expansion_wave3
+- query: khói bay chậm trong nền tối
+  category: Высококачественные стоковые клипы
+  language: vi
+  subtheme: slow_motion_smoke
+  method: slow_motion_smoke
+  pool: expansion_wave3
+- query: धीमी गति में धुआं उठता हुआ
+  category: Высококачественные стоковые клипы
+  language: hi
+  subtheme: slow_motion_smoke
+  method: slow_motion_smoke
+  pool: expansion_wave3
+- query: دخان يتصاعد ببطء في خلفية داكنة
+  category: Высококачественные стоковые клипы
+  language: ar
+  subtheme: slow_motion_smoke
+  method: slow_motion_smoke
+  pool: expansion_wave3
+- query: دود در حال حرکت آهسته
+  category: Высококачественные стоковые клипы
+  language: fa
+  subtheme: slow_motion_smoke
+  method: slow_motion_smoke
+  pool: expansion_wave3
+- query: αργός καπνός σε σκοτεινό φόντο
+  category: Высококачественные стоковые клипы
+  language: el
+  subtheme: slow_motion_smoke
+  method: slow_motion_smoke
+  pool: expansion_wave3
+- query: עשן איטי על רקע כהה
+  category: Высококачественные стоковые клипы
+  language: he
+  subtheme: slow_motion_smoke
+  method: slow_motion_smoke
+  pool: expansion_wave3
+- query: asap bergerak perlahan latar gelap
+  category: Высококачественные стоковые клипы
+  language: ms
+  subtheme: slow_motion_smoke
+  method: slow_motion_smoke
+  pool: expansion_wave3
+- query: mabagal na usok sa madilim na background
+  category: Высококачественные стоковые клипы
+  language: tl
+  subtheme: slow_motion_smoke
+  method: slow_motion_smoke
+  pool: expansion_wave3
+- query: ধীর গতিতে ধোঁয়া উঠছে
+  category: Высококачественные стоковые клипы
+  language: bn
+  subtheme: slow_motion_smoke
+  method: slow_motion_smoke
+  pool: expansion_wave3
+- query: หมึกสีกระจายในน้ำ
+  category: Высококачественные стоковые клипы
+  language: th
+  subtheme: abstract_ink
+  method: abstract_ink
+  pool: expansion_wave3
+- query: mực màu loang trong nước
+  category: Высококачественные стоковые клипы
+  language: vi
+  subtheme: abstract_ink
+  method: abstract_ink
+  pool: expansion_wave3
+- query: पानी में रंगीन स्याही फैलती हुई
+  category: Высококачественные стоковые клипы
+  language: hi
+  subtheme: abstract_ink
+  method: abstract_ink
+  pool: expansion_wave3
+- query: حبر ملون ينتشر في الماء
+  category: Высококачественные стоковые клипы
+  language: ar
+  subtheme: abstract_ink
+  method: abstract_ink
+  pool: expansion_wave3
+- query: جوهر رنگی در آب پخش می شود
+  category: Высококачественные стоковые клипы
+  language: fa
+  subtheme: abstract_ink
+  method: abstract_ink
+  pool: expansion_wave3
+- query: μελάνι απλώνεται μέσα στο νερό
+  category: Высококачественные стоковые клипы
+  language: el
+  subtheme: abstract_ink
+  method: abstract_ink
+  pool: expansion_wave3
+- query: דיו צבעוני מתפשט במים
+  category: Высококачественные стоковые клипы
+  language: he
+  subtheme: abstract_ink
+  method: abstract_ink
+  pool: expansion_wave3
+- query: dakwat berwarna merebak dalam air
+  category: Высококачественные стоковые клипы
+  language: ms
+  subtheme: abstract_ink
+  method: abstract_ink
+  pool: expansion_wave3
+- query: tinta na kumakalat sa tubig
+  category: Высококачественные стоковые клипы
+  language: tl
+  subtheme: abstract_ink
+  method: abstract_ink
+  pool: expansion_wave3
+- query: পানিতে রঙিন কালি ছড়াচ্ছে
+  category: Высококачественные стоковые клипы
+  language: bn
+  subtheme: abstract_ink
+  method: abstract_ink
+  pool: expansion_wave3
+- query: แสงไฟเมืองยามค่ำคืนเบลอๆ
+  category: Высококачественные стоковые клипы
+  language: th
+  subtheme: city_night_bokeh
+  method: city_night_bokeh
+  pool: expansion_wave3
+- query: đèn thành phố về đêm mờ ảo
+  category: Высококачественные стоковые клипы
+  language: vi
+  subtheme: city_night_bokeh
+  method: city_night_bokeh
+  pool: expansion_wave3
+- query: रात में शहर की रोशनी
+  category: Высококачественные стоковые клипы
+  language: hi
+  subtheme: city_night_bokeh
+  method: city_night_bokeh
+  pool: expansion_wave3
+- query: أضواء المدينة ليلا بتأثير ضبابي
+  category: Высококачественные стоковые клипы
+  language: ar
+  subtheme: city_night_bokeh
+  method: city_night_bokeh
+  pool: expansion_wave3
+- query: نورهای شهر در شب
+  category: Высококачественные стоковые клипы
+  language: fa
+  subtheme: city_night_bokeh
+  method: city_night_bokeh
+  pool: expansion_wave3
+- query: φώτα πόλης τη νύχτα
+  category: Высококачественные стоковые клипы
+  language: el
+  subtheme: city_night_bokeh
+  method: city_night_bokeh
+  pool: expansion_wave3
+- query: אורות העיר בלילה
+  category: Высококачественные стоковые клипы
+  language: he
+  subtheme: city_night_bokeh
+  method: city_night_bokeh
+  pool: expansion_wave3
+- query: lampu bandar pada waktu malam
+  category: Высококачественные стоковые клипы
+  language: ms
+  subtheme: city_night_bokeh
+  method: city_night_bokeh
+  pool: expansion_wave3
+- query: ilaw ng lungsod sa gabi
+  category: Высококачественные стоковые клипы
+  language: tl
+  subtheme: city_night_bokeh
+  method: city_night_bokeh
+  pool: expansion_wave3
+- query: রাতে শহরের আলোর ঝলক
+  category: Высококачественные стоковые клипы
+  language: bn
+  subtheme: city_night_bokeh
+  method: city_night_bokeh
+  pool: expansion_wave3
+- query: ถ่ายสินค้าในสตูดิโอด้วยแสงนุ่ม
+  category: Высококачественные стоковые клипы
+  language: th
+  subtheme: studio_product_light
+  method: studio_product_light
+  pool: expansion_wave3
+- query: chụp sản phẩm trong studio
+  category: Высококачественные стоковые клипы
+  language: vi
+  subtheme: studio_product_light
+  method: studio_product_light
+  pool: expansion_wave3
+- query: स्टूडियो में उत्पाद की फोटोशूट
+  category: Высококачественные стоковые клипы
+  language: hi
+  subtheme: studio_product_light
+  method: studio_product_light
+  pool: expansion_wave3
+- query: تصوير منتج داخل استوديو بإضاءة ناعمة
+  category: Высококачественные стоковые клипы
+  language: ar
+  subtheme: studio_product_light
+  method: studio_product_light
+  pool: expansion_wave3
+- query: عکاسی محصول در استودیو
+  category: Высококачественные стоковые клипы
+  language: fa
+  subtheme: studio_product_light
+  method: studio_product_light
+  pool: expansion_wave3
+- query: φωτογράφιση προϊόντος σε στούντιο
+  category: Высококачественные стоковые клипы
+  language: el
+  subtheme: studio_product_light
+  method: studio_product_light
+  pool: expansion_wave3
+- query: צילום מוצר באולפן
+  category: Высококачественные стоковые клипы
+  language: he
+  subtheme: studio_product_light
+  method: studio_product_light
+  pool: expansion_wave3
+- query: fotografi produk di studio
+  category: Высококачественные стоковые клипы
+  language: ms
+  subtheme: studio_product_light
+  method: studio_product_light
+  pool: expansion_wave3
+- query: pagkuha ng produkto sa studio
+  category: Высококачественные стоковые клипы
+  language: tl
+  subtheme: studio_product_light
+  method: studio_product_light
+  pool: expansion_wave3
+- query: স্টুডিওতে পণ্যের ফটোশুট
+  category: Высококачественные стоковые клипы
+  language: bn
+  subtheme: studio_product_light
+  method: studio_product_light
+  pool: expansion_wave3
+- query: วิดีโอพื้นหลังวนซ้ำไม่มีสะดุด
+  category: Высококачественные стоковые клипы
+  language: th
+  subtheme: seamless_loop_background
+  method: seamless_loop_background
+  pool: expansion_wave3
+- query: video nền lặp lại liền mạch
+  category: Высококачественные стоковые клипы
+  language: vi
+  subtheme: seamless_loop_background
+  method: seamless_loop_background
+  pool: expansion_wave3
+- query: बिना रुके चलने वाला बैकग्राउंड वीडियो
+  category: Высококачественные стоковые клипы
+  language: hi
+  subtheme: seamless_loop_background
+  method: seamless_loop_background
+  pool: expansion_wave3
+- query: فيديو خلفية متكرر بسلاسة
+  category: Высококачественные стоковые клипы
+  language: ar
+  subtheme: seamless_loop_background
+  method: seamless_loop_background
+  pool: expansion_wave3
+- query: ویدیو پس زمینه بدون وقفه
+  category: Высококачественные стоковые клипы
+  language: fa
+  subtheme: seamless_loop_background
+  method: seamless_loop_background
+  pool: expansion_wave3
+- query: βίντεο φόντου χωρίς διακοπή
+  category: Высококачественные стоковые клипы
+  language: el
+  subtheme: seamless_loop_background
+  method: seamless_loop_background
+  pool: expansion_wave3
+- query: וידאו רקע בלופ חלק
+  category: Высококачественные стоковые клипы
+  language: he
+  subtheme: seamless_loop_background
+  method: seamless_loop_background
+  pool: expansion_wave3
+- query: video latar berulang tanpa jeda
+  category: Высококачественные стоковые клипы
+  language: ms
+  subtheme: seamless_loop_background
+  method: seamless_loop_background
+  pool: expansion_wave3
+- query: paulit-ulit na video background
+  category: Высококачественные стоковые клипы
+  language: tl
+  subtheme: seamless_loop_background
+  method: seamless_loop_background
+  pool: expansion_wave3
+- query: বিরতিহীন লুপ ব্যাকগ্রাউন্ড ভিডিও
+  category: Высококачественные стоковые клипы
+  language: bn
+  subtheme: seamless_loop_background
+  method: seamless_loop_background
+  pool: expansion_wave3
+- query: การอบขนมปังโฮมเมดในเตาอบ
+  category: Кулинария
+  language: th
+  subtheme: bread_baking
+  method: bread_baking
+  pool: expansion_wave3
+- query: nướng bánh mì tại nhà
+  category: Кулинария
+  language: vi
+  subtheme: bread_baking
+  method: bread_baking
+  pool: expansion_wave3
+- query: घर पर ब्रेड बेक करना
+  category: Кулинария
+  language: hi
+  subtheme: bread_baking
+  method: bread_baking
+  pool: expansion_wave3
+- query: خبز الخبز المنزلي في الفرن
+  category: Кулинария
+  language: ar
+  subtheme: bread_baking
+  method: bread_baking
+  pool: expansion_wave3
+- query: پخت نان خانگی در فر
+  category: Кулинария
+  language: fa
+  subtheme: bread_baking
+  method: bread_baking
+  pool: expansion_wave3
+- query: ψήσιμο ψωμιού στο σπίτι
+  category: Кулинария
+  language: el
+  subtheme: bread_baking
+  method: bread_baking
+  pool: expansion_wave3
+- query: אפיית לחם ביתי בתנור
+  category: Кулинария
+  language: he
+  subtheme: bread_baking
+  method: bread_baking
+  pool: expansion_wave3
+- query: membakar roti di rumah
+  category: Кулинария
+  language: ms
+  subtheme: bread_baking
+  method: bread_baking
+  pool: expansion_wave3
+- query: pagluluto ng tinapay sa bahay
+  category: Кулинария
+  language: tl
+  subtheme: bread_baking
+  method: bread_baking
+  pool: expansion_wave3
+- query: বাড়িতে রুটি বেক করা
+  category: Кулинария
+  language: bn
+  subtheme: bread_baking
+  method: bread_baking
+  pool: expansion_wave3
+- query: การทำซุปบะหมี่ร้อนๆ
+  category: Кулинария
+  language: th
+  subtheme: noodle_soup_cook
+  method: noodle_soup_cook
+  pool: expansion_wave3
+- query: nấu súp mì nóng hổi
+  category: Кулинария
+  language: vi
+  subtheme: noodle_soup_cook
+  method: noodle_soup_cook
+  pool: expansion_wave3
+- query: गरम नूडल सूप बनाना
+  category: Кулинария
+  language: hi
+  subtheme: noodle_soup_cook
+  method: noodle_soup_cook
+  pool: expansion_wave3
+- query: طبخ شوربة النودلز الساخنة
+  category: Кулинария
+  language: ar
+  subtheme: noodle_soup_cook
+  method: noodle_soup_cook
+  pool: expansion_wave3
+- query: پختن سوپ نودل گرم
+  category: Кулинария
+  language: fa
+  subtheme: noodle_soup_cook
+  method: noodle_soup_cook
+  pool: expansion_wave3
+- query: μαγείρεμα ζεστής σούπας νουντλς
+  category: Кулинария
+  language: el
+  subtheme: noodle_soup_cook
+  method: noodle_soup_cook
+  pool: expansion_wave3
+- query: בישול מרק נודלס חם
+  category: Кулинария
+  language: he
+  subtheme: noodle_soup_cook
+  method: noodle_soup_cook
+  pool: expansion_wave3
+- query: memasak sup mee panas
+  category: Кулинария
+  language: ms
+  subtheme: noodle_soup_cook
+  method: noodle_soup_cook
+  pool: expansion_wave3
+- query: pagluluto ng mainit na sabaw ng mami
+  category: Кулинария
+  language: tl
+  subtheme: noodle_soup_cook
+  method: noodle_soup_cook
+  pool: expansion_wave3
+- query: গরম নুডল স্যুপ রান্না
+  category: Кулинария
+  language: bn
+  subtheme: noodle_soup_cook
+  method: noodle_soup_cook
+  pool: expansion_wave3
+- query: ปิ้งย่างอาหารข้างถนน
+  category: Кулинария
+  language: th
+  subtheme: street_food_grill
+  method: street_food_grill
+  pool: expansion_wave3
+- query: nướng đồ ăn đường phố
+  category: Кулинария
+  language: vi
+  subtheme: street_food_grill
+  method: street_food_grill
+  pool: expansion_wave3
+- query: सड़क किनारे स्ट्रीट फूड ग्रिल
+  category: Кулинария
+  language: hi
+  subtheme: street_food_grill
+  method: street_food_grill
+  pool: expansion_wave3
+- query: شوي طعام الشارع على الفحم
+  category: Кулинария
+  language: ar
+  subtheme: street_food_grill
+  method: street_food_grill
+  pool: expansion_wave3
+- query: کباب کردن غذای خیابانی
+  category: Кулинария
+  language: fa
+  subtheme: street_food_grill
+  method: street_food_grill
+  pool: expansion_wave3
+- query: ψήσιμο φαγητού στον δρόμο
+  category: Кулинария
+  language: el
+  subtheme: street_food_grill
+  method: street_food_grill
+  pool: expansion_wave3
+- query: צליית אוכל רחוב על האש
+  category: Кулинария
+  language: he
+  subtheme: street_food_grill
+  method: street_food_grill
+  pool: expansion_wave3
+- query: memanggang makanan jalanan
+  category: Кулинария
+  language: ms
+  subtheme: street_food_grill
+  method: street_food_grill
+  pool: expansion_wave3
+- query: pag-ihaw ng pagkaing kalye
+  category: Кулинария
+  language: tl
+  subtheme: street_food_grill
+  method: street_food_grill
+  pool: expansion_wave3
+- query: রাস্তার খাবার গ্রিল করা
+  category: Кулинария
+  language: bn
+  subtheme: street_food_grill
+  method: street_food_grill
+  pool: expansion_wave3
+- query: การจัดจานขนมหวานอย่างสวยงาม
+  category: Кулинария
+  language: th
+  subtheme: dessert_plating
+  method: dessert_plating
+  pool: expansion_wave3
+- query: trang trí món tráng miệng
+  category: Кулинария
+  language: vi
+  subtheme: dessert_plating
+  method: dessert_plating
+  pool: expansion_wave3
+- query: मिठाई को प्लेट में सजाना
+  category: Кулинария
+  language: hi
+  subtheme: dessert_plating
+  method: dessert_plating
+  pool: expansion_wave3
+- query: تزيين طبق الحلوى
+  category: Кулинария
+  language: ar
+  subtheme: dessert_plating
+  method: dessert_plating
+  pool: expansion_wave3
+- query: تزئین دسر در بشقاب
+  category: Кулинария
+  language: fa
+  subtheme: dessert_plating
+  method: dessert_plating
+  pool: expansion_wave3
+- query: διακόσμηση γλυκού στο πιάτο
+  category: Кулинария
+  language: el
+  subtheme: dessert_plating
+  method: dessert_plating
+  pool: expansion_wave3
+- query: עיצוב קינוח על הצלחת
+  category: Кулинария
+  language: he
+  subtheme: dessert_plating
+  method: dessert_plating
+  pool: expansion_wave3
+- query: menghias pencuci mulut di pinggan
+  category: Кулинария
+  language: ms
+  subtheme: dessert_plating
+  method: dessert_plating
+  pool: expansion_wave3
+- query: pag-aayos ng panghimagas sa plato
+  category: Кулинария
+  language: tl
+  subtheme: dessert_plating
+  method: dessert_plating
+  pool: expansion_wave3
+- query: প্লেটে মিষ্টি সাজানো
+  category: Кулинария
+  language: bn
+  subtheme: dessert_plating
+  method: dessert_plating
+  pool: expansion_wave3
+- query: ชงกาแฟยามเช้าในบ้าน
+  category: Кулинария
+  language: th
+  subtheme: morning_coffee_brew
+  method: morning_coffee_brew
+  pool: expansion_wave3
+- query: pha cà phê buổi sáng tại nhà
+  category: Кулинария
+  language: vi
+  subtheme: morning_coffee_brew
+  method: morning_coffee_brew
+  pool: expansion_wave3
+- query: सुबह घर पर कॉफी बनाना
+  category: Кулинария
+  language: hi
+  subtheme: morning_coffee_brew
+  method: morning_coffee_brew
+  pool: expansion_wave3
+- query: تحضير قهوة الصباح في المنزل
+  category: Кулинария
+  language: ar
+  subtheme: morning_coffee_brew
+  method: morning_coffee_brew
+  pool: expansion_wave3
+- query: دم کردن قهوه صبحگاهی
+  category: Кулинария
+  language: fa
+  subtheme: morning_coffee_brew
+  method: morning_coffee_brew
+  pool: expansion_wave3
+- query: παρασκευή πρωινού καφέ στο σπίτι
+  category: Кулинария
+  language: el
+  subtheme: morning_coffee_brew
+  method: morning_coffee_brew
+  pool: expansion_wave3
+- query: הכנת קפה בוקר בבית
+  category: Кулинария
+  language: he
+  subtheme: morning_coffee_brew
+  method: morning_coffee_brew
+  pool: expansion_wave3
+- query: membancuh kopi pagi di rumah
+  category: Кулинария
+  language: ms
+  subtheme: morning_coffee_brew
+  method: morning_coffee_brew
+  pool: expansion_wave3
+- query: paggawa ng kape sa umaga
+  category: Кулинария
+  language: tl
+  subtheme: morning_coffee_brew
+  method: morning_coffee_brew
+  pool: expansion_wave3
+- query: সকালে বাড়িতে কফি বানানো
+  category: Кулинария
+  language: bn
+  subtheme: morning_coffee_brew
+  method: morning_coffee_brew
+  pool: expansion_wave3
+- query: เดินป่าตามเส้นทางภูเขา
+  category: Видео с активностями
+  language: th
+  subtheme: hiking_trail
+  method: hiking_trail
+  pool: expansion_wave3
+- query: đi bộ đường dài trên núi
+  category: Видео с активностями
+  language: vi
+  subtheme: hiking_trail
+  method: hiking_trail
+  pool: expansion_wave3
+- query: पहाड़ी रास्ते पर ट्रेकिंग
+  category: Видео с активностями
+  language: hi
+  subtheme: hiking_trail
+  method: hiking_trail
+  pool: expansion_wave3
+- query: المشي على مسار جبلي
+  category: Видео с активностями
+  language: ar
+  subtheme: hiking_trail
+  method: hiking_trail
+  pool: expansion_wave3
+- query: پیاده روی در مسیر کوهستانی
+  category: Видео с активностями
+  language: fa
+  subtheme: hiking_trail
+  method: hiking_trail
+  pool: expansion_wave3
+- query: πεζοπορία σε ορεινό μονοπάτι
+  category: Видео с активностями
+  language: el
+  subtheme: hiking_trail
+  method: hiking_trail
+  pool: expansion_wave3
+- query: טיול רגלי בשביל הרים
+  category: Видео с активностями
+  language: he
+  subtheme: hiking_trail
+  method: hiking_trail
+  pool: expansion_wave3
+- query: mendaki di laluan gunung
+  category: Видео с активностями
+  language: ms
+  subtheme: hiking_trail
+  method: hiking_trail
+  pool: expansion_wave3
+- query: paglalakad sa trail ng bundok
+  category: Видео с активностями
+  language: tl
+  subtheme: hiking_trail
+  method: hiking_trail
+  pool: expansion_wave3
+- query: পাহাড়ি পথে ট্রেকিং
+  category: Видео с активностями
+  language: bn
+  subtheme: hiking_trail
+  method: hiking_trail
+  pool: expansion_wave3
+- query: พายเรือคายัคในแม่น้ำ
+  category: Видео с активностями
+  language: th
+  subtheme: kayak_river
+  method: kayak_river
+  pool: expansion_wave3
+- query: chèo kayak trên sông
+  category: Видео с активностями
+  language: vi
+  subtheme: kayak_river
+  method: kayak_river
+  pool: expansion_wave3
+- query: नदी में कयाक चलाना
+  category: Видео с активностями
+  language: hi
+  subtheme: kayak_river
+  method: kayak_river
+  pool: expansion_wave3
+- query: التجديف بالكاياك في النهر
+  category: Видео с активностями
+  language: ar
+  subtheme: kayak_river
+  method: kayak_river
+  pool: expansion_wave3
+- query: قایق سواری با کایاک در رودخانه
+  category: Видео с активностями
+  language: fa
+  subtheme: kayak_river
+  method: kayak_river
+  pool: expansion_wave3
+- query: κωπηλασία με καγιάκ στο ποτάμι
+  category: Видео с активностями
+  language: el
+  subtheme: kayak_river
+  method: kayak_river
+  pool: expansion_wave3
+- query: שייט קיאק בנהר
+  category: Видео с активностями
+  language: he
+  subtheme: kayak_river
+  method: kayak_river
+  pool: expansion_wave3
+- query: berkayak di sungai
+  category: Видео с активностями
+  language: ms
+  subtheme: kayak_river
+  method: kayak_river
+  pool: expansion_wave3
+- query: paglalayag ng kayak sa ilog
+  category: Видео с активностями
+  language: tl
+  subtheme: kayak_river
+  method: kayak_river
+  pool: expansion_wave3
+- query: নদীতে কায়াক চালানো
+  category: Видео с активностями
+  language: bn
+  subtheme: kayak_river
+  method: kayak_river
+  pool: expansion_wave3
+- query: ปีนหน้าผาหินธรรมชาติ
+  category: Видео с активностями
+  language: th
+  subtheme: rock_climbing
+  method: rock_climbing
+  pool: expansion_wave3
+- query: leo núi đá tự nhiên
+  category: Видео с активностями
+  language: vi
+  subtheme: rock_climbing
+  method: rock_climbing
+  pool: expansion_wave3
+- query: प्राकृतिक चट्टान पर चढ़ाई
+  category: Видео с активностями
+  language: hi
+  subtheme: rock_climbing
+  method: rock_climbing
+  pool: expansion_wave3
+- query: تسلق صخور طبيعية
+  category: Видео с активностями
+  language: ar
+  subtheme: rock_climbing
+  method: rock_climbing
+  pool: expansion_wave3
+- query: صخره نوردی روی دیوار سنگی
+  category: Видео с активностями
+  language: fa
+  subtheme: rock_climbing
+  method: rock_climbing
+  pool: expansion_wave3
+- query: αναρρίχηση σε φυσικό βράχο
+  category: Видео с активностями
+  language: el
+  subtheme: rock_climbing
+  method: rock_climbing
+  pool: expansion_wave3
+- query: טיפוס על סלע טבעי
+  category: Видео с активностями
+  language: he
+  subtheme: rock_climbing
+  method: rock_climbing
+  pool: expansion_wave3
+- query: memanjat batu semula jadi
+  category: Видео с активностями
+  language: ms
+  subtheme: rock_climbing
+  method: rock_climbing
+  pool: expansion_wave3
+- query: pag-akyat sa natural na bato
+  category: Видео с активностями
+  language: tl
+  subtheme: rock_climbing
+  method: rock_climbing
+  pool: expansion_wave3
+- query: প্রাকৃতিক পাথরে আরোহণ
+  category: Видео с активностями
+  language: bn
+  subtheme: rock_climbing
+  method: rock_climbing
+  pool: expansion_wave3
+- query: กางเต็นท์นอนกลางคืนในป่า
+  category: Видео с активностями
+  language: th
+  subtheme: camping_tent_night
+  method: camping_tent_night
+  pool: expansion_wave3
+- query: cắm trại qua đêm trong rừng
+  category: Видео с активностями
+  language: vi
+  subtheme: camping_tent_night
+  method: camping_tent_night
+  pool: expansion_wave3
+- query: जंगल में रात भर तंबू में रहना
+  category: Видео с активностями
+  language: hi
+  subtheme: camping_tent_night
+  method: camping_tent_night
+  pool: expansion_wave3
+- query: التخييم ليلا في الغابة
+  category: Видео с активностями
+  language: ar
+  subtheme: camping_tent_night
+  method: camping_tent_night
+  pool: expansion_wave3
+- query: کمپ زدن شبانه در جنگل
+  category: Видео с активностями
+  language: fa
+  subtheme: camping_tent_night
+  method: camping_tent_night
+  pool: expansion_wave3
+- query: κατασκήνωση τη νύχτα στο δάσος
+  category: Видео с активностями
+  language: el
+  subtheme: camping_tent_night
+  method: camping_tent_night
+  pool: expansion_wave3
+- query: לינה באוהל בלילה ביער
+  category: Видео с активностями
+  language: he
+  subtheme: camping_tent_night
+  method: camping_tent_night
+  pool: expansion_wave3
+- query: berkhemah malam di dalam hutan
+  category: Видео с активностями
+  language: ms
+  subtheme: camping_tent_night
+  method: camping_tent_night
+  pool: expansion_wave3
+- query: camping sa gabi sa gubat
+  category: Видео с активностями
+  language: tl
+  subtheme: camping_tent_night
+  method: camping_tent_night
+  pool: expansion_wave3
+- query: রাতে বনে তাঁবুতে ক্যাম্পিং
+  category: Видео с активностями
+  language: bn
+  subtheme: camping_tent_night
+  method: camping_tent_night
+  pool: expansion_wave3
+- query: ขี่จักรยานไปทำงานในเมือง
+  category: Видео с активностями
+  language: th
+  subtheme: city_bike_commute
+  method: city_bike_commute
+  pool: expansion_wave3
+- query: đạp xe đi làm trong thành phố
+  category: Видео с активностями
+  language: vi
+  subtheme: city_bike_commute
+  method: city_bike_commute
+  pool: expansion_wave3
+- query: शहर में साइकिल से काम पर जाना
+  category: Видео с активностями
+  language: hi
+  subtheme: city_bike_commute
+  method: city_bike_commute
+  pool: expansion_wave3
+- query: ركوب الدراجة إلى العمل في المدينة
+  category: Видео с активностями
+  language: ar
+  subtheme: city_bike_commute
+  method: city_bike_commute
+  pool: expansion_wave3
+- query: دوچرخه سواری به محل کار در شهر
+  category: Видео с активностями
+  language: fa
+  subtheme: city_bike_commute
+  method: city_bike_commute
+  pool: expansion_wave3
+- query: ποδήλατο στη δουλειά μέσα στην πόλη
+  category: Видео с активностями
+  language: el
+  subtheme: city_bike_commute
+  method: city_bike_commute
+  pool: expansion_wave3
+- query: רכיבה על אופניים לעבודה בעיר
+  category: Видео с активностями
+  language: he
+  subtheme: city_bike_commute
+  method: city_bike_commute
+  pool: expansion_wave3
+- query: berbasikal ke tempat kerja di bandar
+  category: Видео с активностями
+  language: ms
+  subtheme: city_bike_commute
+  method: city_bike_commute
+  pool: expansion_wave3
+- query: pagbibisikleta papunta sa trabaho
+  category: Видео с активностями
+  language: tl
+  subtheme: city_bike_commute
+  method: city_bike_commute
+  pool: expansion_wave3
+- query: শহরে সাইকেলে কাজে যাওয়া
+  category: Видео с активностями
+  language: bn
+  subtheme: city_bike_commute
+  method: city_bike_commute
+  pool: expansion_wave3
+- query: ไฮไลต์การแข่งขันฟุตบอล
+  category: Видео спортивные трансляции
+  language: th
+  subtheme: football_match_highlights
+  method: football_match_highlights
+  pool: expansion_wave3
+- query: những pha bóng hay trong trận
+  category: Видео спортивные трансляции
+  language: vi
+  subtheme: football_match_highlights
+  method: football_match_highlights
+  pool: expansion_wave3
+- query: फुटबॉल मैच के मुख्य क्षण
+  category: Видео спортивные трансляции
+  language: hi
+  subtheme: football_match_highlights
+  method: football_match_highlights
+  pool: expansion_wave3
+- query: أفضل لحظات مباراة كرة القدم
+  category: Видео спортивные трансляции
+  language: ar
+  subtheme: football_match_highlights
+  method: football_match_highlights
+  pool: expansion_wave3
+- query: لحظه های برتر مسابقه فوتبال
+  category: Видео спортивные трансляции
+  language: fa
+  subtheme: football_match_highlights
+  method: football_match_highlights
+  pool: expansion_wave3
+- query: στιγμιότυπα ποδοσφαιρικού αγώνα
+  category: Видео спортивные трансляции
+  language: el
+  subtheme: football_match_highlights
+  method: football_match_highlights
+  pool: expansion_wave3
+- query: רגעי השיא של משחק כדורגל
+  category: Видео спортивные трансляции
+  language: he
+  subtheme: football_match_highlights
+  method: football_match_highlights
+  pool: expansion_wave3
+- query: detik menarik perlawanan bola sepak
+  category: Видео спортивные трансляции
+  language: ms
+  subtheme: football_match_highlights
+  method: football_match_highlights
+  pool: expansion_wave3
+- query: highlights ng laban sa football
+  category: Видео спортивные трансляции
+  language: tl
+  subtheme: football_match_highlights
+  method: football_match_highlights
+  pool: expansion_wave3
+- query: ফুটবল ম্যাচের সেরা মুহূর্ত
+  category: Видео спортивные трансляции
+  language: bn
+  subtheme: football_match_highlights
+  method: football_match_highlights
+  pool: expansion_wave3
+- query: การเล่นบาสเกตบอลในสนาม
+  category: Видео спортивные трансляции
+  language: th
+  subtheme: basketball_court_play
+  method: basketball_court_play
+  pool: expansion_wave3
+- query: chơi bóng rổ trên sân
+  category: Видео спортивные трансляции
+  language: vi
+  subtheme: basketball_court_play
+  method: basketball_court_play
+  pool: expansion_wave3
+- query: बास्केटबॉल कोर्ट पर खेल
+  category: Видео спортивные трансляции
+  language: hi
+  subtheme: basketball_court_play
+  method: basketball_court_play
+  pool: expansion_wave3
+- query: لعب كرة السلة في الملعب
+  category: Видео спортивные трансляции
+  language: ar
+  subtheme: basketball_court_play
+  method: basketball_court_play
+  pool: expansion_wave3
+- query: بازی بسکتبال در زمین
+  category: Видео спортивные трансляции
+  language: fa
+  subtheme: basketball_court_play
+  method: basketball_court_play
+  pool: expansion_wave3
+- query: μπάσκετ στο γήπεδο
+  category: Видео спортивные трансляции
+  language: el
+  subtheme: basketball_court_play
+  method: basketball_court_play
+  pool: expansion_wave3
+- query: משחק כדורסל במגרש
+  category: Видео спортивные трансляции
+  language: he
+  subtheme: basketball_court_play
+  method: basketball_court_play
+  pool: expansion_wave3
+- query: permainan bola keranjang di gelanggang
+  category: Видео спортивные трансляции
+  language: ms
+  subtheme: basketball_court_play
+  method: basketball_court_play
+  pool: expansion_wave3
+- query: paglalaro ng basketball sa court
+  category: Видео спортивные трансляции
+  language: tl
+  subtheme: basketball_court_play
+  method: basketball_court_play
+  pool: expansion_wave3
+- query: কোর্টে বাস্কেটবল খেলা
+  category: Видео спортивные трансляции
+  language: bn
+  subtheme: basketball_court_play
+  method: basketball_court_play
+  pool: expansion_wave3
+- query: การแข่งขันว่ายน้ำในสระ
+  category: Видео спортивные трансляции
+  language: th
+  subtheme: swimming_race
+  method: swimming_race
+  pool: expansion_wave3
+- query: cuộc đua bơi trong hồ
+  category: Видео спортивные трансляции
+  language: vi
+  subtheme: swimming_race
+  method: swimming_race
+  pool: expansion_wave3
+- query: स्विमिंग पूल में तैराकी प्रतियोगिता
+  category: Видео спортивные трансляции
+  language: hi
+  subtheme: swimming_race
+  method: swimming_race
+  pool: expansion_wave3
+- query: سباق السباحة في المسبح
+  category: Видео спортивные трансляции
+  language: ar
+  subtheme: swimming_race
+  method: swimming_race
+  pool: expansion_wave3
+- query: مسابقه شنا در استخر
+  category: Видео спортивные трансляции
+  language: fa
+  subtheme: swimming_race
+  method: swimming_race
+  pool: expansion_wave3
+- query: κολυμβητικός αγώνας στην πισίνα
+  category: Видео спортивные трансляции
+  language: el
+  subtheme: swimming_race
+  method: swimming_race
+  pool: expansion_wave3
+- query: מרוץ שחייה בבריכה
+  category: Видео спортивные трансляции
+  language: he
+  subtheme: swimming_race
+  method: swimming_race
+  pool: expansion_wave3
+- query: perlumbaan renang di kolam
+  category: Видео спортивные трансляции
+  language: ms
+  subtheme: swimming_race
+  method: swimming_race
+  pool: expansion_wave3
+- query: karera ng paglangoy sa pool
+  category: Видео спортивные трансляции
+  language: tl
+  subtheme: swimming_race
+  method: swimming_race
+  pool: expansion_wave3
+- query: পুলে সাঁতারের প্রতিযোগিতা
+  category: Видео спортивные трансляции
+  language: bn
+  subtheme: swimming_race
+  method: swimming_race
+  pool: expansion_wave3
+- query: การตีลูกเทนนิสโต้กัน
+  category: Видео спортивные трансляции
+  language: th
+  subtheme: tennis_rally
+  method: tennis_rally
+  pool: expansion_wave3
+- query: pha đánh bóng qua lại trên sân tennis
+  category: Видео спортивные трансляции
+  language: vi
+  subtheme: tennis_rally
+  method: tennis_rally
+  pool: expansion_wave3
+- query: टेनिस में लंबी रैली
+  category: Видео спортивные трансляции
+  language: hi
+  subtheme: tennis_rally
+  method: tennis_rally
+  pool: expansion_wave3
+- query: تبادل الكرات في مباراة تنس
+  category: Видео спортивные трансляции
+  language: ar
+  subtheme: tennis_rally
+  method: tennis_rally
+  pool: expansion_wave3
+- query: رالی طولانی در بازی تنیس
+  category: Видео спортивные трансляции
+  language: fa
+  subtheme: tennis_rally
+  method: tennis_rally
+  pool: expansion_wave3
+- query: ανταλλαγή χτυπημάτων στο τένις
+  category: Видео спортивные трансляции
+  language: el
+  subtheme: tennis_rally
+  method: tennis_rally
+  pool: expansion_wave3
+- query: חילופי חבטות במשחק טניס
+  category: Видео спортивные трансляции
+  language: he
+  subtheme: tennis_rally
+  method: tennis_rally
+  pool: expansion_wave3
+- query: rali panjang dalam perlawanan tenis
+  category: Видео спортивные трансляции
+  language: ms
+  subtheme: tennis_rally
+  method: tennis_rally
+  pool: expansion_wave3
+- query: palitan ng palo sa tennis
+  category: Видео спортивные трансляции
+  language: tl
+  subtheme: tennis_rally
+  method: tennis_rally
+  pool: expansion_wave3
+- query: টেনিসে দীর্ঘ র্যালি
+  category: Видео спортивные трансляции
+  language: bn
+  subtheme: tennis_rally
+  method: tennis_rally
+  pool: expansion_wave3
+- query: การวิ่งแข่งในลู่วิ่ง
+  category: Видео спортивные трансляции
+  language: th
+  subtheme: athletics_track_run
+  method: athletics_track_run
+  pool: expansion_wave3
+- query: chạy đua trên đường chạy
+  category: Видео спортивные трансляции
+  language: vi
+  subtheme: athletics_track_run
+  method: athletics_track_run
+  pool: expansion_wave3
+- query: एथलेटिक्स ट्रैक पर दौड़
+  category: Видео спортивные трансляции
+  language: hi
+  subtheme: athletics_track_run
+  method: athletics_track_run
+  pool: expansion_wave3
+- query: سباق الجري على المضمار
+  category: Видео спортивные трансляции
+  language: ar
+  subtheme: athletics_track_run
+  method: athletics_track_run
+  pool: expansion_wave3
+- query: دویدن در پیست دوومیدانی
+  category: Видео спортивные трансляции
+  language: fa
+  subtheme: athletics_track_run
+  method: athletics_track_run
+  pool: expansion_wave3
+- query: αγώνας δρόμου στο στίβο
+  category: Видео спортивные трансляции
+  language: el
+  subtheme: athletics_track_run
+  method: athletics_track_run
+  pool: expansion_wave3
+- query: ריצה במסלול אתלטיקה
+  category: Видео спортивные трансляции
+  language: he
+  subtheme: athletics_track_run
+  method: athletics_track_run
+  pool: expansion_wave3
+- query: larian di trek olahraga
+  category: Видео спортивные трансляции
+  language: ms
+  subtheme: athletics_track_run
+  method: athletics_track_run
+  pool: expansion_wave3
+- query: karera sa track ng athletics
+  category: Видео спортивные трансляции
+  language: tl
+  subtheme: athletics_track_run
+  method: athletics_track_run
+  pool: expansion_wave3
+- query: অ্যাথলেটিক্স ট্র্যাকে দৌড়
+  category: Видео спортивные трансляции
+  language: bn
+  subtheme: athletics_track_run
+  method: athletics_track_run
+  pool: expansion_wave3
+- query: การร่างแบบโลโก้ด้วยมือ
+  category: Дизайн
+  language: th
+  subtheme: logo_sketch
+  method: logo_sketch
+  pool: expansion_wave3
+- query: phác thảo thiết kế logo
+  category: Дизайн
+  language: vi
+  subtheme: logo_sketch
+  method: logo_sketch
+  pool: expansion_wave3
+- query: लोगो का हाथ से स्केच
+  category: Дизайн
+  language: hi
+  subtheme: logo_sketch
+  method: logo_sketch
+  pool: expansion_wave3
+- query: رسم شعار باليد على الورق
+  category: Дизайн
+  language: ar
+  subtheme: logo_sketch
+  method: logo_sketch
+  pool: expansion_wave3
+- query: طراحی دستی لوگو
+  category: Дизайн
+  language: fa
+  subtheme: logo_sketch
+  method: logo_sketch
+  pool: expansion_wave3
+- query: σχέδιο λογοτύπου στο χέρι
+  category: Дизайн
+  language: el
+  subtheme: logo_sketch
+  method: logo_sketch
+  pool: expansion_wave3
+- query: שרטוט לוגו ביד
+  category: Дизайн
+  language: he
+  subtheme: logo_sketch
+  method: logo_sketch
+  pool: expansion_wave3
+- query: melakar logo dengan tangan
+  category: Дизайн
+  language: ms
+  subtheme: logo_sketch
+  method: logo_sketch
+  pool: expansion_wave3
+- query: pag-sketch ng logo
+  category: Дизайн
+  language: tl
+  subtheme: logo_sketch
+  method: logo_sketch
+  pool: expansion_wave3
+- query: হাতে লোগো স্কেচ করা
+  category: Дизайн
+  language: bn
+  subtheme: logo_sketch
+  method: logo_sketch
+  pool: expansion_wave3
+- query: การทำบอร์ดอารมณ์สำหรับตกแต่งภายใน
+  category: Дизайн
+  language: th
+  subtheme: interior_moodboard
+  method: interior_moodboard
+  pool: expansion_wave3
+- query: làm bảng ý tưởng thiết kế nội thất
+  category: Дизайн
+  language: vi
+  subtheme: interior_moodboard
+  method: interior_moodboard
+  pool: expansion_wave3
+- query: इंटीरियर डिजाइन के लिए मूडबोर्ड
+  category: Дизайн
+  language: hi
+  subtheme: interior_moodboard
+  method: interior_moodboard
+  pool: expansion_wave3
+- query: لوحة إلهام لتصميم داخلي
+  category: Дизайн
+  language: ar
+  subtheme: interior_moodboard
+  method: interior_moodboard
+  pool: expansion_wave3
+- query: تخته ایده برای طراحی داخلی
+  category: Дизайн
+  language: fa
+  subtheme: interior_moodboard
+  method: interior_moodboard
+  pool: expansion_wave3
+- query: πίνακας διάθεσης για εσωτερικό χώρο
+  category: Дизайн
+  language: el
+  subtheme: interior_moodboard
+  method: interior_moodboard
+  pool: expansion_wave3
+- query: לוח השראה לעיצוב פנים
+  category: Дизайн
+  language: he
+  subtheme: interior_moodboard
+  method: interior_moodboard
+  pool: expansion_wave3
+- query: papan mood untuk reka bentuk dalaman
+  category: Дизайн
+  language: ms
+  subtheme: interior_moodboard
+  method: interior_moodboard
+  pool: expansion_wave3
+- query: mood board para sa interior design
+  category: Дизайн
+  language: tl
+  subtheme: interior_moodboard
+  method: interior_moodboard
+  pool: expansion_wave3
+- query: ইন্টেরিয়র ডিজাইনের মুড বোর্ড
+  category: Дизайн
+  language: bn
+  subtheme: interior_moodboard
+  method: interior_moodboard
+  pool: expansion_wave3
+- query: การออกแบบหน้าจอแอปบนมือถือ
+  category: Дизайн
+  language: th
+  subtheme: ui_mobile_layout
+  method: ui_mobile_layout
+  pool: expansion_wave3
+- query: thiết kế giao diện ứng dụng di động
+  category: Дизайн
+  language: vi
+  subtheme: ui_mobile_layout
+  method: ui_mobile_layout
+  pool: expansion_wave3
+- query: मोबाइल ऐप का इंटरफेस डिजाइन
+  category: Дизайн
+  language: hi
+  subtheme: ui_mobile_layout
+  method: ui_mobile_layout
+  pool: expansion_wave3
+- query: تصميم واجهة تطبيق الهاتف
+  category: Дизайн
+  language: ar
+  subtheme: ui_mobile_layout
+  method: ui_mobile_layout
+  pool: expansion_wave3
+- query: طراحی رابط اپلیکیشن موبایل
+  category: Дизайн
+  language: fa
+  subtheme: ui_mobile_layout
+  method: ui_mobile_layout
+  pool: expansion_wave3
+- query: σχεδιασμός διεπαφής εφαρμογής
+  category: Дизайн
+  language: el
+  subtheme: ui_mobile_layout
+  method: ui_mobile_layout
+  pool: expansion_wave3
+- query: עיצוב ממשק אפליקציה לנייד
+  category: Дизайн
+  language: he
+  subtheme: ui_mobile_layout
+  method: ui_mobile_layout
+  pool: expansion_wave3
+- query: reka bentuk antara muka aplikasi mudah alih
+  category: Дизайн
+  language: ms
+  subtheme: ui_mobile_layout
+  method: ui_mobile_layout
+  pool: expansion_wave3
+- query: disenyo ng interface ng mobile app
+  category: Дизайн
+  language: tl
+  subtheme: ui_mobile_layout
+  method: ui_mobile_layout
+  pool: expansion_wave3
+- query: মোবাইল অ্যাপের ইন্টারফেস ডিজাইন
+  category: Дизайн
+  language: bn
+  subtheme: ui_mobile_layout
+  method: ui_mobile_layout
+  pool: expansion_wave3
+- query: การจัดตัวอักษรบนโปสเตอร์
+  category: Дизайн
+  language: th
+  subtheme: poster_typography
+  method: poster_typography
+  pool: expansion_wave3
+- query: sắp xếp chữ trên poster
+  category: Дизайн
+  language: vi
+  subtheme: poster_typography
+  method: poster_typography
+  pool: expansion_wave3
+- query: पोस्टर पर टाइपोग्राफी का काम
+  category: Дизайн
+  language: hi
+  subtheme: poster_typography
+  method: poster_typography
+  pool: expansion_wave3
+- query: تنسيق الخطوط على الملصق
+  category: Дизайн
+  language: ar
+  subtheme: poster_typography
+  method: poster_typography
+  pool: expansion_wave3
+- query: تایپوگرافی روی پوستر
+  category: Дизайн
+  language: fa
+  subtheme: poster_typography
+  method: poster_typography
+  pool: expansion_wave3
+- query: τυπογραφία σε αφίσα
+  category: Дизайн
+  language: el
+  subtheme: poster_typography
+  method: poster_typography
+  pool: expansion_wave3
+- query: טיפוגרפיה על פוסטר
+  category: Дизайн
+  language: he
+  subtheme: poster_typography
+  method: poster_typography
+  pool: expansion_wave3
+- query: tipografi pada poster
+  category: Дизайн
+  language: ms
+  subtheme: poster_typography
+  method: poster_typography
+  pool: expansion_wave3
+- query: typography sa poster
+  category: Дизайн
+  language: tl
+  subtheme: poster_typography
+  method: poster_typography
+  pool: expansion_wave3
+- query: পোস্টারে টাইপোগ্রাফি সাজানোর নিয়ম
+  category: Дизайн
+  language: bn
+  subtheme: poster_typography
+  method: poster_typography
+  pool: expansion_wave3
+- query: การเลือกสีสำหรับแบรนด์
+  category: Дизайн
+  language: th
+  subtheme: brand_color_palette
+  method: brand_color_palette
+  pool: expansion_wave3
+- query: chọn bảng màu cho thương hiệu
+  category: Дизайн
+  language: vi
+  subtheme: brand_color_palette
+  method: brand_color_palette
+  pool: expansion_wave3
+- query: ब्रांड के लिए रंग पैलेट चुनना
+  category: Дизайн
+  language: hi
+  subtheme: brand_color_palette
+  method: brand_color_palette
+  pool: expansion_wave3
+- query: اختيار ألوان الهوية التجارية
+  category: Дизайн
+  language: ar
+  subtheme: brand_color_palette
+  method: brand_color_palette
+  pool: expansion_wave3
+- query: انتخاب پالت رنگ برند
+  category: Дизайн
+  language: fa
+  subtheme: brand_color_palette
+  method: brand_color_palette
+  pool: expansion_wave3
+- query: επιλογή χρωματικής παλέτας μάρκας
+  category: Дизайн
+  language: el
+  subtheme: brand_color_palette
+  method: brand_color_palette
+  pool: expansion_wave3
+- query: בחירת פלטת צבעים למותג
+  category: Дизайн
+  language: he
+  subtheme: brand_color_palette
+  method: brand_color_palette
+  pool: expansion_wave3
+- query: memilih palet warna untuk jenama
+  category: Дизайн
+  language: ms
+  subtheme: brand_color_palette
+  method: brand_color_palette
+  pool: expansion_wave3
+- query: pagpili ng palette ng kulay ng brand
+  category: Дизайн
+  language: tl
+  subtheme: brand_color_palette
+  method: brand_color_palette
+  pool: expansion_wave3
+- query: ব্র্যান্ডের রঙের প্যালেট বাছাই
+  category: Дизайн
+  language: bn
+  subtheme: brand_color_palette
+  method: brand_color_palette
+  pool: expansion_wave3
+- query: การตัดแต่งกิ่งองุ่นในฤดูหนาว
+  category: Сад огород
+  language: th
+  subtheme: winter_grape_pruning
+  method: winter_grape_pruning
+  pool: expansion_wave3
+- query: cắt tỉa cành nho vào mùa đông
+  category: Сад огород
+  language: vi
+  subtheme: winter_grape_pruning
+  method: winter_grape_pruning
+  pool: expansion_wave3
+- query: सर्दियों में अंगूर की छंटाई
+  category: Сад огород
+  language: hi
+  subtheme: winter_grape_pruning
+  method: winter_grape_pruning
+  pool: expansion_wave3
+- query: تقليم كرمة العنب في الشتاء
+  category: Сад огород
+  language: ar
+  subtheme: winter_grape_pruning
+  method: winter_grape_pruning
+  pool: expansion_wave3
+- query: هرس تاک انگور در زمستان
+  category: Сад огород
+  language: fa
+  subtheme: winter_grape_pruning
+  method: winter_grape_pruning
+  pool: expansion_wave3
+- query: κλάδεμα αμπελιού τον χειμώνα
+  category: Сад огород
+  language: el
+  subtheme: winter_grape_pruning
+  method: winter_grape_pruning
+  pool: expansion_wave3
+- query: גיזום גפן ענבים בחורף
+  category: Сад огород
+  language: he
+  subtheme: winter_grape_pruning
+  method: winter_grape_pruning
+  pool: expansion_wave3
+- query: memangkas pokok anggur pada musim sejuk
+  category: Сад огород
+  language: ms
+  subtheme: winter_grape_pruning
+  method: winter_grape_pruning
+  pool: expansion_wave3
+- query: paggunting ng ubas tuwing taglamig
+  category: Сад огород
+  language: tl
+  subtheme: winter_grape_pruning
+  method: winter_grape_pruning
+  pool: expansion_wave3
+- query: শীতে আঙুর গাছের 가지치기
+  category: Сад огород
+  language: bn
+  subtheme: winter_grape_pruning
+  method: winter_grape_pruning
+  pool: expansion_wave3
+- query: การเพาะกล้ามะเขือเทศในถาด
+  category: Сад огород
+  language: th
+  subtheme: tomato_seedling
+  method: tomato_seedling
+  pool: expansion_wave3
+- query: gieo hạt giống cà chua
+  category: Сад огород
+  language: vi
+  subtheme: tomato_seedling
+  method: tomato_seedling
+  pool: expansion_wave3
+- query: टमाटर के बीज से पौध तैयार करना
+  category: Сад огород
+  language: hi
+  subtheme: tomato_seedling
+  method: tomato_seedling
+  pool: expansion_wave3
+- query: زراعة شتلات الطماطم
+  category: Сад огород
+  language: ar
+  subtheme: tomato_seedling
+  method: tomato_seedling
+  pool: expansion_wave3
+- query: کاشت نشاء گوجه فرنگی
+  category: Сад огород
+  language: fa
+  subtheme: tomato_seedling
+  method: tomato_seedling
+  pool: expansion_wave3
+- query: φύτεμα σπόρων ντομάτας
+  category: Сад огород
+  language: el
+  subtheme: tomato_seedling
+  method: tomato_seedling
+  pool: expansion_wave3
+- query: שתילת שתילי עגבניות
+  category: Сад огород
+  language: he
+  subtheme: tomato_seedling
+  method: tomato_seedling
+  pool: expansion_wave3
+- query: menyemai benih tomato
+  category: Сад огород
+  language: ms
+  subtheme: tomato_seedling
+  method: tomato_seedling
+  pool: expansion_wave3
+- query: pagpupunla ng binhi ng kamatis
+  category: Сад огород
+  language: tl
+  subtheme: tomato_seedling
+  method: tomato_seedling
+  pool: expansion_wave3
+- query: টমেটোর চারা তৈরি করা
+  category: Сад огород
+  language: bn
+  subtheme: tomato_seedling
+  method: tomato_seedling
+  pool: expansion_wave3
+- query: เตรียมดินในแปลงปลูกยกสูง
+  category: Сад огород
+  language: th
+  subtheme: raised_bed_soil
+  method: raised_bed_soil
+  pool: expansion_wave3
+- query: chuẩn bị đất cho luống nâng cao
+  category: Сад огород
+  language: vi
+  subtheme: raised_bed_soil
+  method: raised_bed_soil
+  pool: expansion_wave3
+- query: ऊंची क्यारी के लिए मिट्टी तैयार करना
+  category: Сад огород
+  language: hi
+  subtheme: raised_bed_soil
+  method: raised_bed_soil
+  pool: expansion_wave3
+- query: تجهيز التربة للأحواض المرتفعة
+  category: Сад огород
+  language: ar
+  subtheme: raised_bed_soil
+  method: raised_bed_soil
+  pool: expansion_wave3
+- query: آماده کردن خاک باغچه
+  category: Сад огород
+  language: fa
+  subtheme: raised_bed_soil
+  method: raised_bed_soil
+  pool: expansion_wave3
+- query: προετοιμασία χώματος σε υπερυψωμένο παρτέρι
+  category: Сад огород
+  language: el
+  subtheme: raised_bed_soil
+  method: raised_bed_soil
+  pool: expansion_wave3
+- query: הכנת אדמה לערוגה מוגבהת
+  category: Сад огород
+  language: he
+  subtheme: raised_bed_soil
+  method: raised_bed_soil
+  pool: expansion_wave3
+- query: menyediakan tanah untuk batas tanaman
+  category: Сад огород
+  language: ms
+  subtheme: raised_bed_soil
+  method: raised_bed_soil
+  pool: expansion_wave3
+- query: paghahanda ng lupa sa mataas na halaman
+  category: Сад огород
+  language: tl
+  subtheme: raised_bed_soil
+  method: raised_bed_soil
+  pool: expansion_wave3
+- query: উঁচু বেডের জন্য মাটি তৈরি
+  category: Сад огород
+  language: bn
+  subtheme: raised_bed_soil
+  method: raised_bed_soil
+  pool: expansion_wave3
+- query: การต่อกิ่งต้นไม้ผล
+  category: Сад огород
+  language: th
+  subtheme: fruit_tree_grafting
+  method: fruit_tree_grafting
+  pool: expansion_wave3
+- query: ghép cành cây ăn quả
+  category: Сад огород
+  language: vi
+  subtheme: fruit_tree_grafting
+  method: fruit_tree_grafting
+  pool: expansion_wave3
+- query: फलों के पेड़ में कलम बांधना
+  category: Сад огород
+  language: hi
+  subtheme: fruit_tree_grafting
+  method: fruit_tree_grafting
+  pool: expansion_wave3
+- query: تطعيم أشجار الفاكهة
+  category: Сад огород
+  language: ar
+  subtheme: fruit_tree_grafting
+  method: fruit_tree_grafting
+  pool: expansion_wave3
+- query: پیوند زدن درختان میوه
+  category: Сад огород
+  language: fa
+  subtheme: fruit_tree_grafting
+  method: fruit_tree_grafting
+  pool: expansion_wave3
+- query: εμβολιασμός οπωροφόρων δέντρων
+  category: Сад огород
+  language: el
+  subtheme: fruit_tree_grafting
+  method: fruit_tree_grafting
+  pool: expansion_wave3
+- query: הרכבה של עצי פרי
+  category: Сад огород
+  language: he
+  subtheme: fruit_tree_grafting
+  method: fruit_tree_grafting
+  pool: expansion_wave3
+- query: menyambung pokok buah
+  category: Сад огород
+  language: ms
+  subtheme: fruit_tree_grafting
+  method: fruit_tree_grafting
+  pool: expansion_wave3
+- query: pagdurugtong ng sanga ng punong prutas
+  category: Сад огород
+  language: tl
+  subtheme: fruit_tree_grafting
+  method: fruit_tree_grafting
+  pool: expansion_wave3
+- query: ফলের গাছে কলম করা
+  category: Сад огород
+  language: bn
+  subtheme: fruit_tree_grafting
+  method: fruit_tree_grafting
+  pool: expansion_wave3
+- query: การทำปุ๋ยหมักจากเศษพืช
+  category: Сад огород
+  language: th
+  subtheme: compost_pile
+  method: compost_pile
+  pool: expansion_wave3
+- query: ủ phân hữu cơ từ lá cây
+  category: Сад огород
+  language: vi
+  subtheme: compost_pile
+  method: compost_pile
+  pool: expansion_wave3
+- query: पत्तों से जैविक खाद बनाना
+  category: Сад огород
+  language: hi
+  subtheme: compost_pile
+  method: compost_pile
+  pool: expansion_wave3
+- query: صنع السماد العضوي من الأوراق
+  category: Сад огород
+  language: ar
+  subtheme: compost_pile
+  method: compost_pile
+  pool: expansion_wave3
+- query: ساخت کود کمپوست از برگ
+  category: Сад огород
+  language: fa
+  subtheme: compost_pile
+  method: compost_pile
+  pool: expansion_wave3
+- query: κομπόστ από φύλλα κήπου
+  category: Сад огород
+  language: el
+  subtheme: compost_pile
+  method: compost_pile
+  pool: expansion_wave3
+- query: הכנת קומפוסט מעלים
+  category: Сад огород
+  language: he
+  subtheme: compost_pile
+  method: compost_pile
+  pool: expansion_wave3
+- query: membuat kompos daripada daun
+  category: Сад огород
+  language: ms
+  subtheme: compost_pile
+  method: compost_pile
+  pool: expansion_wave3
+- query: paggawa ng compost mula sa dahon
+  category: Сад огород
+  language: tl
+  subtheme: compost_pile
+  method: compost_pile
+  pool: expansion_wave3
+- query: পাতার কম্পোস্ট তৈরি
+  category: Сад огород
+  language: bn
+  subtheme: compost_pile
+  method: compost_pile
+  pool: expansion_wave3
+- query: ป่าในยามเช้าที่มีหมอก
+  category: Природа
+  language: th
+  subtheme: foggy_morning_forest
+  method: foggy_morning_forest
+  pool: expansion_wave3
+- query: rừng sương mù buổi sớm
+  category: Природа
+  language: vi
+  subtheme: foggy_morning_forest
+  method: foggy_morning_forest
+  pool: expansion_wave3
+- query: सुबह कोहरे में डूबा जंगल
+  category: Природа
+  language: hi
+  subtheme: foggy_morning_forest
+  method: foggy_morning_forest
+  pool: expansion_wave3
+- query: غابة ضبابية في الصباح
+  category: Природа
+  language: ar
+  subtheme: foggy_morning_forest
+  method: foggy_morning_forest
+  pool: expansion_wave3
+- query: جنگل مه آلود در صبح
+  category: Природа
+  language: fa
+  subtheme: foggy_morning_forest
+  method: foggy_morning_forest
+  pool: expansion_wave3
+- query: δάσος με ομίχλη το πρωί
+  category: Природа
+  language: el
+  subtheme: foggy_morning_forest
+  method: foggy_morning_forest
+  pool: expansion_wave3
+- query: יער ערפילי בשעת בוקר
+  category: Природа
+  language: he
+  subtheme: foggy_morning_forest
+  method: foggy_morning_forest
+  pool: expansion_wave3
+- query: hutan berkabus pada waktu pagi
+  category: Природа
+  language: ms
+  subtheme: foggy_morning_forest
+  method: foggy_morning_forest
+  pool: expansion_wave3
+- query: maulap na gubat sa umaga
+  category: Природа
+  language: tl
+  subtheme: foggy_morning_forest
+  method: foggy_morning_forest
+  pool: expansion_wave3
+- query: সকালের কুয়াশায় ঢাকা বন
+  category: Природа
+  language: bn
+  subtheme: foggy_morning_forest
+  method: foggy_morning_forest
+  pool: expansion_wave3
+- query: ใบไม้ร่วงปลิวตามลม
+  category: Природа
+  language: th
+  subtheme: autumn_leaves_wind
+  method: autumn_leaves_wind
+  pool: expansion_wave3
+- query: lá mùa thu bay trong gió
+  category: Природа
+  language: vi
+  subtheme: autumn_leaves_wind
+  method: autumn_leaves_wind
+  pool: expansion_wave3
+- query: हवा में उड़ते पतझड़ के पत्ते
+  category: Природа
+  language: hi
+  subtheme: autumn_leaves_wind
+  method: autumn_leaves_wind
+  pool: expansion_wave3
+- query: أوراق الخريف تتطاير مع الريح
+  category: Природа
+  language: ar
+  subtheme: autumn_leaves_wind
+  method: autumn_leaves_wind
+  pool: expansion_wave3
+- query: برگ های پاییزی در باد
+  category: Природа
+  language: fa
+  subtheme: autumn_leaves_wind
+  method: autumn_leaves_wind
+  pool: expansion_wave3
+- query: φύλλα φθινοπώρου στον άνεμο
+  category: Природа
+  language: el
+  subtheme: autumn_leaves_wind
+  method: autumn_leaves_wind
+  pool: expansion_wave3
+- query: עלי סתיו מתעופפים ברוח
+  category: Природа
+  language: he
+  subtheme: autumn_leaves_wind
+  method: autumn_leaves_wind
+  pool: expansion_wave3
+- query: daun musim luruh ditiup angin
+  category: Природа
+  language: ms
+  subtheme: autumn_leaves_wind
+  method: autumn_leaves_wind
+  pool: expansion_wave3
+- query: dahon ng taglagas na tinatangay ng hangin
+  category: Природа
+  language: tl
+  subtheme: autumn_leaves_wind
+  method: autumn_leaves_wind
+  pool: expansion_wave3
+- query: বাতাসে উড়ছে শরতের পাতা
+  category: Природа
+  language: bn
+  subtheme: autumn_leaves_wind
+  method: autumn_leaves_wind
+  pool: expansion_wave3
+- query: เนินทรายในทะเลทราย
+  category: Природа
+  language: th
+  subtheme: desert_dunes
+  method: desert_dunes
+  pool: expansion_wave3
+- query: đồi cát giữa sa mạc
+  category: Природа
+  language: vi
+  subtheme: desert_dunes
+  method: desert_dunes
+  pool: expansion_wave3
+- query: रेगिस्तान में रेत के टीले
+  category: Природа
+  language: hi
+  subtheme: desert_dunes
+  method: desert_dunes
+  pool: expansion_wave3
+- query: كثبان رملية في الصحراء
+  category: Природа
+  language: ar
+  subtheme: desert_dunes
+  method: desert_dunes
+  pool: expansion_wave3
+- query: تپه های شنی در کویر
+  category: Природа
+  language: fa
+  subtheme: desert_dunes
+  method: desert_dunes
+  pool: expansion_wave3
+- query: αμμόλοφοι στην έρημο
+  category: Природа
+  language: el
+  subtheme: desert_dunes
+  method: desert_dunes
+  pool: expansion_wave3
+- query: דיונות חול במדבר
+  category: Природа
+  language: he
+  subtheme: desert_dunes
+  method: desert_dunes
+  pool: expansion_wave3
+- query: bukit pasir di padang gurun
+  category: Природа
+  language: ms
+  subtheme: desert_dunes
+  method: desert_dunes
+  pool: expansion_wave3
+- query: buhangin sa disyerto
+  category: Природа
+  language: tl
+  subtheme: desert_dunes
+  method: desert_dunes
+  pool: expansion_wave3
+- query: মরুভূমির বালিয়াড়িতে হাঁটার দৃশ্য
+  category: Природа
+  language: bn
+  subtheme: desert_dunes
+  method: desert_dunes
+  pool: expansion_wave3
+- query: ยอดเขาปกคลุมด้วยหิมะ
+  category: Природа
+  language: th
+  subtheme: snowy_peaks
+  method: snowy_peaks
+  pool: expansion_wave3
+- query: đỉnh núi phủ tuyết trắng
+  category: Природа
+  language: vi
+  subtheme: snowy_peaks
+  method: snowy_peaks
+  pool: expansion_wave3
+- query: बर्फ से ढकी पहाड़ी चोटियां
+  category: Природа
+  language: hi
+  subtheme: snowy_peaks
+  method: snowy_peaks
+  pool: expansion_wave3
+- query: قمم جبلية مغطاة بالثلوج
+  category: Природа
+  language: ar
+  subtheme: snowy_peaks
+  method: snowy_peaks
+  pool: expansion_wave3
+- query: قله های برفی کوهستان
+  category: Природа
+  language: fa
+  subtheme: snowy_peaks
+  method: snowy_peaks
+  pool: expansion_wave3
+- query: χιονισμένες κορυφές βουνών
+  category: Природа
+  language: el
+  subtheme: snowy_peaks
+  method: snowy_peaks
+  pool: expansion_wave3
+- query: פסגות הרים מושלגות מרחוק
+  category: Природа
+  language: he
+  subtheme: snowy_peaks
+  method: snowy_peaks
+  pool: expansion_wave3
+- query: puncak gunung bersalji
+  category: Природа
+  language: ms
+  subtheme: snowy_peaks
+  method: snowy_peaks
+  pool: expansion_wave3
+- query: maniyebe na tuktok ng bundok
+  category: Природа
+  language: tl
+  subtheme: snowy_peaks
+  method: snowy_peaks
+  pool: expansion_wave3
+- query: বরফে ঢাকা পাহাড়ের চূড়া
+  category: Природа
+  language: bn
+  subtheme: snowy_peaks
+  method: snowy_peaks
+  pool: expansion_wave3
+- query: ทุ่งหญ้าที่มีดอกไม้ป่า
+  category: Природа
+  language: th
+  subtheme: wildflower_meadow
+  method: wildflower_meadow
+  pool: expansion_wave3
+- query: đồng cỏ với hoa dại
+  category: Природа
+  language: vi
+  subtheme: wildflower_meadow
+  method: wildflower_meadow
+  pool: expansion_wave3
+- query: जंगली फूलों से भरा मैदान
+  category: Природа
+  language: hi
+  subtheme: wildflower_meadow
+  method: wildflower_meadow
+  pool: expansion_wave3
+- query: مرج مليء بالزهور البرية
+  category: Природа
+  language: ar
+  subtheme: wildflower_meadow
+  method: wildflower_meadow
+  pool: expansion_wave3
+- query: چمنزار پر از گل های وحشی
+  category: Природа
+  language: fa
+  subtheme: wildflower_meadow
+  method: wildflower_meadow
+  pool: expansion_wave3
+- query: λιβάδι με αγριολούλουδα
+  category: Природа
+  language: el
+  subtheme: wildflower_meadow
+  method: wildflower_meadow
+  pool: expansion_wave3
+- query: אחו פרחי בר
+  category: Природа
+  language: he
+  subtheme: wildflower_meadow
+  method: wildflower_meadow
+  pool: expansion_wave3
+- query: padang rumput dengan bunga liar
+  category: Природа
+  language: ms
+  subtheme: wildflower_meadow
+  method: wildflower_meadow
+  pool: expansion_wave3
+- query: parang na may mga ligaw na bulaklak
+  category: Природа
+  language: tl
+  subtheme: wildflower_meadow
+  method: wildflower_meadow
+  pool: expansion_wave3
+- query: বুনো ফুলে ভরা মাঠ
+  category: Природа
+  language: bn
+  subtheme: wildflower_meadow
+  method: wildflower_meadow
+  pool: expansion_wave3
+- query: อาหารสดในตลาดนัดเช้า
+  category: Еда
+  language: th
+  subtheme: farmers_market_food
+  method: farmers_market_food
+  pool: expansion_wave3
+- query: thực phẩm tươi ở chợ đầu mối
+  category: Еда
+  language: vi
+  subtheme: farmers_market_food
+  method: farmers_market_food
+  pool: expansion_wave3
+- query: सब्जी मंडी में ताजा खाना
+  category: Еда
+  language: hi
+  subtheme: farmers_market_food
+  method: farmers_market_food
+  pool: expansion_wave3
+- query: طعام طازج في سوق المزارعين
+  category: Еда
+  language: ar
+  subtheme: farmers_market_food
+  method: farmers_market_food
+  pool: expansion_wave3
+- query: غذای تازه در بازار محلی
+  category: Еда
+  language: fa
+  subtheme: farmers_market_food
+  method: farmers_market_food
+  pool: expansion_wave3
+- query: φρέσκα τρόφιμα στη λαϊκή αγορά
+  category: Еда
+  language: el
+  subtheme: farmers_market_food
+  method: farmers_market_food
+  pool: expansion_wave3
+- query: אוכל טרי בשוק האיכרים
+  category: Еда
+  language: he
+  subtheme: farmers_market_food
+  method: farmers_market_food
+  pool: expansion_wave3
+- query: makanan segar di pasar tani
+  category: Еда
+  language: ms
+  subtheme: farmers_market_food
+  method: farmers_market_food
+  pool: expansion_wave3
+- query: sariwang pagkain sa palengke
+  category: Еда
+  language: tl
+  subtheme: farmers_market_food
+  method: farmers_market_food
+  pool: expansion_wave3
+- query: কৃষকের বাজারে তাজা খাবার
+  category: Еда
+  language: bn
+  subtheme: farmers_market_food
+  method: farmers_market_food
+  pool: expansion_wave3
+- query: จานซูชิหลากหลายหน้า
+  category: Еда
+  language: th
+  subtheme: sushi_platter
+  method: sushi_platter
+  pool: expansion_wave3
+- query: đĩa sushi nhiều loại
+  category: Еда
+  language: vi
+  subtheme: sushi_platter
+  method: sushi_platter
+  pool: expansion_wave3
+- query: सुशी की प्लेट सजी हुई
+  category: Еда
+  language: hi
+  subtheme: sushi_platter
+  method: sushi_platter
+  pool: expansion_wave3
+- query: طبق سوشي متنوع
+  category: Еда
+  language: ar
+  subtheme: sushi_platter
+  method: sushi_platter
+  pool: expansion_wave3
+- query: بشقاب سوشی متنوع
+  category: Еда
+  language: fa
+  subtheme: sushi_platter
+  method: sushi_platter
+  pool: expansion_wave3
+- query: πιατέλα σούσι με ποικιλίες
+  category: Еда
+  language: el
+  subtheme: sushi_platter
+  method: sushi_platter
+  pool: expansion_wave3
+- query: מגש סושי מגוון
+  category: Еда
+  language: he
+  subtheme: sushi_platter
+  method: sushi_platter
+  pool: expansion_wave3
+- query: pinggan sushi pelbagai jenis
+  category: Еда
+  language: ms
+  subtheme: sushi_platter
+  method: sushi_platter
+  pool: expansion_wave3
+- query: plato ng sushi na iba-iba
+  category: Еда
+  language: tl
+  subtheme: sushi_platter
+  method: sushi_platter
+  pool: expansion_wave3
+- query: নানা রকম সুশির প্লেট
+  category: Еда
+  language: bn
+  subtheme: sushi_platter
+  method: sushi_platter
+  pool: expansion_wave3
+- query: ถาดชีสพร้อมผลไม้
+  category: Еда
+  language: th
+  subtheme: cheese_board
+  method: cheese_board
+  pool: expansion_wave3
+- query: thớt phô mai kèm trái cây
+  category: Еда
+  language: vi
+  subtheme: cheese_board
+  method: cheese_board
+  pool: expansion_wave3
+- query: चीज़ बोर्ड के साथ फल
+  category: Еда
+  language: hi
+  subtheme: cheese_board
+  method: cheese_board
+  pool: expansion_wave3
+- query: طبق جبن مع فواكه
+  category: Еда
+  language: ar
+  subtheme: cheese_board
+  method: cheese_board
+  pool: expansion_wave3
+- query: تخته پنیر همراه میوه
+  category: Еда
+  language: fa
+  subtheme: cheese_board
+  method: cheese_board
+  pool: expansion_wave3
+- query: πιατέλα τυριών με φρούτα
+  category: Еда
+  language: el
+  subtheme: cheese_board
+  method: cheese_board
+  pool: expansion_wave3
+- query: מגש גבינות עם פירות
+  category: Еда
+  language: he
+  subtheme: cheese_board
+  method: cheese_board
+  pool: expansion_wave3
+- query: papan keju dengan buah-buahan
+  category: Еда
+  language: ms
+  subtheme: cheese_board
+  method: cheese_board
+  pool: expansion_wave3
+- query: plato ng keso at prutas
+  category: Еда
+  language: tl
+  subtheme: cheese_board
+  method: cheese_board
+  pool: expansion_wave3
+- query: ফলের সাথে চিজ প্লেট
+  category: Еда
+  language: bn
+  subtheme: cheese_board
+  method: cheese_board
+  pool: expansion_wave3
+- query: อาหารทะเลสดในจาน
+  category: Еда
+  language: th
+  subtheme: seafood_plate
+  method: seafood_plate
+  pool: expansion_wave3
+- query: hải sản tươi trên đĩa
+  category: Еда
+  language: vi
+  subtheme: seafood_plate
+  method: seafood_plate
+  pool: expansion_wave3
+- query: ताजा समुद्री भोजन की प्लेट
+  category: Еда
+  language: hi
+  subtheme: seafood_plate
+  method: seafood_plate
+  pool: expansion_wave3
+- query: طبق مأكولات بحرية طازجة
+  category: Еда
+  language: ar
+  subtheme: seafood_plate
+  method: seafood_plate
+  pool: expansion_wave3
+- query: بشقاب غذای دریایی تازه
+  category: Еда
+  language: fa
+  subtheme: seafood_plate
+  method: seafood_plate
+  pool: expansion_wave3
+- query: πιατέλα φρέσκων θαλασσινών
+  category: Еда
+  language: el
+  subtheme: seafood_plate
+  method: seafood_plate
+  pool: expansion_wave3
+- query: צלחת פירות ים טריים
+  category: Еда
+  language: he
+  subtheme: seafood_plate
+  method: seafood_plate
+  pool: expansion_wave3
+- query: hidangan makanan laut segar
+  category: Еда
+  language: ms
+  subtheme: seafood_plate
+  method: seafood_plate
+  pool: expansion_wave3
+- query: plato ng sariwang seafood
+  category: Еда
+  language: tl
+  subtheme: seafood_plate
+  method: seafood_plate
+  pool: expansion_wave3
+- query: তাজা সামুদ্রিক খাবারের প্লেট
+  category: Еда
+  language: bn
+  subtheme: seafood_plate
+  method: seafood_plate
+  pool: expansion_wave3
+- query: การหั่นผลไม้เมืองร้อน
+  category: Еда
+  language: th
+  subtheme: tropical_fruit_cut
+  method: tropical_fruit_cut
+  pool: expansion_wave3
+- query: cắt trái cây nhiệt đới
+  category: Еда
+  language: vi
+  subtheme: tropical_fruit_cut
+  method: tropical_fruit_cut
+  pool: expansion_wave3
+- query: उष्णकटिबंधीय फल काटना
+  category: Еда
+  language: hi
+  subtheme: tropical_fruit_cut
+  method: tropical_fruit_cut
+  pool: expansion_wave3
+- query: تقطيع الفواكه الاستوائية
+  category: Еда
+  language: ar
+  subtheme: tropical_fruit_cut
+  method: tropical_fruit_cut
+  pool: expansion_wave3
+- query: بریدن میوه های گرمسیری
+  category: Еда
+  language: fa
+  subtheme: tropical_fruit_cut
+  method: tropical_fruit_cut
+  pool: expansion_wave3
+- query: κόψιμο τροπικών φρούτων
+  category: Еда
+  language: el
+  subtheme: tropical_fruit_cut
+  method: tropical_fruit_cut
+  pool: expansion_wave3
+- query: חיתוך פירות טרופיים
+  category: Еда
+  language: he
+  subtheme: tropical_fruit_cut
+  method: tropical_fruit_cut
+  pool: expansion_wave3
+- query: memotong buah-buahan tropika
+  category: Еда
+  language: ms
+  subtheme: tropical_fruit_cut
+  method: tropical_fruit_cut
+  pool: expansion_wave3
+- query: paghihiwa ng tropikal na prutas
+  category: Еда
+  language: tl
+  subtheme: tropical_fruit_cut
+  method: tropical_fruit_cut
+  pool: expansion_wave3
+- query: গ্রীষ্মমণ্ডলীয় ফল কাটা
+  category: Еда
+  language: bn
+  subtheme: tropical_fruit_cut
+  method: tropical_fruit_cut
+  pool: expansion_wave3
+- query: แมวเล่นอยู่ในบ้าน
+  category: Животные
+  language: th
+  subtheme: cats_at_home
+  method: cats_at_home
+  pool: expansion_wave3
+- query: mèo chơi trong nhà
+  category: Животные
+  language: vi
+  subtheme: cats_at_home
+  method: cats_at_home
+  pool: expansion_wave3
+- query: घर में खेलती बिल्लियां
+  category: Животные
+  language: hi
+  subtheme: cats_at_home
+  method: cats_at_home
+  pool: expansion_wave3
+- query: قطط تلعب داخل المنزل
+  category: Животные
+  language: ar
+  subtheme: cats_at_home
+  method: cats_at_home
+  pool: expansion_wave3
+- query: گربه ها در خانه بازی می کنند
+  category: Животные
+  language: fa
+  subtheme: cats_at_home
+  method: cats_at_home
+  pool: expansion_wave3
+- query: γάτες παίζουν μέσα στο σπίτι
+  category: Животные
+  language: el
+  subtheme: cats_at_home
+  method: cats_at_home
+  pool: expansion_wave3
+- query: חתולים משחקים בבית
+  category: Животные
+  language: he
+  subtheme: cats_at_home
+  method: cats_at_home
+  pool: expansion_wave3
+- query: kucing bermain di dalam rumah
+  category: Животные
+  language: ms
+  subtheme: cats_at_home
+  method: cats_at_home
+  pool: expansion_wave3
+- query: pusang naglalaro sa bahay
+  category: Животные
+  language: tl
+  subtheme: cats_at_home
+  method: cats_at_home
+  pool: expansion_wave3
+- query: ঘরে বিড়াল খেলছে
+  category: Животные
+  language: bn
+  subtheme: cats_at_home
+  method: cats_at_home
+  pool: expansion_wave3
+- query: สุนัขวิ่งเล่นในสวนสาธารณะ
+  category: Животные
+  language: th
+  subtheme: dog_park_play
+  method: dog_park_play
+  pool: expansion_wave3
+- query: chó chạy chơi trong công viên
+  category: Животные
+  language: vi
+  subtheme: dog_park_play
+  method: dog_park_play
+  pool: expansion_wave3
+- query: पार्क में दौड़ते कुत्ते
+  category: Животные
+  language: hi
+  subtheme: dog_park_play
+  method: dog_park_play
+  pool: expansion_wave3
+- query: كلاب تجري في الحديقة
+  category: Животные
+  language: ar
+  subtheme: dog_park_play
+  method: dog_park_play
+  pool: expansion_wave3
+- query: سگ ها در پارک می دوند
+  category: Животные
+  language: fa
+  subtheme: dog_park_play
+  method: dog_park_play
+  pool: expansion_wave3
+- query: σκύλοι τρέχουν στο πάρκο
+  category: Животные
+  language: el
+  subtheme: dog_park_play
+  method: dog_park_play
+  pool: expansion_wave3
+- query: כלבים רצים בפארק
+  category: Животные
+  language: he
+  subtheme: dog_park_play
+  method: dog_park_play
+  pool: expansion_wave3
+- query: anjing berlari di taman
+  category: Животные
+  language: ms
+  subtheme: dog_park_play
+  method: dog_park_play
+  pool: expansion_wave3
+- query: asong tumatakbo sa parke
+  category: Животные
+  language: tl
+  subtheme: dog_park_play
+  method: dog_park_play
+  pool: expansion_wave3
+- query: পার্কে কুকুর দৌড়াচ্ছে
+  category: Животные
+  language: bn
+  subtheme: dog_park_play
+  method: dog_park_play
+  pool: expansion_wave3
+- query: นกกินอาหารที่ถาดให้อาหาร
+  category: Животные
+  language: th
+  subtheme: birds_garden_feeder
+  method: birds_garden_feeder
+  pool: expansion_wave3
+- query: chim ăn tại máng treo trong vườn
+  category: Животные
+  language: vi
+  subtheme: birds_garden_feeder
+  method: birds_garden_feeder
+  pool: expansion_wave3
+- query: बगीचे में चिड़ियों का दाना खाना
+  category: Животные
+  language: hi
+  subtheme: birds_garden_feeder
+  method: birds_garden_feeder
+  pool: expansion_wave3
+- query: طيور تأكل من مغذية الحديقة
+  category: Животные
+  language: ar
+  subtheme: birds_garden_feeder
+  method: birds_garden_feeder
+  pool: expansion_wave3
+- query: پرندگان روی دانه خوری باغ
+  category: Животные
+  language: fa
+  subtheme: birds_garden_feeder
+  method: birds_garden_feeder
+  pool: expansion_wave3
+- query: πουλιά τρώνε στην ταΐστρα κήπου
+  category: Животные
+  language: el
+  subtheme: birds_garden_feeder
+  method: birds_garden_feeder
+  pool: expansion_wave3
+- query: ציפורים אוכלות במאכיל בגן
+  category: Животные
+  language: he
+  subtheme: birds_garden_feeder
+  method: birds_garden_feeder
+  pool: expansion_wave3
+- query: burung makan di bekas makanan taman
+  category: Животные
+  language: ms
+  subtheme: birds_garden_feeder
+  method: birds_garden_feeder
+  pool: expansion_wave3
+- query: ibong kumakain sa feeder sa hardin
+  category: Животные
+  language: tl
+  subtheme: birds_garden_feeder
+  method: birds_garden_feeder
+  pool: expansion_wave3
+- query: বাগানের খাবার পাত্রে পাখি খাচ্ছে
+  category: Животные
+  language: bn
+  subtheme: birds_garden_feeder
+  method: birds_garden_feeder
+  pool: expansion_wave3
+- query: ปลาว่ายน้ำในตู้ปลา
+  category: Животные
+  language: th
+  subtheme: aquarium_fish
+  method: aquarium_fish
+  pool: expansion_wave3
+- query: cá bơi trong bể thủy sinh
+  category: Животные
+  language: vi
+  subtheme: aquarium_fish
+  method: aquarium_fish
+  pool: expansion_wave3
+- query: एक्वेरियम में तैरती मछलियां
+  category: Животные
+  language: hi
+  subtheme: aquarium_fish
+  method: aquarium_fish
+  pool: expansion_wave3
+- query: أسماك تسبح في حوض زجاجي
+  category: Животные
+  language: ar
+  subtheme: aquarium_fish
+  method: aquarium_fish
+  pool: expansion_wave3
+- query: ماهی ها در آکواریوم شنا می کنند
+  category: Животные
+  language: fa
+  subtheme: aquarium_fish
+  method: aquarium_fish
+  pool: expansion_wave3
+- query: ψάρια κολυμπούν στο ενυδρείο
+  category: Животные
+  language: el
+  subtheme: aquarium_fish
+  method: aquarium_fish
+  pool: expansion_wave3
+- query: דגים שוחים באקווריום
+  category: Животные
+  language: he
+  subtheme: aquarium_fish
+  method: aquarium_fish
+  pool: expansion_wave3
+- query: ikan berenang dalam akuarium
+  category: Животные
+  language: ms
+  subtheme: aquarium_fish
+  method: aquarium_fish
+  pool: expansion_wave3
+- query: isdang lumalangoy sa aquarium
+  category: Животные
+  language: tl
+  subtheme: aquarium_fish
+  method: aquarium_fish
+  pool: expansion_wave3
+- query: অ্যাকোয়ারিয়ামে মাছ সাঁতার কাটছে
+  category: Животные
+  language: bn
+  subtheme: aquarium_fish
+  method: aquarium_fish
+  pool: expansion_wave3
+- query: สัตว์เลี้ยงในฟาร์มตอนเช้า
+  category: Животные
+  language: th
+  subtheme: farm_animals
+  method: farm_animals
+  pool: expansion_wave3
+- query: vật nuôi trong trang trại buổi sáng
+  category: Животные
+  language: vi
+  subtheme: farm_animals
+  method: farm_animals
+  pool: expansion_wave3
+- query: सुबह खेत के जानवर
+  category: Животные
+  language: hi
+  subtheme: farm_animals
+  method: farm_animals
+  pool: expansion_wave3
+- query: حيوانات المزرعة في الصباح
+  category: Животные
+  language: ar
+  subtheme: farm_animals
+  method: farm_animals
+  pool: expansion_wave3
+- query: حیوانات مزرعه در صبح
+  category: Животные
+  language: fa
+  subtheme: farm_animals
+  method: farm_animals
+  pool: expansion_wave3
+- query: ζώα του αγροκτήματος το πρωί
+  category: Животные
+  language: el
+  subtheme: farm_animals
+  method: farm_animals
+  pool: expansion_wave3
+- query: חיות משק בשעת בוקר
+  category: Животные
+  language: he
+  subtheme: farm_animals
+  method: farm_animals
+  pool: expansion_wave3
+- query: haiwan ladang pada waktu pagi
+  category: Животные
+  language: ms
+  subtheme: farm_animals
+  method: farm_animals
+  pool: expansion_wave3
+- query: mga alagang hayop sa bukid
+  category: Животные
+  language: tl
+  subtheme: farm_animals
+  method: farm_animals
+  pool: expansion_wave3
+- query: সকালে খামারের পশু
+  category: Животные
+  language: bn
+  subtheme: farm_animals
+  method: farm_animals
+  pool: expansion_wave3
+- query: การแกะมือถือดูชิ้นส่วนข้างใน
+  category: Наука и технологии
+  language: th
+  subtheme: smartphone_teardown
+  method: smartphone_teardown
+  pool: expansion_wave3
+- query: tháo điện thoại để xem linh kiện
+  category: Наука и технологии
+  language: vi
+  subtheme: smartphone_teardown
+  method: smartphone_teardown
+  pool: expansion_wave3
+- query: स्मार्टफोन खोलकर उसके पुर्जे देखना
+  category: Наука и технологии
+  language: hi
+  subtheme: smartphone_teardown
+  method: smartphone_teardown
+  pool: expansion_wave3
+- query: تفكيك الهاتف لرؤية مكوناته
+  category: Наука и технологии
+  language: ar
+  subtheme: smartphone_teardown
+  method: smartphone_teardown
+  pool: expansion_wave3
+- query: باز کردن گوشی برای دیدن قطعات
+  category: Наука и технологии
+  language: fa
+  subtheme: smartphone_teardown
+  method: smartphone_teardown
+  pool: expansion_wave3
+- query: λύσιμο κινητού για έλεγχο εξαρτημάτων
+  category: Наука и технологии
+  language: el
+  subtheme: smartphone_teardown
+  method: smartphone_teardown
+  pool: expansion_wave3
+- query: פירוק טלפון לבדיקת חלקים
+  category: Наука и технологии
+  language: he
+  subtheme: smartphone_teardown
+  method: smartphone_teardown
+  pool: expansion_wave3
+- query: membuka telefon untuk lihat komponen
+  category: Наука и технологии
+  language: ms
+  subtheme: smartphone_teardown
+  method: smartphone_teardown
+  pool: expansion_wave3
+- query: pagbukas ng cellphone para sa piyesa
+  category: Наука и технологии
+  language: tl
+  subtheme: smartphone_teardown
+  method: smartphone_teardown
+  pool: expansion_wave3
+- query: ফোন খুলে যন্ত্রাংশ দেখা
+  category: Наука и технологии
+  language: bn
+  subtheme: smartphone_teardown
+  method: smartphone_teardown
+  pool: expansion_wave3
+- query: แขนกลหุ่นยนต์ทำงานอัตโนมัติ
+  category: Наука и технологии
+  language: th
+  subtheme: robot_arm_demo
+  method: robot_arm_demo
+  pool: expansion_wave3
+- query: cánh tay robot hoạt động tự động
+  category: Наука и технологии
+  language: vi
+  subtheme: robot_arm_demo
+  method: robot_arm_demo
+  pool: expansion_wave3
+- query: रोबोटिक आर्म का काम करना
+  category: Наука и технологии
+  language: hi
+  subtheme: robot_arm_demo
+  method: robot_arm_demo
+  pool: expansion_wave3
+- query: ذراع روبوت تعمل تلقائيا
+  category: Наука и технологии
+  language: ar
+  subtheme: robot_arm_demo
+  method: robot_arm_demo
+  pool: expansion_wave3
+- query: بازوی رباتیک در حال کار
+  category: Наука и технологии
+  language: fa
+  subtheme: robot_arm_demo
+  method: robot_arm_demo
+  pool: expansion_wave3
+- query: ρομποτικός βραχίονας σε λειτουργία
+  category: Наука и технологии
+  language: el
+  subtheme: robot_arm_demo
+  method: robot_arm_demo
+  pool: expansion_wave3
+- query: זרוע רובוטית בפעולה
+  category: Наука и технологии
+  language: he
+  subtheme: robot_arm_demo
+  method: robot_arm_demo
+  pool: expansion_wave3
+- query: lengan robot beroperasi secara automatik
+  category: Наука и технологии
+  language: ms
+  subtheme: robot_arm_demo
+  method: robot_arm_demo
+  pool: expansion_wave3
+- query: robot arm na gumagana
+  category: Наука и технологии
+  language: tl
+  subtheme: robot_arm_demo
+  method: robot_arm_demo
+  pool: expansion_wave3
+- query: রোবটিক হাত কাজ করছে
+  category: Наука и технологии
+  language: bn
+  subtheme: robot_arm_demo
+  method: robot_arm_demo
+  pool: expansion_wave3
+- query: ดูเซลล์ผ่านกล้องจุลทรรศน์
+  category: Наука и технологии
+  language: th
+  subtheme: microscope_cells
+  method: microscope_cells
+  pool: expansion_wave3
+- query: quan sát tế bào qua kính hiển vi
+  category: Наука и технологии
+  language: vi
+  subtheme: microscope_cells
+  method: microscope_cells
+  pool: expansion_wave3
+- query: माइक्रोस्कोप से कोशिकाएं देखना
+  category: Наука и технологии
+  language: hi
+  subtheme: microscope_cells
+  method: microscope_cells
+  pool: expansion_wave3
+- query: مشاهدة الخلايا تحت المجهر
+  category: Наука и технологии
+  language: ar
+  subtheme: microscope_cells
+  method: microscope_cells
+  pool: expansion_wave3
+- query: دیدن سلول ها زیر میکروسکوپ
+  category: Наука и технологии
+  language: fa
+  subtheme: microscope_cells
+  method: microscope_cells
+  pool: expansion_wave3
+- query: κύτταρα κάτω από μικροσκόπιο
+  category: Наука и технологии
+  language: el
+  subtheme: microscope_cells
+  method: microscope_cells
+  pool: expansion_wave3
+- query: תאים מתחת למיקרוסקופ
+  category: Наука и технологии
+  language: he
+  subtheme: microscope_cells
+  method: microscope_cells
+  pool: expansion_wave3
+- query: melihat sel di bawah mikroskop
+  category: Наука и технологии
+  language: ms
+  subtheme: microscope_cells
+  method: microscope_cells
+  pool: expansion_wave3
+- query: pagsisiyasat ng sel sa mikroskopyo
+  category: Наука и технологии
+  language: tl
+  subtheme: microscope_cells
+  method: microscope_cells
+  pool: expansion_wave3
+- query: মাইক্রোস্কোপে কোষ দেখা
+  category: Наука и технологии
+  language: bn
+  subtheme: microscope_cells
+  method: microscope_cells
+  pool: expansion_wave3
+- query: การติดตั้งแผงโซลาร์บนหลังคา
+  category: Наука и технологии
+  language: th
+  subtheme: solar_panel_install
+  method: solar_panel_install
+  pool: expansion_wave3
+- query: lắp đặt tấm pin năng lượng mặt trời
+  category: Наука и технологии
+  language: vi
+  subtheme: solar_panel_install
+  method: solar_panel_install
+  pool: expansion_wave3
+- query: छत पर सोलर पैनल लगाना
+  category: Наука и технологии
+  language: hi
+  subtheme: solar_panel_install
+  method: solar_panel_install
+  pool: expansion_wave3
+- query: تركيب ألواح الطاقة الشمسية
+  category: Наука и технологии
+  language: ar
+  subtheme: solar_panel_install
+  method: solar_panel_install
+  pool: expansion_wave3
+- query: نصب پنل خورشیدی روی سقف
+  category: Наука и технологии
+  language: fa
+  subtheme: solar_panel_install
+  method: solar_panel_install
+  pool: expansion_wave3
+- query: τοποθέτηση ηλιακών πάνελ στη στέγη
+  category: Наука и технологии
+  language: el
+  subtheme: solar_panel_install
+  method: solar_panel_install
+  pool: expansion_wave3
+- query: התקנת פאנלים סולאריים על הגג
+  category: Наука и технологии
+  language: he
+  subtheme: solar_panel_install
+  method: solar_panel_install
+  pool: expansion_wave3
+- query: memasang panel solar di atas bumbung
+  category: Наука и технологии
+  language: ms
+  subtheme: solar_panel_install
+  method: solar_panel_install
+  pool: expansion_wave3
+- query: paglalagay ng solar panel sa bubong
+  category: Наука и технологии
+  language: tl
+  subtheme: solar_panel_install
+  method: solar_panel_install
+  pool: expansion_wave3
+- query: ছাদে সোলার প্যানেল বসানো
+  category: Наука и технологии
+  language: bn
+  subtheme: solar_panel_install
+  method: solar_panel_install
+  pool: expansion_wave3
+- query: เครื่องพิมพ์สามมิติกำลังพิมพ์ชิ้นงาน
+  category: Наука и технологии
+  language: th
+  subtheme: 3d_printer_print
+  method: 3d_printer_print
+  pool: expansion_wave3
+- query: máy in 3d đang in sản phẩm
+  category: Наука и технологии
+  language: vi
+  subtheme: 3d_printer_print
+  method: 3d_printer_print
+  pool: expansion_wave3
+- query: थ्रीडी प्रिंटर से वस्तु बनना
+  category: Наука и технологии
+  language: hi
+  subtheme: 3d_printer_print
+  method: 3d_printer_print
+  pool: expansion_wave3
+- query: طابعة ثلاثية الأبعاد تطبع مجسما
+  category: Наука и технологии
+  language: ar
+  subtheme: 3d_printer_print
+  method: 3d_printer_print
+  pool: expansion_wave3
+- query: چاپگر سه بعدی در حال چاپ
+  category: Наука и технологии
+  language: fa
+  subtheme: 3d_printer_print
+  method: 3d_printer_print
+  pool: expansion_wave3
+- query: εκτυπωτής 3d τυπώνει αντικείμενο
+  category: Наука и технологии
+  language: el
+  subtheme: 3d_printer_print
+  method: 3d_printer_print
+  pool: expansion_wave3
+- query: מדפסת תלת מימד מדפיסה
+  category: Наука и технологии
+  language: he
+  subtheme: 3d_printer_print
+  method: 3d_printer_print
+  pool: expansion_wave3
+- query: pencetak 3d sedang mencetak objek
+  category: Наука и технологии
+  language: ms
+  subtheme: 3d_printer_print
+  method: 3d_printer_print
+  pool: expansion_wave3
+- query: 3d printer na nagpi-print
+  category: Наука и технологии
+  language: tl
+  subtheme: 3d_printer_print
+  method: 3d_printer_print
+  pool: expansion_wave3
+- query: থ্রিডি প্রিন্টার কিছু প্রিন্ট করছে
+  category: Наука и технологии
+  language: bn
+  subtheme: 3d_printer_print
+  method: 3d_printer_print
+  pool: expansion_wave3
+- query: ซ้อมกีตาร์โปร่งที่บ้าน
+  category: Музыка
+  language: th
+  subtheme: acoustic_guitar_practice
+  method: acoustic_guitar_practice
+  pool: expansion_wave3
+- query: tập đàn guitar acoustic tại nhà
+  category: Музыка
+  language: vi
+  subtheme: acoustic_guitar_practice
+  method: acoustic_guitar_practice
+  pool: expansion_wave3
+- query: घर पर अकॉस्टिक गिटार का अभ्यास
+  category: Музыка
+  language: hi
+  subtheme: acoustic_guitar_practice
+  method: acoustic_guitar_practice
+  pool: expansion_wave3
+- query: تدريب على الجيتار الصوتي
+  category: Музыка
+  language: ar
+  subtheme: acoustic_guitar_practice
+  method: acoustic_guitar_practice
+  pool: expansion_wave3
+- query: تمرین گیتار آکوستیک
+  category: Музыка
+  language: fa
+  subtheme: acoustic_guitar_practice
+  method: acoustic_guitar_practice
+  pool: expansion_wave3
+- query: εξάσκηση σε ακουστική κιθάρα
+  category: Музыка
+  language: el
+  subtheme: acoustic_guitar_practice
+  method: acoustic_guitar_practice
+  pool: expansion_wave3
+- query: תרגול גיטרה אקוסטית
+  category: Музыка
+  language: he
+  subtheme: acoustic_guitar_practice
+  method: acoustic_guitar_practice
+  pool: expansion_wave3
+- query: berlatih gitar akustik
+  category: Музыка
+  language: ms
+  subtheme: acoustic_guitar_practice
+  method: acoustic_guitar_practice
+  pool: expansion_wave3
+- query: pagsasanay sa acoustic guitar
+  category: Музыка
+  language: tl
+  subtheme: acoustic_guitar_practice
+  method: acoustic_guitar_practice
+  pool: expansion_wave3
+- query: অ্যাকোস্টিক গিটারে অনুশীলন
+  category: Музыка
+  language: bn
+  subtheme: acoustic_guitar_practice
+  method: acoustic_guitar_practice
+  pool: expansion_wave3
+- query: เล่นเปียโนเพลงเพราะๆ
+  category: Музыка
+  language: th
+  subtheme: piano_cover
+  method: piano_cover
+  pool: expansion_wave3
+- query: chơi piano bản nhạc hay
+  category: Музыка
+  language: vi
+  subtheme: piano_cover
+  method: piano_cover
+  pool: expansion_wave3
+- query: पियानो पर मधुर धुन बजाना
+  category: Музыка
+  language: hi
+  subtheme: piano_cover
+  method: piano_cover
+  pool: expansion_wave3
+- query: عزف مقطوعة جميلة على البيانو
+  category: Музыка
+  language: ar
+  subtheme: piano_cover
+  method: piano_cover
+  pool: expansion_wave3
+- query: نواختن قطعه زیبا با پیانو
+  category: Музыка
+  language: fa
+  subtheme: piano_cover
+  method: piano_cover
+  pool: expansion_wave3
+- query: παίζοντας πιάνο ένα όμορφο κομμάτι
+  category: Музыка
+  language: el
+  subtheme: piano_cover
+  method: piano_cover
+  pool: expansion_wave3
+- query: נגינה בפסנתר של מנגינה
+  category: Музыка
+  language: he
+  subtheme: piano_cover
+  method: piano_cover
+  pool: expansion_wave3
+- query: memainkan piano lagu merdu
+  category: Музыка
+  language: ms
+  subtheme: piano_cover
+  method: piano_cover
+  pool: expansion_wave3
+- query: tumutugtog ng piano
+  category: Музыка
+  language: tl
+  subtheme: piano_cover
+  method: piano_cover
+  pool: expansion_wave3
+- query: পিয়ানোতে সুন্দর সুর বাজানো
+  category: Музыка
+  language: bn
+  subtheme: piano_cover
+  method: piano_cover
+  pool: expansion_wave3
+- query: ซ้อมกลองในห้องซ้อม
+  category: Музыка
+  language: th
+  subtheme: drum_practice_room
+  method: drum_practice_room
+  pool: expansion_wave3
+- query: tập trống trong phòng tập
+  category: Музыка
+  language: vi
+  subtheme: drum_practice_room
+  method: drum_practice_room
+  pool: expansion_wave3
+- query: ड्रम रूम में अभ्यास
+  category: Музыка
+  language: hi
+  subtheme: drum_practice_room
+  method: drum_practice_room
+  pool: expansion_wave3
+- query: تدريب على الطبول في غرفة العزف
+  category: Музыка
+  language: ar
+  subtheme: drum_practice_room
+  method: drum_practice_room
+  pool: expansion_wave3
+- query: تمرین درام در اتاق تمرین
+  category: Музыка
+  language: fa
+  subtheme: drum_practice_room
+  method: drum_practice_room
+  pool: expansion_wave3
+- query: εξάσκηση ντραμς στο δωμάτιο
+  category: Музыка
+  language: el
+  subtheme: drum_practice_room
+  method: drum_practice_room
+  pool: expansion_wave3
+- query: תרגול תופים בחדר חזרות
+  category: Музыка
+  language: he
+  subtheme: drum_practice_room
+  method: drum_practice_room
+  pool: expansion_wave3
+- query: berlatih dram di bilik latihan
+  category: Музыка
+  language: ms
+  subtheme: drum_practice_room
+  method: drum_practice_room
+  pool: expansion_wave3
+- query: pagsasanay sa drum sa silid
+  category: Музыка
+  language: tl
+  subtheme: drum_practice_room
+  method: drum_practice_room
+  pool: expansion_wave3
+- query: প্র্যাকটিস রুমে ড্রাম অনুশীলন
+  category: Музыка
+  language: bn
+  subtheme: drum_practice_room
+  method: drum_practice_room
+  pool: expansion_wave3
+- query: นักดนตรีเล่นดนตรีข้างถนน
+  category: Музыка
+  language: th
+  subtheme: street_musician
+  method: street_musician
+  pool: expansion_wave3
+- query: nhạc công chơi nhạc trên phố
+  category: Музыка
+  language: vi
+  subtheme: street_musician
+  method: street_musician
+  pool: expansion_wave3
+- query: सड़क पर संगीत बजाते कलाकार
+  category: Музыка
+  language: hi
+  subtheme: street_musician
+  method: street_musician
+  pool: expansion_wave3
+- query: عازف موسيقى في الشارع
+  category: Музыка
+  language: ar
+  subtheme: street_musician
+  method: street_musician
+  pool: expansion_wave3
+- query: نوازنده دوره گرد در خیابان
+  category: Музыка
+  language: fa
+  subtheme: street_musician
+  method: street_musician
+  pool: expansion_wave3
+- query: μουσικός παίζει στον δρόμο
+  category: Музыка
+  language: el
+  subtheme: street_musician
+  method: street_musician
+  pool: expansion_wave3
+- query: מוזיקאי מנגן ברחוב
+  category: Музыка
+  language: he
+  subtheme: street_musician
+  method: street_musician
+  pool: expansion_wave3
+- query: pemuzik jalanan sedang bermain
+  category: Музыка
+  language: ms
+  subtheme: street_musician
+  method: street_musician
+  pool: expansion_wave3
+- query: musikero na tumutugtog sa kalye
+  category: Музыка
+  language: tl
+  subtheme: street_musician
+  method: street_musician
+  pool: expansion_wave3
+- query: রাস্তায় বাদক বাজাচ্ছেন
+  category: Музыка
+  language: bn
+  subtheme: street_musician
+  method: street_musician
+  pool: expansion_wave3
+- query: บันทึกเสียงร้องในสตูดิโอ
+  category: Музыка
+  language: th
+  subtheme: music_studio_recording
+  method: music_studio_recording
+  pool: expansion_wave3
+- query: thu âm giọng hát trong phòng thu
+  category: Музыка
+  language: vi
+  subtheme: music_studio_recording
+  method: music_studio_recording
+  pool: expansion_wave3
+- query: स्टूडियो में गाना रिकॉर्ड करना
+  category: Музыка
+  language: hi
+  subtheme: music_studio_recording
+  method: music_studio_recording
+  pool: expansion_wave3
+- query: تسجيل الغناء داخل الاستوديو
+  category: Музыка
+  language: ar
+  subtheme: music_studio_recording
+  method: music_studio_recording
+  pool: expansion_wave3
+- query: ضبط آواز در استودیو
+  category: Музыка
+  language: fa
+  subtheme: music_studio_recording
+  method: music_studio_recording
+  pool: expansion_wave3
+- query: ηχογράφηση φωνής στο στούντιο
+  category: Музыка
+  language: el
+  subtheme: music_studio_recording
+  method: music_studio_recording
+  pool: expansion_wave3
+- query: הקלטת שירה באולפן
+  category: Музыка
+  language: he
+  subtheme: music_studio_recording
+  method: music_studio_recording
+  pool: expansion_wave3
+- query: merakam vokal di studio
+  category: Музыка
+  language: ms
+  subtheme: music_studio_recording
+  method: music_studio_recording
+  pool: expansion_wave3
+- query: pag-record ng boses sa studio
+  category: Музыка
+  language: tl
+  subtheme: music_studio_recording
+  method: music_studio_recording
+  pool: expansion_wave3
+- query: স্টুডিওতে গান রেকর্ড করা
+  category: Музыка
+  language: bn
+  subtheme: music_studio_recording
+  method: music_studio_recording
+  pool: expansion_wave3
+- query: การทดลองลูกตุ้มอย่างง่าย
+  category: Физика
+  language: th
+  subtheme: pendulum_experiment
+  method: pendulum_experiment
+  pool: expansion_wave3
+- query: thí nghiệm con lắc đơn
+  category: Физика
+  language: vi
+  subtheme: pendulum_experiment
+  method: pendulum_experiment
+  pool: expansion_wave3
+- query: सरल लोलक का प्रयोग
+  category: Физика
+  language: hi
+  subtheme: pendulum_experiment
+  method: pendulum_experiment
+  pool: expansion_wave3
+- query: تجربة البندول البسيط
+  category: Физика
+  language: ar
+  subtheme: pendulum_experiment
+  method: pendulum_experiment
+  pool: expansion_wave3
+- query: آزمایش آونگ ساده
+  category: Физика
+  language: fa
+  subtheme: pendulum_experiment
+  method: pendulum_experiment
+  pool: expansion_wave3
+- query: πείραμα απλού εκκρεμούς
+  category: Физика
+  language: el
+  subtheme: pendulum_experiment
+  method: pendulum_experiment
+  pool: expansion_wave3
+- query: ניסוי מטוטלת פשוטה
+  category: Физика
+  language: he
+  subtheme: pendulum_experiment
+  method: pendulum_experiment
+  pool: expansion_wave3
+- query: eksperimen bandul ringkas
+  category: Физика
+  language: ms
+  subtheme: pendulum_experiment
+  method: pendulum_experiment
+  pool: expansion_wave3
+- query: eksperimento sa pendulum
+  category: Физика
+  language: tl
+  subtheme: pendulum_experiment
+  method: pendulum_experiment
+  pool: expansion_wave3
+- query: সরল দোলকের পরীক্ষা
+  category: Физика
+  language: bn
+  subtheme: pendulum_experiment
+  method: pendulum_experiment
+  pool: expansion_wave3
+- query: การหักเหของแสงในน้ำ
+  category: Физика
+  language: th
+  subtheme: light_refraction
+  method: light_refraction
+  pool: expansion_wave3
+- query: khúc xạ ánh sáng qua nước
+  category: Физика
+  language: vi
+  subtheme: light_refraction
+  method: light_refraction
+  pool: expansion_wave3
+- query: पानी में प्रकाश का अपवर्तन
+  category: Физика
+  language: hi
+  subtheme: light_refraction
+  method: light_refraction
+  pool: expansion_wave3
+- query: انكسار الضوء في الماء
+  category: Физика
+  language: ar
+  subtheme: light_refraction
+  method: light_refraction
+  pool: expansion_wave3
+- query: شکست نور در آب
+  category: Физика
+  language: fa
+  subtheme: light_refraction
+  method: light_refraction
+  pool: expansion_wave3
+- query: διάθλαση φωτός μέσα στο νερό
+  category: Физика
+  language: el
+  subtheme: light_refraction
+  method: light_refraction
+  pool: expansion_wave3
+- query: שבירת אור במים
+  category: Физика
+  language: he
+  subtheme: light_refraction
+  method: light_refraction
+  pool: expansion_wave3
+- query: pembiasan cahaya dalam air
+  category: Физика
+  language: ms
+  subtheme: light_refraction
+  method: light_refraction
+  pool: expansion_wave3
+- query: repraksyon ng liwanag sa tubig
+  category: Физика
+  language: tl
+  subtheme: light_refraction
+  method: light_refraction
+  pool: expansion_wave3
+- query: পানিতে আলোর প্রতিসরণ
+  category: Физика
+  language: bn
+  subtheme: light_refraction
+  method: light_refraction
+  pool: expansion_wave3
+- query: สาธิตสนามแม่เหล็กด้วยผงเหล็ก
+  category: Физика
+  language: th
+  subtheme: magnet_field_demo
+  method: magnet_field_demo
+  pool: expansion_wave3
+- query: thí nghiệm từ trường với mạt sắt
+  category: Физика
+  language: vi
+  subtheme: magnet_field_demo
+  method: magnet_field_demo
+  pool: expansion_wave3
+- query: लोहे के बुरादे से चुंबकीय क्षेत्र
+  category: Физика
+  language: hi
+  subtheme: magnet_field_demo
+  method: magnet_field_demo
+  pool: expansion_wave3
+- query: تجربة المجال المغناطيسي ببرادة الحديد
+  category: Физика
+  language: ar
+  subtheme: magnet_field_demo
+  method: magnet_field_demo
+  pool: expansion_wave3
+- query: نمایش میدان مغناطیسی با براده آهن
+  category: Физика
+  language: fa
+  subtheme: magnet_field_demo
+  method: magnet_field_demo
+  pool: expansion_wave3
+- query: μαγνητικό πεδίο με ρινίσματα σιδήρου
+  category: Физика
+  language: el
+  subtheme: magnet_field_demo
+  method: magnet_field_demo
+  pool: expansion_wave3
+- query: שדה מגנטי עם נסורת ברזל
+  category: Физика
+  language: he
+  subtheme: magnet_field_demo
+  method: magnet_field_demo
+  pool: expansion_wave3
+- query: medan magnet dengan serbuk besi
+  category: Физика
+  language: ms
+  subtheme: magnet_field_demo
+  method: magnet_field_demo
+  pool: expansion_wave3
+- query: magnetic field gamit ang iron filings
+  category: Физика
+  language: tl
+  subtheme: magnet_field_demo
+  method: magnet_field_demo
+  pool: expansion_wave3
+- query: লোহার গুঁড়ো দিয়ে চৌম্বক ক্ষেত্র
+  category: Физика
+  language: bn
+  subtheme: magnet_field_demo
+  method: magnet_field_demo
+  pool: expansion_wave3
+- query: การตกอย่างอิสระในสุญญากาศ
+  category: Физика
+  language: th
+  subtheme: free_fall_vacuum
+  method: free_fall_vacuum
+  pool: expansion_wave3
+- query: vật rơi tự do trong chân không
+  category: Физика
+  language: vi
+  subtheme: free_fall_vacuum
+  method: free_fall_vacuum
+  pool: expansion_wave3
+- query: निर्वात में वस्तु का मुक्त रूप से गिरना
+  category: Физика
+  language: hi
+  subtheme: free_fall_vacuum
+  method: free_fall_vacuum
+  pool: expansion_wave3
+- query: السقوط الحر في الفراغ
+  category: Физика
+  language: ar
+  subtheme: free_fall_vacuum
+  method: free_fall_vacuum
+  pool: expansion_wave3
+- query: سقوط آزاد در خلأ
+  category: Физика
+  language: fa
+  subtheme: free_fall_vacuum
+  method: free_fall_vacuum
+  pool: expansion_wave3
+- query: ελεύθερη πτώση στο κενό
+  category: Физика
+  language: el
+  subtheme: free_fall_vacuum
+  method: free_fall_vacuum
+  pool: expansion_wave3
+- query: נפילה חופשית בוואקום
+  category: Физика
+  language: he
+  subtheme: free_fall_vacuum
+  method: free_fall_vacuum
+  pool: expansion_wave3
+- query: jatuh bebas dalam vakum
+  category: Физика
+  language: ms
+  subtheme: free_fall_vacuum
+  method: free_fall_vacuum
+  pool: expansion_wave3
+- query: free fall sa vacuum
+  category: Физика
+  language: tl
+  subtheme: free_fall_vacuum
+  method: free_fall_vacuum
+  pool: expansion_wave3
+- query: শূন্য মাধ্যমে মুক্ত পতন
+  category: Физика
+  language: bn
+  subtheme: free_fall_vacuum
+  method: free_fall_vacuum
+  pool: expansion_wave3
+- query: การแทรกสอดของคลื่นน้ำ
+  category: Физика
+  language: th
+  subtheme: wave_interference
+  method: wave_interference
+  pool: expansion_wave3
+- query: giao thoa của sóng nước
+  category: Физика
+  language: vi
+  subtheme: wave_interference
+  method: wave_interference
+  pool: expansion_wave3
+- query: जल तरंगों का व्यतिकरण
+  category: Физика
+  language: hi
+  subtheme: wave_interference
+  method: wave_interference
+  pool: expansion_wave3
+- query: تداخل موجات الماء
+  category: Физика
+  language: ar
+  subtheme: wave_interference
+  method: wave_interference
+  pool: expansion_wave3
+- query: تداخل موج های آب
+  category: Физика
+  language: fa
+  subtheme: wave_interference
+  method: wave_interference
+  pool: expansion_wave3
+- query: συμβολή κυμάτων νερού
+  category: Физика
+  language: el
+  subtheme: wave_interference
+  method: wave_interference
+  pool: expansion_wave3
+- query: התאבכות גלי מים
+  category: Физика
+  language: he
+  subtheme: wave_interference
+  method: wave_interference
+  pool: expansion_wave3
+- query: interferens gelombang air
+  category: Физика
+  language: ms
+  subtheme: wave_interference
+  method: wave_interference
+  pool: expansion_wave3
+- query: interference ng alon sa tubig
+  category: Физика
+  language: tl
+  subtheme: wave_interference
+  method: wave_interference
+  pool: expansion_wave3
+- query: পানির তরঙ্গের ব্যতিচার
+  category: Физика
+  language: bn
+  subtheme: wave_interference
+  method: wave_interference
+  pool: expansion_wave3
+- query: กราฟแท่งเคลื่อนไหวในวิดีโอ
+  category: Инфографика
+  language: th
+  subtheme: animated_bar_chart
+  method: animated_bar_chart
+  pool: expansion_wave3
+- query: biểu đồ cột động trong video
+  category: Инфографика
+  language: vi
+  subtheme: animated_bar_chart
+  method: animated_bar_chart
+  pool: expansion_wave3
+- query: वीडियो में एनिमेटेड बार चार्ट
+  category: Инфографика
+  language: hi
+  subtheme: animated_bar_chart
+  method: animated_bar_chart
+  pool: expansion_wave3
+- query: رسم بياني متحرك في فيديو
+  category: Инфографика
+  language: ar
+  subtheme: animated_bar_chart
+  method: animated_bar_chart
+  pool: expansion_wave3
+- query: نمودار میله ای متحرک
+  category: Инфографика
+  language: fa
+  subtheme: animated_bar_chart
+  method: animated_bar_chart
+  pool: expansion_wave3
+- query: κινούμενο ραβδόγραμμα σε βίντεο
+  category: Инфографика
+  language: el
+  subtheme: animated_bar_chart
+  method: animated_bar_chart
+  pool: expansion_wave3
+- query: גרף עמודות מונפש
+  category: Инфографика
+  language: he
+  subtheme: animated_bar_chart
+  method: animated_bar_chart
+  pool: expansion_wave3
+- query: carta bar beranimasi dalam video
+  category: Инфографика
+  language: ms
+  subtheme: animated_bar_chart
+  method: animated_bar_chart
+  pool: expansion_wave3
+- query: animated bar chart sa video
+  category: Инфографика
+  language: tl
+  subtheme: animated_bar_chart
+  method: animated_bar_chart
+  pool: expansion_wave3
+- query: ভিডিওতে অ্যানিমেটেড বার চার্ট
+  category: Инфографика
+  language: bn
+  subtheme: animated_bar_chart
+  method: animated_bar_chart
+  pool: expansion_wave3
+- query: แผนที่ข้อมูลเคลื่อนไหว
+  category: Инфографика
+  language: th
+  subtheme: data_map_animation
+  method: data_map_animation
+  pool: expansion_wave3
+- query: bản đồ dữ liệu chuyển động
+  category: Инфографика
+  language: vi
+  subtheme: data_map_animation
+  method: data_map_animation
+  pool: expansion_wave3
+- query: डेटा मैप का एनिमेशन
+  category: Инфографика
+  language: hi
+  subtheme: data_map_animation
+  method: data_map_animation
+  pool: expansion_wave3
+- query: خريطة بيانات متحركة
+  category: Инфографика
+  language: ar
+  subtheme: data_map_animation
+  method: data_map_animation
+  pool: expansion_wave3
+- query: نقشه داده متحرک
+  category: Инфографика
+  language: fa
+  subtheme: data_map_animation
+  method: data_map_animation
+  pool: expansion_wave3
+- query: κινούμενος χάρτης δεδομένων
+  category: Инфографика
+  language: el
+  subtheme: data_map_animation
+  method: data_map_animation
+  pool: expansion_wave3
+- query: מפת נתונים מונפשת
+  category: Инфографика
+  language: he
+  subtheme: data_map_animation
+  method: data_map_animation
+  pool: expansion_wave3
+- query: peta data beranimasi
+  category: Инфографика
+  language: ms
+  subtheme: data_map_animation
+  method: data_map_animation
+  pool: expansion_wave3
+- query: animated na mapa ng data
+  category: Инфографика
+  language: tl
+  subtheme: data_map_animation
+  method: data_map_animation
+  pool: expansion_wave3
+- query: অ্যানিমেটেড ডেটা ম্যাপ
+  category: Инфографика
+  language: bn
+  subtheme: data_map_animation
+  method: data_map_animation
+  pool: expansion_wave3
+- query: ไทม์ไลน์อธิบายเหตุการณ์
+  category: Инфографика
+  language: th
+  subtheme: timeline_explainer
+  method: timeline_explainer
+  pool: expansion_wave3
+- query: dòng thời gian giải thích sự kiện
+  category: Инфографика
+  language: vi
+  subtheme: timeline_explainer
+  method: timeline_explainer
+  pool: expansion_wave3
+- query: घटनाओं को समझाने वाली टाइमलाइन
+  category: Инфографика
+  language: hi
+  subtheme: timeline_explainer
+  method: timeline_explainer
+  pool: expansion_wave3
+- query: خط زمني يشرح الأحداث
+  category: Инфографика
+  language: ar
+  subtheme: timeline_explainer
+  method: timeline_explainer
+  pool: expansion_wave3
+- query: خط زمان برای توضیح رویدادها
+  category: Инфографика
+  language: fa
+  subtheme: timeline_explainer
+  method: timeline_explainer
+  pool: expansion_wave3
+- query: χρονολόγιο που εξηγεί γεγονότα
+  category: Инфографика
+  language: el
+  subtheme: timeline_explainer
+  method: timeline_explainer
+  pool: expansion_wave3
+- query: ציר זמן המסביר אירועים
+  category: Инфографика
+  language: he
+  subtheme: timeline_explainer
+  method: timeline_explainer
+  pool: expansion_wave3
+- query: garis masa menerangkan peristiwa
+  category: Инфографика
+  language: ms
+  subtheme: timeline_explainer
+  method: timeline_explainer
+  pool: expansion_wave3
+- query: timeline na nagpapaliwanag ng pangyayari
+  category: Инфографика
+  language: tl
+  subtheme: timeline_explainer
+  method: timeline_explainer
+  pool: expansion_wave3
+- query: ঘটনা ব্যাখ্যা করা টাইমলাইন
+  category: Инфографика
+  language: bn
+  subtheme: timeline_explainer
+  method: timeline_explainer
+  pool: expansion_wave3
+- query: ชุดไอคอนขยับในงานนำเสนอ
+  category: Инфографика
+  language: th
+  subtheme: icon_set_motion
+  method: icon_set_motion
+  pool: expansion_wave3
+- query: bộ biểu tượng chuyển động trong slide
+  category: Инфографика
+  language: vi
+  subtheme: icon_set_motion
+  method: icon_set_motion
+  pool: expansion_wave3
+- query: प्रेजेंटेशन में हिलते आइकन सेट
+  category: Инфографика
+  language: hi
+  subtheme: icon_set_motion
+  method: icon_set_motion
+  pool: expansion_wave3
+- query: مجموعة أيقونات متحركة للعرض
+  category: Инфографика
+  language: ar
+  subtheme: icon_set_motion
+  method: icon_set_motion
+  pool: expansion_wave3
+- query: مجموعه آیکون متحرک برای ارائه
+  category: Инфографика
+  language: fa
+  subtheme: icon_set_motion
+  method: icon_set_motion
+  pool: expansion_wave3
+- query: σετ εικονιδίων σε κίνηση
+  category: Инфографика
+  language: el
+  subtheme: icon_set_motion
+  method: icon_set_motion
+  pool: expansion_wave3
+- query: סט אייקונים בתנועה
+  category: Инфографика
+  language: he
+  subtheme: icon_set_motion
+  method: icon_set_motion
+  pool: expansion_wave3
+- query: set ikon bergerak dalam slaid
+  category: Инфографика
+  language: ms
+  subtheme: icon_set_motion
+  method: icon_set_motion
+  pool: expansion_wave3
+- query: gumagalaw na icon set sa slide
+  category: Инфографика
+  language: tl
+  subtheme: icon_set_motion
+  method: icon_set_motion
+  pool: expansion_wave3
+- query: স্লাইডে অ্যানিমেটেড আইকন সেট
+  category: Инфографика
+  language: bn
+  subtheme: icon_set_motion
+  method: icon_set_motion
+  pool: expansion_wave3
+- query: แผนภาพขั้นตอนการทำงาน
+  category: Инфографика
+  language: th
+  subtheme: process_flow_diagram
+  method: process_flow_diagram
+  pool: expansion_wave3
+- query: sơ đồ quy trình từng bước
+  category: Инфографика
+  language: vi
+  subtheme: process_flow_diagram
+  method: process_flow_diagram
+  pool: expansion_wave3
+- query: कार्य प्रक्रिया का फ्लो डायग्राम
+  category: Инфографика
+  language: hi
+  subtheme: process_flow_diagram
+  method: process_flow_diagram
+  pool: expansion_wave3
+- query: مخطط سير العمل خطوة بخطوة
+  category: Инфографика
+  language: ar
+  subtheme: process_flow_diagram
+  method: process_flow_diagram
+  pool: expansion_wave3
+- query: نمودار فرایند گام به گام
+  category: Инфографика
+  language: fa
+  subtheme: process_flow_diagram
+  method: process_flow_diagram
+  pool: expansion_wave3
+- query: διάγραμμα ροής διαδικασίας
+  category: Инфографика
+  language: el
+  subtheme: process_flow_diagram
+  method: process_flow_diagram
+  pool: expansion_wave3
+- query: תרשים זרימת תהליך
+  category: Инфографика
+  language: he
+  subtheme: process_flow_diagram
+  method: process_flow_diagram
+  pool: expansion_wave3
+- query: gambar rajah aliran proses
+  category: Инфографика
+  language: ms
+  subtheme: process_flow_diagram
+  method: process_flow_diagram
+  pool: expansion_wave3
+- query: diagram ng proseso ng trabaho
+  category: Инфографика
+  language: tl
+  subtheme: process_flow_diagram
+  method: process_flow_diagram
+  pool: expansion_wave3
+- query: কাজের প্রক্রিয়ার প্রবাহ চিত্র
+  category: Инфографика
+  language: bn
+  subtheme: process_flow_diagram
+  method: process_flow_diagram
+  pool: expansion_wave3
+- query: การวาดตัวละครอนิเมะด้วยดินสอ
+  category: Аниме / анимация
+  language: th
+  subtheme: anime_drawing_sketch
+  method: anime_drawing_sketch
+  pool: expansion_wave3
+- query: vẽ nhân vật anime bằng bút chì
+  category: Аниме / анимация
+  language: vi
+  subtheme: anime_drawing_sketch
+  method: anime_drawing_sketch
+  pool: expansion_wave3
+- query: एनीमे किरदार की पेंसिल ड्राइंग
+  category: Аниме / анимация
+  language: hi
+  subtheme: anime_drawing_sketch
+  method: anime_drawing_sketch
+  pool: expansion_wave3
+- query: رسم شخصية أنمي بالرصاص
+  category: Аниме / анимация
+  language: ar
+  subtheme: anime_drawing_sketch
+  method: anime_drawing_sketch
+  pool: expansion_wave3
+- query: کشیدن شخصیت انیمه با مداد
+  category: Аниме / анимация
+  language: fa
+  subtheme: anime_drawing_sketch
+  method: anime_drawing_sketch
+  pool: expansion_wave3
+- query: σχέδιο χαρακτήρα anime με μολύβι
+  category: Аниме / анимация
+  language: el
+  subtheme: anime_drawing_sketch
+  method: anime_drawing_sketch
+  pool: expansion_wave3
+- query: ציור דמות אנימה בעיפרון
+  category: Аниме / анимация
+  language: he
+  subtheme: anime_drawing_sketch
+  method: anime_drawing_sketch
+  pool: expansion_wave3
+- query: melukis watak anime dengan pensel
+  category: Аниме / анимация
+  language: ms
+  subtheme: anime_drawing_sketch
+  method: anime_drawing_sketch
+  pool: expansion_wave3
+- query: pagguhit ng anime character
+  category: Аниме / анимация
+  language: tl
+  subtheme: anime_drawing_sketch
+  method: anime_drawing_sketch
+  pool: expansion_wave3
+- query: পেন্সিলে অ্যানিমে চরিত্র আঁকা
+  category: Аниме / анимация
+  language: bn
+  subtheme: anime_drawing_sketch
+  method: anime_drawing_sketch
+  pool: expansion_wave3
+- query: รีวิวอนิเมะซีรีส์ที่กำลังดู
+  category: Аниме / анимация
+  language: th
+  subtheme: anime_series_review
+  method: anime_series_review
+  pool: expansion_wave3
+- query: đánh giá bộ anime đang xem
+  category: Аниме / анимация
+  language: vi
+  subtheme: anime_series_review
+  method: anime_series_review
+  pool: expansion_wave3
+- query: एनीमे सीरीज की समीक्षा
+  category: Аниме / анимация
+  language: hi
+  subtheme: anime_series_review
+  method: anime_series_review
+  pool: expansion_wave3
+- query: مراجعة مسلسل أنمي
+  category: Аниме / анимация
+  language: ar
+  subtheme: anime_series_review
+  method: anime_series_review
+  pool: expansion_wave3
+- query: نقد و بررسی سریال انیمه
+  category: Аниме / анимация
+  language: fa
+  subtheme: anime_series_review
+  method: anime_series_review
+  pool: expansion_wave3
+- query: κριτική σειράς anime
+  category: Аниме / анимация
+  language: el
+  subtheme: anime_series_review
+  method: anime_series_review
+  pool: expansion_wave3
+- query: סקירת סדרת אנימה
+  category: Аниме / анимация
+  language: he
+  subtheme: anime_series_review
+  method: anime_series_review
+  pool: expansion_wave3
+- query: ulasan siri anime
+  category: Аниме / анимация
+  language: ms
+  subtheme: anime_series_review
+  method: anime_series_review
+  pool: expansion_wave3
+- query: review ng anime series
+  category: Аниме / анимация
+  language: tl
+  subtheme: anime_series_review
+  method: anime_series_review
+  pool: expansion_wave3
+- query: অ্যানিমে সিরিজের রিভিউ
+  category: Аниме / анимация
+  language: bn
+  subtheme: anime_series_review
+  method: anime_series_review
+  pool: expansion_wave3
+- query: ภาพยนตร์แอนิเมชันสั้น
+  category: Аниме / анимация
+  language: th
+  subtheme: animation_short_film
+  method: animation_short_film
+  pool: expansion_wave3
+- query: phim hoạt hình ngắn
+  category: Аниме / анимация
+  language: vi
+  subtheme: animation_short_film
+  method: animation_short_film
+  pool: expansion_wave3
+- query: छोटी एनिमेशन फिल्म
+  category: Аниме / анимация
+  language: hi
+  subtheme: animation_short_film
+  method: animation_short_film
+  pool: expansion_wave3
+- query: فيلم رسوم متحركة قصير
+  category: Аниме / анимация
+  language: ar
+  subtheme: animation_short_film
+  method: animation_short_film
+  pool: expansion_wave3
+- query: تماشای انیمیشن کوتاه جذاب
+  category: Аниме / анимация
+  language: fa
+  subtheme: animation_short_film
+  method: animation_short_film
+  pool: expansion_wave3
+- query: μικρού μήκους ταινία κινουμένων σχεδίων
+  category: Аниме / анимация
+  language: el
+  subtheme: animation_short_film
+  method: animation_short_film
+  pool: expansion_wave3
+- query: סרט אנימציה קצר
+  category: Аниме / анимация
+  language: he
+  subtheme: animation_short_film
+  method: animation_short_film
+  pool: expansion_wave3
+- query: filem animasi pendek
+  category: Аниме / анимация
+  language: ms
+  subtheme: animation_short_film
+  method: animation_short_film
+  pool: expansion_wave3
+- query: maikling animated film
+  category: Аниме / анимация
+  language: tl
+  subtheme: animation_short_film
+  method: animation_short_film
+  pool: expansion_wave3
+- query: ছোট অ্যানিমেশন ফিল্ম
+  category: Аниме / анимация
+  language: bn
+  subtheme: animation_short_film
+  method: animation_short_film
+  pool: expansion_wave3
+- query: ขั้นตอนออกแบบตัวละครการ์ตูน
+  category: Аниме / анимация
+  language: th
+  subtheme: character_design_process
+  method: character_design_process
+  pool: expansion_wave3
+- query: quy trình thiết kế nhân vật hoạt hình
+  category: Аниме / анимация
+  language: vi
+  subtheme: character_design_process
+  method: character_design_process
+  pool: expansion_wave3
+- query: कार्टून किरदार डिजाइन की प्रक्रिया
+  category: Аниме / анимация
+  language: hi
+  subtheme: character_design_process
+  method: character_design_process
+  pool: expansion_wave3
+- query: خطوات تصميم شخصية كرتونية
+  category: Аниме / анимация
+  language: ar
+  subtheme: character_design_process
+  method: character_design_process
+  pool: expansion_wave3
+- query: مراحل طراحی شخصیت کارتونی
+  category: Аниме / анимация
+  language: fa
+  subtheme: character_design_process
+  method: character_design_process
+  pool: expansion_wave3
+- query: διαδικασία σχεδιασμού χαρακτήρα κινουμένου
+  category: Аниме / анимация
+  language: el
+  subtheme: character_design_process
+  method: character_design_process
+  pool: expansion_wave3
+- query: תהליך עיצוב דמות מצוירת
+  category: Аниме / анимация
+  language: he
+  subtheme: character_design_process
+  method: character_design_process
+  pool: expansion_wave3
+- query: proses reka bentuk watak kartun
+  category: Аниме / анимация
+  language: ms
+  subtheme: character_design_process
+  method: character_design_process
+  pool: expansion_wave3
+- query: proseso ng pagdidisenyo ng karakter
+  category: Аниме / анимация
+  language: tl
+  subtheme: character_design_process
+  method: character_design_process
+  pool: expansion_wave3
+- query: কার্টুন চরিত্র ডিজাইনের ধাপ
+  category: Аниме / анимация
+  language: bn
+  subtheme: character_design_process
+  method: character_design_process
+  pool: expansion_wave3
+- query: การทำแอนิเมชันสต็อปโมชันจากกระดาษ
+  category: Аниме / анимация
+  language: th
+  subtheme: stop_motion_craft
+  method: stop_motion_craft
+  pool: expansion_wave3
+- query: làm phim stop motion từ giấy
+  category: Аниме / анимация
+  language: vi
+  subtheme: stop_motion_craft
+  method: stop_motion_craft
+  pool: expansion_wave3
+- query: कागज से स्टॉप मोशन एनिमेशन बनाना
+  category: Аниме / анимация
+  language: hi
+  subtheme: stop_motion_craft
+  method: stop_motion_craft
+  pool: expansion_wave3
+- query: صنع أنيميشن إيقاف الحركة بالورق
+  category: Аниме / анимация
+  language: ar
+  subtheme: stop_motion_craft
+  method: stop_motion_craft
+  pool: expansion_wave3
+- query: ساخت انیمیشن استاپ موشن با کاغذ
+  category: Аниме / анимация
+  language: fa
+  subtheme: stop_motion_craft
+  method: stop_motion_craft
+  pool: expansion_wave3
+- query: δημιουργία animation stop motion με χαρτί
+  category: Аниме / анимация
+  language: el
+  subtheme: stop_motion_craft
+  method: stop_motion_craft
+  pool: expansion_wave3
+- query: יצירת אנימציית סטופ מושן מנייר
+  category: Аниме / анимация
+  language: he
+  subtheme: stop_motion_craft
+  method: stop_motion_craft
+  pool: expansion_wave3
+- query: membuat animasi stop motion daripada kertas
+  category: Аниме / анимация
+  language: ms
+  subtheme: stop_motion_craft
+  method: stop_motion_craft
+  pool: expansion_wave3
+- query: paggawa ng stop motion gamit ang papel
+  category: Аниме / анимация
+  language: tl
+  subtheme: stop_motion_craft
+  method: stop_motion_craft
+  pool: expansion_wave3
+- query: কাগজ দিয়ে স্টপ মোশন অ্যানিমেশন
+  category: Аниме / анимация
+  language: bn
+  subtheme: stop_motion_craft
+  method: stop_motion_craft
+  pool: expansion_wave3

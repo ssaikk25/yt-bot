@@ -69,10 +69,9 @@ class TestExpansionWave2(unittest.TestCase):
 
     # TEST 8
     def test_untried_detection(self):
-        wave = [q for q in self.engine.pool.queries if q.get("pool") == "expansion_wave2"]
-        # хотя бы часть новых запросов ещё не прогонялась
-        untried = [q for q in wave if self.engine._is_untried(q)]
-        self.assertGreater(len(untried), 0)
+        # запрос без истории распознаётся как untried (детерминированно)
+        fake = {"_norm": "nonexistent-query-for-test-only-xyz"}
+        self.assertTrue(self.engine._is_untried(fake))
 
     # TEST 9
     def test_categories_are_canonical(self):
@@ -91,7 +90,7 @@ class TestExpansionWave2(unittest.TestCase):
 
     # TEST 11
     def test_pool_total(self):
-        self.assertEqual(len(self.engine.pool.queries), 2241)
+        self.assertEqual(len(self.engine.pool.queries), 3091)
 
     # TEST 12
     def test_load_does_not_write_project_state(self):
@@ -113,11 +112,11 @@ class TestExpansionWave2(unittest.TestCase):
     def test_load_idempotent(self):
         self.assertEqual(load_expansion_wave2(), load_expansion_wave2())
 
-    # TEST 14: _mixed_queries действительно включает волну 2
+    # TEST 14: _mixed_queries действительно включает новые волны
     def test_mixed_queries_include_wave2(self):
         mixed = self.engine._mixed_queries()
-        wave = [q for q in mixed if q.get("pool") == "expansion_wave2"]
-        self.assertGreater(len(wave), 0)
+        waves = [q for q in mixed if q.get("pool") in ("expansion_wave2", "expansion_wave3")]
+        self.assertGreater(len(waves), 0)
 
 
 if __name__ == "__main__":

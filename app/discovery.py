@@ -34,6 +34,7 @@ from .access_control import (
 from .expansion_pool import EXPANSION_POOL, EXPERIMENT_POOL
 from .expansion_pool_950 import EXPANSION_950
 from .expansion_pool_wave2 import EXPANSION_WAVE2
+from .expansion_pool_wave3 import EXPANSION_WAVE3
 from .logger import get_logger
 from .models import ChannelCandidate
 from .query_pool import QueryPool, QUERY_POOL, load_pool_from_yaml, normalize_query
@@ -169,7 +170,8 @@ class DiscoveryEngine:
                        + [dict(q) for q in EXPANSION_POOL]
                        + [dict(q) for q in EXPERIMENT_POOL]
                        + [dict(q) for q in EXPANSION_950]
-                       + [dict(q) for q in EXPANSION_WAVE2])
+                       + [dict(q) for q in EXPANSION_WAVE2]
+                       + [dict(q) for q in EXPANSION_WAVE3])
         # Не ищем по исключённым категориям (аниме и т.п.).
         all_queries = [
             q for q in all_queries
@@ -295,7 +297,7 @@ class DiscoveryEngine:
         base = [q for q in queries if q.get("pool") == "base"]
         # expansion_wave2 участвует в том же бакете, что и expansion:
         # untried-бонус даёт новым запросам приоритет, затем идут старые.
-        exp = [q for q in queries if q.get("pool") in ("expansion", "expansion_wave2")]
+        exp = [q for q in queries if q.get("pool") in ("expansion", "expansion_wave2", "expansion_wave3")]
         exr = [q for q in queries if q.get("pool") == "experiment"]
         n = self.settings.discovery_queries_per_run
         n_base = int(round(n * self.settings.base_query_ratio))
