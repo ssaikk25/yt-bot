@@ -10,6 +10,7 @@
 """
 from __future__ import annotations
 
+import hashlib
 import re
 import statistics
 import unicodedata
@@ -267,11 +268,22 @@ def video_priority(video_title: str, farm_risk: float,
 
 
 def order_videos(videos, farm_risk: float, threshold: float = 0.5):
-    """Сортирует видео: для ферм — сначала самые подозрительные (быстрый confirm),
-    для нормальных каналов — сначала наименее подозрительные (быстрый PASS)."""
+    """Порядок проверки видео.
+
+    - Ферма (farm_risk >= threshold): сначала самые подозрительные — быстрый FAIL.
+    - Обычный канал: **несмешённый** детерминированный порядок (хеш video_id).
+
+    Раньше для обычных каналов сортировали «чистые первыми», из-за чего бот
+    добирал подтверждение из лучших роликов и систематически завышал PASS.
+    """
     scored = [(v, title_risk(getattr(v, "title", ""))[0]) for v in videos]
     if farm_risk >= threshold:
         scored.sort(key=lambda x: -x[1])   # рискованные первыми
-    else:
-        scored.sort(key=lambda x: x[1])    # «чистые» первыми
+        return [v for v, _ in scored]
+
+    def _unbiased_key(pair):
+        vid = str(getattr(pair[0], "video_id", "") or "")
+        return hashlib.sha1(vid.encode("utf-8")).hexdigest()
+
+    scored.sort(key=_unbiased_key)
     return [v for v, _ in scored]

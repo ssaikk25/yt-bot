@@ -30,7 +30,7 @@ def check_prereqs(settings) -> bool:
     if not settings.youtube_api_key:
         log.error("Не задан YOUTUBE_API_KEY (см. .env)")
         ok = False
-    if not settings.mimo_api_key:
+    if not settings.mimo_api_key and getattr(settings, "vision_provider", "mimo") != "opencode":
         log.error("Не задан MIMO_API_KEY (см. .env)")
         ok = False
     return ok

@@ -31,7 +31,7 @@ class DeepSeekClient:
     def __init__(
         self,
         api_key: str,
-        base_url: str = "https://llm.azati.ai",
+        base_url: str = "https://api.deepseek.com",
         model: str = "deepseek-flash",
         categories: Optional[list[str]] = None,
         timeout: float = 180.0,
@@ -134,7 +134,19 @@ class DeepSeekClient:
 
 
 def create_vision_client(settings):
-    """Фабрика оценщика кадров: DeepSeek, если DEEPSEEK_ENABLED=true, иначе MiMo."""
+    """Фабрика оценщика кадров: opencode / DeepSeek / MiMo."""
+    if getattr(settings, "vision_provider", "mimo") == "opencode":
+        from .opencode_client import OpenCodeVisionClient
+
+        log.info("Оценщик кадров: opencode (%s @ %s)", settings.opencode_model, settings.opencode_server_url)
+        return OpenCodeVisionClient(
+            base_url=settings.opencode_server_url,
+            provider_id=settings.opencode_provider_id,
+            model=settings.opencode_model,
+            categories=settings.categories,
+            timeout=settings.opencode_timeout,
+            retries=settings.opencode_retries,
+        )
     if getattr(settings, "deepseek_enabled", False) and settings.deepseek_api_key:
         log.info("Оценщик кадров: DeepSeek (%s)", settings.deepseek_model)
         return DeepSeekClient(

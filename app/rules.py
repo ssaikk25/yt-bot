@@ -17,16 +17,37 @@ def required_suitable(total: int, ratio: float = 0.30) -> int:
     return max(1, math.ceil(total * ratio))
 
 
-def decide_30_percent(passed: int, checked: int, total: int, ratio: float = 0.30) -> str:
+def decide_30_percent(
+    passed: int,
+    checked: int,
+    total: int,
+    ratio: float = 0.30,
+    min_checked: int = 0,
+    border_margin: float = 0.10,
+) -> str:
     """Решение по правилу 30%: 'PASS' | 'FAIL' | 'CONTINUE'.
 
-    - PASS: passed >= required.
-    - FAIL: даже если все оставшиеся пройдут, порог недостижим (passed + remaining < required).
+    - PASS: passed >= required И набрана минимальная выборка (min_checked).
+    - FAIL: даже если все оставшиеся пройдут, порог недостижим.
     - CONTINUE: продолжать проверку.
+
+    Зачем min_checked: без него правило на знаменателе 1-3 видео срабатывало
+    мгновенно (required=max(1,ceil(total*0.3))), давая PASS по одному-двум роликам.
+
+    Зачем border_margin: если наблюдаемая доля близка к порогу (в пределах
+    border_margin), добираем доказательства по всему пулу, а не останавливаемся.
     """
     required = required_suitable(total, ratio)
+    need = min(min_checked, total) if min_checked and min_checked > 0 else 0
+
     if passed >= required:
+        if checked < need:
+            return "CONTINUE"  # мало данных для честного PASS
+        observed = passed / max(1, checked)
+        if checked < total and observed < ratio + border_margin:
+            return "CONTINUE"  # пограничный случай — дорабатываем
         return "PASS"
+
     remaining = total - checked
     if passed + remaining < required:
         return "FAIL"

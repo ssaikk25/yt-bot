@@ -13,6 +13,7 @@ from __future__ import annotations
 import math
 from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, as_completed, wait
 from pathlib import Path
+from typing import Any, Protocol
 
 from .access_control import (
     TEMP_KINDS,
@@ -27,8 +28,7 @@ from .category_mapper import CATEGORY_KEY_MAP, canonicalize
 from .frame_sampler import FrameSampler, MediaUrlError, ProbeError, compute_timestamps
 from .local_vlm import LocalVlmClient
 from .logger import get_logger
-from .mimo_client import MiMoClient
-from .models import ChannelCandidate, ChannelEvaluation, VideoCandidate, VideoEvaluation
+from .models import ChannelCandidate, ChannelEvaluation, FrameAnalysis, VideoCandidate, VideoEvaluation
 from .precheck import compute_farm_risk, farm_risk_band, order_videos, video_priority
 from .rules import decide_30_percent, required_suitable
 from .thumbhash import thumbnails_similarity
@@ -46,8 +46,13 @@ HARD_ARTIFACT_FLAGS = [
 # определить; о нём только логируем.
 
 
+class VisionClient(Protocol):
+    def analyze(self, images: list[bytes]) -> FrameAnalysis: ...
+    def snapshot(self) -> dict[str, Any]: ...
+
+
 class ChannelEvaluator:
-    def __init__(self, settings, youtube, mimo: MiMoClient, sampler: FrameSampler, parallel: int = 4):
+    def __init__(self, settings, youtube, mimo: VisionClient, sampler: FrameSampler, parallel: int = 4):
         self.settings = settings
         self.youtube = youtube
         self.mimo = mimo
@@ -69,6 +74,15 @@ class ChannelEvaluator:
         eligible = pool[: self.settings.max_videos_per_channel]
         ev.eligible_count = len(eligible)  # total_found (до probe)
 
+        # Правило 30% осмысленно только на достаточной выборке: если годных
+        # (>=720p, >5с, <10k просмотров, не Shorts/вертикальные) видео меньше
+        # минимума канала — оценивать нечего, это был бы PASS «по одному ролику».
+        min_pool = int(getattr(self.settings, "min_channel_videos", 10) or 10)
+        if len(eligible) < min_pool:
+            ev.reason = f"мало годных видео: {len(eligible)} < {min_pool}"
+            log.info("Канал %s: %s", channel.title, ev.reason)
+            return ev
+
         # --- Дешёвый channel fingerprint (без MiMo) + умный порядок проверки ---
         farm_risk = self._compute_farm_risk(channel, eligible)
         ev.farm_risk = farm_risk
@@ -76,7 +90,7 @@ class ChannelEvaluator:
         eligible = order_videos(eligible, farm_risk, self.settings.order_farm_threshold)
 
         log.info(
-            "Канал %s: farm_risk=%.2f (%s) | videos_total=%d",
+            "Канал %s: farm_risk=%.2f (%s) | pool=%d (после дешёвых фильтров)",
             channel.title, farm_risk,
             farm_risk_band(farm_risk, self.settings.farm_high_threshold,
                            self.settings.farm_very_high_threshold),
@@ -136,7 +150,11 @@ class ChannelEvaluator:
                     # denominator = реально проверяемые (минус unavailable). Проверяем после КАЖДОГО видео.
                     total = len(eligible) - unavailable_count
                     required = required_suitable(total, self.settings.min_suitable_ratio)
-                    decision = decide_30_percent(ev.suitable, ev.checked, total, self.settings.min_suitable_ratio)
+                    decision = decide_30_percent(
+                        ev.suitable, ev.checked, total, self.settings.min_suitable_ratio,
+                        min_checked=int(getattr(self.settings, "min_checked_for_pass", 10) or 0),
+                        border_margin=float(getattr(self.settings, "border_margin", 0.10) or 0.0),
+                    )
                     if decision == "PASS":
                         decided = True
                         ev.passed = True
@@ -164,8 +182,11 @@ class ChannelEvaluator:
                 ev.reason = f"не решено: {total - ev.checked} видео дали temp-ошибку"
             else:
                 ratio = ev.suitable / max(1, total)
-                ev.passed = ev.suitable >= required
-                ev.reason = f"итог: подходят {ev.suitable}/{total} = {ratio:.0%}"
+                need = min(int(getattr(self.settings, "min_checked_for_pass", 10) or 0), total)
+                enough = ev.checked >= need
+                ev.passed = bool(ev.suitable >= required and enough)
+                suffix = "" if enough else f" (мало проверено: {ev.checked} < {need})"
+                ev.reason = f"итог: подходят {ev.suitable}/{total} = {ratio:.0%}{suffix}"
 
         ev.unavailable_count = unavailable_count
 
@@ -175,7 +196,7 @@ class ChannelEvaluator:
         remaining = max(0, total - ev.checked)
         verdict = "PASS" if ev.passed else ("TEMP" if ev.temp_error else "FAIL")
         log.info(
-            "Канал %s: ИТОГ videos_total=%d unavailable=%d eligible=%d required=%d "
+            "Канал %s: ИТОГ pool=%d unavailable=%d usable=%d required=%d "
             "checked=%d passed=%d failed=%d remaining=%d -> %s",
             channel.title, len(eligible), unavailable_count, total, required,
             ev.checked, ev.suitable, ev.checked - ev.suitable, remaining,
@@ -195,7 +216,7 @@ class ChannelEvaluator:
             snap1["calls"] - snap0["calls"],
         )
         if new_par != self.parallel:
-            log.info("MiMo parallel: %d -> %d (calls=%d errors=%d)",
+            log.info("Vision parallel: %d -> %d (calls=%d errors=%d)",
                      self.parallel, new_par,
                      snap1["calls"] - snap0["calls"],
                      snap1["call_errors"] - snap0["call_errors"])
@@ -316,7 +337,7 @@ class ChannelEvaluator:
                     context={"video_id": v.video_id, "channel_id": v.channel_id,
                              "title": v.title, "target_category": None},
                 )
-                log.info("local_vlm %s: авто-отказ по [%s], MiMo пропущен",
+                log.info("local_vlm %s: авто-отказ по [%s], Vision пропущен",
                          v.video_id, ", ".join(local_result.flags))
                 return vv
 
@@ -335,7 +356,7 @@ class ChannelEvaluator:
         if mimo_is_rate_limited():
             vv.error_kind = "mimo_429"
             vv.temp_error = True
-            vv.reject_reason = "MiMo rate-limited (429), отложено"
+            vv.reject_reason = "Vision rate-limited (429), отложено"
             _record_local(mimo_error=True)
             return vv
         try:
@@ -344,8 +365,8 @@ class ChannelEvaluator:
             # MiMo-сбой = нет вердикта = временная ошибка (retry), НЕ permanent reject.
             vv.error_kind = "mimo_error"
             vv.temp_error = True
-            vv.reject_reason = f"ошибка MiMo (temp): {str(e)[:160]}"
-            log.warning("mimo %s (temp): %s", v.video_id, e)
+            vv.reject_reason = f"ошибка Vision (temp): {str(e)[:160]}"
+            log.warning("Vision %s (temp): %s", v.video_id, e)
             _record_local(mimo_error=True)
             return vv
 
@@ -369,7 +390,7 @@ class ChannelEvaluator:
                         max_width=self.settings.frame_max_width,
                     )
                 except MediaUrlError as e:
-                    log.warning("MiMo DEEP %s: media_url [%s], пропускаю DEEP", v.video_id, e.kind)
+                    log.warning("Vision DEEP %s: media_url [%s], пропускаю DEEP", v.video_id, e.kind)
                     deep_frames = []
                 if deep_frames:
                     try:
@@ -377,19 +398,19 @@ class ChannelEvaluator:
                         analysis = self.mimo.analyze(images + deep_images)
                         if dark_frac > 0.5:
                             analysis.flags["too_dark"] = True
-                        log.info("MiMo DEEP %s: conf=%.2f cat=%r", v.video_id, analysis.confidence, analysis.category)
+                        log.info("Vision DEEP %s: conf=%.2f cat=%r", v.video_id, analysis.confidence, analysis.category)
                     except Exception as e:
-                        log.warning("MiMo DEEP %s: %s", v.video_id, str(e)[:120])
+                        log.warning("Vision DEEP %s: %s", v.video_id, str(e)[:120])
         else:
-            log.info("MiMo %s: DEEP не нужен (%s)", v.video_id, deep_reason)
+            log.info("Vision %s: DEEP не нужен (%s)", v.video_id, deep_reason)
 
         vv.analysis = analysis
 
         if analysis.flags.get("speed_change"):
-            log.info("MiMo отметил speed_change у %s (информативно, не жёсткий отказ)", v.video_id)
+            log.info("Vision отметил speed_change у %s (информативно, не жёсткий отказ)", v.video_id)
 
         if not analysis.suitable:
-            vv.reject_reason = f"MiMo: unsuitable ({analysis.reason[:150]})"
+            vv.reject_reason = f"Vision: unsuitable ({analysis.reason[:150]})"
         else:
             bad = [k for k in HARD_ARTIFACT_FLAGS if analysis.flags.get(k)]
             if bad:

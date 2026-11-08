@@ -117,11 +117,12 @@ class TestFarmRisk(unittest.TestCase):
 
 
 class TestOrdering(unittest.TestCase):
-    def _mk(self, title):
+    def _mk(self, title, vid=None):
         class V:
-            def __init__(self, t):
+            def __init__(self, t, i):
                 self.title = t
-        return V(title)
+                self.video_id = i
+        return V(title, vid or title)
 
     def test_farm_risky_first(self):
         videos = [self._mk("clean lathe turning"), self._mk("AI Story generated"),
@@ -129,10 +130,18 @@ class TestOrdering(unittest.TestCase):
         ordered = order_videos(videos, farm_risk=0.8, threshold=0.5)
         self.assertEqual(ordered[0].title, "AI Story generated")
 
-    def test_normal_clean_first(self):
-        videos = [self._mk("AI Story generated"), self._mk("clean lathe turning")]
-        ordered = order_videos(videos, farm_risk=0.1, threshold=0.5)
-        self.assertEqual(ordered[0].title, "clean lathe turning")
+    def test_normal_order_is_unbiased_and_deterministic(self):
+        """Для обычных каналов порядок НЕ «чистые первыми» (это завышало PASS),
+        а несмещённый и воспроизводимый."""
+        videos = [self._mk("AI Story generated", "v1"),
+                  self._mk("clean lathe turning", "v2"),
+                  self._mk("tractor plowing", "v3"),
+                  self._mk("Top 10 compilation", "v4")]
+        a = [v.video_id for v in order_videos(videos, farm_risk=0.1, threshold=0.5)]
+        b = [v.video_id for v in order_videos(videos, farm_risk=0.1, threshold=0.5)]
+        self.assertEqual(a, b)                                  # детерминизм
+        self.assertEqual(sorted(a), ["v1", "v2", "v3", "v4"])   # набор сохранён
+        self.assertNotEqual(a, ["v2", "v3", "v4", "v1"])        # не «чистые первыми»
 
 
 if __name__ == "__main__":

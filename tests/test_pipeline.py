@@ -107,16 +107,25 @@ class TestEvaluatorEarlyStop(unittest.TestCase):
         evaluator._evaluate_video = fake_eval
         return evaluator, calls
 
-    def test_early_pass_stops_calling(self):
+    def test_early_pass_after_min_checks(self):
+        # все подходят: PASS после минимальной выборки (10), а не после required=5
+        results = [ve(vc(f"v{i}"), suitable=True) for i in range(15)]
+        evaluator, calls = self._make(results)
+        ev = evaluator.evaluate(ChannelCandidate(channel_id="UC1", title="c"),
+                                [r.video for r in results])
+        self.assertTrue(ev.passed)
+        self.assertEqual(ev.checked, 10)
+        self.assertEqual(calls["n"], 10)
+
+    def test_no_pass_on_tiny_sample(self):
+        # 3 подходящих из 10: PASS только после полной проверки (раньше — на 3-м)
         results = [ve(vc(f"v{i}"), suitable=True) for i in range(3)] + \
                   [ve(vc(f"v{i}")) for i in range(3, 10)]
         evaluator, calls = self._make(results)
         ev = evaluator.evaluate(ChannelCandidate(channel_id="UC1", title="c"),
                                 [r.video for r in results])
-        self.assertTrue(ev.passed)
-        # early PASS: не должно проверить все 10, только 3 (required=3)
-        self.assertEqual(calls["n"], 3)
-        self.assertEqual(ev.checked, 3)
+        self.assertEqual(ev.checked, 10)   # проверены все, а не 3
+        self.assertTrue(ev.passed)         # 3/10 = 30% — честно выполнено
 
     def test_early_fail_stops_calling(self):
         results = [ve(vc(f"v{i}")) for i in range(15)]  # все unsuitable
@@ -140,14 +149,16 @@ class TestEvaluatorEarlyStop(unittest.TestCase):
         self.assertFalse(ev.passed)
 
     def test_smaller_than_parallel_no_refill_spin(self):
-        # регрессия: 2 видео при parallel=4 раньше крутило бесконечный refill
+        # 2 годных видео < минимума канала (10): канал отклоняется сразу,
+        # оценки не запускаются — и зависания refill тоже нет
         reset_mimo_parallel(base=4, min_par=4)
-        results = [ve(vc(f"v{i}")) for i in range(2)]  # оба unsuitable
+        results = [ve(vc(f"v{i}")) for i in range(2)]
         evaluator, calls = self._make(results, parallel=4)
         ev = evaluator.evaluate(ChannelCandidate(channel_id="UC1", title="c"),
                                 [r.video for r in results])
         self.assertFalse(ev.passed)
-        self.assertEqual(calls["n"], 2)  # оба проверены, без зависания
+        self.assertEqual(ev.checked, 0)          # оценка не запускалась
+        self.assertIn("мало годных", ev.reason)
 
 
 if __name__ == "__main__":

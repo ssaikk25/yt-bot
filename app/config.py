@@ -99,6 +99,11 @@ class Settings:
     min_channel_videos: int = 10
     min_suitable_ratio: float = 0.30
     min_required_checked: int = 3
+    # Минимум проверенных видео для честного PASS (иначе порог 30% достигался
+    # на выборке из 1-2 роликов).
+    min_checked_for_pass: int = 10
+    # Пограничная зона у порога: если доля в пределах +border_margin, добираем.
+    border_margin: float = 0.10
     max_videos_per_channel: int = 20
     max_shorts_ratio: float = 0.0  # 0.0 = строго: Shorts/live запрещены
     max_subscribers: int = 1000    # 0 = не ограничивать; >лимита — канал не берём
@@ -195,11 +200,21 @@ class Settings:
     # По умолчанию выключен: оценщик кадров остаётся MiMo.
     deepseek_enabled: bool = False
     deepseek_api_key: str = ""
-    deepseek_base_url: str = "https://llm.azati.ai"
+    deepseek_base_url: str = "https://api.deepseek.com"
     deepseek_model: str = "deepseek-flash"
     deepseek_timeout: float = 180.0
     deepseek_max_tokens: int = 4096   # 2048 иногда обрезает reasoning → пустой JSON
     deepseek_retries: int = 3
+
+    # --- Vision через локальный сервер opencode (бесплатная модель) ---
+    # vision_provider: "mimo" | "deepseek" | "opencode".
+    # "opencode" требует запущенный `opencode serve` (OPENCODE_SERVER_URL).
+    vision_provider: str = "mimo"
+    opencode_server_url: str = "http://127.0.0.1:4097"
+    opencode_provider_id: str = "opencode"
+    opencode_model: str = "deepseek-v4.1-flash-free"
+    opencode_timeout: float = 180.0
+    opencode_retries: int = 3
 
     # --- Локальный VLM pre-filter (экономия вызовов MiMo) ---
     # В штатном режиме выключен: не меняет существующее поведение.
@@ -289,6 +304,8 @@ def load_settings() -> Settings:
         min_channel_videos=_env_int("MIN_CHANNEL_VIDEOS", 10),
         min_suitable_ratio=_env_float("MIN_SUITABLE_RATIO", 0.30),
         min_required_checked=_env_int("MIN_REQUIRED_CHECKED", 3),
+        min_checked_for_pass=_env_int("MIN_CHECKED_FOR_PASS", 10),
+        border_margin=_env_float("BORDER_MARGIN", 0.10),
         max_videos_per_channel=_env_int("MAX_VIDEOS_PER_CHANNEL", 20),
         max_shorts_ratio=_env_float("MAX_SHORTS_RATIO", 0.0),
         max_subscribers=_env_int("MAX_SUBSCRIBERS", 1000),
@@ -368,6 +385,12 @@ def load_settings() -> Settings:
         deepseek_timeout=_env_float("DEEPSEEK_TIMEOUT", 180.0),
         deepseek_max_tokens=_env_int("DEEPSEEK_MAX_TOKENS", 4096),
         deepseek_retries=_env_int("DEEPSEEK_RETRIES", 3),
+        vision_provider=(os.getenv("VISION_PROVIDER", "mimo") or "mimo").strip().lower(),
+        opencode_server_url=(os.getenv("OPENCODE_SERVER_URL", Settings.opencode_server_url) or Settings.opencode_server_url).strip(),
+        opencode_provider_id=(os.getenv("OPENCODE_PROVIDER_ID", Settings.opencode_provider_id) or Settings.opencode_provider_id).strip(),
+        opencode_model=(os.getenv("OPENCODE_MODEL", Settings.opencode_model) or Settings.opencode_model).strip(),
+        opencode_timeout=_env_float("OPENCODE_TIMEOUT", 180.0),
+        opencode_retries=_env_int("OPENCODE_RETRIES", 3),
         local_vlm_enabled=_env_bool("LOCAL_VLM_ENABLED", False),
         local_vlm_mode=(os.getenv("LOCAL_VLM_MODE", "shadow") or "shadow").strip().lower(),
         local_vlm_base_url=(os.getenv("LOCAL_VLM_BASE_URL", Settings.local_vlm_base_url) or Settings.local_vlm_base_url).strip(),
