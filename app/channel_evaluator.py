@@ -150,6 +150,16 @@ class ChannelEvaluator:
                     # denominator = реально проверяемые (минус unavailable). Проверяем после КАЖДОГО видео.
                     total = len(eligible) - unavailable_count
                     required = required_suitable(total, self.settings.min_suitable_ratio)
+
+                    # Недоступные видео уменьшают знаменатель: если доступных
+                    # меньше минимума канала, правило 30% проверить не на чем.
+                    min_pool_live = int(getattr(self.settings, "min_channel_videos", 10) or 10)
+                    if total < min_pool_live:
+                        decided = True
+                        ev.passed = False
+                        ev.reason = f"мало доступных видео: {total} < {min_pool_live}"
+                        break
+
                     decision = decide_30_percent(
                         ev.suitable, ev.checked, total, self.settings.min_suitable_ratio,
                         min_checked=int(getattr(self.settings, "min_checked_for_pass", 10) or 0),
