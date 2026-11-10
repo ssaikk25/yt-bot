@@ -40,6 +40,8 @@ log = get_logger("evaluator")
 HARD_ARTIFACT_FLAGS = [
     "watermark", "borders", "overlay_text", "strong_shake", "collage",
     "blur", "pixelation", "ai_generated", "too_dark", "talking_head",
+    # Запрещённые форматы: даже при suitable=true отсекаем принудительно.
+    "screen_recording", "podcast", "motion_design",
     "unclear_content", "slideshow",
 ]
 # speed_change НЕ входит в жёсткие: по отдельным кадрам его нельзя достоверно

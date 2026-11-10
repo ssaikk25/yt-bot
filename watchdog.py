@@ -78,7 +78,9 @@ def start_runner():
         "MAX_VIEWS": "10000", "TARGET_CHANNELS": "999999999", "MAX_HOURS": "48",
         "QUOTA_WAIT_SECONDS": "900", "MAX_VIDEOS_PER_CHANNEL": "20",
         "EVAL_PARALLEL": "8", "YTDLP_DELAY": "3.0",
-        "PROBE_MIN_INTERVAL": "0",
+        # Троттлинг: 15 с между проверками видео (~240/час) — проверено,
+        # что при таком темпе YouTube не выдаёт bot-check часами.
+        "PROBE_MIN_INTERVAL": "15",
         "FRAME_COUNT": "5", "FRAME_FRACTIONS": "0.05,0.25,0.50,0.75,0.95",
         "QUICK_ACCEPT_CONFIDENCE": "0.90", "DEEP_CONFIDENCE_THRESHOLD": "0.90",
         # Честная проверка: минимум 10 проверенных видео для PASS,

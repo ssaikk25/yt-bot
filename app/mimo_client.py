@@ -65,13 +65,18 @@ def build_system_prompt(categories: list[str]) -> str:
 - Ч/б видео и сепия — ДОПУСТИМЫ, это не дефект.
 - Живая/дышащая камера — ДОПУСТИМА: лёгкое, плавное, «дышащее» движение камеры (в т.ч. взгляд от первого лица) — это НЕ strong_shake. Отсекай только сильную хаотичную тряску, будто трясутся руки оператора.
 
+ЖЁСТКО ЗАПРЕЩЁННЫЕ ФОРМАТЫ (suitable=false, даже если картинка чистая и «красивая»):
+- скринкаст / запись экрана (screen_recording=true): виден экран компьютера или телефона, интерфейс программы, браузер, окно кода, презентация, обучающее видео «показываю на экране», разбор софта;
+- подкаст / говорящие лица (podcast=true): люди сидят и разговаривают (студия, микрофоны, круглый стол, интервью, шоу с ведущими), кадры — преимущественно лица говорящих;
+- моушн-дизайн / анимированная графика (motion_design=true): абстрактные движущиеся фигуры, кинетическая типографика, анимированные заставки/интро/логотипы, графические шаблоны и переходы — то есть НЕТ реальной съёмки камерой.
+
 НЕПРИЕМЛЕМЫЙ КОНТЕНТ (suitable=false, даже если кадры чистые):
 - йога/упражнения в неприличных позах;
 - рытьё в мусорках/на свалках;
 - романтические отношения между представителями одного пола.
 
 Верни СТРОГО один JSON-объект, без пояснений и markdown:
-{{"suitable": bool, "category": "<одна из категорий>", "watermark": bool, "borders": bool, "overlay_text": bool, "strong_shake": bool, "collage": bool, "blur": bool, "pixelation": bool, "ai_generated": bool, "too_dark": bool, "talking_head": bool, "unclear_content": bool, "slideshow": bool, "speed_change": bool, "description": "краткое описание", "confidence": 0.0, "reason": "..."}}"""
+{{"suitable": bool, "category": "<одна из категорий>", "watermark": bool, "borders": bool, "overlay_text": bool, "strong_shake": bool, "collage": bool, "blur": bool, "pixelation": bool, "ai_generated": bool, "too_dark": bool, "talking_head": bool, "screen_recording": bool, "podcast": bool, "motion_design": bool, "unclear_content": bool, "slideshow": bool, "speed_change": bool, "description": "краткое описание", "confidence": 0.0, "reason": "..."}}"""
 
 
 def _extract_json(text: str) -> dict:
@@ -121,6 +126,7 @@ def to_frame_analysis(parsed: dict) -> FrameAnalysis:
     flag_names = [
         "watermark", "borders", "overlay_text", "strong_shake", "collage",
         "blur", "pixelation", "ai_generated", "too_dark", "talking_head",
+        "screen_recording", "podcast", "motion_design",
         "unclear_content", "slideshow", "speed_change",
     ]
     flags = {k: bool(parsed.get(k, False)) for k in flag_names}

@@ -29,6 +29,10 @@ HARD_JUNK_KEYWORDS = [
     "white noise", "ruido blanco", "sonido de", "sleep music", "dormir",
     "relajarse", "calmar la mente", "relaxing music", "ambient music",
     "для сна", "релакс", "медитация", "meditation", "asmr", "lofi", "sleep sounds",
+    # Запрещённые форматы: отсекаем по заголовку, не тратя probe/vision.
+    "podcast", "подкаст", "screencast", "скринкаст", "screen recording",
+    "запись экрана", "webinar", "вебинар", "motion design", "моушн дизайн",
+    "kinetic typography", "кинетическая типографика",
 ]
 
 # --------------------------------------------------------------------------- #
